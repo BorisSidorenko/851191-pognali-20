@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Борис Сидоренко](https://up.htmlacademy.ru/adaptive/20/user/851191).
-* Наставник: [Александр Кошара].
+* Наставник: [Александр Кошара](https://up.htmlacademy.ru/adaptive/20/user/169035).
 
 ---
 
