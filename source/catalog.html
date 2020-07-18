@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск идеального попутчика</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">
+                О сервисе
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Направления
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Попутчики
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="button button--auth">
+            Авторизация
+          </a>
+          <ul class="nav__list contacts-list">
+            <li class="contacts-list__item">
+              <a href="tel:88005558628">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__list social-list">
+            <li class="social-list__item social-list__item--fb">
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item--vk">
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item-inst">
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__header">Попутчики</h1>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <section class="filters">
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Список доступных попутчиков</h2>
+          <ul class="catalog__list cards">
+            <li class="cards__item">
+              <h3 class="cards__header">Таня<br>Фирсова</h3>
+              <span class="cards__likes">1,5 М</span>
+              <ul class="cards__interests interests">
+                <li class="interests__item">
+                  #ЗОЖ
+                </li>
+                <li class="interests__item">
+                  #ПП
+                </li>
+                <li class="interests__item">
+                  #Фитнес
+                </li>
+                <li class="interests__item">
+                  #пляж
+                </li>
+                <li class="interests__item">
+                  #авокадо
+                </li>
+                <li class="interests__item">
+                  #смузи
+                </li>
+              </ul>
+              <p class="cards__text">
+                хочет посетить:
+              </p>
+              <ul class="cards__wishes wishes">
+                <li class="wishes__item">
+                  Шри-Ланка
+                </li>
+                <li class="wishes__item">
+                  Тайланд
+                </li>
+                <li class="wishes__item">
+                  Сейшелы
+                </li>
+              </ul>
+              <div class="cards__transport transport">
+                <span class="cards__text">транспорт:</span>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Самолёт"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Автобус"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Велосипед"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Пешеход"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="cards__level level">
+                <span class="cards__text">левел:</span>
+                <span class="level__text">99</span>
+              </div>
+              <a href="#" class="button button--call">Позвать!</a>
+            </li>
+            <li class="cards__item">
+              <h3 class="cards__header">Петя<br>Демин</h3>
+              <span class="cards__likes">1500</span>
+              <ul class="cards__interests interests">
+                <li class="interests__item">
+                  #бургер
+                </li>
+                <li class="interests__item">
+                  #бар
+                </li>
+                <li class="interests__item">
+                  #футбол
+                </li>
+                <li class="interests__item">
+                  #концерт
+                </li>
+                <li class="interests__item">
+                  #крафт
+                </li>
+              </ul>
+              <p class="cards__text">
+                хочет посетить:
+              </p>
+              <ul class="cards__wishes wishes">
+                <li class="wishes__item">
+                  Бельгия
+                </li>
+                <li class="wishes__item">
+                  Чехия
+                </li>
+              </ul>
+              <div class="cards__transport transport">
+                <span class="cards__text">транспорт:</span>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Самолёт"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Автобус"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Велосипед"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Пешеход"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="cards__level level">
+                <span class="cards__text">левел:</span>
+                <span class="level__text">80</span>
+              </div>
+              <a href="#" class="button button--call">Позвать!</a>
+            </li>
+            <li class="cards__item">
+              <h3 class="cards__header">Марк<br>Смолов</h3>
+              <span class="cards__likes">170</span>
+              <ul class="cards__interests interests">
+                <li class="interests__item">
+                  #рэп
+                </li>
+                <li class="interests__item">
+                  #тату
+                </li>
+                <li class="interests__item">
+                  #хайпбист
+                </li>
+                <li class="interests__item">
+                  #кроссовки
+                </li>
+                <li class="interests__item">
+                  #суприм
+                </li>
+              </ul>
+              <p class="cards__text">
+                хочет посетить:
+              </p>
+              <ul class="cards__wishes wishes">
+                <li class="wishes__item">
+                  США
+                </li>
+                <li class="wishes__item">
+                  Австралия
+                </li>
+                <li class="wishes__item">
+                  Доминика
+                </li>
+              </ul>
+              <div class="cards__transport transport">
+                <span class="cards__text">транспорт:</span>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Самолёт"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Автобус"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Велосипед"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Пешеход"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="cards__level level">
+                <span class="cards__text">левел:</span>
+                <span class="level__text">25</span>
+              </div>
+              <a href="#" class="button button--call">Позвать!</a>
+            </li>
+            <li class="cards__item">
+              <h3 class="cards__header">Лариса<br>Роговая</h3>
+              <span class="cards__likes">23</span>
+              <ul class="cards__interests interests">
+                <li class="interests__item">
+                  #образование
+                </li>
+                <li class="interests__item">
+                  #карьера
+                </li>
+                <li class="interests__item">
+                  #учеба
+                </li>
+                <li class="interests__item">
+                  #линкедин
+                </li>
+              </ul>
+              <p class="cards__text">
+                хочет посетить:
+              </p>
+              <ul class="cards__wishes wishes">
+                <li class="wishes__item">
+                  Великобритания
+                </li>
+                <li class="wishes__item">
+                  Германия
+                </li>
+              </ul>
+              <div class="cards__transport transport">
+                <span class="cards__text">транспорт:</span>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Самолёт"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle transport__toggle--active" aria-label="Автобус"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Велосипед"></button>
+                  </li>
+                  <li class="transport__item">
+                    <button type="button" class="transport__toggle" aria-label="Пешеход"></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="cards__level level">
+                <span class="cards__text">левел:</span>
+                <span class="level__text">50</span>
+              </div>
+              <a href="#" class="button button--call">Позвать!</a>
+            </li>
+          </ul>
+          <a href="#" class="button button--more">показать еще</a>
+        </section>
+        <div class="pagination">
+          <h2 class="visually-hidden">Другие страницы</h2>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="#" class="pagination__link--prev">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link--next">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://vk.com/htmlacademy" class="social__link social__link-vk">
+                Мы в Вконтакте
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link-fb">
+                Мы в Фейсбуке
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link-inst">
+                Мы в Инстаграме
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
