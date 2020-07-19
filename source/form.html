@@ -9,24 +9,24 @@
       <a class="page-header__logo">
         <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
       </a>
-      <nav class="nav">
+      <nav class="page-header__nav nav">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a href="#" class="site-list__link">
                 О сервисе
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="#" class="site-list__link">
                 Направления
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="#" class="site-list__link">
                 Попутчики
               </a>
             </li>
@@ -34,38 +34,37 @@
           <a href="#" class="button button--auth">
             Авторизация
           </a>
-          <ul class="nav__list contacts-list">
-            <li class="contacts-list__item">
-              <a href="tel:88005558628">
+          <ul class="nav__list contacts">
+            <li class="contacts__item">
+              <a href="tel:88005558628" class="contacts__link contacts__link--phone">
                 8 800 555-86-28
               </a>
             </li>
-            <li class="contacts-list__item">
-              <a href="mailto:mail@htmlacademy.ru">
+            <li class="contacts__item">
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--email">
                 mail@htmlacademy.ru
               </a>
             </li>
           </ul>
-          <ul class="nav__list social-list">
-            <li class="social-list__item social-list__item--fb">
-              <a href="#">
+          <ul class="nav__list socials">
+            <li class="socials__item socials__item--fb">
+              <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__link-fb">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-list__item social-list__item--vk">
-              <a href="#">
+            <li class="socials__item socials__item--vk">
+              <a href="https://vk.com/htmlacademy" class="socials__link socials__link-vk">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li class="social-list__item social-list__item-inst">
-              <a href="#">
+            <li class="socials__item socials__item-inst">
+              <a href="https://www.instagram.com/htmlacademy" class="socials__link socials__link-inst">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__header">Направления</h1>
     </header>
     <main class="page-main">
     </main>
@@ -74,25 +73,23 @@
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="https://vk.com/htmlacademy" class="social__link social__link-vk">
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link-fb">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link-inst">
-                <span class="visually-hidden">Мы в Инстаграме</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="page-footer__socials socials">
+          <li class="socials__item socials__item--fb">
+            <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__link-fb">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="socials__item socials__item--vk">
+            <a href="https://vk.com/htmlacademy" class="socials__link socials__link-vk">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="socials__item socials__item-inst">
+            <a href="https://www.instagram.com/htmlacademy" class="socials__link socials__link-inst">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
