@@ -65,17 +65,166 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__header">Попутчики</h1>
+      <h1 class="page-title">Попутчики</h1>
     </header>
-    <main class="page-main">
-      <div class="page-main__wrapper">
+    <main class="main">
+      <div class="main__wrapper">
         <section class="filters">
+          <h2 class="visually-hidden">Фильтр попутчиков</h2>
+          <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="filters__title">
+              Подберите<br>
+              идеального<br>
+              попутчика
+            </h3>
+            <fieldset class="filters__fieldset filters__fieldset--hobbies">
+              <h4 class="filters__category">хобби</h4>
+              <ul class="hobbies">
+                <li class="hobbies__item">
+                  <input type="checkbox" name="healthy-lifestyle" id="healthy-lifestyle" class="hobbies__input">
+                  <label for="healthy-lifestyle" class="hobbies__label">ЗОЖ</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="fitness" id="fitness" class="hobbies__input">
+                  <label for="fitness" class="hobbies__label">Фитнес</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="beach" id="beach" class="hobbies__input">
+                  <label for="beach" class="hobbies__label">пляж</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="bar" id="bar" class="hobbies__input">
+                  <label for="bar" class="hobbies__label">бар</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="football" id="football" class="hobbies__input">
+                  <label for="football" class="hobbies__label">футбол</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="concert" id="concert" class="hobbies__input">
+                  <label for="concert" class="hobbies__label">концерт</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="craft" id="craft" class="hobbies__input">
+                  <label for="craft" class="hobbies__label">крафт</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="tatoo" id="tatoo" class="hobbies__input">
+                  <label for="tatoo" class="hobbies__label">тату</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="hypebeast" id="hypebeast" class="hobbies__input">
+                  <label for="hypebeast" class="hobbies__label">хайпбист</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="sneakers" id="sneakers" class="hobbies__input">
+                  <label for="sneakers" class="hobbies__label">кроссовки</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="supreme" id="supreme" class="hobbies__input">
+                  <label for="supreme" class="hobbies__label">суприм</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="education" id="education" class="hobbies__input">
+                  <label for="education" class="hobbies__label">образование</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="career" id="career" class="hobbies__input">
+                  <label for="career" class="hobbies__label">карьера</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="study" id="study" class="hobbies__input">
+                  <label for="study" class="hobbies__label">учеба</label>
+                </li>
+                <li class="hobbies__item">
+                  <input type="checkbox" name="linkedin" id="linkedin" class="hobbies__input">
+                  <label for="linkedin" class="hobbies__label">линкедин</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__fieldset filters__fieldset--music">
+              <h4 class="filters__category">музыка</h4>
+              <ul class="music">
+                <li class="music__item">
+                  <input type="checkbox" name="rock" id="rock" class="music__input" checked>
+                  <label for="rock" class="music__label">Тяжелый рок</label>
+                </li>
+                <li class="music__item">
+                  <input type="checkbox" name="rap" id="rap" class="music__input" checked>
+                  <label for="rap" class="music__label">Русский рэп</label>
+                </li>
+                <li class="music__item">
+                  <input type="checkbox" name="dance" id="dance" class="music__input">
+                  <label for="dance" class="music__label">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__fieldset filters__fieldset--food">
+              <h4 class="filters__category">еда</h4>
+              <ul class="food">
+                <li class="food__item">
+                  <input type="checkbox" name="avocado" id="avocado" class="food__input">
+                  <label for="avocado" class="food__label">авокадо</label>
+                </li>
+                <li class="food__item">
+                  <input type="checkbox" name="healthy-food" id="healthy-food" class="food__input">
+                  <label for="healthy-food" class="food__label">ПП</label>
+                </li>
+                <li class="food__item">
+                  <input type="checkbox" name="smoothies" id="smoothies" class="food__input">
+                  <label for="smoothies" class="food__label">смузи</label>
+                </li>
+                <li class="food__item">
+                  <input type="checkbox" name="burger" id="burger" class="food__input">
+                  <label for="burger" class="food__label">бургер</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__fieldset filters__fieldset--transport">
+              <h4 class="filters__category">транспорт</h4>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" id="plane" class="transport__input">
+                  <label for="plane" class="transport__label">самолёт</label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bus" id="bus" class="transport__input">
+                  <label for="bus" class="transport__label">автобус</label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" id="bike" class="transport__input">
+                  <label for="bike" class="transport__label">велосипед</label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="pedestrian" id="pedestrian" class="transport__input">
+                  <label for="pedestrian" class="transport__label">пешеход</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters__fieldset filters__fieldset--level">
+              <h4 class="filters__category">левел</h4>
+              <div class="level-controls">
+                <label for="level-min" class="visually-hidden">Левел от:</label>
+                <input type="text" name="level-min" id="level-min" class="level-controls__min">
+                <label for="level-max" class="visually-hidden">Левел до:</label>
+                <input type="text" name="level-max" id="level-max" class="level-controls__max">
+              </div>
+              <div class="range-controls">
+                <button type="button" aria-label="Минимальный уровень" class="range-controls__toggle toggle_min"></button>
+                <button type="button" aria-label="Максимальный уровень" class="range-controls__toggle toggle_max"></button>
+              </div>
+            </fieldset>
+            <button type="submit" class="filters__button"></button>
+          </form>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список доступных попутчиков</h2>
           <ul class="catalog__list cards">
             <li class="cards__item">
-              <h3 class="cards__header">Таня<br>Фирсова</h3>
+              <h3 class="cards__title">
+                <span class="cards__first-name">Таня</span>
+                <span class="cards__last-name">Фирсова</span>
+              </h3>
               <span class="cards__likes">1,5 М</span>
               <ul class="cards__interests interests">
                 <li class="interests__item">
@@ -97,20 +246,22 @@
                   #смузи
                 </li>
               </ul>
-              <p class="cards__text">
-                хочет посетить:
-              </p>
-              <ul class="cards__wishes wishes">
-                <li class="wishes__item">
-                  Шри-Ланка
-                </li>
-                <li class="wishes__item">
-                  Тайланд
-                </li>
-                <li class="wishes__item">
-                  Сейшелы
-                </li>
-              </ul>
+              <div class="cards__wishes wishes">
+                <p class="cards__text">
+                  хочет посетить:
+                </p>
+                <ul class="wishes__list">
+                  <li class="wishes__item">
+                    Шри-Ланка
+                  </li>
+                  <li class="wishes__item">
+                    Тайланд
+                  </li>
+                  <li class="wishes__item">
+                    Сейшелы
+                  </li>
+                </ul>
+              </div>
               <div class="cards__transport transport">
                 <span class="cards__text">транспорт:</span>
                 <ul class="transport__list">
@@ -132,10 +283,13 @@
                 <span class="cards__text">левел:</span>
                 <span class="level__text">99</span>
               </div>
-              <a href="#" class="button button--call">Позвать!</a>
+              <a href="#" class="cards__link button button--call">Позвать!</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__header">Петя<br>Демин</h3>
+              <h3 class="cards__title">
+                <span class="cards__first-name">Петя</span>
+                <span class="cards__last-name">Демин</span>
+              </h3>
               <span class="cards__likes">1500</span>
               <ul class="cards__interests interests">
                 <li class="interests__item">
@@ -154,17 +308,19 @@
                   #крафт
                 </li>
               </ul>
-              <p class="cards__text">
-                хочет посетить:
-              </p>
-              <ul class="cards__wishes wishes">
-                <li class="wishes__item">
-                  Бельгия
-                </li>
-                <li class="wishes__item">
-                  Чехия
-                </li>
-              </ul>
+              <div class="cards__wishes wishes">
+                <p class="cards__text">
+                  хочет посетить:
+                </p>
+                <ul class="cards__wishes wishes">
+                  <li class="wishes__item">
+                    Бельгия
+                  </li>
+                  <li class="wishes__item">
+                    Чехия
+                  </li>
+                </ul>
+              </div>
               <div class="cards__transport transport">
                 <span class="cards__text">транспорт:</span>
                 <ul class="transport__list">
@@ -186,10 +342,13 @@
                 <span class="cards__text">левел:</span>
                 <span class="level__text">80</span>
               </div>
-              <a href="#" class="button button--call">Позвать!</a>
+              <a href="#" class="cards__link button button--call">Позвать!</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__header">Марк<br>Смолов</h3>
+              <h3 class="cards__title">
+                <span class="cards__first-name">Марк</span>
+                <span class="cards__last-name">Смолов</span>
+              </h3>
               <span class="cards__likes">170</span>
               <ul class="cards__interests interests">
                 <li class="interests__item">
@@ -208,20 +367,22 @@
                   #суприм
                 </li>
               </ul>
-              <p class="cards__text">
-                хочет посетить:
-              </p>
-              <ul class="cards__wishes wishes">
-                <li class="wishes__item">
-                  США
-                </li>
-                <li class="wishes__item">
-                  Австралия
-                </li>
-                <li class="wishes__item">
-                  Доминика
-                </li>
-              </ul>
+              <div class="cards__wishes wishes">
+                <p class="cards__text">
+                  хочет посетить:
+                </p>
+                <ul class="cards__wishes wishes">
+                  <li class="wishes__item">
+                    США
+                  </li>
+                  <li class="wishes__item">
+                    Австралия
+                  </li>
+                  <li class="wishes__item">
+                    Доминика
+                  </li>
+                </ul>
+              </div>
               <div class="cards__transport transport">
                 <span class="cards__text">транспорт:</span>
                 <ul class="transport__list">
@@ -243,10 +404,13 @@
                 <span class="cards__text">левел:</span>
                 <span class="level__text">25</span>
               </div>
-              <a href="#" class="button button--call">Позвать!</a>
+              <a href="#" class="cards__link button button--call">Позвать!</a>
             </li>
             <li class="cards__item">
-              <h3 class="cards__header">Лариса<br>Роговая</h3>
+              <h3 class="cards__title">
+                <span class="cards__first-name">Лариса</span>
+                <span class="cards__last-name">Роговая</span>
+              </h3>
               <span class="cards__likes">23</span>
               <ul class="cards__interests interests">
                 <li class="interests__item">
@@ -262,17 +426,19 @@
                   #линкедин
                 </li>
               </ul>
-              <p class="cards__text">
-                хочет посетить:
-              </p>
-              <ul class="cards__wishes wishes">
-                <li class="wishes__item">
-                  Великобритания
-                </li>
-                <li class="wishes__item">
-                  Германия
-                </li>
-              </ul>
+              <div class="cards__wishes wishes">
+                <p class="cards__text">
+                  хочет посетить:
+                </p>
+                <ul class="cards__wishes wishes">
+                  <li class="wishes__item">
+                    Великобритания
+                  </li>
+                  <li class="wishes__item">
+                    Германия
+                  </li>
+                </ul>
+              </div>
               <div class="cards__transport transport">
                 <span class="cards__text">транспорт:</span>
                 <ul class="transport__list">
@@ -294,21 +460,21 @@
                 <span class="cards__text">левел:</span>
                 <span class="level__text">50</span>
               </div>
-              <a href="#" class="button button--call">Позвать!</a>
+              <a href="#" class="cards__link button button--call">Позвать!</a>
             </li>
           </ul>
-          <a href="#" class="button button--more">показать еще</a>
+          <a href="#" class="catalog__link button button--more">показать еще</a>
         </section>
         <div class="pagination">
           <h2 class="visually-hidden">Другие страницы</h2>
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a href="#" class="pagination__link--prev">
+              <a href="#" class="pagination__link pagination__link--prev">
                 <span class="visually-hidden">Предыдущая страница</span>
               </a>
             </li>
             <li class="pagination__item">
-              <a href="#" class="pagination__link--next">
+              <a href="#" class="pagination__link pagination__link--next">
                 <span class="visually-hidden">Следующая страница</span>
               </a>
             </li>
@@ -317,11 +483,11 @@
       </div>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
+      </a>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/150x150" width="96px" height="15px" alt="Погнали?">
-        </a>
-        <div class="page-footer__social social">
+        <div class="page-footer__socials socials">
           <ul class="social__list">
             <li class="social__item">
               <a href="https://vk.com/htmlacademy" class="social__link social__link-vk">
