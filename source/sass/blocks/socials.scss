@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 105px;
+}
+
+.socials__icon--fb {
+  width: 11px;
+  height: 21px;
+}
+
+.socials__icon--vk {
+  width: 23px;
+  height: 12px;
+}
+
+.socials__icon--inst {
+  width: 18px;
+  height: 18px;
+}

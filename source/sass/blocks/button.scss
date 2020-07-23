@@ -1,0 +1,114 @@
+.button {
+  position: relative;
+  display: block;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  color: $basic_blue;
+    &--auth {
+      width: 270px;
+      height: 50px;
+      line-height: 30px;
+      text-align: center;
+    }
+    &--auth-header {
+      width: 190px;
+      height: 40px;
+      line-height: 20px;
+      text-align: center;
+    }
+    &--auth::before,
+    &--auth-header::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background-color: $basic_yellow;
+      border-radius: 25px;
+      content: '';
+    }
+    &--phone,
+    &--mail {
+      width: 40px;
+      height: 40px;
+    }
+    &--phone::before,
+    &--mail::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: $special_orange;
+      border-radius: 50%;
+      content: '';
+    }
+    &--phone::after,
+    &--mail::after {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      background-image: url('../../img/topmenu-phone.svg');
+      background-repeat: no-repeat;
+      content: '';
+    }
+    &--mail::before {
+      background-color: $special_yellow_dark;
+    }
+    &--mail::after {
+      top: 14px;
+      height: 13px;
+      background-image: url('../../img/topmenu-mail.svg');
+      background-repeat: no-repeat;
+    }
+    &--all {
+      width: 270px;
+      height: 62px;
+    }
+    &--all::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      background-color: $basic_yellow;
+      border-radius: 10px;
+      content: '';
+    }
+}
+
+.button__text {
+  position: relative;
+}
+
+.button__text--auth,
+.button__text--auth-header {
+  display: inline-block;
+  padding-top: 12px;
+  text-transform: uppercase;
+}
+
+.button__text--auth-header{
+  padding-top: 10px;
+}
+
+.button__text--all {
+  display: inline-block;
+  padding-top: 22px;
+  padding-left: 23px;
+  line-height: 18px;
+}
+
+.button__text--travalers {
+  display: inline-block;
+  padding-top: 22px;
+  padding-left: 23px;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic_blue_light;
+}

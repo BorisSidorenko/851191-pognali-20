@@ -1,0 +1,32 @@
+.about {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 8px;
+  background-color: $light_blue;
+  border-radius: 0 0 25px 25px;
+  box-sizing: border-box;
+}
+
+.about__wrapper {
+  padding-top: 33px;
+  padding-right: 52px;
+  padding-left: 29px;
+  padding-bottom: 82px;
+  background: url('../../img/about-mobile@1x.png') center no-repeat;
+}
+
+.about__text {
+  margin: 0;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+}
+
+.about__text--emphasis {
+  padding-top: 20px;
+  font-weight: bold;
+}
