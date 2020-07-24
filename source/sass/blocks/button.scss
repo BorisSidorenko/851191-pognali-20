@@ -89,6 +89,62 @@
       border-radius: 25px;
       content: '';
     }
+    &--tariffs,
+    &--more {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      color: $tariffs_blue;
+      text-decoration: none;
+    }
+    &--more {
+      position: relative;
+      width: 115px;
+      height: 30px;
+      margin: 0 auto;
+      padding-left: 33px;
+      font-size: 17px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $special_blue_dark;
+    }
+    &--more::before {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background: url('../../img/show-more-plus.svg');
+      content: '';
+    }
+    &--prev,
+    &--next {
+      width: 135px;
+      height: 51px;
+      background-color: $basic_white;
+      border-radius: 25px 0 0 25px;
+    }
+    &--next {
+      border-radius: 0 25px 25px 0;
+    }
+    &--prev::before,
+    &--next::before {
+      position: absolute;
+      top: 17px;
+      left: 63px;
+      width: 20px;
+      height: 13px;
+      background: url('../../img/triangle-arrow-left.svg') center no-repeat;
+      content: '';
+    }
+    &--next::before {
+      position: absolute;
+      right: 63px;
+      background: url('../../img/triangle-arrow-right.svg') center no-repeat;
+      content: '';
+    }
 }
 
 .button__text {
@@ -118,7 +174,7 @@
       padding-left: 23px;
       font-size: 18px;
       line-height: 18px;
-      color: $special_blue_light;
+      color: $special_blue_dark;
     }
     &--call {
       padding-top: 14px;

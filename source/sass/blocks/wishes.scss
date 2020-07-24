@@ -10,6 +10,12 @@
 }
 
 .wishes__list {
+  display: grid;
+  grid-template-columns: 26px 120px;
+  grid-template-rows: 18px;
+  column-gap: 14px;
+  row-gap: 10px;
+
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
@@ -17,15 +23,19 @@
 }
 
 .wishes__item {
-  padding-bottom: 10px;
+  grid-column: 2;
   font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $special_blue_light;
-  &:last-child {
-    padding-bottom: 0;
-  }
+  color: $special_blue_dark;
+    &::before {
+      grid-column: 1;
+      width: 10px;
+      height: 10px;
+      background-color: $basic_blue_light;
+      content: '';
+    }
 }
