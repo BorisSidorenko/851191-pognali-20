@@ -1,0 +1,32 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  padding-top: 37px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 18px;
+}
+
+.page-footer__logo {
+  display: block;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.page-footer__socials {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 37px;
+  list-style: none;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
