@@ -1,0 +1,31 @@
+.cards__item {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.card {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  background-color: $basic-white;
+}
+
+.card__title {
+  margin: 0;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: $special_blue_light;
+}
+
+.card__interests {
+  justify-content: start;
+  width: 176px;
+  margin: 0;
+}
+

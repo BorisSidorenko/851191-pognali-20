@@ -1,0 +1,31 @@
+.wishes__title {
+  margin: 0;
+  padding-bottom: 19px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: $special_grey;
+}
+
+.wishes__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  list-style-type: none;
+}
+
+.wishes__item {
+  padding-bottom: 10px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_blue_light;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

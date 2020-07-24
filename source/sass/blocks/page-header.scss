@@ -2,13 +2,23 @@
   padding-top: 28px;
   padding-left: 26px;
   padding-right: 24px;
+  padding-bottom: 11px;
   width: 320px;
   margin: 0 auto;
-  background:  url('../../img/traveller-illustration-mobile@1x.png') bottom 20px center no-repeat,
-                     url('../../img/globe-back-mobile@1x.jpg') bottom 20px center no-repeat;
-  background-repeat: no-repeat;
   box-sizing: border-box;
+  background-color: $header_blue;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px 20px 0 $basic-white;
+  &--index {
+    padding-bottom: 0;
+    background:  url('../../img/traveller-illustration-mobile@1x.png') bottom 20px center no-repeat,
+    url('../../img/globe-back-mobile@1x.jpg') bottom 20px center no-repeat;
+    background-repeat: no-repeat;
+    border-radius: none;
+    box-shadow: none;
+  }
 }
+
 
 .page-header__slogan {
   margin: 0;
