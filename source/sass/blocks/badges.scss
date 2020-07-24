@@ -15,14 +15,16 @@
   font-size: 15px;
   line-height: 16px;
   color: $special_grey;
-    &--transport {
-      padding-left: 2px;
-    }
-    &--level {
-      padding-right: 2px;
-    }
-    @media (min-width: 767px) {
-      display: none;
-    }
-}
 
+  &--transport {
+    padding-left: 2px;
+  }
+
+  &--level {
+    padding-right: 2px;
+  }
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+}

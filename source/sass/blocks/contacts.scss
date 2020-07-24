@@ -21,30 +21,33 @@
   padding-bottom: 12px;
   text-decoration: none;
   color: $light_blue;
-    &--phone::before,
-    &--email::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 45px;
-      height: 45px;
-      background-color: $basic-yellow;
-      border-radius: 50%;
-      content: '';
-    }
-    &--phone::after,
-    &--email::after {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 16px;
-      height: 16px;
-      background-image: url('../../img/contacts-phone.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      content: '';
-    }
-    &--email::after {
-      background-image: url('../../img/contacts-mail.svg');
-    }
+
+  &--phone::before,
+  &--email::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $basic-yellow;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--phone::after,
+  &--email::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/contacts-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+
+  &--email::after {
+    background-image: url("../../img/contacts-mail.svg");
+  }
 }

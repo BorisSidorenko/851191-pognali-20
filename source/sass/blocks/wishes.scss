@@ -31,11 +31,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special_blue_dark;
-    &::before {
-      grid-column: 1;
-      width: 10px;
-      height: 10px;
-      background-color: $basic_blue_light;
-      content: '';
-    }
+
+  &::before {
+    grid-column: 1;
+    width: 10px;
+    height: 10px;
+    background-color: $basic_blue_light;
+    content: "";
+  }
 }
