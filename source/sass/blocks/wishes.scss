@@ -11,32 +11,55 @@
 
 .wishes__list {
   display: grid;
-  grid-template-columns: 26px 120px;
-  grid-template-rows: 18px;
-  column-gap: 14px;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
   row-gap: 10px;
-
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
   list-style-type: none;
+
+  @media (min-width: 767px) {
+    & {
+      column-gap: 25px;
+    }
+  }
 }
 
 .wishes__item {
-  grid-column: 2;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content;
+  column-gap: 14px;
   font-family: $font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
+  align-items: center;
+  white-space: nowrap;
   text-transform: uppercase;
   color: $special_blue_dark;
 
   &::before {
-    grid-column: 1;
-    width: 10px;
-    height: 10px;
+    width: 26px;
+    height: 18px;
     background-color: $basic_blue_light;
     content: "";
+  }
+
+  @media (min-width: 767px) {
+    & {
+      grid-row: 1 / -1;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &::before {
+      width: 35px;
+      height: 24px;
+      background-color: $basic_blue_light;
+      content: "";
+    }
   }
 }

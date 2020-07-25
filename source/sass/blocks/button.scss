@@ -164,6 +164,15 @@
     background: url("../../img/triangle-arrow-right.svg") center no-repeat;
     content: "";
   }
+
+  &--filter {
+    padding: 0;
+    width: 230px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: $basic_white;
+    border: none;
+  }
 }
 
 .button__text {
@@ -202,6 +211,12 @@
 
   &--call {
     padding-top: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $basic_blue;
+  }
+
+  &--filter {
     line-height: 17px;
     text-transform: uppercase;
     color: $basic_blue;

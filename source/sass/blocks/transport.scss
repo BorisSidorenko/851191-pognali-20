@@ -6,4 +6,9 @@
   padding: 0;
   padding-bottom: 13px;
   list-style-type: none;
+
+  @media (min-width: 767px) {
+    flex-direction: column;
+    margin: 0;
+  }
 }
