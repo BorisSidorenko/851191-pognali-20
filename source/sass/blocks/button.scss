@@ -1,53 +1,96 @@
 .button {
-  position: relative;
   display: block;
+  width: 270px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  color: $basic_blue;
 
-  &--auth {
-    width: 270px;
-    height: 50px;
+  &--text-align--center {
+    text-align: center;
+  }
+
+  &--text-align--left {
+    text-align: left;
+  }
+
+  &--text--upper {
+    text-transform: uppercase;
+  }
+
+  &--text--dark-blue {
+    color: $special_blue_dark;
+  }
+
+  &--rounded {
+    padding-top: 12px;
+    padding-bottom: 8px;
     line-height: 30px;
-    text-align: center;
-  }
-
-  &--auth-header {
-    width: 190px;
-    height: 40px;
-    line-height: 20px;
-    text-align: center;
-  }
-
-  &--auth::before,
-  &--auth-header::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    background-color: $basic_yellow;
     border-radius: 25px;
-    content: "";
   }
 
-  &--phone,
-  &--mail {
-    width: 40px;
-    height: 40px;
+  &--rounded--m {
+    width: 230px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 17px;
+    border-radius: 25px;
   }
 
-  &--phone::before,
-  &--mail::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
+  &--rounded--s {
+    width: 190px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
+
+  &--right-rounded {
+    width: 135px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 0 25px 25px 0;
+  }
+
+  &--left-rounded {
+    width: 135px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 25px 0 0 25px;
+  }
+
+  &--no--border {
+    border: none;
+  }
+
+  &--no--padding {
+    padding: 0;
+  }
+
+  &--bg-color--white {
+    background-color: $basic_white;
+  }
+
+  &--bg-color--yellow {
+    background-color: $basic_yellow;
+  }
+
+  &--bg-color--orange {
     background-color: $special_orange;
-    border-radius: 50%;
-    content: "";
   }
 
-  &--phone::after,
-  &--mail::after {
+  &--circle {
+    position: relative;
+    width: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  &--circle--phone::before,
+  &--circle--mail::before {
     position: absolute;
     top: 12px;
     left: 12px;
@@ -58,167 +101,31 @@
     content: "";
   }
 
-  &--mail::before {
-    background-color: $special_yellow_dark;
-  }
-
-  &--mail::after {
+  &--circle--mail::before {
     top: 14px;
     height: 13px;
     background-image: url("../../img/topmenu-mail.svg");
     background-repeat: no-repeat;
   }
 
-  &--all {
+  &--rectangle {
     width: 270px;
-    height: 62px;
-  }
-
-  &--all::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    background-color: $basic_yellow;
-    border-radius: 10px;
-    content: "";
-  }
-
-  &--call {
-    width: 230px;
-    height: 40px;
-    text-align: center;
-  }
-
-  &--call::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    background-color: $basic_yellow;
-    border-radius: 25px;
-    content: "";
-  }
-
-  &--tariffs,
-  &--more {
-    font-family: $font-family;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-    color: $tariffs_blue;
-    text-decoration: none;
-  }
-
-  &--more {
-    position: relative;
-    width: 115px;
-    height: 30px;
-    margin: 0 auto;
-    padding-left: 33px;
-    font-size: 17px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $special_blue_dark;
-  }
-
-  &--more::before {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    background: url("../../img/show-more-plus.svg");
-    content: "";
-  }
-
-  &--prev,
-  &--next {
-    width: 135px;
-    height: 51px;
-    background-color: $basic_white;
-    border-radius: 25px 0 0 25px;
-  }
-
-  &--next {
-    border-radius: 0 25px 25px 0;
-  }
-
-  &--prev::before,
-  &--next::before {
-    position: absolute;
-    top: 17px;
-    left: 63px;
-    width: 20px;
-    height: 13px;
-    background: url("../../img/triangle-arrow-left.svg") center no-repeat;
-    content: "";
-  }
-
-  &--next::before {
-    position: absolute;
-    right: 63px;
-    background: url("../../img/triangle-arrow-right.svg") center no-repeat;
-    content: "";
-  }
-
-  &--filter {
-    padding: 0;
-    width: 230px;
-    height: 40px;
-    border-radius: 25px;
-    background-color: $basic_white;
-    border: none;
-  }
-}
-
-.button__text {
-  position: relative;
-  display: inline-block;
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  text-decoration: none;
-  color: $basic_blue;
-
-  &--auth,
-  &--auth-header {
-    padding-top: 12px;
-    text-transform: uppercase;
-  }
-
-  &--auth-header {
-    padding-top: 10px;
-  }
-
-  &--all {
-    padding-top: 22px;
     padding-left: 23px;
-    line-height: 18px;
-  }
-
-  &--travalers {
     padding-top: 22px;
-    padding-left: 23px;
+    padding-bottom: 22px;
+    padding-right: 23px;
     font-size: 18px;
     line-height: 18px;
     color: $special_blue_dark;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
 
-  &--call {
-    padding-top: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: $basic_blue;
-  }
-
-  &--filter {
-    line-height: 17px;
-    text-transform: uppercase;
-    color: $basic_blue;
+  &--no-bg {
+    font-size: 16px;
+    line-height: 16px;
+    color: $tariffs_blue;
+    background-color: transparent;
   }
 }
+

@@ -1,24 +1,22 @@
 .tariffs {
-  width: 320px;
-  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 38px;
   background-color: $light_grey;
   border-radius: 0 0 25px 25px;
-}
-
-.tariffs__wrapper {
-  padding-left: 49px;
-  padding-top: 68px;
-  padding-right: 25px;
-  padding-bottom: 38px;
+  box-sizing: border-box;
 }
 
 .tariffs__header {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 43px;
 }
 
 .tariffs__list {
   margin: 0;
   padding: 0;
+  padding-left: 24px;
   font-family: $font-family;
   font-style: normal;
   font-weight: 300;
@@ -35,4 +33,9 @@
   margin: 0;
   padding: 0;
   padding-bottom: 16px;
+}
+
+.tariffs__button {
+  width: 219px;
+  margin: 0 auto;
 }

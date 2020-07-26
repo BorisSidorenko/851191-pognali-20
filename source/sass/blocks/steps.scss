@@ -1,14 +1,8 @@
 .steps {
-  width: 320px;
-  margin: 0 auto;
   padding-bottom: 39px;
   background-color: $light_blue;
   box-shadow: inset 0 285px 0 $basic_blue;
-}
-
-.steps__wrapper {
-  padding-left: 25px;
-  padding-right: 25px;
+  box-sizing: border-box;
 }
 
 .steps__header {

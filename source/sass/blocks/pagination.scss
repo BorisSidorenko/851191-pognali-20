@@ -1,12 +1,30 @@
 .pagination {
-  margin: 0 auto;
-  padding-top: 18px;
-}
-
-.pagination__list {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 18px;
   list-style-type: none;
+}
+
+.pagination__button {
+  position: relative;
+
+  &--prev::before,
+  &--next::before  {
+    position: absolute;
+    top: 17px;
+    left: 63px;
+    width: 20px;
+    height: 13px;
+    background: url("../../img/triangle-arrow-left.svg") center no-repeat;
+    content: "";
+  }
+
+  &--next::before {
+    position: absolute;
+    right: 63px;
+    background: url("../../img/triangle-arrow-right.svg") center no-repeat;
+    content: "";
+  }
 }

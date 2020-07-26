@@ -1,22 +1,20 @@
 .directions {
-  width: 320px;
-  margin: 0 auto;
-  border-radius: 0 0 25px 25px;
-}
-
-.directions__wrapper {
   padding-top: 71px;
   padding-bottom: 34px;
+  border-radius: 0 0 25px 25px;
+  background-color: $basic_blue_light;
+  box-sizing: border-box;
 }
 
 .directions__header {
-  padding-left: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .directions__text {
   margin: 0;
-  padding-left: 49px;
-  padding-right: 55px;
+  padding-left: 24px;
+  padding-right: 30px;
   padding-bottom: 60px;
   font-family: $font-family;
   font-style: normal;
@@ -24,49 +22,4 @@
   font-size: 16px;
   line-height: 22px;
   color: $special_grey;
-}
-
-.directions__list {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.direction {
-  text-decoration: none;
-}
-
-.direction__image {
-  border-radius: 10px 10px 0 0;
-}
-
-.direction__description {
-  width: 270px;
-  height: 89px;
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: $basic_white;
-  border-radius: 10px;
-}
-
-.direction__country {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: $basic_black;
-}
-
-.direction__popularity {
-  line-height: 20px;
-  color: rgba($basic_blue, 0.3);
-}
-
-.direction__slogan {
-  line-height: 18px;
-  color: rgba($special_grey, 0.3);
-}
-
-.directions__link {
-  margin: 0 auto;
 }

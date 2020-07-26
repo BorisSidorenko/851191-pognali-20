@@ -1,8 +1,16 @@
 .filters {
+  padding-top: 21px;
+
+
+  background-color: $basic_blue_light;
+  box-sizing: border-box;
+}
+
+.filters__form {
   padding-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: $basic_yellow;
   border-radius: 20px;
 }
