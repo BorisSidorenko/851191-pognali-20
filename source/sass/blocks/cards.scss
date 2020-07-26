@@ -2,8 +2,9 @@
 .cards {
   padding-bottom: 18px;
 }
+
 .cards__item {
-  &:not(last-child) {
+  &:not(:last-child) {
     padding-bottom: 10px;
   }
 }
