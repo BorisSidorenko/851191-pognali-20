@@ -1,8 +1,6 @@
 .filters {
   padding-top: 21px;
-
-
-  background-color: $basic_blue_light;
+  background-color: $main_bg-color;
   box-sizing: border-box;
 }
 
@@ -24,7 +22,7 @@
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: $special_blue_dark;
+  color: $main_text-color;
 }
 
 .filters__fieldset {
@@ -56,7 +54,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $special_blue_dark;
+  color: $main_text-color;
 }
 
 .filters__list {

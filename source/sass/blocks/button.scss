@@ -6,7 +6,7 @@
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
-  color: $basic_blue;
+  color: $additional_text-color;
 
   &--text-align--center {
     text-align: center;
@@ -21,7 +21,7 @@
   }
 
   &--text--dark-blue {
-    color: $special_blue_dark;
+    color: $main_text-color;
   }
 
   &--rounded {
@@ -116,7 +116,7 @@
     padding-right: 23px;
     font-size: 18px;
     line-height: 18px;
-    color: $special_blue_dark;
+    color: $main_text-color;
     border-radius: 10px;
     box-sizing: border-box;
   }

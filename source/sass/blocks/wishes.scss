@@ -39,12 +39,12 @@
   align-items: center;
   white-space: nowrap;
   text-transform: uppercase;
-  color: $special_blue_dark;
+  color: $main_text-color;
 
   &::before {
     width: 26px;
     height: 18px;
-    background-color: $basic_blue_light;
+    background-color: $main_bg-color;
     content: "";
   }
 
@@ -58,7 +58,7 @@
     &::before {
       width: 35px;
       height: 24px;
-      background-color: $basic_blue_light;
+      background-color: $main_bg-color;
       content: "";
     }
   }
