@@ -8,19 +8,19 @@
   text-decoration: none;
   color: $additional_text-color;
 
-  &--text-align--center {
+  &--text-align_center {
     text-align: center;
   }
 
-  &--text-align--left {
+  &--text-align_left {
     text-align: left;
   }
 
-  &--text--upper {
+  &--text_upper {
     text-transform: uppercase;
   }
 
-  &--text--dark-blue {
+  &--text_dark-blue {
     color: $main_text-color;
   }
 
@@ -31,7 +31,7 @@
     border-radius: 25px;
   }
 
-  &--rounded--m {
+  &--rounded_m {
     width: 230px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -39,7 +39,7 @@
     border-radius: 25px;
   }
 
-  &--rounded--s {
+  &--rounded_s {
     width: 190px;
     line-height: 20px;
     padding-top: 10px;
@@ -61,23 +61,30 @@
     border-radius: 25px 0 0 25px;
   }
 
-  &--no--border {
+  &--no_border {
     border: none;
   }
 
-  &--no--padding {
+  &--no_padding {
     padding: 0;
   }
 
-  &--bg-color--white {
+  &--no_bg {
+    font-size: 16px;
+    line-height: 16px;
+    color: $tariffs_blue;
+    background-color: transparent;
+  }
+
+  &--bg-color_white {
     background-color: $basic_white;
   }
 
-  &--bg-color--yellow {
+  &--bg-color_yellow {
     background-color: $basic_yellow;
   }
 
-  &--bg-color--orange {
+  &--bg-color_orange {
     background-color: $special_orange;
   }
 
@@ -89,8 +96,8 @@
     border-radius: 50%;
   }
 
-  &--circle--phone::before,
-  &--circle--mail::before {
+  &--circle_phone::before,
+  &--circle_mail::before {
     position: absolute;
     top: 12px;
     left: 12px;
@@ -101,7 +108,7 @@
     content: "";
   }
 
-  &--circle--mail::before {
+  &--circle_mail::before {
     top: 14px;
     height: 13px;
     background-image: url("../../img/topmenu-mail.svg");
@@ -119,12 +126,5 @@
     color: $main_text-color;
     border-radius: 10px;
     box-sizing: border-box;
-  }
-
-  &--no-bg {
-    font-size: 16px;
-    line-height: 16px;
-    color: $tariffs_blue;
-    background-color: transparent;
   }
 }
