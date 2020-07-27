@@ -1,0 +1,41 @@
+.tariffs {
+  padding-top: 37px;
+  padding-bottom: 38px;
+  background-color: $light_grey;
+  border-radius: 0 0 25px 25px;
+  box-sizing: border-box;
+}
+
+.tariffs__header {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 43px;
+}
+
+.tariffs__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special_grey;
+}
+
+.tariffs__name {
+  padding-top: 13px;
+}
+
+.tariffs__price {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.tariffs__button {
+  width: 219px;
+  margin: 0 auto;
+}

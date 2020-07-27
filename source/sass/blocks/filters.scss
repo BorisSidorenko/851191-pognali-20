@@ -1,0 +1,80 @@
+.filters {
+  padding-top: 21px;
+  background-color: $main_bg-color;
+  box-sizing: border-box;
+}
+
+.filters__form {
+  padding-top: 26px;
+  padding-bottom: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: $basic_yellow;
+  border-radius: 20px;
+}
+
+.filters__title {
+  margin: 0;
+  padding-bottom: 23px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $main_text-color;
+}
+
+.filters__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 14px;
+  border: none;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 220px;
+    border: 1px solid $filters-dilimeter_yellow;
+    content: "";
+  }
+}
+
+.filters__category {
+  margin: 0;
+  padding-top: 12px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $main_text-color;
+}
+
+.filters__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  list-style-type: none;
+
+  &--hobbies {
+    display: none;
+  }
+}
+
+.filters__label {
+  padding-left: 27px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic_black;
+  text-transform: capitalize;
+}

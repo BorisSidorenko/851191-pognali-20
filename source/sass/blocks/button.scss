@@ -1,0 +1,130 @@
+.button {
+  display: block;
+  width: 270px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  color: $additional_text-color;
+
+  &--text-align_center {
+    text-align: center;
+  }
+
+  &--text-align_left {
+    text-align: left;
+  }
+
+  &--text_upper {
+    text-transform: uppercase;
+  }
+
+  &--text_dark-blue {
+    color: $main_text-color;
+  }
+
+  &--rounded {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    line-height: 30px;
+    border-radius: 25px;
+  }
+
+  &--rounded_m {
+    width: 230px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 17px;
+    border-radius: 25px;
+  }
+
+  &--rounded_s {
+    width: 190px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
+
+  &--right-rounded {
+    width: 135px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 0 25px 25px 0;
+  }
+
+  &--left-rounded {
+    width: 135px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 25px 0 0 25px;
+  }
+
+  &--no_border {
+    border: none;
+  }
+
+  &--no_padding {
+    padding: 0;
+  }
+
+  &--no_bg {
+    font-size: 16px;
+    line-height: 16px;
+    color: $tariffs_blue;
+    background-color: transparent;
+  }
+
+  &--bg-color_white {
+    background-color: $basic_white;
+  }
+
+  &--bg-color_yellow {
+    background-color: $basic_yellow;
+  }
+
+  &--bg-color_orange {
+    background-color: $special_orange;
+  }
+
+  &--circle {
+    position: relative;
+    width: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  &--circle_phone::before,
+  &--circle_mail::before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/topmenu-phone.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--circle_mail::before {
+    top: 14px;
+    height: 13px;
+    background-image: url("../../img/topmenu-mail.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--rectangle {
+    width: 270px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 23px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $main_text-color;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+}

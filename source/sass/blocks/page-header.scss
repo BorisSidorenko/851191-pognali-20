@@ -1,0 +1,44 @@
+.page-header {
+  padding-top: 28px;
+  padding-left: 26px;
+  padding-right: 24px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+  background-color: $header_bg-color;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 20px 0 $basic_white;
+
+  &--index {
+    padding-bottom: 0;
+    background:  url("../../img/traveller-illustration-mobile@1x.png") bottom 20px center no-repeat,
+      url("../../img/globe-back-mobile@1x.jpg") bottom 20px center no-repeat;
+    background-repeat: no-repeat;
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+
+
+.page-header__slogan {
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+  padding-bottom: 265px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $basic_white;
+}
+
+.page-header__header-buttons {
+  display: flex;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

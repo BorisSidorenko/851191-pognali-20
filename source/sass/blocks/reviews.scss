@@ -1,0 +1,26 @@
+.reviews {
+  margin: 0;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic_white;
+}
+
+.reviews__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 28px;
+  padding-left: 25px;
+}
+
+.reviews__text--author {
+  padding-top: 18px;
+}
+
+.reviews__text--cite {
+  padding: 0;
+  font-weight: bold;
+  font-style: normal;
+}

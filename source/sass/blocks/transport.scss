@@ -1,0 +1,14 @@
+.transport__list {
+  display: flex;
+  justify-content: space-between;
+  width: 129px;
+  margin-right: 52px;
+  padding: 0;
+  padding-bottom: 13px;
+  list-style-type: none;
+
+  @media (min-width: 767px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
