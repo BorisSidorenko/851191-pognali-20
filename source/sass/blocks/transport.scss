@@ -12,3 +12,15 @@
     margin: 0;
   }
 }
+
+.transport__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main_color;
+}
