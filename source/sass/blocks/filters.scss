@@ -1,7 +1,6 @@
 .filters {
   padding-top: 21px;
   background-color: $main_bg-color;
-  box-sizing: border-box;
 }
 
 .filters__form {
@@ -33,7 +32,6 @@
   padding-right: 5px;
   padding-bottom: 14px;
   border: none;
-  box-sizing: border-box;
 
   &::before {
     position: absolute;
