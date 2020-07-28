@@ -6,4 +6,10 @@
   height: 15px;
   content: "";
   fill: $basic_yellow;
+
+  &--address-marker {
+    width: 16px;
+    height: 21px;
+    top: 12px;
+  }
 }

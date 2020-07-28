@@ -65,6 +65,10 @@
     border: none;
   }
 
+  &--border {
+    border: 3px solid $additional_bg-color;
+  }
+
   &--padding_none {
     padding: 0;
   }
