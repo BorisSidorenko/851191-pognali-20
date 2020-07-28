@@ -1,6 +1,8 @@
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "blocks/icon.scss";
+@import "blocks/input.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
 @import "blocks/page-header.scss";
@@ -18,10 +20,12 @@
 @import "blocks/travelers.scss";
 @import "blocks/interests.scss";
 @import "blocks/tariffs.scss";
+@import "blocks/email-form.scss";
+@import "blocks/our-contacts.scss";
+@import "blocks/feedback.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/page-title.scss";
-@import "blocks/main.scss";
 @import "blocks/filters.scss";
 @import "blocks/catalog.scss";
 @import "blocks/cards.scss";

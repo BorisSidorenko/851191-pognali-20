@@ -1,0 +1,22 @@
+.our-contacts {
+  padding-bottom: 13px;
+}
+
+.our-contacts__contacts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.our-contacts__text {
+  margin: 0;
+  padding-bottom: 17px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $basic_white;
+}

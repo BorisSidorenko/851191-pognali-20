@@ -11,7 +11,7 @@ $special_blue_dark : #1d2e5b;
 $special_red : #f47e7e;
 $special_orange : #ff8d30;
 $basic_white : #ffffff;
-$basic_black: #000000;
+$basic_black : #000000;
 
 //additional project colors
 $light_blue : #192144;
@@ -24,6 +24,7 @@ $filters-dilimeter_yellow: #f3c72b;
 
 //main colors
 $main_bg-color: $basic_blue_light;
+$additional_bg-color: $light_blue;
 $main_color: $special_blue_dark;
 $additional_text-color: $basic_blue;
 $additional_text-color--30: rgba($additional_text-color, 0.3);

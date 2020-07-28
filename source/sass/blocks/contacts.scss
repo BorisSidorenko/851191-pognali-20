@@ -22,32 +22,18 @@
   text-decoration: none;
   color: $light_blue;
 
-  &--phone::before,
-  &--email::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 45px;
     height: 45px;
-    background-color: $basic-yellow;
+    background-color: $nav-link_icon-blue;
     border-radius: 50%;
     content: "";
   }
+}
 
-  &--phone::after,
-  &--email::after {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../img/contacts-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    content: "";
-  }
-
-  &--email::after {
-    background-image: url("../../img/contacts-mail.svg");
-  }
+.our-contacts .contacts__link {
+  color: $basic_yellow;
 }

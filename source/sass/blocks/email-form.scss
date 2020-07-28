@@ -1,0 +1,22 @@
+.email-form {
+  display: flex;
+  padding-bottom: 29px;
+}
+
+.email-form__button {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 12px;
+  width: 50px;
+  background-color: $basic_yellow;
+  box-shadow: -10px 0 0  $basic_yellow;
+
+  svg {
+    width: 14px;
+    height: 16px;
+  }
+
+  polygon {
+    fill: $special_blue_dark;
+  }
+}
