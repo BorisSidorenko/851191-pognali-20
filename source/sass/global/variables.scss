@@ -1,4 +1,4 @@
-$font-family: "Blogger Sans", "Arial", sans-serif;
+$main-font: "Blogger Sans", "Arial", sans-serif;
 
 //main project colors
 $basic_blue : #161c35;
@@ -24,6 +24,7 @@ $filters-dilimeter_yellow: #f3c72b;
 
 //main colors
 $main_bg-color: $basic_blue_light;
-$main_text-color: $special_blue_dark;
+$main_color: $special_blue_dark;
 $additional_text-color: $basic_blue;
+$additional_text-color--30: rgba($additional_text-color, 0.3);
 $header_bg-color: $header_blue;

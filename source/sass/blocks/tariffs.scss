@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   padding-left: 24px;
-  font-family: $font-family;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -38,4 +38,7 @@
 .tariffs__button {
   width: 219px;
   margin: 0 auto;
+  font-size: 16px;
+  line-height: 16px;
+  color: $tariffs_blue;
 }

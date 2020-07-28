@@ -10,12 +10,12 @@
 
 .card__title {
   margin: 0;
-  font-family: $font-family;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
-  color: $main_text-color;
+  color: $main_color;
 }
 
 .card__interests {
@@ -25,7 +25,7 @@
 }
 
 .card__likes {
-  font-family: $font-family;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
