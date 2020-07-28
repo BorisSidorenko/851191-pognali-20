@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: 767px) {
+  @media (min-width: $mobile_width) {
     flex-direction: column;
   }
 }
@@ -28,7 +28,7 @@
     padding-right: 2px;
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: $mobile_width) {
     display: none;
   }
 }
