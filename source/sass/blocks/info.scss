@@ -1,0 +1,18 @@
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+}
+
+.info__button {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  background-color: $special_blue_light;
+}
+
+.info__current-photo {
+  padding-left: 35px;
+}

@@ -1,0 +1,37 @@
+.input {
+  background: $basic_white;
+
+  &::placeholder {
+    padding-left: 25px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba($special_grey, 0.3);
+  }
+
+  &--border_black {
+    border: 1px solid $basic_black;
+  }
+
+  &--border_grey {
+    border: 1px solid $input-border_grey;
+  }
+
+  &--shadow {
+    box-shadow: 0 4px 4px rgba($basic_black, 0.25);
+  }
+
+  &--rectangle {
+    width: 220px;
+  }
+
+  &--rounded {
+    border-radius: 10px;
+  }
+
+  &--rounded_left {
+    border-radius: 10px 0 0 10px;
+  }
+}

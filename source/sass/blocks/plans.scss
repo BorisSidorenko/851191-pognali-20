@@ -1,0 +1,33 @@
+.plans {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: $special_blue_light;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 20px 0 $special_blue_light;
+}
+
+.plans__title {
+  margin: 0;
+  padding-bottom: 29px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: $main_color;
+}
+
+.plans__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.plans__item {
+  padding-bottom: 10px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

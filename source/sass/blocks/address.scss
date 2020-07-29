@@ -1,26 +1,22 @@
-.contacts {
-  padding-top: 66px;
-  padding-bottom: 41px;
-  padding-left: 25px;
+.address {
+  padding-top: 31px;
+  padding-bottom: 35px;
+  background-color: $basic_yellow;
+  border-radius: 0 0 20px 20px;
 }
 
-.contacts__item {
+.address__text {
   position: relative;
+  margin: 0;
   padding-left: 61px;
+  padding-bottom: 32px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
   text-transform: uppercase;
-}
-
-.contacts__link {
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 12px;
-  text-decoration: none;
-  color: $light_blue;
+  color: $main_color;
 
   &::before {
     position: absolute;
@@ -32,8 +28,4 @@
     border-radius: 50%;
     content: "";
   }
-}
-
-.our-contacts .contacts__link {
-  color: $basic_yellow;
 }

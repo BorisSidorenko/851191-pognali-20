@@ -1,0 +1,31 @@
+.number {
+  padding-bottom: 20px;
+}
+
+.number__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.number__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $main_color;
+
+  &--unit {
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: rgba($main_color, 0.3);
+  }
+}
+
+.number__control {
+  height: 43px;
+  text-align: center;
+}

@@ -6,10 +6,9 @@
   padding-bottom: 31px;
   background: url("../../img/smolov-back-desktop@1x.png") top 34px right 25px no-repeat,
     url("../../img/rogovaya-back-mobile@1x.png") top 307px left no-repeat;
-  background-color: $light_blue;
+  background-color: $additional_bg-color;
   box-shadow: 0 20px 0 $light_grey;
   border-radius: 0 0 25px 25px;
-  box-sizing: border-box;
 
   &::before {
     position: absolute;
@@ -39,7 +38,7 @@
   margin: 0;
   padding-right: 25px;
   padding-left: 25px;
-  font-family: $font-family;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -77,13 +76,13 @@
 .travelers__name {
   display: block;
   padding-top: 27px;
-  font-family: $font-family;
+  font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-  color: $main_text-color;
+  color: $main_color;
 }
 
 .travalers__button {

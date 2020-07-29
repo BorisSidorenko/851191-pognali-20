@@ -1,4 +1,4 @@
-$font-family: "Blogger Sans", "Arial", sans-serif;
+$main-font: "Blogger Sans", "Arial", sans-serif;
 
 //main project colors
 $basic_blue : #161c35;
@@ -11,7 +11,7 @@ $special_blue_dark : #1d2e5b;
 $special_red : #f47e7e;
 $special_orange : #ff8d30;
 $basic_white : #ffffff;
-$basic_black: #000000;
+$basic_black : #000000;
 
 //additional project colors
 $light_blue : #192144;
@@ -21,9 +21,18 @@ $dark_blue: #141b3b;
 $light_grey : #e6e8f1;
 $tariffs_blue : #132576;
 $filters-dilimeter_yellow: #f3c72b;
+$new-plan_light-blue: #d4d9eb;
+$input-border_grey : #cbced9;
+$calendar_orange: #ff5c23;
+$calendar-border_grey: #d6d9e6;
 
 //main colors
 $main_bg-color: $basic_blue_light;
-$main_text-color: $special_blue_dark;
+$additional_bg-color: $light_blue;
+$main_color: $special_blue_dark;
 $additional_text-color: $basic_blue;
+$additional_text-color--30: rgba($additional_text-color, 0.3);
 $header_bg-color: $header_blue;
+
+//screen resolutions
+$mobile_width: 767px;
