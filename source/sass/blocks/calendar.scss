@@ -24,7 +24,6 @@
 
 
 .calendar__row {
-
   &--header {
     font-family: $main-font;
     font-style: normal;
@@ -36,7 +35,6 @@
 }
 
 .calendar__day {
-
   &--weekend {
     color: $calendar_orange;
   }
