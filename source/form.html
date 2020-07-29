@@ -146,7 +146,7 @@
       </ul>
     </section>
     <section class="new-plan container">
-      <h2>Добавить план:</h2>
+      <h2 class="new-plan__title">Добавить план:</h2>
       <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="slider">
           <p class="slider__toggles new-plan__toggles">
@@ -156,8 +156,7 @@
           </p>
           <div class="step">
             <h3 class="step__title">
-              <span>Шаг 1.</span>
-              <span>Даты пребывания</span>
+              <span>Шаг 1.<br>Даты пребывания</span>
             </h3>
             <p class="step__description">
               Укажите предпочтительное
@@ -172,7 +171,7 @@
                 <span class="number__title number__title--unit">чел.</span>
               </div>
               <label for="travelers-amount" class="visually-hidden">Колличество попутчиков</label>
-              <input class="number__control" type="text" name="travelers-amount" id="travelers-amount" value="2">
+              <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="travelers-amount" id="travelers-amount" value="2">
             </div>
             <div class="number step__group">
               <div class="number__header">
@@ -180,7 +179,7 @@
                 <span class="number__title number__title--unit">дн.</span>
               </div>
               <label for="days-amount" class="visually-hidden">Колличество дней</label>
-              <input class="number__control" type="text" name="days-amount" id="days-amount" value="2">
+              <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="days-amount" id="days-amount" value="2">
             </div>
             <div class="checkbox step__checkbox">
               <input class="checkbox__control" type="checkbox" name="children-allowed" id="children-allowed" checked>
@@ -262,12 +261,11 @@
                 </tr>
               </table>
             </div>
-            <a href="steps.html" class="step__next-step step__next-step--link">Следующий шаг</a>
+            <a href="steps.html" class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step">Следующий шаг</a>
           </div>
           <div class="step">
             <h3 class="step__title">
-              <span>Шаг 2.</span>
-              <span>Маршрут</span>
+              <span>Шаг 2.<br>Маршрут</span>
             </h3>
             <p class="step__description">
               Укажите страны, которые вы
@@ -379,8 +377,7 @@
           </div>
           <div class="step">
             <h3 class="step__title">
-              <span>Шаг 3.</span>
-              <span>Развлечения</span>
+              <span>Шаг 3.<br>Развлечения</span>
             </h3>
             <p class="step__description">
               Наконец, расскажите о своих

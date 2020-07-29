@@ -3,4 +3,10 @@
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $mobile_width) {
+    width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }

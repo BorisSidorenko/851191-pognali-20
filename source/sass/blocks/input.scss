@@ -1,7 +1,5 @@
 .input {
   background: $basic_white;
-  border: 1px solid $basic_black;
-  box-shadow: 0px 4px 4px rgba($basic_black, 0.25);
 
   &::placeholder {
     padding-left: 25px;
@@ -13,9 +11,27 @@
     color: rgba($special_grey, 0.3);
   }
 
+  &--border_black {
+    border: 1px solid $basic_black;
+  }
+
+  &--border_grey {
+    border: 1px solid $input-border_grey;
+  }
+
+  &--shadow {
+    box-shadow: 0px 4px 4px rgba($basic_black, 0.25);
+  }
+
   &--rectangle {
     width: 220px;
-    height: 62px;
+  }
+
+  &--rounded {
+    border-radius: 10px;
+  }
+
+  &--rounded_left {
     border-radius: 10px 0 0 10px;
   }
 }

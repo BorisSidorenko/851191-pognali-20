@@ -1,0 +1,17 @@
+.new-plan {
+  padding-top: 30px;
+  padding-bottom: 43px;
+  background-color: $new-plan_light-blue;
+  box-shadow: 0 20px 0 $new-plan_light-blue;
+  border-radius: 25px 25px 0 0;
+}
+
+.new-plan__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $main_color;
+}
