@@ -11,7 +11,8 @@
   width: 129px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 13px;
+  padding-top: 8px;
+  padding-bottom: 15px;
   list-style-type: none;
 
   @media (min-width: $mobile_width) {
@@ -31,4 +32,23 @@
   text-align: center;
   text-transform: uppercase;
   color: $main_color;
+}
+
+.transport__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--active {
+
+    .transport__icon {
+      fill: $main_color;
+    }
+  }
+}
+
+.transport__icon {
+  width: 17px;
+  height: 16px;
+  fill: rgba($main_color, 0.15);
 }
