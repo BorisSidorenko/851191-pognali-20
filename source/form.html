@@ -273,14 +273,20 @@
               быть одна или сразу несколько.
             </p>
             <div class="country step__country">
-              <select class="country__select">
-                <option value="Босния и герцеговина" selected class="country__selected">Босния и герцеговина</option>
+              <select class="input country__selected input--rectangle input--rounded input--border_grey">
+                <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
               </select>
               <div class="country__flag"></div>
             </div>
             <div class="country step__country">
-              <select class="country__select">
-                <option value="Чехия" selected class="country__selected">Чехия</option>
+              <select class="input country__selected input--rectangle input--rounded input--border_grey">
+                <option value="Чехия" selected>Чехия</option>
+              </select>
+              <div class="country__flag"></div>
+            </div>
+            <div class="country step__country">
+              <select class="input country__select input--rectangle input--rounded input--border_grey">
+                <option value="Чехия" selected>Выберите страну</option>
               </select>
               <div class="country__flag"></div>
             </div>
@@ -324,51 +330,51 @@
               </table>
               <ul class="choose-country__list">
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="australia" value="Австралия">
+                  <input type="radio" name="country" id="australia" value="Австралия" class="visually-hidden">
                   <label for="australia">Австралия</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="austria" value="Австрия">
+                  <input type="radio" name="country" id="austria" value="Австрия" class="visually-hidden">
                   <label for="austria">Австрия</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="azerbaijan" value="Азербайджан">
+                  <input type="radio" name="country" id="azerbaijan" value="Азербайджан" class="visually-hidden">
                   <label for="azerbaijan">Азербайджан</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="albania" value="Албания">
+                  <input type="radio" name="country" id="albania" value="Албания" class="visually-hidden">
                   <label for="albania">Албания</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="algeria" value="Алжир">
+                  <input type="radio" name="country" id="algeria" value="Алжир" class="visually-hidden">
                   <label for="algeria">Алжир</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="angola" value="Ангола">
+                  <input type="radio" name="country" id="angola" value="Ангола" class="visually-hidden">
                   <label for="angola">Ангола</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="andorra" value="Андорра">
+                  <input type="radio" name="country" id="andorra" value="Андорра" class="visually-hidden">
                   <label for="andorra">Андорра</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда">
+                  <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда" class="visually-hidden">
                   <label for="antigua">Антигуа и Барбуда</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="argentina" value="Аргентина">
+                  <input type="radio" name="country" id="argentina" value="Аргентина" class="visually-hidden">
                   <label for="argentina">Аргентина</label>
                 </li>
                 <li class="choose-country__item">
-                  <input type="radio" name="country" id="armenia" value="Армения">
+                  <input type="radio" name="country" id="armenia" value="Армения" class="visually-hidden">
                   <label for="armenia">Армения</label>
                 </li>
               </ul>
               <div class="country__flag"></div>
             </div>
-            <div class="add-country step__add-country">
-              <select class="add-country__select" disabled>
-                <option value="" selected class="choose-country__selected">Добавить страну</option>
+            <div class="country step__country">
+              <select class="input country__add input--rectangle input--rounded input--border_grey">
+                <option value="Чехия" selected disabled>Добавить страну</option>
               </select>
               <div class="country__flag"></div>
             </div>
