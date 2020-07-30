@@ -14,7 +14,7 @@
     left: 0;
     width: 100px;
     height: 100px;
-    border: 3px solid $special_orange;
+    border: 3px solid $special-orange;
     border-radius: 50%;
     content: "";
   }
@@ -24,7 +24,7 @@
     top: 60px;
     left: 24px;
     width: 51px;
-    border: 1px solid rgba($special_grey, 0.3);
+    border: 1px solid rgba($special-grey, 0.3);
     content: "";
   }
 }
@@ -34,7 +34,7 @@
   font-weight: bold;
   font-size: 38px;
   line-height: 38px;
-  color: $additional_text-color;
+  color: $additional-text_color;
 }
 
 .current-level__title {
@@ -42,5 +42,5 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
-  color: $special_grey;
+  color: $special-grey;
 }

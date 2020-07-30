@@ -1,7 +1,7 @@
 .address {
   padding-top: 31px;
   padding-bottom: 35px;
-  background-color: $basic_yellow;
+  background-color: $basic-yellow;
   border-radius: 0 0 20px 20px;
 }
 
@@ -16,7 +16,7 @@
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   &::before {
     position: absolute;
@@ -24,7 +24,7 @@
     left: 0;
     width: 45px;
     height: 45px;
-    background-color: $nav-link_icon-blue;
+    background-color: $icon-blue;
     border-radius: 50%;
     content: "";
   }

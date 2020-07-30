@@ -1,5 +1,5 @@
 .input {
-  background: $basic_white;
+  background: $basic-white;
 
   &::placeholder {
     padding-left: 25px;
@@ -8,19 +8,19 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
-    color: rgba($special_grey, 0.3);
+    color: rgba($special-grey, 0.3);
   }
 
   &--border_black {
-    border: 1px solid $basic_black;
+    border: 1px solid $basic-black;
   }
 
   &--border_grey {
-    border: 1px solid $input-border_grey;
+    border: 1px solid $input-grey;
   }
 
   &--shadow {
-    box-shadow: 0 4px 4px rgba($basic_black, 0.25);
+    box-shadow: 0 4px 4px rgba($basic-black, 0.25);
   }
 
   &--rectangle {

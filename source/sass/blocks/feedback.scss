@@ -1,7 +1,7 @@
 .feedback {
-  background-color: $additional_bg-color;
+  background-color: $additional-bg_color;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 0 $basic_yellow;
+  box-shadow: 0 20px 0 $basic-yellow;
 }
 
 .feedback__header {
@@ -19,9 +19,9 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: $basic_white;
+  color: $basic-white;
 }
 
 .feedback__link {
-  color: $basic_yellow;
+  color: $basic-yellow;
 }

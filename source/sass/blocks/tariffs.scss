@@ -1,9 +1,9 @@
 .tariffs {
   padding-top: 37px;
   padding-bottom: 38px;
-  background-color: $light_grey;
+  background-color: $light-grey;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 0 $additional_bg-color;
+  box-shadow: 0 20px 0 $additional-bg_color;
 }
 
 .tariffs__header {
@@ -22,7 +22,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
-  color: $special_grey;
+  color: $special-grey;
 }
 
 .tariffs__name {
@@ -40,5 +40,5 @@
   margin: 0 auto;
   font-size: 16px;
   line-height: 16px;
-  color: $tariffs_blue;
+  color: $tariffs-blue;
 }

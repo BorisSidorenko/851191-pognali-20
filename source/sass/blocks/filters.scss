@@ -1,6 +1,6 @@
 .filters {
   padding-top: 21px;
-  background-color: $main_bg-color;
+  background-color: $main-bg_color;
 }
 
 .filters__form {
@@ -8,7 +8,7 @@
   padding-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: $basic_yellow;
+  background-color: $basic-yellow;
   border-radius: 20px;
 }
 
@@ -21,7 +21,7 @@
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: $main_color;
+  color: $main-color;
 }
 
 .filters__group {
@@ -38,7 +38,7 @@
     top: 0;
     left: 5px;
     width: 220px;
-    border: 1px solid $filters-dilimeter_yellow;
+    border: 1px solid $dilimeter-yellow;
     content: "";
   }
 }
@@ -52,7 +52,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 }
 
 .filters__list {
@@ -73,6 +73,6 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  color: $basic_black;
+  color: $basic-black;
   text-transform: capitalize;
 }

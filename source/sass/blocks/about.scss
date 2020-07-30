@@ -4,9 +4,9 @@
   padding-left: 20px;
   padding-bottom: 82px;
   background: url("../../img/about-mobile@1x.png") center no-repeat;
-  background-color: $additional_bg-color;
+  background-color: $additional-bg_color;
   border-radius: 0 0 25px 25px;
-  box-shadow: 0 20px 0 $basic_blue_light;
+  box-shadow: 0 20px 0 $main-bg_color;
 }
 
 .about__header {
@@ -21,7 +21,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: $basic_white;
+  color: $basic-white;
 }
 
 .about__text--emphasis {

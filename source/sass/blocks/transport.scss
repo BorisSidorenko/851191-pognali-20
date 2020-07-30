@@ -1,6 +1,6 @@
 .transport {
   &--profile {
-    border: 1px solid $input-border_grey;
+    border: 1px solid $input-grey;
     border-radius: 10px;
   }
 }
@@ -15,7 +15,7 @@
   padding-bottom: 15px;
   list-style-type: none;
 
-  @media (min-width: $mobile_width) {
+  @media (min-width: $mobile-width) {
     flex-direction: column;
     margin: 0;
   }
@@ -31,7 +31,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 }
 
 .transport__toggle {
@@ -41,7 +41,7 @@
 
   &--active {
     .transport__icon {
-      fill: $main_color;
+      fill: $main-color;
     }
   }
 }
@@ -49,5 +49,5 @@
 .transport__icon {
   width: 17px;
   height: 16px;
-  fill: rgba($main_color, 0.15);
+  fill: rgba($main-color, 0.15);
 }

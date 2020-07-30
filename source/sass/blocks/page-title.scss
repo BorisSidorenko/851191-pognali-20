@@ -7,7 +7,7 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  color: $basic_white;
+  color: $basic-white;
 
   &::after {
     position: absolute;
@@ -15,7 +15,7 @@
     left: 0;
     width: 173px;
     height: 5px;
-    background-color: $special_orange;
+    background-color: $special-orange;
     border-radius: 4px;
     content: "";
   }

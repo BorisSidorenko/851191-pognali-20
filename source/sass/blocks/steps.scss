@@ -1,8 +1,8 @@
 .steps {
   padding-bottom: 39px;
-  background-color: $additional_bg-color;
+  background-color: $additional-bg_color;
   box-shadow: inset 0 285px 0 $basic_blue,
-    0 -20px 0 $basic_blue;
+    0 -20px 0 $basic-blue;
 }
 
 .steps__header {
@@ -20,13 +20,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  background-color: $special_orange;
+  background-color: $special-orange;
 }
 
 .steps__number {
-  color: $basic_white;
+  color: $basic-white;
 }
 
 .steps__description {
-  color: $additional_text-color;
+  color: $additional-text_color;
 }

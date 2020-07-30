@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  background-color: $basic_white;
+  background-color: $basic-white;
   border-radius: 10px;
 }
 
@@ -21,17 +21,17 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: $basic_black;
+  color: $basic-black;
 }
 
 .direction__popularity {
   line-height: 20px;
-  color: $additional_text-color--30;
+  color: $additional-text_color_30;
 }
 
 .direction__slogan {
   line-height: 18px;
-  color: rgba($special_grey, 0.3);
+  color: rgba($special-grey, 0.3);
 }
 
 .directions__link {

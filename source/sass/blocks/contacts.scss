@@ -20,7 +20,7 @@
   padding-top: 15px;
   padding-bottom: 12px;
   text-decoration: none;
-  color: $light_blue;
+  color: $light-blue;
 
   &::before {
     position: absolute;
@@ -28,12 +28,12 @@
     left: 0;
     width: 45px;
     height: 45px;
-    background-color: $nav-link_icon-blue;
+    background-color: $icon-blue;
     border-radius: 50%;
     content: "";
   }
 }
 
 .our-contacts .contacts__link {
-  color: $basic_yellow;
+  color: $basic-yellow;
 }

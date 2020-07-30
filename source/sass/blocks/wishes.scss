@@ -6,7 +6,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  color: $special_grey;
+  color: $special-grey;
 }
 
 .wishes__list {
@@ -19,7 +19,7 @@
   padding-bottom: 15px;
   list-style-type: none;
 
-  @media (min-width: $mobile_width) {
+  @media (min-width: $mobile-width) {
     & {
       column-gap: 25px;
     }
@@ -39,16 +39,16 @@
   align-items: center;
   white-space: nowrap;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   &::before {
     width: 26px;
     height: 18px;
-    background-color: $main_bg-color;
+    background-color: $main-bg_color;
     content: "";
   }
 
-  @media (min-width: $mobile_width) {
+  @media (min-width: $mobile-width) {
     & {
       grid-row: 1 / -1;
       font-size: 20px;
@@ -58,7 +58,7 @@
     &::before {
       width: 35px;
       height: 24px;
-      background-color: $main_bg-color;
+      background-color: $main-bg_color;
       content: "";
     }
   }

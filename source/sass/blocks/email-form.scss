@@ -8,8 +8,8 @@
   padding-bottom: 21px;
   padding-left: 12px;
   width: 50px;
-  background-color: $basic_yellow;
-  box-shadow: -10px 0 0  $basic_yellow;
+  background-color: $basic-yellow;
+  box-shadow: -10px 0 0  $basic-yellow;
 
   svg {
     width: 14px;
@@ -17,6 +17,6 @@
   }
 
   polygon {
-    fill: $special_blue_dark;
+    fill: $special-blue_dark;
   }
 }

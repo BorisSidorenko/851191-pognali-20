@@ -6,7 +6,7 @@
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
-  color: $additional_text-color;
+  color: $additional-text_color;
 
   &--text-align_center {
     text-align: center;
@@ -21,7 +21,7 @@
   }
 
   &--text_dark-blue {
-    color: $main_color;
+    color: $main-color;
   }
 
   &--rounded {
@@ -66,7 +66,7 @@
   }
 
   &--border {
-    border: 3px solid $additional_bg-color;
+    border: 3px solid $additional-bg_color;
   }
 
   &--padding_none {
@@ -78,15 +78,15 @@
   }
 
   &--bg-color_white {
-    background-color: $basic_white;
+    background-color: $basic-white;
   }
 
   &--bg-color_yellow {
-    background-color: $basic_yellow;
+    background-color: $basic-yellow;
   }
 
   &--bg-color_orange {
-    background-color: $special_orange;
+    background-color: $special-orange;
   }
 
   &--circle {
@@ -130,7 +130,7 @@
     padding-right: 23px;
     font-size: 18px;
     line-height: 18px;
-    color: $main_color;
+    color: $main-color;
     border-radius: 10px;
   }
 }

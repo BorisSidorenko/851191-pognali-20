@@ -8,8 +8,8 @@
   padding-bottom: 23px;
   font-family: $main-font;
   font-style: normal;
-  color: $main_color;
-  background: $basic_white;
+  color: $main-color;
+  background: $basic-white;
   border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@
   line-height: 14px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   span {
     padding-bottom: 5px;
@@ -47,5 +47,5 @@
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: rgba($basic_black, 0.3);
+  color: rgba($basic-black, 0.3);
 }

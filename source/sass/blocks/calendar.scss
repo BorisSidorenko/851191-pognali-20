@@ -17,8 +17,8 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba($special_grey, 0.3);
-    border: 1px solid $calendar-border_grey;
+    color: rgba($special-grey, 0.3);
+    border: 1px solid $calendar-grey;
   }
 }
 
@@ -30,12 +30,12 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: $special_grey;
+    color: $special-grey;
   }
 }
 
 .calendar__day {
   &--weekend {
-    color: $calendar_orange;
+    color: $calendar-orange;
   }
 }

@@ -3,9 +3,9 @@
   padding-left: 26px;
   padding-right: 24px;
   padding-bottom: 11px;
-  background-color: $header_bg-color;
+  background-color: $header-bg_color;
   border-radius: 0 0 25px 25px;
-  box-shadow: 0 20px 0 $main_bg-color;
+  box-shadow: 0 20px 0 $main-bg_color;
 
   &--index {
     padding-bottom: 0;
@@ -31,7 +31,7 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: $basic_white;
+  color: $basic-white;
 }
 
 .page-header__header-buttons {
