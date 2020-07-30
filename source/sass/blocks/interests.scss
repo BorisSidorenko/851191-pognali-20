@@ -20,4 +20,8 @@
   line-height: 18px;
   text-align: center;
   color: $special-grey;
+
+  &::after {
+    content: "\00a0";
+  }
 }
