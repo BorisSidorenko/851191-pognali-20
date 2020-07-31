@@ -15,6 +15,11 @@
     border-radius: 0;
     box-shadow: none;
   }
+
+  @media (min-width: $mobile-width) {
+    background:  url("../../img/traveller-illustration-tablet@1x.png") bottom 20px center no-repeat,
+    url("../../img/globe-back-tablet@1x.jpg") bottom 20px center no-repeat;
+  }
 }
 
 
@@ -32,6 +37,11 @@
   line-height: 40px;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $mobile-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .page-header__header-buttons {
@@ -40,4 +50,16 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.page-header__reviews {
+  display: none;
+
+  @media (min-width: $mobile-width) {
+    display: block;
+  }
 }

@@ -13,14 +13,30 @@
   margin-bottom: 0;
   padding-top: 28px;
   padding-left: 25px;
-}
 
-.reviews__text--author {
-  padding-top: 18px;
-}
+  @media (min-width: $mobile-width) {
+    padding: 0;
+    font-size: 28px;
+    line-height: 33px;
+  }
 
-.reviews__text--cite {
-  padding: 0;
-  font-weight: bold;
-  font-style: normal;
+  &--author {
+    padding-top: 18px;
+
+    @media (min-width: $mobile-width) {
+      padding-top: 0;
+    }
+  }
+
+  &--cite {
+    padding: 0;
+    font-weight: bold;
+    font-style: normal;
+
+    @media (min-width: $mobile-width) {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
 }

@@ -130,4 +130,13 @@
     color: $main-color;
     border-radius: 10px;
   }
+
+  @media (min-width: $mobile-width) {
+    &--rectangle {
+      width: 616px;
+      font-size: 24px;
+      line-height: 24px;
+      border-radius: 20px;
+    }
+  }
 }

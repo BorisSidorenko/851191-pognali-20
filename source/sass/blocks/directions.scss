@@ -4,11 +4,38 @@
   border-radius: 0 0 25px 25px;
   background-color: $main-bg_color;
   box-shadow: 0 25px 0 $additional-bg_color;
+
+  @media (min-width: $mobile-width) {
+    position: relative;
+    background: url("../../img/flags-back@1x.png") top 80px right 40px no-repeat;
+    background-color: $main-bg_color;
+
+    &::before {
+      position: absolute;
+      top: 403px;
+      left: 40px;
+      width: 141px;
+      height: 141px;
+      background-color: $dark-grey;
+      border-radius: 20px;
+      content: "";
+    }
+  }
+}
+
+.directions__list {
+  position: relative;
 }
 
 .directions__header {
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 57px;
+
+  @media (min-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .directions__text {
@@ -22,4 +49,12 @@
   font-size: 16px;
   line-height: 22px;
   color: $special-grey;
+
+  @media (min-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 275px;
+    padding-bottom: 104px;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }

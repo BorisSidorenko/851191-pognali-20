@@ -1,23 +1,62 @@
 .direction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
   text-decoration: none;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $mobile-width) {
+    flex-direction: row-reverse;
+    margin-bottom: 11px;
+
+    &:last-child {
+      margin-bottom: 44px;
+    }
+  }
 }
 
 .direction__image {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $mobile-width) {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+
+    &--thai {
+      background: url("../../img/thailand-desktop@1x.jpg") center center no-repeat;
+    }
+  }
 }
 
 .direction__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
   width: 270px;
-  height: 89px;
+  padding-top: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   background-color: $basic-white;
   border-radius: 10px;
+
+  @media (min-width: $mobile-width) {
+    width: 616px;
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .direction__country {
+  width: 70%;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;

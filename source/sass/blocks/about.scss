@@ -7,10 +7,46 @@
   background-color: $additional-bg_color;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $mobile-width) {
+    position: relative;
+    padding-top: 41px;
+    padding-right: 384px;
+    padding-left: 74px;
+    padding-bottom: 89px;
+    background-color: $additional-bg_color;
+    background-image: none;
+
+    &::before {
+      position: absolute;
+      width: 688px;
+      height: 212px;
+      top: 0;
+      left: 40px;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      width: 376px;
+      height: 548px;
+      top: 41px;
+      right: 8px;
+      background-image: url("../../img/about-tablet@1x.png");
+      content: "";
+    }
+  }
 }
 
 .about__header {
   padding-left: 29px;
+
+  @media (min-width: $mobile-width) {
+    position: relative;
+    padding-left: 0;
+  }
 }
 
 .about__text {
@@ -22,9 +58,33 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-white;
+
+  @media (min-width: $mobile-width) {
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 31px;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .about__text--emphasis {
   padding-top: 20px;
   font-weight: bold;
+
+  @media (min-width: $mobile-width) {
+    padding-top: 0;
+    padding-bottom: 52px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.about__link {
+  display: none;
+
+  @media (min-width: $mobile-width) {
+    display: block;
+    width: 276px;
+  }
 }
