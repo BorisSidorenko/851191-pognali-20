@@ -7,6 +7,7 @@
   font-size: 17px;
   text-decoration: none;
   color: $additional-text_color;
+  border: none;
 
   &--text-align_center {
     text-align: center;
@@ -59,10 +60,6 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-radius: 25px 0 0 25px;
-  }
-
-  &--border_none {
-    border: none;
   }
 
   &--border {

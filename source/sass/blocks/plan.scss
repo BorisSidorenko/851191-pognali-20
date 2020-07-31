@@ -31,11 +31,11 @@
   text-transform: uppercase;
   color: $main-color;
 
-  span {
+  &--travelers {
     padding-bottom: 5px;
   }
 
-  span:last-child {
+  &--travelers:last-child {
     padding-bottom: 0;
   }
 }

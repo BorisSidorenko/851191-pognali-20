@@ -2,24 +2,6 @@
   margin-bottom: 22px;
   width: 100%;
   border-collapse: collapse;
-
-  th {
-    padding-bottom: 10px;
-  }
-
-  td {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba($special-grey, 0.3);
-    border: 1px solid $calendar-grey;
-  }
 }
 
 
@@ -35,7 +17,23 @@
 }
 
 .calendar__day {
+  padding-bottom: 10px;
+
   &--weekend {
     color: $calendar-orange;
   }
+}
+
+.calendar__date {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba($special-grey, 0.3);
+  border: 1px solid $calendar-grey;
 }

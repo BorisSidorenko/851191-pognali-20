@@ -4,19 +4,25 @@
 }
 
 .email-form__button {
+  position: relative;
   padding-top: 21px;
   padding-bottom: 21px;
   padding-left: 12px;
   width: 50px;
   background-color: $basic-yellow;
   box-shadow: -10px 0 0  $basic-yellow;
-
-  svg {
-    width: 14px;
-    height: 16px;
-  }
-
-  polygon {
-    fill: $special-blue_dark;
-  }
 }
+
+.email-form__icon {
+  width: 14px;
+  height: 16px;
+  top: 22px;
+  fill: $special-blue_dark;
+}
+
+.email-form__input {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+
