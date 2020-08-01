@@ -8,6 +8,30 @@
   border-radius: 20px;
 }
 
+.card__header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  column-gap: 16px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    background-color: $offline-orange;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.card__photo {
+  grid-row: 1/-1;
+  border-radius: 50%;
+}
+
 .card__title {
   margin: 0;
   font-family: $main-font;
@@ -18,13 +42,41 @@
   color: $main-color;
 }
 
+.card__like-button {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: $dark-grey;
+
+  &--active {
+    background-color: $like-active;
+
+    .card__icon {
+      stroke: none;
+      fill: $heart-red;
+    }
+  }
+}
+
+.card__icon {
+  top: 10px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  fill: $dark-grey;
+  stroke: $light-blue;
+}
+
 .card__interests {
   justify-content: start;
-  width: 176px;
   margin: 0;
+  padding-top: 13px;
+  width: 200px;
 }
 
 .card__likes {
+  grid-row: 2;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;

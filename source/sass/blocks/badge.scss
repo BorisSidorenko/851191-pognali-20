@@ -1,0 +1,39 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: $basic-blue_light;
+  border-radius: 50%;
+
+  &--active {
+    .badge__icon {
+      fill: $special-blue_dark;
+    }
+  }
+}
+
+.badge__icon {
+  fill: rgba($special-blue_dark, 0.15);
+
+  &--plane {
+    width: 12px;
+    height: 14px;
+  }
+
+  &--bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bike {
+    width: 14px;
+    height: 17px;
+  }
+
+  &--run {
+    width: 13px;
+    height: 17px;
+  }
+}

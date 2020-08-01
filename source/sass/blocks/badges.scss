@@ -1,15 +1,10 @@
 .badges {
-  display: flex;
-  flex-wrap: wrap;
-
   @media (min-width: $mobile-width) {
-    flex-direction: column;
   }
 }
 
 .badges__title {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   margin: 0;
   padding-bottom: 10px;
@@ -31,4 +26,14 @@
   @media (min-width: $mobile-width) {
     display: none;
   }
+}
+
+.badges__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+}
+
+.badges__transport {
+  display: flex;
 }
