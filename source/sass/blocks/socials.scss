@@ -1,8 +1,19 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   width: 105px;
+}
+
+.socials__item {
+  &--vk {
+    margin-left: 27px;
+  }
+
+  &--inst {
+    margin-left: 26px;
+  }
 }
 
 .socials--footer {
@@ -35,8 +46,8 @@
 .socials__link {
   &--footer::before {
     position: absolute;
-    top: -10px;
-    left: -13px;
+    top: 0;
+    left: 0;
     width: 45px;
     height: 45px;
     background-color: $basic-yellow;

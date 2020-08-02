@@ -1,8 +1,3 @@
-.badges {
-  @media (min-width: $mobile-width) {
-  }
-}
-
 .badges__title {
   display: flex;
   justify-content: space-between;
@@ -32,8 +27,18 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 13px;
+
+  @media (min-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .badges__transport {
   display: flex;
+
+  @media (min-width: $mobile-width) {
+    flex-direction: column;
+  }
 }

@@ -1,30 +1,14 @@
 .pagination {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 18px;
-  list-style-type: none;
-}
+  margin-top: 18px;
 
-.pagination__button {
-  position: relative;
-
-  &--prev::before,
-  &--next::before {
-    position: absolute;
-    top: 17px;
-    left: 63px;
-    width: 20px;
-    height: 13px;
-    background: url("../../img/triangle-arrow-left.svg") center no-repeat;
-    content: "";
-  }
-
-  &--next::before {
-    position: absolute;
-    right: 63px;
-    background: url("../../img/triangle-arrow-right.svg") center no-repeat;
-    content: "";
+  @media (min-width: $mobile-width) {
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+    padding-right: 35px;
+    background-color: $basic-white;
+    border-radius: 20px;
   }
 }

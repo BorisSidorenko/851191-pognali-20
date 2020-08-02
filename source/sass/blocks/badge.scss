@@ -12,6 +12,10 @@
       fill: $special-blue_dark;
     }
   }
+
+  @media (min-width: $mobile-width) {
+    background-color: transparent;
+  }
 }
 
 .badge__icon {
@@ -35,5 +39,27 @@
   &--run {
     width: 13px;
     height: 17px;
+  }
+
+  @media (min-width: $mobile-width) {
+    &--plane {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--bus {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--bike {
+      width: 26px;
+      height: 25px;
+    }
+
+    &--run {
+      width: 23px;
+      height: 24px;
+    }
   }
 }
