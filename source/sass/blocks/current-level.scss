@@ -11,7 +11,7 @@
   &::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
     width: 100px;
     height: 100px;
     border: 3px solid $special-orange;
@@ -22,7 +22,7 @@
   &::after {
     position: absolute;
     top: 60px;
-    left: 24px;
+    left: 32px;
     width: 51px;
     border: 1px solid rgba($special-grey, 0.3);
     content: "";

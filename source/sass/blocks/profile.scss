@@ -1,16 +1,48 @@
 .profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
   padding-top: 20px;
   padding-bottom: 34px;
   background-color: $main-bg_color;
   box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $mobile-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.profile__current-level {
+  padding-left: 17px;
+}
+
+.profile__current-photo {
+  padding-right: 17px;
+  margin-left: auto;
 }
 
 .profile__tags {
+  grid-column: 1 / -1;
   margin: 0;
   padding: 0;
 }
 
 .profile__transport {
+  grid-column: 1 / -1;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $mobile-width) {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
+
+.profile__button {
+  grid-column: 1 / -1;
+  margin-top: 16px;
+  margin-bottom: 25px;
+  background-color: $special-blue_light;
+}
+
+
