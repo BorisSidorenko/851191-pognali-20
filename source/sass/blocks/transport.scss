@@ -7,7 +7,6 @@
 
 .transport__list {
   display: flex;
-  justify-content: space-between;
   width: 129px;
   margin: 0 auto;
   padding: 0;
@@ -15,9 +14,18 @@
   padding-bottom: 15px;
   list-style-type: none;
 
+  &--form {
+    margin: 0;
+  }
+
   @media (min-width: $mobile-width) {
     flex-direction: column;
     margin: 0;
+
+    &--form {
+      flex-direction: row;
+      padding: 0;
+    }
   }
 }
 
