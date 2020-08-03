@@ -7,12 +7,12 @@
 }
 
 .socials__item {
-  &--vk {
-    margin-left: 27px;
-  }
-
-  &--inst {
-    margin-left: 26px;
+  &--footer {
+    display: flex;
+    width: 45px;
+    height: 44px;
+    background-color: $basic-yellow;
+    border-radius: 50%;
   }
 }
 
@@ -20,9 +20,9 @@
   width: 135px;
 }
 
-.socials__item--footer {
-  position: relative;
-}
+// .socials__item--footer {
+//   position: relative;
+// }
 
 .socials__icon {
   position: relative;
@@ -44,14 +44,17 @@
 }
 
 .socials__link {
-  &--footer::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 45px;
-    height: 45px;
-    background-color: $basic-yellow;
-    border-radius: 50%;
-    content: "";
+  &--footer {
+    margin: auto;
   }
+  // &--footer::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 45px;
+  //   height: 45px;
+  //   background-color: $basic-yellow;
+  //   border-radius: 50%;
+  //   content: "";
+  // }
 }
