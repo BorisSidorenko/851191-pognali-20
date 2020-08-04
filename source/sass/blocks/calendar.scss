@@ -1,5 +1,4 @@
 .calendar {
-  margin-bottom: 22px;
   width: 100%;
   border-collapse: collapse;
 }
@@ -14,6 +13,11 @@
     line-height: 18px;
     color: $special-grey;
   }
+
+  @media (min-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .calendar__day {
@@ -21,6 +25,14 @@
 
   &--weekend {
     color: $calendar-orange;
+  }
+}
+
+.calendar__extended-day {
+  display: none;
+
+  @media (min-width: $mobile-width) {
+    display: inline;
   }
 }
 
@@ -36,4 +48,9 @@
   line-height: 18px;
   color: rgba($special-grey, 0.3);
   border: 1px solid $calendar-grey;
+
+  @media (min-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

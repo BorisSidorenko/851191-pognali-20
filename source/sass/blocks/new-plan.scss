@@ -4,6 +4,11 @@
   background-color: $plan-light_blue;
   box-shadow: 0 20px 0 $plan-light_blue;
   border-radius: 25px 25px 0 0;
+
+  @media (min-width: $mobile-width) {
+    padding-top: 53px;
+    padding-bottom: 63px;
+  }
 }
 
 .new-plan__title {
@@ -14,4 +19,10 @@
   font-size: 24px;
   line-height: 24px;
   color: $main-color;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 56px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

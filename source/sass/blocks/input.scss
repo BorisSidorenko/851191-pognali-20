@@ -34,4 +34,14 @@
   &--rounded_left {
     border-radius: 10px 0 0 10px;
   }
+
+  @media (min-width: $mobile-width) {
+    &--rectangle {
+      width: 532px;
+    }
+
+    &--rounded {
+      border-radius: 4px;
+    }
+  }
 }

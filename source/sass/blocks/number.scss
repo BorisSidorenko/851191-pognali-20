@@ -1,11 +1,11 @@
-.number {
-  padding-bottom: 20px;
-}
-
 .number__header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 8px;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .number__title {
@@ -23,9 +23,31 @@
     text-transform: uppercase;
     color: rgba($main-color, 0.3);
   }
+
+  @media (min-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+
+    &--unit {
+      letter-spacing: 0.08em;
+    }
+  }
 }
 
 .number__control {
   height: 43px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  color: $special-blue_dark;
   text-align: center;
+
+  @media (min-width: $mobile-width) {
+    height: 70px;
+    font-size: 20px;
+    line-height: 18px;
+  }
 }

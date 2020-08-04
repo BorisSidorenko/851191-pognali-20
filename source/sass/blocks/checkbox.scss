@@ -5,4 +5,12 @@
   font-size: 15px;
   line-height: 15px;
   color: $main-color;
+
+  @media (min-width: $mobile-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }

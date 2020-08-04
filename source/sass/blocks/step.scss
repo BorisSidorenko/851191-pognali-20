@@ -10,6 +10,15 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 56px;
+  }
 }
 
 .step__title {
@@ -23,6 +32,14 @@
   font-size: 20px;
   line-height: 20px;
   color: $main-color;
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
+    padding-bottom: 35px;
+    font-size: 36px;
+    line-height: 36px;
+    order: -4;
+  }
 }
 
 .step__description {
@@ -36,21 +53,80 @@
   font-size: 16px;
   line-height: 22px;
   color: $special-grey;
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
+    padding-right: 24px;
+    padding-bottom: 38px;
+    font-size: 20px;
+    line-height: 24px;
+    order: -3;
+  }
 }
 
 .step__group {
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 20px;
+
+  @media (min-width: $mobile-width) {
+    position: relative;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &--travalers {
+      order: -2;
+    }
+
+    &--duration {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 532px;
+      border-top: 1px solid $dilimeter-grey;
+      content: "";
+    }
+  }
 }
 
 .step__checkbox {
   padding-left: 5px;
   padding-right: 5px;
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
+    margin-bottom: 27px;
+    order: -1;
+  }
 }
 
 .step__dates {
+  padding-bottom: 22px;
   padding-left: 5px;
   padding-right: 5px;
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
+    padding-bottom: 47px;
+  }
+}
+
+.step__next-step {
+  @media (min-width: $mobile-width) {
+    padding-top: 29px;
+    padding-left: 34px;
+    padding-bottom: 27px;
+    width: 284px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    border-radius: 20px;
+  }
 }
 
 .step__prev-step {
