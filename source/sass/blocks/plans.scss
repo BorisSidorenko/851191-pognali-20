@@ -16,6 +16,11 @@
   line-height: 24px;
   text-align: left;
   color: $main-color;
+
+  @media (min-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .plans__list {
