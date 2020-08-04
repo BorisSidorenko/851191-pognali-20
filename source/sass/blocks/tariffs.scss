@@ -40,7 +40,7 @@
 .tariffs__header {
   padding-top: 16px;
   padding-left: 24px;
-  padding-right: 138px;
+  padding-right: 24px;
   padding-bottom: 43px;
 
   @media (min-width: $mobile-width) {
@@ -90,6 +90,7 @@
   position: relative;
   padding-top: 13px;
   padding-bottom: 16px;
+  padding-right: 40px;
 
   &::before {
     position: absolute;
@@ -165,6 +166,7 @@
 .tariffs__button {
   position: relative;
   margin: 0 auto;
+  padding: 0;
   width: 219px;
   font-size: 16px;
   line-height: 16px;

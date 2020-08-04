@@ -6,11 +6,17 @@
 
   @media (min-width: $mobile-width) {
     padding-bottom: 96px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 .steps__header {
   padding-bottom: 29px;
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .steps__list {

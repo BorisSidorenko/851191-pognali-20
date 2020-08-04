@@ -90,7 +90,8 @@
   @media (min-width: $mobile-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 81px;
+    flex-wrap: wrap;
+    padding-bottom: 61px;
   }
 }
 
@@ -98,7 +99,7 @@
   padding-bottom: 9px;
 
   @media (min-width: $mobile-width) {
-    padding: 0;
+    padding-bottom: 20px;
   }
 }
 

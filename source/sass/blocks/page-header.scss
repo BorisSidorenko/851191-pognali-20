@@ -18,9 +18,13 @@
 
   @media (min-width: $mobile-width) {
     &--index {
-      background: url("../../img/traveller-illustration-tablet@1x.png") bottom 20px center no-repeat,
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background: url("../../img/traveller-illustration-tablet@1x.png") top 380px right 111px no-repeat,
         url("../../img/globe-back-tablet@1x.jpg") bottom 20px center no-repeat;
-      border-radius: 0 0 50px 50px;
+      background-color: $header-bg_color;
+      border-radius: 0;
     }
   }
 }
@@ -29,9 +33,9 @@
   margin: 0;
   padding: 0;
   padding-top: 52px;
-  padding-bottom: 265px;
   padding-left: 16px;
   padding-right: 16px;
+  min-height: 503px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -41,6 +45,9 @@
   color: $basic-white;
 
   @media (min-width: $mobile-width) {
+    padding-top: 72px;
+    min-height: 300px;
+    padding-bottom: 86px;
     font-size: 60px;
     line-height: 70px;
   }
