@@ -18,6 +18,9 @@
 
   @media (min-width: $mobile-width) {
     &--index {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: min-content min-content;
       padding-top: 40px;
       padding-left: 40px;
       padding-right: 40px;
@@ -26,6 +29,13 @@
       background-color: $header-bg_color;
       border-radius: 0;
     }
+  }
+}
+
+.page-header__logo {
+  @media (min-width: $mobile-width) {
+    grid-row: 1;
+    grid-column: 1 / -1;
   }
 }
 
@@ -45,6 +55,8 @@
   color: $basic-white;
 
   @media (min-width: $mobile-width) {
+    grid-row: 2;
+    grid-column: 1 / -1;
     padding-top: 72px;
     min-height: 300px;
     padding-bottom: 86px;
@@ -61,7 +73,8 @@
   list-style-type: none;
 
   @media (min-width: $mobile-width) {
-    display: none;
+    grid-row: 1;
+    grid-column: 3;
   }
 }
 
@@ -70,5 +83,7 @@
 
   @media (min-width: $mobile-width) {
     display: block;
+    grid-row: 3;
+    grid-column: 1 / -1;
   }
 }

@@ -1,0 +1,18 @@
+.header-buttons__button {
+  @media (min-width: $mobile-width) {
+    &--phone,
+    &--mail {
+      display: none;
+    }
+
+    &--auth {
+      grid-row: 1;
+    }
+  }
+}
+
+.header-buttons__item {
+  @media (min-width: $mobile-width) {
+    margin-left: auto;
+  }
+}
