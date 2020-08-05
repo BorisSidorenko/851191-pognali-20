@@ -1,3 +1,15 @@
+.header-buttons {
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    &--hide {
+      display: flex;
+    }
+  }
+}
+
 .header-buttons__button {
   @media (min-width: $mobile-width) {
     &--phone,

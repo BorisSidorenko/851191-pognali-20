@@ -1,7 +1,7 @@
-.page-title {
+.title {
   position: relative;
   margin: 0;
-  padding-top: 62px;
+  width: min-content;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -11,12 +11,22 @@
 
   &::after {
     position: absolute;
-    top: 106px;
+    bottom: -14px;
     left: 0;
-    width: 173px;
+    width: 100%;
     height: 5px;
     background-color: $special-orange;
     border-radius: 4px;
     content: "";
+  }
+
+  @media (min-width: $mobile-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    &::after {
+      bottom: -70px;
+      height: 8px;
+    }
   }
 }
