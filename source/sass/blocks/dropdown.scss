@@ -10,4 +10,10 @@
   &--border_grey {
     border: 1px solid $input-grey;
   }
+
+  @media (min-width: $mobile-width) {
+    &--rectangle {
+      width: 369px;
+    }
+  }
 }

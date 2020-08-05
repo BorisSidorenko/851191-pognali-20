@@ -280,17 +280,20 @@
                 </tr>
               </table>
             </div>
-            <a href="steps.html" class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step button--text_dark-blue">Следующий шаг</a>
+            <div class="step__controls">
+              <a href="steps.html" class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step button--text_dark-blue">Следующий шаг</a>
+            </div>
           </div>
           <div class="step">
             <h3 class="step__title">
               <span>Шаг 2.<br>Маршрут</span>
             </h3>
-            <p class="step__description">
+            <p class="step__description step__description--two">
               Укажите страны, которые вы
               хотели посетить. Это может
               быть одна или сразу несколько.
             </p>
+            <div class="step__wrapper">
             <div class="country step__country">
               <select class="dropdown country__selected dropdown--rectangle dropdown--rounded dropdown--border_grey">
                 <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
@@ -396,8 +399,11 @@
               </select>
               <div class="country__flag"></div>
             </div>
-            <a href="steps.html" class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step button--text_dark-blue">Следующий шаг</a>
-            <a href="steps.html" class="button button--bg_none button--text_dark-blue step__prev-step">На шаг назад</a>
+          </div>
+            <div class="step__controls">
+              <a href="steps.html" class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step button--text_dark-blue">Следующий шаг</a>
+              <a href="steps.html" class="button button--bg_none button--text_dark-blue step__prev-step">На шаг назад</a>
+            </div>
           </div>
           <div class="step">
             <h3 class="step__title">
@@ -417,9 +423,11 @@
               <span class="entertainment__country">Чехия</span>
               <textarea class="entertainment__description" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </div>
-            <button type="submit"
+            <div class="step__controls">
+              <button type="submit"
               class="button button--rounded_m button--text_upper button--text-align_center button--bg-color_yellow step__next-step button--text_dark-blue">Отправить</button>
-            <a href="steps.html" class="button button--bg_none button--text_dark-blue step__prev-step">На шаг назад</a>
+              <a href="steps.html" class="button button--bg_none button--text_dark-blue step__prev-step">На шаг назад</a>
+            </div>
           </div>
         </div>
       </form>

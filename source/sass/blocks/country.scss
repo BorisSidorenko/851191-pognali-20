@@ -1,7 +1,3 @@
-.country {
-  padding-bottom: 22px;
-}
-
 .country__selected,
 .country__select,
 .country__add {
@@ -17,11 +13,25 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: $main-color;
+
+  @media (min-width: $mobile-width) {
+    padding-top: 27px;
+    padding-left: 26px;
+    padding-bottom: 23px;
+    width: 369px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .country__select,
 .country__add {
   width: 100%;
+
+  @media (min-width: $mobile-width) {
+    width: 369px;
+  }
 }
 
 .country__add {
