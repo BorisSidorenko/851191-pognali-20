@@ -9,6 +9,12 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 123px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .steps__header {
@@ -26,6 +32,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -89,6 +99,29 @@
 
     &--fourth {
       border-radius: 0 0 10px 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding-right: 34px;
+    border-radius: 20px 0 0 20px;
+
+    &--first {
+      box-shadow: 20px 0 0 $special-orange;
+    }
+
+    &--second {
+      box-shadow: 20px 0 0 $special-orange_light;
+    }
+
+    &--third {
+      box-shadow: 20px 0 0 $special-yellow_dark;
+    }
+
+    &--fourth {
+      border-radius: 20px;
     }
   }
 }

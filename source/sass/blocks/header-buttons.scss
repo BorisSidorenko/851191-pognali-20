@@ -21,6 +21,10 @@
       grid-row: 1;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header-buttons__item {

@@ -35,6 +35,11 @@
       border-radius: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr min-content;
+    row-gap: 110px;
+  }
 }
 
 .page-header__logo {
@@ -68,6 +73,13 @@
     font-size: 60px;
     line-height: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+    padding: 0;
+    padding-left: 67px;
+    text-align: left;
+  }
 }
 
 .page-header__header-buttons {
@@ -80,6 +92,12 @@
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 3;
+    width: 100%;
   }
 }
 
