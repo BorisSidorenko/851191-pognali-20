@@ -76,6 +76,20 @@
         content: "";
       }
     }
+
+    &--three {
+      position: relative;
+      padding-bottom: 34px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid $dilimeter-grey;
+        content: "";
+      }
+    }
   }
 }
 
@@ -177,7 +191,7 @@
   padding-bottom: 25px;
 
   @media (min-width: $mobile-width) {
-    padding-top: 42px;
+    padding-top: 36px;
     padding-bottom: 50px;
   }
 }
@@ -191,6 +205,10 @@
 
   @media (min-width: $mobile-width) {
     padding-bottom: 15px;
+
+    &:first-child {
+      padding-top: 6px;
+    }
 
     &:last-child {
       padding: 0;

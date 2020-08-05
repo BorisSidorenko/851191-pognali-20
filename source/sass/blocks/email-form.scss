@@ -1,6 +1,10 @@
 .email-form {
   display: flex;
   padding-bottom: 29px;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .email-form__button {
@@ -11,6 +15,12 @@
   width: 50px;
   background-color: $basic-yellow;
   box-shadow: -10px 0 0 $basic-yellow;
+
+  @media (min-width: $mobile-width) {
+    width: 80px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: none;
+  }
 }
 
 .email-form__icon {
@@ -18,9 +28,19 @@
   height: 16px;
   top: 22px;
   fill: $special-blue_dark;
+
+  @media (min-width: $mobile-width) {
+    top: 28px;
+    left: 31px;
+  }
 }
 
 .email-form__input {
   padding-top: 22px;
   padding-bottom: 22px;
+  border: none;
+
+  @media (min-width: $mobile-width) {
+    border-radius: 20px 0 0 20px;
+  }
 }

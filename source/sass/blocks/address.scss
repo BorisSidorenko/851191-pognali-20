@@ -3,6 +3,11 @@
   padding-bottom: 35px;
   background-color: $basic-yellow;
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $mobile-width) {
+    padding-top: 48px;
+    padding-bottom: 84px;
+  }
 }
 
 .address__text {
@@ -27,5 +32,21 @@
     background-color: $icon-blue;
     border-radius: 50%;
     content: "";
+  }
+
+  @media (min-width: $mobile-width) {
+    margin-bottom: 44px;
+    padding-left: 94px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+    }
   }
 }

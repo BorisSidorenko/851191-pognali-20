@@ -1,13 +1,23 @@
 .feedback {
+  padding-top: 72px;
+  padding-bottom: 29px;
   background-color: $additional-bg_color;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 20px 0 $basic-yellow;
+
+  @media (min-width: $mobile-width) {
+    padding-top: 76px;
+    padding-bottom: 60px;
+  }
 }
 
 .feedback__header {
   margin: 0;
-  padding-top: 72px;
   text-align: center;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 59px;
+  }
 }
 
 .feedback__text {
@@ -20,6 +30,12 @@
   line-height: 22px;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 65px;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .feedback__link {
