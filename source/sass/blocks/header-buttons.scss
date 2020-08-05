@@ -3,7 +3,7 @@
     display: none;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     &--hide {
       display: flex;
     }
@@ -11,7 +11,7 @@
 }
 
 .header-buttons__button {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     &--phone,
     &--mail {
       display: none;
@@ -24,7 +24,7 @@
 }
 
 .header-buttons__item {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-left: auto;
   }
 }

@@ -8,7 +8,7 @@
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 41px;
     padding-right: 384px;
@@ -41,7 +41,7 @@
 }
 
 .about__header {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 0;
   }
@@ -56,7 +56,7 @@
   line-height: 22px;
   color: $basic-white;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 0;
     padding-bottom: 31px;
@@ -69,7 +69,7 @@
   padding-top: 20px;
   font-weight: bold;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 52px;
     font-size: 21px;
@@ -80,7 +80,7 @@
 .about__link {
   display: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     width: 276px;
   }

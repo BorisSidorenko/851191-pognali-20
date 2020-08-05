@@ -7,7 +7,7 @@
   background-color: $main-bg_color;
   box-shadow: 0 20px 0 $main-bg_color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -32,7 +32,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
   }

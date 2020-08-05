@@ -1,7 +1,7 @@
 .dates {
   padding-top: 23px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 58px;
   }
 }
@@ -20,7 +20,7 @@
   border-top: 1px solid $calendar-grey;
   border-bottom: 1px solid $calendar-grey;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 39px;
     padding-top: 27px;
     padding-bottom: 23px;

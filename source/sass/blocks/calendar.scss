@@ -14,7 +14,7 @@
     color: $special-grey;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
   }
@@ -31,7 +31,7 @@
 .calendar__extended-day {
   display: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }
@@ -49,7 +49,7 @@
   color: rgba($special-grey, 0.3);
   border: 1px solid $calendar-grey;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
   }

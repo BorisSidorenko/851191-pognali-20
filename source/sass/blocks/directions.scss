@@ -5,7 +5,7 @@
   background-color: $main-bg_color;
   box-shadow: 0 25px 0 $additional-bg_color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     background: url("../../img/flags-back@1x.png") top 80px right 40px no-repeat;
     background-color: $main-bg_color;
@@ -32,7 +32,7 @@
   padding-right: 25px;
   padding-bottom: 57px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -50,7 +50,7 @@
   line-height: 22px;
   color: $special-grey;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 275px;
     padding-bottom: 104px;

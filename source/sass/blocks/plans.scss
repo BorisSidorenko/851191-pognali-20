@@ -5,7 +5,7 @@
   border-radius: 25px 25px 0 0;
   box-shadow: 0 20px 0 $special-blue_light;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 57px;
     padding-bottom: 76px;
   }
@@ -22,7 +22,7 @@
   text-align: left;
   color: $main-color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 48px;
     font-size: 36px;
     line-height: 36px;

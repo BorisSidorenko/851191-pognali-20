@@ -4,7 +4,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-right: auto;
     padding-left: 20px;
   }
@@ -13,7 +13,7 @@
 .page-numbers__item {
   display: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin-right: 39px;
 

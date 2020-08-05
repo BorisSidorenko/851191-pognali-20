@@ -7,7 +7,7 @@
   background-color: $basic-white;
   border-radius: 20px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr min-content 1fr;
@@ -36,7 +36,7 @@
     content: "";
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
   }
@@ -90,7 +90,7 @@
   padding-top: 13px;
   width: 200px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 2;
   }
@@ -109,14 +109,14 @@
 }
 
 .card__wishes {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
     grid-row: 4;
   }
 }
 
 .card__badges {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     grid-column: 3;
     grid-row: 1 / -1;
@@ -125,7 +125,7 @@
 
 
 .card__link {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 3;
     padding-top: 16px;

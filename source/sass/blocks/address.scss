@@ -4,7 +4,7 @@
   background-color: $basic-yellow;
   border-radius: 0 0 20px 20px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 48px;
     padding-bottom: 84px;
   }
@@ -34,7 +34,7 @@
     content: "";
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 44px;
     padding-left: 94px;
     padding-top: 20px;

@@ -11,7 +11,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 39px;
@@ -34,7 +34,7 @@
   line-height: 20px;
   color: $main-color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     padding-bottom: 35px;
     font-size: 36px;
@@ -55,7 +55,7 @@
   line-height: 22px;
   color: $special-grey;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     padding-right: 24px;
     padding-bottom: 38px;
@@ -98,7 +98,7 @@
   padding-right: 5px;
   padding-bottom: 20px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding: 0;
     padding-top: 25px;
@@ -127,7 +127,7 @@
   padding-left: 5px;
   padding-right: 5px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 27px;
     order: -1;
@@ -139,20 +139,20 @@
   padding-left: 5px;
   padding-right: 5px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     padding-bottom: 47px;
   }
 }
 
 .step__controls {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .step__next-step {
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 29px;
     padding-left: 34px;
     padding-bottom: 27px;
@@ -178,7 +178,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 29px;
     width: 180px;
     font-size: 24px;
@@ -190,7 +190,7 @@
 .step__wrapper {
   padding-bottom: 25px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 36px;
     padding-bottom: 50px;
   }
@@ -203,7 +203,7 @@
     padding: 0;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 15px;
 
     &:first-child {

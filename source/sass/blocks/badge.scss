@@ -13,7 +13,7 @@
     }
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     background-color: transparent;
   }
 }
@@ -41,7 +41,7 @@
     height: 17px;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     &--plane {
       width: 20px;
       height: 20px;

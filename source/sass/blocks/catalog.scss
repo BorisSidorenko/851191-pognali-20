@@ -4,7 +4,7 @@
   background-color: $main-bg_color;
   box-shadow: 0 30px 0 $main-bg_color;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-right: 40px;
     padding-left: 40px;
   }

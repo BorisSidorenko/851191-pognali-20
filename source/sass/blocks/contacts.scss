@@ -14,7 +14,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 90px;
     font-size: 28px;
     line-height: 28px;
@@ -39,7 +39,7 @@
     content: "";
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 25px;
 
     &::before {

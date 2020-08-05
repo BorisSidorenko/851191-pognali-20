@@ -1,7 +1,7 @@
 .header-title {
   padding-top: 62px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     padding-top: 134px;
   }

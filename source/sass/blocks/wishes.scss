@@ -19,7 +19,7 @@
   padding-bottom: 15px;
   list-style-type: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     & {
       column-gap: 25px;
     }
@@ -48,7 +48,7 @@
     content: "";
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     & {
       grid-row: 1 / -1;
       font-size: 20px;

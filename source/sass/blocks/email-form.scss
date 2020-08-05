@@ -2,7 +2,7 @@
   display: flex;
   padding-bottom: 29px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 60px;
   }
 }
@@ -16,7 +16,7 @@
   background-color: $basic-yellow;
   box-shadow: -10px 0 0 $basic-yellow;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     width: 80px;
     border-radius: 0 20px 20px 0;
     box-shadow: none;
@@ -29,7 +29,7 @@
   top: 22px;
   fill: $special-blue_dark;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     top: 28px;
     left: 31px;
   }
@@ -40,7 +40,7 @@
   padding-bottom: 22px;
   border: none;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     border-radius: 20px 0 0 20px;
   }
 }

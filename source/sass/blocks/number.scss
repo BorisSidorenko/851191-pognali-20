@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding-bottom: 8px;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 24px;
   }
 }
@@ -24,7 +24,7 @@
     color: rgba($main-color, 0.3);
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 0.1em;
@@ -45,7 +45,7 @@
   color: $special-blue_dark;
   text-align: center;
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     height: 70px;
     font-size: 20px;
     line-height: 18px;

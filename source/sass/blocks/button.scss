@@ -139,7 +139,7 @@
     border-radius: 10px;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     &--rectangle {
       width: 616px;
       font-size: 24px;

@@ -11,7 +11,7 @@
     border: 1px solid $input-grey;
   }
 
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     &--rectangle {
       width: 369px;
     }
