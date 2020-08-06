@@ -9,6 +9,13 @@
     padding-top: 76px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    padding-bottom: 102px;
+    padding-left: 132px;
+    padding-right: 134px;
+  }
 }
 
 .feedback__header {
@@ -17,6 +24,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
   }
 }
 
@@ -35,6 +46,10 @@
     padding-bottom: 65px;
     font-size: 28px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
   }
 }
 
