@@ -57,6 +57,10 @@
     width: 616px;
     border-radius: 20px 0 0 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+  }
 }
 
 .direction__country {
@@ -93,8 +97,4 @@
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.directions__link {
-  margin: 0 auto;
 }
