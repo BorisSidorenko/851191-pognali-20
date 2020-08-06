@@ -41,4 +41,27 @@
       height: 32px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--phone {
+      top: 30px;
+      left: 29px;
+      width: 31px;
+      height: 30px;
+    }
+
+    &--mail {
+      top: 32px;
+      left: 26px;
+      width: 37px;
+      height: 25px;
+    }
+
+    &--address-marker {
+      top: 24px;
+      left: 29px;
+      width: 32px;
+      height: 42px;
+    }
+  }
 }
