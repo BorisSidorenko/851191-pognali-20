@@ -1,0 +1,42 @@
+.level-controls {
+  display: flex;
+}
+
+.level-controls__input {
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  width: 110px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $special-blue_dark;
+  border: 1px solid $input-grey;
+
+  &--min {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+
+  &--max {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 74px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 96px;
+  }
+}

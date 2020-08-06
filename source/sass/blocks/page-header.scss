@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content;
+    row-gap: 134px;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -38,7 +39,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr min-content;
-    row-gap: 110px;
   }
 }
 
