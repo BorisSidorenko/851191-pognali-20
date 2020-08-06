@@ -182,6 +182,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--rectangle {
+      width: 276px;
+    }
+
     &--circle {
       position: relative;
       width: 50px;
