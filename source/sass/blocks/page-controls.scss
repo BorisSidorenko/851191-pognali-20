@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 53px;
+  }
 }
 
 .page-controls__button {
@@ -27,13 +32,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 20px;
-
-    &--prev {
-      margin-right: 27px;
-    }
 
     &--prev::before,
     &--next::before {

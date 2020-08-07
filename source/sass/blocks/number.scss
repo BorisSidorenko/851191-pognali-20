@@ -1,7 +1,7 @@
-.number__header {
+.number {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
@@ -36,6 +36,7 @@
 }
 
 .number__control {
+  margin-top: 8px;
   height: 43px;
   font-family: $main-font;
   font-style: normal;
@@ -46,6 +47,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    padding-top: 0;
     height: 70px;
     font-size: 20px;
     line-height: 18px;

@@ -148,6 +148,7 @@
 .step__controls {
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -179,7 +180,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-top: 29px;
+    padding-top: 0;
     width: 180px;
     font-size: 24px;
     line-height: 24px;
