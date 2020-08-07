@@ -19,12 +19,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
     row-gap: 134px;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 66px;
 
     &--index {
       row-gap: 0;
@@ -105,7 +106,8 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 1;
-    grid-column: 3;
+    grid-column: 2;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
