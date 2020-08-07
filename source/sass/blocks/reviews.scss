@@ -1,6 +1,6 @@
 .reviews {
   margin: 0;
-  padding-left: 25px;
+  padding-left: 24px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 300;
@@ -26,23 +26,21 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 28px;
+  padding-bottom: 18px;
+
+  &:last-child {
+    padding: 0;
+    padding-bottom: 29px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-bottom: 45px;
     font-size: 28px;
     line-height: 33px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 32px;
-  }
-
-  &--author {
-    padding-top: 18px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 45px;
-    }
   }
 
   &--cite {

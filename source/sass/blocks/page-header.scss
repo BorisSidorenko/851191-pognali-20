@@ -8,12 +8,13 @@
   box-shadow: 0 20px 0 $main-bg_color;
 
   &--index {
-    padding-bottom: 0;
-    background:  url("../../img/traveller-illustration-mobile@1x.png") bottom 20px center no-repeat,
-      url("../../img/globe-back-mobile@1x.jpg") bottom 20px center no-repeat;
+    padding-bottom: 39px;
+    background:  url("../../img/traveller-illustration-mobile@1x.png") top 314px right 48px no-repeat,
+      url("../../img/globe-back-mobile@1x.jpg") top center no-repeat;
     background-repeat: no-repeat;
+    background-color: $basic-blue;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: inset 0 -279px 0 $additional-bg_color;
   }
 
   @media (min-width: $tablet-width) {
@@ -24,21 +25,34 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 67px;
 
     &--index {
+      row-gap: 0;
       padding-top: 40px;
       padding-left: 40px;
       padding-right: 40px;
-      background: url("../../img/traveller-illustration-tablet@1x.png") top 380px right 111px no-repeat,
-        url("../../img/globe-back-tablet@1x.jpg") bottom 20px center no-repeat;
+      padding-bottom: 96px;
+      background: url("../../img/traveller-illustration-tablet@1x.png") top 567px right 111px no-repeat,
+        url("../../img/globe-back-tablet@1x.jpg") top 540px center no-repeat;
       background-color: $header-bg_color;
       border-radius: 0;
+      box-shadow: none;
     }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr min-content;
+
+    &--index {
+      row-gap: 0;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background: url("../../img/traveller-illustration-desktop@1x.png") top right 111px no-repeat,
+        url("../../img/globe-back-desktop@1x.jpg") top  center no-repeat;
+      background-color: $header-bg_color;
+      border-radius: 0;
+    }
   }
 }
 
@@ -102,8 +116,6 @@
 }
 
 .page-header__reviews {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: block;
     grid-row: 3;

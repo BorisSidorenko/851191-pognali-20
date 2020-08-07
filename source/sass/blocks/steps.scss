@@ -1,27 +1,12 @@
 .steps {
-  padding-bottom: 39px;
-  background-color: $additional-bg_color;
-  box-shadow: inset 0 285px 0 $basic_blue,
-    0 -20px 0 $basic-blue;
-
   @media (min-width: $tablet-width) {
-    padding-bottom: 96px;
-    padding-left: 40px;
-    padding-right: 40px;
+    grid-column: 1/-1;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 123px;
     padding-left: 60px;
     padding-right: 60px;
-  }
-}
-
-.steps__header {
-  padding-bottom: 29px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
 
@@ -138,10 +123,4 @@
 .steps__description {
   margin: 0;
   color: $additional-text_color;
-}
-
-.steps__reviews {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
