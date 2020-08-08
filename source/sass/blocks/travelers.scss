@@ -109,6 +109,8 @@
     &--emphasis {
       grid-row: 3;
       grid-column: 1;
+      margin-bottom: 85px;
+      padding-bottom: 0;
       line-height: 24px;
     }
   }
@@ -129,11 +131,12 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
-    grid-row: 1/4;
+    grid-row: 1/6;
   }
 }
 
 .travelers__item {
+  position: relative;
   padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
@@ -148,33 +151,59 @@
 }
 
 .travelers__info {
+  padding-top: 27px;
+  padding-bottom: 20px;
   width: 270px;
+  text-align: center;
   background-color: $basic-white;
   border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .travelers__image {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .travelers__name {
-  display: block;
-  padding-top: 27px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
   color: $main-color;
 }
 
-.travalers__button {
-  margin: 0 auto;
-
+.travelers__button {
   @media (min-width: $desktop-width) {
     grid-column: 1;
-    grid-row: -1;
+    grid-row: 4;
     width: 280px;
+  }
+}
+
+.travelers__level {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  background-color: rgba($basic-black, 0.6);
+
+  .level__text {
+    color: $basic-white;
+  }
+
+  .level__title {
+    color: $basic-white;
+
+    &::before {
+      background-color: rgba($basic-white, 0.3);
+    }
   }
 }

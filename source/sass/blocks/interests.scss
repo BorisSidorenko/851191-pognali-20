@@ -10,6 +10,11 @@
   padding-top: 14px;
   padding-bottom: 15px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .interests__item {

@@ -43,3 +43,9 @@
     flex-direction: column;
   }
 }
+
+.badges__level {
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+  }
+}
