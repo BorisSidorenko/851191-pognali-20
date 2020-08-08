@@ -13,6 +13,40 @@
     }
   }
 
+  &--special {
+    .badge__icon {
+      fill: $badge_blue;
+    }
+  }
+
+  &--bg_none {
+    background-color: transparent;
+  }
+
+  &--big {
+    .badge__icon {
+      &--plane {
+        width: 21px;
+        height: 21px;
+      }
+
+      &--bus {
+        width: 17px;
+        height: 19px;
+      }
+
+      &--bike {
+        width: 24px;
+        height: 24px;
+      }
+
+      &--run {
+        width: 21px;
+        height: 23px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-color: transparent;
   }

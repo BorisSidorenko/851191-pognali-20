@@ -160,6 +160,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 31px;
+    width: 285px;
     border-radius: 0 0 20px 20px;
   }
 }
@@ -168,6 +169,8 @@
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
     border-radius: 20px 20px 0 0;
   }
 }
@@ -206,4 +209,10 @@
       background-color: rgba($basic-white, 0.3);
     }
   }
+}
+
+.travelers__transport {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
