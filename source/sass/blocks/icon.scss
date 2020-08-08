@@ -19,15 +19,6 @@
     top: 12px;
   }
 
-  &--heart {
-    top: 10px;
-    left: 10px;
-    width: 12px;
-    height: 12px;
-    fill: $dark-grey;
-    stroke: $light-blue;
-  }
-
   @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;

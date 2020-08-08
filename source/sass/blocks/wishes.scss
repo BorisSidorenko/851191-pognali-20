@@ -7,6 +7,10 @@
   font-size: 15px;
   line-height: 16px;
   color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+  }
 }
 
 .wishes__list {
@@ -20,9 +24,9 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    & {
-      column-gap: 25px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
   }
 }
 
@@ -49,11 +53,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    & {
-      grid-row: 1 / -1;
-      font-size: 20px;
-      line-height: 20px;
-    }
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::before {
       width: 35px;
