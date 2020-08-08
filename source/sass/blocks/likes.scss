@@ -1,0 +1,28 @@
+.likes {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  width: min-content;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &--active {
+    .likes__icon {
+      stroke: none;
+      fill: $heart-red;
+    }
+
+    .likes__icon-wrapper {
+      background-color: $like-active;
+    }
+  }
+}
+
+.likes__icon-wrapper {
+  position: relative;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: $dark-grey;
+  border-radius: 50%;
+}
