@@ -14,6 +14,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 39px;
     padding-top: 48px;
     padding-left: 43px;
@@ -22,10 +23,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 101px;
-    padding-left: 152px;
-    padding-right: 152px;
+    padding-left: 160px;
+    padding-right: 160px;
     padding-bottom: 160px;
+    border-radius: 60px;
   }
 }
 
@@ -47,6 +51,10 @@
     font-size: 36px;
     line-height: 36px;
     order: -4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
   }
 }
 
@@ -98,6 +106,24 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--one,
+    &--two,
+    &--three {
+      position: relative;
+      padding-bottom: 55px;
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 998px;
+        border-bottom: 1px solid $dilimeter-grey;
+        content: "";
+      }
+    }
+  }
 }
 
 .step__group {
@@ -128,6 +154,23 @@
       content: "";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+
+    &--travalers {
+      width: 475px;
+    }
+
+    &--duration {
+      margin-top: 14px;
+      width: 466px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .step__checkbox {
@@ -138,6 +181,10 @@
     padding: 0;
     margin-bottom: 27px;
     order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
   }
 }
 
@@ -150,12 +197,17 @@
     padding: 0;
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .step__controls {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -206,6 +258,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 36px;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
+    padding-bottom: 56px;
   }
 }
 

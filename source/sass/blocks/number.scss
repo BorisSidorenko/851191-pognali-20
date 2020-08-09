@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: center;
     padding: 0;
   }
 }
@@ -40,6 +42,11 @@
 
   @media (min-width: $desktop-width) {
     order: -2;
+    letter-spacing: 0;
+
+    &--unit {
+      order: 1;
+    }
   }
 }
 
@@ -63,6 +70,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    order: -1;
+    margin: 0;
+    margin-right: 35px;
+    margin-left: auto;
+    width: 180px;
   }
 }

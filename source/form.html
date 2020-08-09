@@ -185,18 +185,18 @@
       <h2 class="new-plan__title">Добавить план:</h2>
       <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="slider">
-          <p class="slider__toggles new-plan__toggles">
+          <div class="slider__toggles new-plan__toggles">
             <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый шаг"></button>
             <button class="slider__toggle" type="button" aria-label="Второй шаг"></button>
             <button class="slider__toggle" type="button" aria-label="Третий шаг"></button>
-          </p>
+          </div>
           <div class="step">
             <h3 class="step__title">
               <span>Шаг 1. <br class="break break--hide-desktop">Даты пребывания</span>
             </h3>
-            <p class="step__description">
+            <p class="step__description step__description--one">
               Укажите предпочтительное
-              количество попутчиков, которых
+              количество попутчиков, которых<br>
               вы хотели бы позвать в поездку
               и ее предполагаемую
               длительность.
@@ -303,18 +303,18 @@
             </h3>
             <p class="step__description step__description--two">
               Укажите страны, которые вы
-              хотели посетить. Это может
+              хотели посетить.<br class="break break--hide-mobile"> Это может
               быть одна или сразу несколько.
             </p>
             <div class="step__wrapper">
             <div class="country step__country">
-              <select class="dropdown country__selected dropdown--rectangle dropdown--rounded dropdown--border_grey">
+              <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                 <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
               </select>
               <div class="country__flag"></div>
             </div>
             <div class="country step__country">
-              <select class="dropdown country__selected dropdown--rectangle dropdown--rounded dropdown--border_grey">
+              <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                 <option value="Чехия" selected>Чехия</option>
               </select>
               <div class="country__flag"></div>
@@ -424,7 +424,7 @@
             </h3>
             <p class="step__description step__description--three">
               Наконец, расскажите о своих
-              планахвремяпровождения.
+              планахвремяпровождения.<br>
               Можно писать в свободной
               форме и ставить тэги.
             </p>

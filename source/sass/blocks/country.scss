@@ -4,7 +4,6 @@
   padding-top: 13px;
   padding-left: 10px;
   padding-bottom: 10px;
-  width: 168px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -18,19 +17,9 @@
     padding-top: 27px;
     padding-left: 26px;
     padding-bottom: 23px;
-    width: 369px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-  }
-}
-
-.country__select,
-.country__add {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 369px;
   }
 }
 

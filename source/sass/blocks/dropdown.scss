@@ -3,6 +3,10 @@
     width: 220px;
   }
 
+  &--rectangle_s {
+    width: 168px;
+  }
+
   &--rounded {
     border-radius: 4px;
   }
@@ -12,8 +16,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    &--rectangle {
+    &--rectangle,
+    &--rectangle_s {
       width: 369px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--rectangle,
+    &--rectangle_s {
+      width: 730px;
     }
   }
 }

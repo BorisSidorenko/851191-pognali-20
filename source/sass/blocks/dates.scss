@@ -4,6 +4,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+    width: 100%;
+  }
 }
 
 .dates__month {
@@ -24,5 +29,10 @@
     margin-bottom: 39px;
     padding-top: 27px;
     padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
