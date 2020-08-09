@@ -34,6 +34,11 @@
     align-items: center;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .badges__transport {
@@ -42,10 +47,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .badges__level {
   @media (min-width: $tablet-width) {
     margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 44px;
   }
 }

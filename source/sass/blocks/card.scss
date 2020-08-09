@@ -18,6 +18,13 @@
     padding-right: 25px;
     padding-bottom: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 339px min-content 1fr;
+    grid-template-rows: 46px min-content min-content min-content 46px;
+    padding: 0;
+    padding-right: 43px;
+  }
 }
 
 .card__photo-wrapper {
@@ -26,6 +33,10 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 1/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/-1;
   }
 }
 
@@ -37,6 +48,12 @@
     border-radius: 20px;
     width: 190px;
     height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    width: 285px;
+    height: 285px;
   }
 }
 
@@ -88,6 +105,18 @@
       height: 8px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+    grid-row: 2;
+    padding: 0;
+
+    &::after {
+      top: 11px;
+      left: -26px;
+      right: auto;
+    }
+  }
 }
 
 .card__first-name {
@@ -111,6 +140,13 @@
     padding-left: 36px;
     width: 265px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
 }
 
 .card__likes {
@@ -128,6 +164,10 @@
     grid-row: 4;
     grid-column: 3/5;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+  }
 }
 
 .card__wishes {
@@ -138,6 +178,12 @@
     grid-row: 5;
     padding-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1;
+    grid-row: 2/4;
+    padding: 0;
+  }
 }
 
 .card__badges {
@@ -147,6 +193,11 @@
     padding: 0;
     grid-column: 5;
     grid-row: 1 / 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1;
+    grid-row: 4;
   }
 }
 
@@ -163,5 +214,9 @@
     width: 150px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

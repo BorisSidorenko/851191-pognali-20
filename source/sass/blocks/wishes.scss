@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .wishes__list {
@@ -27,6 +31,10 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
