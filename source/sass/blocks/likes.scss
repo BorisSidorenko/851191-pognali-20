@@ -1,21 +1,6 @@
 .likes {
-  display: flex;
-  align-items: center;
   margin-left: 50px;
-  width: min-content;
-  white-space: nowrap;
-  text-decoration: none;
-
-  &--active {
-    .likes__icon {
-      stroke: none;
-      fill: $heart-red;
-    }
-
-    .likes__icon-wrapper {
-      background-color: $like-active;
-    }
-  }
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -54,5 +39,25 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.likes__link {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $basic-blue;
+
+  &--active {
+    .likes__icon {
+      stroke: none;
+      fill: $heart-red;
+    }
+
+    .likes__icon-wrapper {
+      background-color: $like-active;
+    }
   }
 }
