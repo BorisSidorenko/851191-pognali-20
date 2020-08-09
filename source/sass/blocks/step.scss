@@ -20,6 +20,13 @@
     padding-right: 43px;
     padding-bottom: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-left: 152px;
+    padding-right: 152px;
+    padding-bottom: 160px;
+  }
 }
 
 .step__title {
@@ -185,6 +192,11 @@
     font-size: 24px;
     line-height: 24px;
     text-transform: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
   }
 }
 

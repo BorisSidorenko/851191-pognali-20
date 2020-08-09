@@ -9,6 +9,11 @@
     padding-top: 53px;
     padding-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
 }
 
 .new-plan__title {
@@ -24,5 +29,10 @@
     padding-bottom: 56px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 69px;
+    padding-bottom: 54px;
   }
 }

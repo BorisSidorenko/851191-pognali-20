@@ -9,6 +9,13 @@
     padding-top: 57px;
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-left: 124px;
+    padding-right: 58px;
+    padding-bottom: 64px;
+  }
 }
 
 .plans__title {
@@ -27,6 +34,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 7px;
+  }
 }
 
 .plans__list {
@@ -40,5 +51,9 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
   }
 }

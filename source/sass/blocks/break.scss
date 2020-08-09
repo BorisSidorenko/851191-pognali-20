@@ -1,5 +1,15 @@
 .break {
   @media (min-width: $tablet-width) {
-    display: none;
+    &--hide-tablet {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+
+    &--hide-desktop {
+      display: none;
+    }
   }
 }
