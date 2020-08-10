@@ -27,6 +27,10 @@
   font-size: 38px;
   line-height: 38px;
   color: $additional-text_color;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
 
 .current-level__title {
@@ -44,5 +48,13 @@
     width: 51px;
     border-top: 1px solid rgba($special-grey, 0.3);
     content: "";
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+
+    &::before {
+      border-top: 2px solid rgba($basic-white, 0.3);
+    }
   }
 }

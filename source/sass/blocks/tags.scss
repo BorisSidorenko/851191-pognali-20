@@ -6,6 +6,10 @@
   line-height: 18px;
   border: 1px solid $input-grey;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .tags__title {
@@ -14,6 +18,13 @@
   font-weight: bold;
   color: $main-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .tags__list {
