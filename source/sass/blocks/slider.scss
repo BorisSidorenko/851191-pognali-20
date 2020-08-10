@@ -1,3 +1,45 @@
+.slider {
+  position: relative;
+}
+
 .slider__toggles {
-  margin: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: -41px;
+  right: 18px;
+  width: 47px;
+
+  @media (min-width: $tablet-width) {
+    top: -73px;
+    right: 0;
+    width: 76px;
+    height: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 116px;
+    right: 382px;
+    flex-direction: column;
+    width: 6px;
+    height: 94px;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  border: none;
+  background-color: rgba($special-blue_dark, 0.3);
+  border-radius: 50%;
+
+  &--current {
+    background-color: $special-blue_dark;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 6px;
+    height: 6px;
+  }
 }

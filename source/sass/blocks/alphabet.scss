@@ -1,20 +1,20 @@
 .alphabet {
   width: 100%;
   border-collapse: collapse;
+}
 
-  td {
-    padding-top: 12px;
-    padding-bottom: 15px;
-    padding-right: 12px;
-    padding-left: 8px;
-    text-align: center;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $main_color;
-    border: 1px solid $calendar-border_grey;
-  }
+.alphabet__cell {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 12px;
+  padding-left: 8px;
+  text-align: center;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $main-color;
+  border: 1px solid $calendar-grey;
 }

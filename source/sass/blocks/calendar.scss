@@ -1,25 +1,6 @@
 .calendar {
-  margin-bottom: 22px;
   width: 100%;
   border-collapse: collapse;
-
-  th {
-    padding-bottom: 10px;
-  }
-
-  td {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba($special_grey, 0.3);
-    border: 1px solid $calendar-border_grey;
-  }
 }
 
 
@@ -30,12 +11,45 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: $special_grey;
+    color: $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 .calendar__day {
+  padding-bottom: 10px;
+
   &--weekend {
-    color: $calendar_orange;
+    color: $calendar-orange;
+  }
+}
+
+.calendar__extended-day {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.calendar__date {
+  padding: 7px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba($special-grey, 0.3);
+  border: 1px solid $calendar-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

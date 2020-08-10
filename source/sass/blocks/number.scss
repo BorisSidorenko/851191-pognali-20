@@ -1,11 +1,17 @@
 .number {
-  padding-bottom: 20px;
-}
-
-.number__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .number__title {
@@ -16,16 +22,57 @@
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   &--unit {
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: rgba($main_color, 0.3);
+    color: rgba($main-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+
+    &--unit {
+      letter-spacing: 0.08em;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -2;
+    letter-spacing: 0;
+
+    &--unit {
+      order: 1;
+    }
   }
 }
 
 .number__control {
+  margin-top: 8px;
   height: 43px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  color: $special-blue_dark;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    padding-top: 0;
+    height: 70px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 35px;
+    margin-left: auto;
+    width: 180px;
+  }
 }

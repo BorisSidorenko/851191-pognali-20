@@ -1,0 +1,31 @@
+.dropdown {
+  &--rectangle {
+    width: 220px;
+  }
+
+  &--rectangle_s {
+    width: 168px;
+  }
+
+  &--rounded {
+    border-radius: 4px;
+  }
+
+  &--border_grey {
+    border: 1px solid $input-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--rectangle,
+    &--rectangle_s {
+      width: 369px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--rectangle,
+    &--rectangle_s {
+      width: 730px;
+    }
+  }
+}

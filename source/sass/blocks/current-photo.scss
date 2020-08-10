@@ -1,3 +1,16 @@
 .current-photo__image {
+  display: block;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px 20px 0 0;
+  }
 }

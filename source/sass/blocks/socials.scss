@@ -1,16 +1,32 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   width: 105px;
 }
 
-.socials--footer {
-  width: 135px;
+.socials__item {
+  &--footer {
+    display: flex;
+    width: 45px;
+    height: 44px;
+    background-color: $basic-yellow;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 62px;
+      height: 62px;
+    }
+  }
 }
 
-.socials__item--footer {
-  position: relative;
+.socials--footer {
+  width: 135px;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+  }
 }
 
 .socials__icon {
@@ -30,17 +46,37 @@
     width: 18px;
     height: 18px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--fb {
+      width: 14px;
+      height: 26px;
+    }
+
+    &--vk {
+      width: 27px;
+      height: 18px;
+    }
+
+    &--inst {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .socials__link {
-  &--footer::before {
-    position: absolute;
-    top: -10px;
-    left: -13px;
-    width: 45px;
-    height: 45px;
-    background-color: $basic_yellow;
-    border-radius: 50%;
-    content: "";
+  &--footer {
+    margin: auto;
   }
+  // &--footer::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 45px;
+  //   height: 45px;
+  //   background-color: $basic-yellow;
+  //   border-radius: 50%;
+  //   content: "";
+  // }
 }

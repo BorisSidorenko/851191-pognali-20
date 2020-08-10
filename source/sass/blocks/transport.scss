@@ -1,13 +1,12 @@
 .transport {
   &--profile {
-    border: 1px solid $input-border_grey;
+    border: 1px solid $input-grey;
     border-radius: 10px;
   }
 }
 
 .transport__list {
   display: flex;
-  justify-content: space-between;
   width: 129px;
   margin: 0 auto;
   padding: 0;
@@ -15,9 +14,26 @@
   padding-bottom: 15px;
   list-style-type: none;
 
-  @media (min-width: $mobile_width) {
+  &--form {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
     flex-direction: column;
     margin: 0;
+
+    &--form {
+      flex-direction: row;
+      padding: 0;
+    }
+
+    &--profile {
+      flex-direction: row;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 24px;
+      padding-bottom: 12px;
+    }
   }
 }
 
@@ -31,7 +47,14 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .transport__toggle {
@@ -41,7 +64,7 @@
 
   &--active {
     .transport__icon {
-      fill: $main_color;
+      fill: $main-color;
     }
   }
 }
@@ -49,5 +72,5 @@
 .transport__icon {
   width: 17px;
   height: 16px;
-  fill: rgba($main_color, 0.15);
+  fill: rgba($main-color, 0.15);
 }

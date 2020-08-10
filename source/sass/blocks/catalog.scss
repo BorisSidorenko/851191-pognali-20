@@ -1,8 +1,12 @@
 .catalog {
   padding-top: 28px;
   padding-bottom: 46px;
-  background-color: $main_bg-color;
-  box-shadow: 0 20px 0 $main_bg-color;
+  background-color: $main-bg_color;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    width: 951px;
+  }
 }
 
 .catalog__list {
@@ -16,6 +20,7 @@
   width: 150px;
   margin: 0 auto;
   padding-left: 33px;
+  padding-right: 0;
   line-height: 30px;
 
   &::before {

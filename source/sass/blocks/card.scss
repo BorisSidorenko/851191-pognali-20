@@ -1,35 +1,224 @@
 .card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
   margin: 0;
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 22px;
-  background-color: $basic_white;
+  background-color: $basic-white;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 219px min-content min-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content 1fr;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 339px min-content 1fr;
+    grid-template-rows: 46px min-content min-content min-content 46px;
+    padding: 0;
+    padding-right: 43px;
+  }
+}
+
+.card__photo-wrapper {
+  grid-column: 1;
+  grid-row: 1/3;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/-1;
+  }
+}
+
+.card__photo {
+  display: block;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .card__title {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 2;
   margin: 0;
+  margin-left: 14px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
-  color: $main_color;
+  color: $main-color;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 138px;
+    width: 6px;
+    height: 6px;
+    background-color: $offline-orange;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--online {
+    &::after {
+      background-color: $online-green;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/5;
+    margin: 0;
+    padding-right: 30px;
+    width: 285px;
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after {
+      top: 11px;
+      left: auto;
+      right: 0;
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+    grid-row: 2;
+    padding: 0;
+
+    &::after {
+      top: 11px;
+      left: -26px;
+      right: auto;
+    }
+  }
+}
+
+.card__first-name {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "\00a0";
+    }
+  }
 }
 
 .card__interests {
+  grid-column: 1/-1;
   justify-content: start;
-  width: 176px;
   margin: 0;
+  padding-top: 13px;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/5;
+    grid-row: 2;
+    width: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
 }
 
 .card__likes {
+  grid-column: 1/3;
+  grid-row: 2;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $additional_text-color;
+  color: $additional-text_color;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 4;
+    grid-column: 3/5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+  }
+}
+
+.card__wishes {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1;
+    grid-row: 2/4;
+    padding: 0;
+  }
+}
+
+.card__badges {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-column: 5;
+    grid-row: 1 / 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1;
+    grid-row: 4;
+  }
+}
+
+.card__link-wrapper {
+  grid-column: 1/-1;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
+
+.card__link {
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    width: 150px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }

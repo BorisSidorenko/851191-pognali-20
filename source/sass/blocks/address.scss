@@ -1,8 +1,29 @@
 .address {
   padding-top: 31px;
   padding-bottom: 35px;
-  background-color: $basic_yellow;
+  background-color: $basic-yellow;
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 56px;
+    padding-left: 283px;
+    padding-right: 135px;
+  }
+}
+
+
+.address__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    width: 1022px;
+  }
 }
 
 .address__text {
@@ -16,7 +37,7 @@
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   &::before {
     position: absolute;
@@ -24,8 +45,43 @@
     left: 0;
     width: 45px;
     height: 45px;
-    background-color: $nav-link_icon-blue;
+    background-color: $icon-blue;
     border-radius: 50%;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+    padding-left: 94px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 147px;
+    padding-left: 121px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.address__link {
+  @media (min-width: $desktop-width) {
+    width: 324px;
   }
 }

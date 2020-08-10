@@ -1,13 +1,11 @@
 .travelers {
   position: relative;
   padding-top: 34px;
-  padding-left: 25px;
-  padding-right: 25px;
   padding-bottom: 31px;
   background: url("../../img/smolov-back-desktop@1x.png") top 34px right 25px no-repeat,
     url("../../img/rogovaya-back-mobile@1x.png") top 307px left no-repeat;
-  background-color: $additional_bg-color;
-  box-shadow: 0 20px 0 $light_grey;
+  background-color: $additional-bg_color;
+  box-shadow: 0 20px 0 $light-grey;
   border-radius: 0 0 25px 25px;
 
   &::before {
@@ -16,14 +14,41 @@
     left: 0;
     width: 113px;
     height: 132px;
-    background-color: $dark_blue;
+    background-color: $dark-blue;
     border-radius: 0 20px 20px 0;
     content: "";
   }
-}
 
-.travelers__item {
-  padding-bottom: 9px;
+  @media (min-width: $tablet-width) {
+    padding-top: 141px;
+    padding-bottom: 87px;
+    background: url("../../img/rogovaya-back-desktop@1x.png") top 80px right 74px no-repeat,
+      url("../../img/smolov-back-desktop@1x.png") top 426px left 40px no-repeat;
+    background-color: $additional-bg_color;
+
+    &::before {
+      top: 71px;
+      left: 40px;
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    padding-top: 130px;
+    padding-left: 130px;
+    padding-bottom: 134px;
+    background-position: top 386px left 190px, top 134px left 547px;
+
+    &::before {
+      top: 70px;
+      left: 60px;
+    }
+  }
 }
 
 .travelers__header {
@@ -31,6 +56,16 @@
   padding-top: 34px;
   padding-left: 25px;
   padding-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 1;
+  }
 }
 
 .travelers__text {
@@ -43,12 +78,41 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: $basic_white;
+  color: $basic-white;
 
   &--emphasis {
     padding-top: 25px;
     padding-bottom: 54px;
     font-weight: bold;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 170px;
+    padding-bottom: 39px;
+    font-size: 28px;
+    line-height: 34px;
+
+    &--emphasis {
+      padding-bottom: 59px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2;
+    grid-column: 1;
+    padding-bottom: 42px;
+    line-height: 33px;
+
+    &--emphasis {
+      grid-row: 3;
+      grid-column: 1;
+      margin-bottom: 85px;
+      padding-bottom: 0;
+      line-height: 24px;
+    }
   }
 }
 
@@ -57,34 +121,98 @@
   padding: 0;
   padding-bottom: 11px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+    grid-row: 1/6;
+  }
+}
+
+.travelers__item {
+  position: relative;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .travelers__link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 }
 
 .travelers__info {
+  padding-top: 27px;
+  padding-bottom: 20px;
   width: 270px;
-  height: 158px;
-  background-color: $basic_white;
+  text-align: center;
+  background-color: $basic-white;
+  border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    width: 285px;
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .travelers__image {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .travelers__name {
-  display: block;
-  padding-top: 27px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
-  color: $main_color;
+  color: $main-color;
 }
 
-.travalers__button {
-  margin: 0 auto;
+.travelers__button {
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+    grid-row: 4;
+    width: 280px;
+  }
+}
+
+.travelers__level {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  background-color: rgba($basic-black, 0.6);
+
+  .level__text {
+    color: $basic-white;
+  }
+
+  .level__title {
+    color: $basic-white;
+
+    &::before {
+      background-color: rgba($basic-white, 0.3);
+    }
+  }
+}
+
+.travelers__transport {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

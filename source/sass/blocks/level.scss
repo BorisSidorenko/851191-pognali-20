@@ -1,13 +1,47 @@
 .level {
   display: flex;
-  padding-bottom: 13px;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
   font-family: $main-font;
   font-style: normal;
-  color: $special_grey;
+  color: $special-grey;
+  border: 3px solid $special-orange;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .level__text {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+}
+
+.level__title {
+  display: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba($basic-black, 0.4);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    padding-top: 3px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 31px;
+      border-top: 1px solid rgba($special-grey, 0.3);
+      content: "";
+    }
+  }
 }

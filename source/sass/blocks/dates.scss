@@ -1,14 +1,38 @@
 .dates {
   padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+    width: 100%;
+  }
 }
 
 .dates__month {
-  padding-bottom: 22px;
+  margin-bottom: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   line-height: 20px;
-  color: $main_color;
+  color: $main-color;
+  border-top: 1px solid $calendar-grey;
+  border-bottom: 1px solid $calendar-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

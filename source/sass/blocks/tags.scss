@@ -4,16 +4,27 @@
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
-  border: 1px solid $input-border_grey;
+  border: 1px solid $input-grey;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .tags__title {
   margin: 0 auto;
   padding: 0 15px;
   font-weight: bold;
-  color: $main_color;
+  color: $main-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .tags__list {
@@ -32,5 +43,9 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
-  color: rgba($special_grey, 0.6);
+  color: rgba($special-grey, 0.6);
+
+  &::after {
+    content: "\00a0";
+  }
 }

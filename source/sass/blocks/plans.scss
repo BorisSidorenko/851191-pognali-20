@@ -1,9 +1,21 @@
 .plans {
   padding-top: 28px;
   padding-bottom: 30px;
-  background-color: $special_blue_light;
+  background-color: $special-blue_light;
   border-radius: 25px 25px 0 0;
-  box-shadow: 0 20px 0 $special_blue_light;
+  box-shadow: 0 20px 0 $special-blue_light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-left: 124px;
+    padding-right: 58px;
+    padding-bottom: 64px;
+  }
 }
 
 .plans__title {
@@ -15,7 +27,17 @@
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: $main_color;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 7px;
+  }
 }
 
 .plans__list {
@@ -29,5 +51,9 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
   }
 }

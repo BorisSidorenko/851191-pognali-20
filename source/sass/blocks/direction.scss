@@ -1,39 +1,100 @@
 .direction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
   text-decoration: none;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    margin-bottom: 11px;
+
+    &:last-child {
+      margin-bottom: 44px;
+    }
+  }
 }
 
 .direction__image {
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+
+    &--thai {
+      background: url("../../img/thailand-desktop@1x.jpg") center center no-repeat;
+    }
+  }
 }
 
 .direction__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
   width: 270px;
-  height: 89px;
+  padding-top: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  background-color: $basic_white;
+  background-color: $basic-white;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    row-gap: 5px;
+    width: 616px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+  }
 }
 
 .direction__country {
+  width: 70%;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: $basic_black;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .direction__popularity {
   line-height: 20px;
-  color: $additional_text-color--30;
+  color: $additional-text_color_30;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .direction__slogan {
   line-height: 18px;
-  color: rgba($special_grey, 0.3);
-}
+  color: rgba($special-grey, 0.3);
 
-.directions__link {
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+    align-self: center;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

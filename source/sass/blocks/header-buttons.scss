@@ -1,0 +1,34 @@
+.header-buttons {
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--hide {
+      display: flex;
+    }
+  }
+}
+
+.header-buttons__button {
+  @media (min-width: $tablet-width) {
+    &--phone,
+    &--mail {
+      display: none;
+    }
+
+    &--auth {
+      grid-row: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header-buttons__item {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}

@@ -1,12 +1,15 @@
 .button {
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 270px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
-  color: $additional_text-color;
+  color: $additional-text_color;
+  border: none;
 
   &--text-align_center {
     text-align: center;
@@ -21,7 +24,7 @@
   }
 
   &--text_dark-blue {
-    color: $main_color;
+    color: $main-color;
   }
 
   &--rounded {
@@ -61,12 +64,8 @@
     border-radius: 25px 0 0 25px;
   }
 
-  &--border_none {
-    border: none;
-  }
-
   &--border {
-    border: 3px solid $additional_bg-color;
+    border: 3px solid $additional-bg_color;
   }
 
   &--padding_none {
@@ -78,15 +77,15 @@
   }
 
   &--bg-color_white {
-    background-color: $basic_white;
+    background-color: $basic-white;
   }
 
   &--bg-color_yellow {
-    background-color: $basic_yellow;
+    background-color: $basic-yellow;
   }
 
   &--bg-color_orange {
-    background-color: $special_orange;
+    background-color: $special-orange;
   }
 
   &--circle {
@@ -122,6 +121,12 @@
     border-radius: 50%;
   }
 
+  &--circle_toggle_s {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+  }
+
   &--rectangle {
     width: 270px;
     padding-left: 23px;
@@ -130,7 +135,77 @@
     padding-right: 23px;
     font-size: 18px;
     line-height: 18px;
-    color: $main_color;
+    color: $main-color;
     border-radius: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--rectangle {
+      width: 616px;
+      padding-top: 29px;
+      padding-bottom: 27px;
+      padding-left: 33px;
+      font-size: 24px;
+      line-height: 24px;
+      border-radius: 20px;
+    }
+
+    &--rounded {
+      padding-top: 22px;
+      padding-bottom: 20px;
+      width: 618px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 18px;
+      letter-spacing: 0.09em;
+    }
+
+    &--rounded_m {
+      width: 617px;
+      padding-top: 17px;
+      padding-bottom: 18px;
+      font-size: 20px;
+      line-height: 20px;
+      border-radius: 25px;
+    }
+
+    &--rounded_s {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 188px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: bold;
+      letter-spacing: 0;
+      border-radius: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--rectangle {
+      width: 276px;
+    }
+
+    &--circle {
+      position: relative;
+      width: 50px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-radius: 50%;
+    }
+
+    &--circle_phone::before {
+      top: 17px;
+      left: 17px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--circle_mail::before {
+      top: 18px;
+      left: 17px;
+      width: 16px;
+      height: 14px;
+    }
   }
 }

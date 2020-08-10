@@ -1,14 +1,9 @@
-.country {
-  padding-bottom: 22px;
-}
-
 .country__selected,
 .country__select,
 .country__add {
   padding-top: 13px;
   padding-left: 10px;
   padding-bottom: 10px;
-  width: 168px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -16,15 +11,18 @@
   line-height: 18px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: $main_color;
-  border-radius: 4px;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-left: 26px;
+    padding-bottom: 23px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
-.country__select,
 .country__add {
-  width: 100%;
-}
-
-.country__add {
-  background-color: $main_bg-color;
+  background-color: $main-bg_color;
 }

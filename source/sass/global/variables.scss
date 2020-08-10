@@ -1,38 +1,48 @@
 $main-font: "Blogger Sans", "Arial", sans-serif;
 
 //main project colors
-$basic_blue : #161c35;
-$basic_blue_light : #edeff6;
-$basic_yellow : #ffd74b;
-$special_yellow_dark : #ffbd30;
-$special_blue_light : #dfe3f0;
-$special_grey : #444444;
-$special_blue_dark : #1d2e5b;
-$special_red : #f47e7e;
-$special_orange : #ff8d30;
-$basic_white : #ffffff;
-$basic_black : #000000;
+$basic-blue : #161c35;
+$basic-blue_light : #edeff6;
+$basic-yellow : #ffd74b;
+$special-yellow_dark : #ffbd30;
+$special-blue_light : #dfe3f0;
+$special-grey : #444444;
+$special-blue_dark : #1d2e5b;
+$special-red : #f47e7e;
+$special-orange : #ff8d30;
+$special-orange_light : #ffa530;
+$basic-white : #ffffff;
+$basic-black : #000000;
 
 //additional project colors
-$light_blue : #192144;
-$header_blue : #182044;
-$nav-link_icon-blue: #121936;
-$dark_blue: #141b3b;
-$light_grey : #e6e8f1;
-$tariffs_blue : #132576;
-$filters-dilimeter_yellow: #f3c72b;
-$new-plan_light-blue: #d4d9eb;
-$input-border_grey : #cbced9;
-$calendar_orange: #ff5c23;
-$calendar-border_grey: #d6d9e6;
+$light-blue : #192144;
+$header-blue : #182044;
+$icon-blue : #121936;
+$dark-blue : #141b3b;
+$light-grey : #e6e8f1;
+$dark-grey : #e2e5f2;
+$tariffs-blue : #132576;
+$dilimeter-grey : #e1e3e9;
+$dilimeter-yellow : #f3c72b;
+$plan-light_blue : #d4d9eb;
+$input-grey : #cbced9;
+$calendar-orange : #ff5c23;
+$calendar-grey : #d6d9e6;
+$offline-orange : #f97676;
+$online-green: #bbf085;
+$like-active : #f9eaea;
+$heart-red : #f02323;
+$badge_blue : #101d41;
 
 //main colors
-$main_bg-color: $basic_blue_light;
-$additional_bg-color: $light_blue;
-$main_color: $special_blue_dark;
-$additional_text-color: $basic_blue;
-$additional_text-color--30: rgba($additional_text-color, 0.3);
-$header_bg-color: $header_blue;
+$main-bg_color : $basic-blue_light;
+$additional-bg_color  : $light-blue;
+$main-color : $special-blue_dark;
+$additional-text_color : $basic-blue;
+$additional-text_color_30 : rgba($additional-text_color, 0.3);
+$header-bg_color : $header-blue;
 
 //screen resolutions
-$mobile_width: 767px;
+$mobile-width : 767px;
+$tablet-width : 768px;
+$desktop-width : 1440px;

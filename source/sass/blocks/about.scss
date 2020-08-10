@@ -1,30 +1,124 @@
 .about {
   padding-top: 33px;
   padding-right: 52px;
-  padding-left: 20px;
+  padding-left: 49px;
   padding-bottom: 82px;
   background: url("../../img/about-mobile@1x.png") center no-repeat;
-  background-color: $additional_bg-color;
+  background-color: $additional-bg_color;
   border-radius: 0 0 25px 25px;
-  box-shadow: 0 20px 0 $basic_blue_light;
+  box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 41px;
+    padding-right: 384px;
+    padding-left: 74px;
+    padding-bottom: 89px;
+    background-color: $additional-bg_color;
+    background-image: none;
+
+    &::before {
+      position: absolute;
+      width: 688px;
+      height: 212px;
+      top: 0;
+      left: 40px;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      width: 376px;
+      height: 548px;
+      top: 41px;
+      right: 8px;
+      background-image: url("../../img/about-tablet@1x.png");
+      content: "";
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 132px;
+      padding-left: 130px;
+      padding-bottom: 163px;
+
+      &::before {
+        width: 212px;
+        height: 212px;
+        top: 70px;
+        left: 60px;
+      }
+
+      &::after {
+        width: 630px;
+        height: 665px;
+        top: 85px;
+        right: 60px;
+        background-image: url("../../img/about-desktop@1x.png");
+      }
+    }
+  }
 }
 
 .about__header {
-  padding-left: 29px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .about__text {
   margin: 0;
-  padding-left: 29px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: $basic_white;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 31px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 38px;
+    max-width: 619px;
+    line-height: 34px;
+  }
 }
 
 .about__text--emphasis {
   padding-top: 20px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 52px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+    max-width: 425px;
+    line-height: 24px;
+  }
+}
+
+.about__link {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 276px;
+  }
 }

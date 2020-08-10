@@ -1,15 +1,24 @@
-.filters {
-  padding-top: 21px;
-  background-color: $main_bg-color;
-}
-
 .filters__form {
   padding-top: 26px;
   padding-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: $basic_yellow;
+  background-color: $basic-yellow;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-left: 34px;
+    padding-right: 36px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 48px;
+  }
 }
 
 .filters__title {
@@ -21,7 +30,59 @@
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: $main_color;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 38px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+    width: 194px;
+  }
+}
+
+.filters__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 34px;
+    padding-bottom: 37px;
+    margin-bottom: 36px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 617px;
+      height: 0;
+      border-top: 1px solid $dilimeter-yellow;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 617px;
+      height: 0;
+      border-bottom: 1px solid $dilimeter-yellow;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 38px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .filters__group {
@@ -38,8 +99,30 @@
     top: 0;
     left: 5px;
     width: 220px;
-    border: 1px solid $filters-dilimeter_yellow;
+    border-top: 1px solid $dilimeter-yellow;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    align-items: center;
+    column-gap: 18px;
+    padding: 0;
+    padding-bottom: 26px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-bottom: 19px;
   }
 }
 
@@ -52,7 +135,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .filters__list {
@@ -64,6 +158,33 @@
   &--hobbies {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.filters__item {
+  padding-bottom: 12px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .filters__label {
@@ -73,6 +194,16 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  color: $basic_black;
+  color: $basic-black;
   text-transform: capitalize;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.filters__button {
+  @media (min-width: $desktop-width) {
+    width: 194px;
+  }
 }

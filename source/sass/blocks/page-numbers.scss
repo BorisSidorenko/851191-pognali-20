@@ -1,0 +1,41 @@
+.page-numbers {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    padding-left: 20px;
+  }
+}
+
+.page-numbers__item {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-right: 39px;
+
+    &--current {
+      margin-right: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 50px;
+      background-color: $basic-yellow;
+      border-radius: 50%;
+    }
+  }
+}
+
+.page-numbers__link {
+  margin: auto;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $special-blue_dark;
+}

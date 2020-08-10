@@ -1,13 +1,34 @@
 .feedback {
-  background-color: $additional_bg-color;
+  padding-top: 72px;
+  padding-bottom: 29px;
+  background-color: $additional-bg_color;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 0 $basic_yellow;
+  box-shadow: 0 20px 0 $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    padding-bottom: 102px;
+    padding-left: 132px;
+    padding-right: 134px;
+  }
 }
 
 .feedback__header {
   margin: 0;
-  padding-top: 72px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .feedback__text {
@@ -19,9 +40,19 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: $basic_white;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .feedback__link {
-  color: $basic_yellow;
+  color: $basic-yellow;
 }

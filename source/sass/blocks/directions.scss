@@ -2,13 +2,67 @@
   padding-top: 71px;
   padding-bottom: 34px;
   border-radius: 0 0 25px 25px;
-  background-color: $main_bg-color;
-  box-shadow: 0 25px 0 $additional_bg-color;
+  background-color: $main-bg_color;
+  box-shadow: 0 25px 0 $additional-bg_color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 73px;
+    background: url("../../img/flags-back@1x.png") top 80px right 40px no-repeat;
+    background-color: $main-bg_color;
+
+    &::before {
+      position: absolute;
+      top: 403px;
+      left: 40px;
+      width: 141px;
+      height: 141px;
+      background-color: $dark-grey;
+      border-radius: 20px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    column-gap: 172px;
+    padding-top: 161px;
+    padding-left: 130px;
+    padding-bottom: 138px;
+    background-position: top 88px right 60px;
+
+    &::before {
+      top: 90px;
+      left: 60px;
+    }
+  }
+}
+
+.directions__list {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
 }
 
 .directions__header {
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
 }
 
 .directions__text {
@@ -21,5 +75,29 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: $special_grey;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 275px;
+    padding-bottom: 104px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    padding-bottom: 98px;
+    padding-right: 140px;
+  }
+}
+
+.directions__link {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+  }
 }

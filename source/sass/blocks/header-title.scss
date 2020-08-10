@@ -1,0 +1,12 @@
+.header-title {
+  padding-top: 62px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 86px;
+  }
+}

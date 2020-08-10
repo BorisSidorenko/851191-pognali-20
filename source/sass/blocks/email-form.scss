@@ -1,22 +1,68 @@
 .email-form {
   display: flex;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .email-form__button {
+  position: relative;
   padding-top: 21px;
   padding-bottom: 21px;
   padding-left: 12px;
   width: 50px;
-  background-color: $basic_yellow;
-  box-shadow: -10px 0 0  $basic_yellow;
+  background-color: $basic-yellow;
+  box-shadow: -10px 0 0 $basic-yellow;
 
-  svg {
-    width: 14px;
-    height: 16px;
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: none;
   }
 
-  polygon {
-    fill: $special_blue_dark;
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+    width: 330px;
+    text-align: left;
+  }
+}
+
+.email-form__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.email-form__icon {
+  width: 14px;
+  height: 16px;
+  top: 22px;
+  fill: $special-blue_dark;
+
+  @media (min-width: $tablet-width) {
+    top: 29px;
+    left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 274px;
+  }
+}
+
+.email-form__input {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 0 0 20px;
   }
 }

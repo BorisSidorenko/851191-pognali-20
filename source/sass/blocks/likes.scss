@@ -1,0 +1,63 @@
+.likes {
+  margin-left: 50px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.likes__icon-wrapper {
+  display: flex;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: $dark-grey;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.likes__icon {
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  fill: $dark-grey;
+  stroke: $light-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 17px;
+  }
+}
+
+.likes__count {
+  @media (max-width: $mobile-width) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.likes__link {
+  display: flex;
+  align-items: center;
+  width: min-content;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $basic-blue;
+
+  &--active {
+    .likes__icon {
+      stroke: none;
+      fill: $heart-red;
+    }
+
+    .likes__icon-wrapper {
+      background-color: $like-active;
+    }
+  }
+}

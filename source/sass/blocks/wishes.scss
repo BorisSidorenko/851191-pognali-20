@@ -6,7 +6,15 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  color: $special_grey;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .wishes__list {
@@ -19,10 +27,14 @@
   padding-bottom: 15px;
   list-style-type: none;
 
-  @media (min-width: $mobile_width) {
-    & {
-      column-gap: 25px;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -39,26 +51,24 @@
   align-items: center;
   white-space: nowrap;
   text-transform: uppercase;
-  color: $main_color;
+  color: $main-color;
 
   &::before {
     width: 26px;
     height: 18px;
-    background-color: $main_bg-color;
+    background-color: $main-bg_color;
     content: "";
   }
 
-  @media (min-width: $mobile_width) {
-    & {
-      grid-row: 1 / -1;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::before {
       width: 35px;
       height: 24px;
-      background-color: $main_bg-color;
+      background-color: $main-bg_color;
       content: "";
     }
   }
