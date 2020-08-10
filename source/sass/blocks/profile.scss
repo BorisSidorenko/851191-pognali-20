@@ -13,12 +13,20 @@
 }
 
 .profile__current-level {
-  padding-left: 17px;
+  margin-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .profile__current-photo {
-  padding-right: 17px;
+  margin-right: 17px;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .profile__tags {
