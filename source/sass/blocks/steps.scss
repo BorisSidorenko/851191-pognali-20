@@ -4,7 +4,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 123px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -117,6 +116,9 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
