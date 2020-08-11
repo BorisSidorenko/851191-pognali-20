@@ -4,6 +4,10 @@
   align-items: center;
   margin: 0 auto;
   width: 105px;
+
+  @media (min-width: $tablet-width) {
+    width: 139px;
+  }
 }
 
 .socials__item {

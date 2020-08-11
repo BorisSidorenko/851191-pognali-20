@@ -1,9 +1,53 @@
 .nav {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 91px;
+  }
 }
 
 .nav__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 97px;
+  }
+}
+
+.nav__logo {
+  @media (min-width: $tablet-width) {
+    order: -3;
+  }
+}
+
+.nav__toggle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
+.nav__button {
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 188px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    order: -1;
+  }
 }
