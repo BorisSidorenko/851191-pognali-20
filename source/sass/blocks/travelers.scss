@@ -197,18 +197,6 @@
   top: 20px;
   left: 22px;
   background-color: rgba($basic-black, 0.6);
-
-  .level__text {
-    color: $basic-white;
-  }
-
-  .level__title {
-    color: $basic-white;
-
-    &::before {
-      background-color: rgba($basic-white, 0.3);
-    }
-  }
 }
 
 .travelers__transport {
