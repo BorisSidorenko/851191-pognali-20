@@ -1,8 +1,12 @@
 .site-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 76px;
   padding-bottom: 51px;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     padding-top: 94px;
     padding-bottom: 144px;
   }

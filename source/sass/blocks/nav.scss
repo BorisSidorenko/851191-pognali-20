@@ -66,6 +66,8 @@
   }
 
   &--nojs {
+    background-color: $basic-white;
+
     .nav__toggle {
       display: none;
     }
@@ -81,6 +83,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    background-color: $additional-bg_color;
+
+    &--opened,
+    &--nojs {
+      background-color: $basic-white;
+    }
+
     .nav__button {
       display: block;
     }
@@ -88,7 +97,8 @@
 }
 
 .nav__list {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style-type: none;
 

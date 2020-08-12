@@ -1,12 +1,10 @@
 .contacts {
   padding-top: 66px;
   padding-bottom: 41px;
-  padding-left: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 129px;
-    padding-left: 0;
     width: 100%;
   }
 }
