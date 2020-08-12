@@ -5,94 +5,114 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 27px;
-  padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 91px;
+    background-color: $additional-bg_color;
   }
+}
 
-  &--closed {
-    .nav__toggle {
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 25px;
-        height: 3px;
-        background-color: $basic-white;
-        border-radius: 1.5px;
-        content: "";
-      }
-
-      &::after {
-        top: 5px;
-      }
+.nav--closed {
+  .nav__toggle {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 3px;
+      background-color: $basic-white;
+      border-radius: 1.5px;
+      content: "";
     }
 
-    .nav__list,
-    .nav__button {
-      display: none;
+    &::after {
+      top: 5px;
     }
   }
 
-  &--opened {
-    background-color: $basic-white;
+  .nav__list,
+  .nav__button {
+    display: none;
+  }
+}
 
-    .nav__toggle {
-      &::before,
-      &::after {
-        position: absolute;
-        top: 5px;
-        right: 0;
-        width: 24px;
-        height: 2px;
-        background-color: $nav-button_close;
-        border-radius: 1.5px;
-        content: "";
-      }
+.nav--opened {
+  padding-bottom: 41px;
+  background-color: $basic-white;
 
-      &::before {
-        transform: rotate(45deg);
-      }
+  .nav__toggle {
+    &::before,
+    &::after {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $nav-button_close;
+      border-radius: 1.5px;
+      content: "";
+    }
 
-      &::after {
-        transform: rotate(-45deg);
-      }
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 
-  &--nojs {
-    background-color: $basic-white;
-
-    .nav__toggle {
-      display: none;
-    }
-
-    .nav__button {
-      display: block;
-    }
-
-    .nav__list {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .nav__button {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
-    background-color: $additional-bg_color;
-
-    &--opened,
-    &--nojs {
-      background-color: $basic-white;
-    }
+    padding-bottom: 91px;
 
     .nav__button {
-      display: block;
+      display: none;
     }
+  }
+}
+
+.nav--nojs {
+  padding-bottom: 41px;
+  background-color: $basic-white;
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__button {
+    display: block;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 91px;
+
+    .nav__button {
+      display: none;
+    }
+  }
+}
+
+.nav__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
   }
 }
 
