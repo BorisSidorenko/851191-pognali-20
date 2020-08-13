@@ -18,12 +18,18 @@
     }
 
     &--auth {
-      grid-row: 1;
+      position: absolute;
+      top: 40px;
+      right: 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+
+    &--auth {
+      position: static;
+    }
   }
 }
 
