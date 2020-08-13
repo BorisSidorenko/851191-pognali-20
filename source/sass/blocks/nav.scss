@@ -4,7 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 27px;
+  padding-top: 19px;
+
+  &--index {
+    padding-top: 27px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;
@@ -175,7 +179,7 @@
 
 .nav__toggle {
   position: absolute;
-  top: 32px;
+  top: 23px;
   right: 25px;
   width: 25px;
   height: 15px;
@@ -185,6 +189,10 @@
   border: none;
   cursor: pointer;
   outline: none;
+
+  &--index {
+    top: 32px;
+  }
 
   @media (min-width: $tablet-width) {
     top: 61px;

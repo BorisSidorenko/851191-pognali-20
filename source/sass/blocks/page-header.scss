@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $basic-blue;
+  background-color: $header-blue;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
 
@@ -9,6 +9,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content min-content min-content;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-blue;
+  }
+}
+
+.page-header--index {
+  background-color: $basic-blue;
 }
 
 .page-header__slogan {
@@ -74,6 +82,10 @@
 }
 
 .page-header__wrapper {
+  grid-column: 1/-1;
+  grid-row: 2/6;
+  padding-bottom: 11px;
+
   &--index {
     grid-column: 1/-1;
     grid-row: 2/6;
@@ -110,11 +122,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr min-content;
+    padding-top: 49px;
 
     &--index {
       row-gap: 110px;
       padding-bottom: 123px;
-      padding-top: 49px;
       background: url("../../img/traveller-illustration-desktop@1x.png") top 110px right 405px no-repeat,
         url("../../img/globe-back-desktop@1x.jpg") top center no-repeat;
       background-color: $header-bg_color;
