@@ -7,8 +7,9 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
-    min-height: 448px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 400px;
   }
 
 
@@ -35,7 +36,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-bottom: 45px;
     font-size: 28px;
     line-height: 33px;

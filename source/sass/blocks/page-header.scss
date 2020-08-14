@@ -6,9 +6,9 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     min-width: 768px;
   }
 
@@ -27,6 +27,27 @@
   border-radius: 0;
   box-shadow: inset 0 -279px 0 $additional-bg_color,
     inset 0 -564px 0 $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 0;
+    padding-bottom: 96px;
+    background-image: url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-tablet@1x.jpg");
+    background-position: calc(50% + 111px) 404px, 50% 382px;
+    background-repeat: no-repeat;
+    background-color: $header-bg_color;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 110px;
+    padding-bottom: 123px;
+    background: url("../../img/traveller-illustration-desktop@1x.png") top 110px right 405px no-repeat,
+      url("../../img/globe-back-desktop@1x.jpg") top center no-repeat;
+    background-color: $header-bg_color;
+    border-radius: 0;
+  }
 }
 
 .page-header__slogan {
@@ -44,8 +65,6 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2;
-    grid-column: 1 / -1;
     padding-top: 72px;
     min-height: 300px;
     padding-bottom: 86px;
@@ -54,7 +73,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1;
     padding: 0;
     padding-left: 67px;
     min-height: 0;
@@ -69,14 +87,13 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    grid-row: 1;
-    grid-column: 2;
-    width: 100%;
+    width: 228px;
+    order: -1;
+    margin-left: 143px;
+    align-self: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1;
-    grid-column: 3;
     width: 100%;
   }
 }
@@ -84,61 +101,5 @@
 .page-header__reviews {
   @media (min-width: $tablet-width) {
     display: block;
-    grid-row: 3;
-    grid-column: 1 / -1;
-  }
-}
-
-.page-header__wrapper {
-  grid-column: 1/-1;
-  grid-row: 2/6;
-  padding-bottom: 11px;
-
-  &--index {
-    grid-column: 1/-1;
-    grid-row: 2/6;
-    padding-bottom: 39px;
-    background:  url("../../img/traveller-illustration-mobile@1x.png") top 223px right 48px no-repeat,
-      url("../../img/globe-back-mobile@1x.jpg") top center no-repeat;
-    background-repeat: no-repeat;
-    background-color: $basic-blue;
-    border-radius: 0;
-    box-shadow: inset 0 -279px 0 $additional-bg_color,
-      inset 0 -564px 0 $basic-blue;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content;
-    row-gap: 134px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 66px;
-
-    &--index {
-      row-gap: 0;
-      padding-bottom: 96px;
-      background: url("../../img/traveller-illustration-tablet@1x.png") top 404px right 111px no-repeat,
-        url("../../img/globe-back-tablet@1x.jpg") top 382px center no-repeat;
-      background-color: $header-bg_color;
-      border-radius: 0;
-      box-shadow: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr min-content;
-    padding-top: 49px;
-
-    &--index {
-      row-gap: 110px;
-      padding-bottom: 123px;
-      background: url("../../img/traveller-illustration-desktop@1x.png") top 110px right 405px no-repeat,
-        url("../../img/globe-back-desktop@1x.jpg") top center no-repeat;
-      background-color: $header-bg_color;
-      border-radius: 0;
-    }
   }
 }
