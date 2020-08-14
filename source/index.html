@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container container--padding-none page-header--index">
+  <header class="page-header page-header--index">
     <nav class="nav page-header__nav nav--index nav--closed nav--nojs container">
       <a class="nav__logo">
         <picture>
@@ -102,79 +102,77 @@
           </li>
         </ul>
     </nav>
-    <div class="container page-header__wrapper page-header__wrapper--index">
-      <p class="page-header__slogan">
-        В путешествие<br>с крутыми<br>попутчиками!
+    <p class="page-header__slogan container">
+      В путешествие<br>с крутыми<br>попутчиками!
+    </p>
+    <ul class="header-buttons page-header__header-buttons container">
+      <li class="header-buttons__item">
+        <a href="#" class="button header-buttons__button header-buttons__button--phone button--circle button--circle_phone button--bg-color_orange">
+          <span class="visually-hidden">Телефон</span>
+        </a>
+      </li>
+      <li class="header-buttons__item">
+        <a href="#" class="button header-buttons__button header-buttons__button--mail button--circle button--bg-color_yellow button--circle_mail">
+          <span class="visually-hidden">Почта</span>
+        </a>
+      </li>
+      <li class="header-buttons__item">
+        <a href="#" class="button header-buttons__button header-buttons__button--auth button--rounded button--bg-color_yellow button--rounded_s button--text-align_center button--text_upper">Авторизация</a>
+      </li>
+    </ul>
+    <blockquote class="reviews page-header__reviews container">
+      <p class="reviews__text">
+        «Лучшее приложение,<br>
+        что я видел в жизни!»
       </p>
-      <ul class="header-buttons page-header__header-buttons">
-        <li class="header-buttons__item">
-          <a href="#" class="button header-buttons__button header-buttons__button--phone button--circle button--circle_phone button--bg-color_orange">
-            <span class="visually-hidden">Телефон</span>
-          </a>
-        </li>
-        <li class="header-buttons__item">
-          <a href="#" class="button header-buttons__button header-buttons__button--mail button--circle button--bg-color_yellow button--circle_mail">
-            <span class="visually-hidden">Почта</span>
-          </a>
-        </li>
-        <li class="header-buttons__item">
-          <a href="#" class="button header-buttons__button header-buttons__button--auth button--rounded button--bg-color_yellow button--rounded_s button--text-align_center button--text_upper">Авторизация</a>
-        </li>
-      </ul>
-      <blockquote class="reviews page-header__reviews">
-        <p class="reviews__text">
-          «Лучшее приложение,<br>
-          что я видел в жизни!»
-        </p>
-        <p class="reviews__text">
-          <cite class="reviews__text reviews__text--cite">
-            Мурат Эльтазин<br>
-            главный редактор<br>
-            газеты «гаджетлайф»
-          </cite>
-        </p>
-      </blockquote>
-      <section class="steps">
-        <dl class="steps__list">
-          <div class="steps__item steps__item--first">
-            <dt class="steps__number">
-              1
-            </dt>
-            <dd class="steps__description">
-              Выберите<br>
-              направление
-            </dd>
-          </div>
-          <div class="steps__item steps__item--second">
-            <dt class="steps__number">
-              2
-            </dt>
-            <dd class="steps__description">
-              Изучите идеи<br>
-              путешественников
-            </dd>
-          </div>
-          <div class="steps__item steps__item--third">
-            <dt class="steps__number">
-              3
-            </dt>
-            <dd class="steps__description">
-              Находите тех,<br>
-              кто похож на вас
-            </dd>
-          </div>
-          <div class="steps__item steps__item--fourth">
-            <dt class="steps__number">
-              4
-            </dt>
-            <dd class="steps__description">
-              Путешествуйте<br>
-              вместе!
-            </dd>
-          </div>
-        </dl>
-      </section>
-    </div>
+      <p class="reviews__text">
+        <cite class="reviews__text reviews__text--cite">
+          Мурат Эльтазин<br>
+          главный редактор<br>
+          газеты «гаджетлайф»
+        </cite>
+      </p>
+    </blockquote>
+    <section class="steps container">
+      <dl class="steps__list">
+        <div class="steps__item steps__item--first">
+          <dt class="steps__number">
+            1
+          </dt>
+          <dd class="steps__description">
+            Выберите<br>
+            направление
+          </dd>
+        </div>
+        <div class="steps__item steps__item--second">
+          <dt class="steps__number">
+            2
+          </dt>
+          <dd class="steps__description">
+            Изучите идеи<br>
+            путешественников
+          </dd>
+        </div>
+        <div class="steps__item steps__item--third">
+          <dt class="steps__number">
+            3
+          </dt>
+          <dd class="steps__description">
+            Находите тех,<br>
+            кто похож на вас
+          </dd>
+        </div>
+        <div class="steps__item steps__item--fourth">
+          <dt class="steps__number">
+            4
+          </dt>
+          <dd class="steps__description">
+            Путешествуйте<br>
+            вместе!
+          </dd>
+        </div>
+      </dl>
+    </section>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Поиск крутых попутчиков</h1>
@@ -223,7 +221,7 @@
           <div class="direction__description">
             <span class="direction__country">Франция</span>
             <span class="direction__popularity">12518</span>
-            <span class="direction__slogan">Трэ бьен, <br class="break break--hide-tablet">манифик!</span>
+            <span class="direct__slogan">Трэ бьен, <br class="break break--hide-tablet">манифик!</span>
           </div>
         </a>
         <a class="direction directions__item" href="#">

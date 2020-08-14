@@ -1,4 +1,5 @@
 .page-header {
+  min-width: 320px;
   background-color: $header-blue;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
@@ -8,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content min-content min-content;
+    min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,11 +18,18 @@
 }
 
 .page-header--index {
+  padding-bottom: 39px;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
+  background-position: calc(50% + 16px) 223px, top center;
+  background-repeat: no-repeat;
   background-color: $basic-blue;
+  border-radius: 0;
+  box-shadow: inset 0 -279px 0 $additional-bg_color,
+    inset 0 -564px 0 $basic-blue;
 }
 
 .page-header__slogan {
-  margin: 0;
   padding: 0;
   padding-top: 52px;
   padding-left: 16px;
@@ -56,7 +65,6 @@
 .page-header__header-buttons {
   display: flex;
   width: 270px;
-  margin: 0;
   padding: 0;
   list-style-type: none;
 
