@@ -82,6 +82,14 @@
   margin-bottom: 25px;
   background-color: $special-blue_light;
 
+  &:hover {
+    background-color: $btn-photo_hover_grey;
+  }
+
+  &:active {
+    color: rgba($basic_blue, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 3;
     margin: 0;

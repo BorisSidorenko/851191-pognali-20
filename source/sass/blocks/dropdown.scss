@@ -1,4 +1,6 @@
 .dropdown {
+  outline: none;
+
   &--rectangle {
     width: 220px;
   }
@@ -13,6 +15,15 @@
 
   &--border_grey {
     border: 1px solid $input-grey;
+
+    &:hover {
+      border-color: $input-border_hover_grey;
+    }
+
+    &:focus {
+      color: $basic-white;
+      background-color: $special-blue_dark;
+    }
   }
 
   @media (min-width: $tablet-width) {

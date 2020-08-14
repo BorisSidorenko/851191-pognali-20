@@ -36,6 +36,14 @@
   }
 }
 
-.our-contacts .contacts__link {
+.our-contacts__link {
   color: $basic-yellow;
+
+  &:hover {
+    color: $special-yellow_dark;
+  }
+
+  &:active {
+    color: rgba($special-yellow_dark, 0.3);
+  }
 }

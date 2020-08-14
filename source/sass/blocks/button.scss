@@ -82,6 +82,14 @@
 
   &--bg-color_yellow {
     background-color: $basic-yellow;
+
+    &:hover {
+      background-color: $btn-rectangle_hover_orange;
+    }
+
+    &:active {
+      color: rgba($special-blue_dark, 0.3);
+    }
   }
 
   &--bg-color_orange {

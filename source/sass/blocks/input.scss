@@ -7,9 +7,16 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  outline: none;
 
   &::placeholder {
     color: rgba($special-grey, 0.3);
+  }
+
+  &:hover {
+    &::placeholder {
+      color: rgba($special-grey, 0.5);
+    }
   }
 
   &--border_black {

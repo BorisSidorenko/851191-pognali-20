@@ -61,6 +61,14 @@
   color: $special-blue_dark;
   text-align: center;
 
+  &:hover {
+    border-color: $input-border_hover_grey;
+  }
+
+  &:focus {
+    border-color: $basic_blue;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 24px;
     padding-top: 0;
