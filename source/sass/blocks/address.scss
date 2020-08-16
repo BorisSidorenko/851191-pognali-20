@@ -81,6 +81,15 @@
 }
 
 .address__link {
+  &:hover {
+    background-color: $light-blue;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     width: 324px;
   }
