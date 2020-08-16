@@ -145,9 +145,28 @@
 }
 
 .travelers__link {
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
+}
+
+.travelers__status {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $offline-orange;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--online {
+    &::before {
+      background-color: $online-green;
+    }
+  }
 }
 
 .travelers__info {
@@ -166,6 +185,7 @@
 }
 
 .travelers__image {
+  display: block;
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
