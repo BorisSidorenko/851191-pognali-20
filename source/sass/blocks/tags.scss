@@ -56,17 +56,6 @@
   list-style-type: none;
 }
 
-.tags_item {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 18px;
-  color: rgba($special-grey, 0.6);
-
-  &::after {
-    content: "\00a0";
-  }
-}
-
 .tags__input {
   padding-top: 18px;
   padding-bottom: 27px;
