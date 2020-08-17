@@ -250,8 +250,13 @@
               <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="days-amount" id="days-amount" value="2">
             </div>
             <div class="checkbox step__checkbox">
-              <input class="checkbox__control" type="checkbox" name="children-allowed" id="children-allowed" checked>
-              <label class="checkbox__label" for="children-allowed">Можно с детьми</label>
+              <input class="checkbox__control visually-hidden" type="checkbox" name="children-allowed" id="children-allowed" checked>
+              <label class="checkbox__label" for="children-allowed">
+                <svg class="checkbox__tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                  <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 " />
+                </svg>
+                Можно с детьми
+              </label>
             </div>
             <div class="dates step__dates">
               <div class="month dates__month">
