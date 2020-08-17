@@ -9,10 +9,11 @@
   box-shadow: 0 20px 0 $main-bg_color;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 308px 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 384px;
     grid-template-rows: 47px 1fr;
     row-gap: 27px;
     padding-top: 0;
