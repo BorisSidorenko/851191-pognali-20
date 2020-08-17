@@ -50,6 +50,11 @@
   }
 }
 
+.number__group {
+  position: relative;
+  margin-left: auto;
+}
+
 .number__control {
   margin-top: 8px;
   height: 43px;
@@ -80,7 +85,106 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 35px;
-    margin-left: auto;
     width: 180px;
   }
 }
+
+.number__control::-webkit-outer-spin-button,
+.number__control::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.number__control[type=number] {
+  -moz-appearance: textfield;
+}
+
+.number__button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.number__remove {
+  &::before {
+    position: absolute;
+    top: 31px;
+    left: 14px;
+    width: 14px;
+    height: 2px;
+    background-color: #ccc;
+    content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 60px;
+      left: 23px;
+      width: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 36px;
+      left: 20px;
+      width: 20px;
+    }
+  }
+}
+
+.number__add {
+  &::before {
+    position: absolute;
+    top: 31px;
+    right: 14px;
+    width: 14px;
+    height: 2px;
+    background-color: #ccc;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top:  25px;
+    right: 20px;
+    width: 2px;
+    height: 14px;
+    background-color: #ccc;
+    content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 60px;
+      right: 23px;
+      width: 20px;
+    }
+
+    &::after {
+      top: 51px;
+      right: 31px;
+      height: 20px;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 36px;
+      right: 56px;
+      width: 20px;
+    }
+
+    &::after {
+      top: 27px;
+      right: 64px;
+      height: 20px;
+    }
+  }
+}
+
