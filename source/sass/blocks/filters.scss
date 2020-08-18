@@ -231,7 +231,7 @@
   outline: none;
 
   &:hover {
-    filter: drop-shadow(0px 3px 6px rgba($basic-black, 0.14));
+    filter: drop-shadow(0 3px 6px rgba($basic-black, 0.14));
   }
 
   &:active {
@@ -270,7 +270,7 @@
 }
 
 .filters__controls {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
