@@ -15,17 +15,6 @@
   line-height: 15px;
   color: $main-color;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 58px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-}
-
-.checkbox__control + .checkbox__label {
   &::before {
     position: absolute;
     top: 0;
@@ -37,7 +26,31 @@
     content: "";
   }
 
+  &:hover {
+    &::before {
+      border-color: $input-border_hover_grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $btn-transport_down;
+      border: none;
+    }
+
+    .checkbox__tick {
+      fill: rgba($basic-blue, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding-left: 58px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
     &::before {
       width: 36px;
       height: 36px;
