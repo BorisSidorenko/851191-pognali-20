@@ -242,8 +242,8 @@
               <span class="number__title number__title--unit">чел.</span>
               <label for="travelers-amount" class="input input__label visually-hidden">Колличество попутчиков</label>
               <div class="number__group">
-                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
                 <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="travelers-amount" id="travelers-amount" value="2">
+                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
                 <button type="button" class="number__add number__button" aria-label="Добавить"></button>
               </div>
             </div>
@@ -252,8 +252,8 @@
               <span class="number__title number__title--unit">дн.</span>
               <label for="days-amount" class="input input__label visually-hidden">Колличество дней</label>
               <div class="number__group">
-                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
                 <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="days-amount" id="days-amount" value="2">
+                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
                 <button type="button" class="number__add number__button" aria-label="Добавить"></button>
               </div>
             </div>
@@ -268,13 +268,9 @@
             </div>
             <div class="dates step__dates">
               <div class="month dates__month">
-                <a href="#" class="month__prev month__prev--link">
-                  <span class="visually-hidden">Предыдущий месяц</span>
-                </a>
+                <button class="month__prev month__prev--link" aria-label="Предыдущий месяц"></button>
                 <span class="month__current month__current--text">Март 2019</span>
-                <a href="#" class="month__next month__next--link">
-                  <span class="visually-hidden">Следующий месяц</span>
-                </a>
+                <button class="month__next month__next--link" aria-label="Следующий месяц"></button>
               </div>
               <table class="calendar step__calendar">
                 <tr class="calendar__row calendar__row--header">

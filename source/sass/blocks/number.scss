@@ -68,10 +68,24 @@
 
   &:hover {
     border-color: $input-border_hover_grey;
+
+    ~ .number__button {
+      &::before,
+      &::after {
+        background-color: $input-border_hover_grey;
+      }
+    }
   }
 
   &:focus {
     border-color: $basic_blue;
+
+    ~ .number__button {
+      &::before,
+      &::after {
+        background-color: $basic_blue;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -104,26 +118,42 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $number-control_hover;
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: $number-control_down;
+    }
+  }
 }
 
 .number__remove {
   &::before {
     position: absolute;
     top: 31px;
-    left: 14px;
+    right: 191px;
     width: 14px;
     height: 2px;
-    background-color: #ccc;
+    background-color: $nav-button_close;
     content: "";
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       top: 60px;
-      left: 23px;
+      right: 489px;
       width: 20px;
     }
   }
@@ -131,7 +161,7 @@
   @media (min-width: $desktop-width) {
     &::before {
       top: 36px;
-      left: 20px;
+      right: 175px;
       width: 20px;
     }
   }
@@ -144,7 +174,7 @@
     right: 14px;
     width: 14px;
     height: 2px;
-    background-color: #ccc;
+    background-color: $nav-button_close;
     content: "";
   }
 
@@ -154,7 +184,7 @@
     right: 20px;
     width: 2px;
     height: 14px;
-    background-color: #ccc;
+    background-color: $nav-button_close;
     content: "";
   }
 
