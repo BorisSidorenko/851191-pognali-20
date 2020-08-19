@@ -275,6 +275,7 @@
 }
 
 .step__country {
+  position: relative;
   padding-bottom: 22px;
 
   &:last-child {
@@ -283,10 +284,6 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
-
-    &:first-child {
-      padding-top: 6px;
-    }
 
     &:last-child {
       padding: 0;
