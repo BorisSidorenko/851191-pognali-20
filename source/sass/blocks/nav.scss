@@ -252,12 +252,7 @@
 }
 
 .nav__button {
-  grid-column: 1/4;
-  grid-row: 3;
-
   @media (min-width: $tablet-width) {
-    grid-column: 3;
-    grid-row: 1;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 188px;
@@ -266,6 +261,22 @@
     line-height: 20px;
     letter-spacing: 0;
     order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4;
+    grid-row: 1;
+  }
+}
+
+
+.nav__wrapper--button {
+  grid-column: 1/4;
+  grid-row: 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+    grid-row: 1;
   }
 
   @media (min-width: $desktop-width) {
