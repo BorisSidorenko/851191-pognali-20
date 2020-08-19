@@ -6,10 +6,6 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,10 +84,6 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-    // width: 228px;
-    // order: -1;
-    // margin-left: 143px;
-    // align-self: flex-end;
   }
 
   @media (min-width: $desktop-width) {
