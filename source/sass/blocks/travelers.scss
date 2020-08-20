@@ -153,28 +153,6 @@
   }
 }
 
-.travelers__link {
-  color: $main-color;
-  text-decoration: none;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    grid-column: 2/4;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2/4;
-    grid-row: 2;
-  }
-}
-
 .travelers__status {
   position: relative;
 

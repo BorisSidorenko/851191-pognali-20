@@ -8,6 +8,12 @@
     padding-top: 152px;
     padding-bottom: 66px;
     padding-left: 75px;
+    padding-right: 75px;
+
+    &--extended {
+      display: flex;
+      align-items: center;
+    }
   }
 
   @media (min-width: $desktop-width) {
