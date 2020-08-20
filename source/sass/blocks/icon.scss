@@ -19,6 +19,21 @@
     top: 12px;
   }
 
+  &--handset {
+    top: 17px;
+    left: 17px;
+    width: 16px;
+    fill: $basic-blue;
+  }
+
+  &--mail-s {
+    top: 19px;
+    left: 17px;
+    width: 14px;
+    height: 11px;
+    fill: $basic-blue;
+  }
+
   @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;
@@ -62,6 +77,25 @@
       left: 29px;
       width: 32px;
       height: 42px;
+    }
+  }
+}
+
+.icon__header {
+  &--handset,
+  &--mail-s  {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--phone,
+    &--mail  {
+      display: none;
+    }
+
+    &--handset,
+    &--mail-s {
+      display: block;
     }
   }
 }
