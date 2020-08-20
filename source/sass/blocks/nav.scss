@@ -95,6 +95,14 @@
     display: block;
   }
 
+  .nav__logo--header {
+    display: none;
+  }
+
+  .nav__logo--menu {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 91px;
   }
@@ -130,6 +138,10 @@
 .nav__logo {
   grid-column: 1;
   grid-row: 1;
+
+  &--menu {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1;
