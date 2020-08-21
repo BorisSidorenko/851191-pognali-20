@@ -15,6 +15,7 @@ navToggle.addEventListener('click', function() {
 
 var countriesFilter = document.querySelector('.countries-filter');
 var countriesFilterToggle = document.querySelector('.countries-filter__toggle');
+var closeFilterBtn = document.querySelector('.countries-filter__button');
 
 countriesFilter.classList.remove('countries-filter--nojs');
 
@@ -28,4 +29,8 @@ countriesFilterToggle.addEventListener('click', function() {
   }
 });
 
+closeFilterBtn.addEventListener('click', function() {
+  countriesFilter.classList.remove('countries-filter--opened')
+  countriesFilter.classList.add('countries-filter--closed')
+});
 
