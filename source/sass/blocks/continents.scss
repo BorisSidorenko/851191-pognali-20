@@ -4,6 +4,11 @@
   margin-bottom: 21px;
   padding-left: 25px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 .continents__item {
@@ -22,5 +27,16 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 28px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

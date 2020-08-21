@@ -78,6 +78,15 @@
       width: 32px;
       height: 16px;
     }
+
+    &--contries-filter-toggle {
+      width: 30px;
+      height: 6px;
+    }
+
+    &--contries-filter {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +109,10 @@
       left: 29px;
       width: 32px;
       height: 42px;
+    }
+
+    &--contries-filter {
+      display: inline;
     }
   }
 }
