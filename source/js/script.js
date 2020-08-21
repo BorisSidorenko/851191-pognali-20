@@ -12,3 +12,20 @@ navToggle.addEventListener('click', function() {
     nav.classList.add('nav--closed');
   }
 });
+
+var countriesFilter = document.querySelector('.countries-filter');
+var countriesFilterToggle = document.querySelector('.countries-filter__toggle');
+
+countriesFilter.classList.remove('countries-filter--nojs');
+
+countriesFilterToggle.addEventListener('click', function() {
+  if (countriesFilter.classList.contains('countries-filter--closed')) {
+    countriesFilter.classList.remove('countries-filter--closed');
+    countriesFilter.classList.add('countries-filter--opened');
+  } else {
+    countriesFilter.classList.remove('countries-filter--opened');
+    countriesFilter.classList.add('countries-filter--closed');
+  }
+});
+
+

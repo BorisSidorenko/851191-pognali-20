@@ -3,11 +3,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
   padding-top: 33px;
-  padding-bottom: 28px;
+  padding-bottom: 17px;
   background-color: $dark-grey;
   border-radius: 0 0 25px 25px;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content 100px;
+    row-gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content 100px;
     row-gap: 60px;
@@ -20,7 +28,6 @@
   position: relative;
   grid-column: 1/3;
   margin: 0;
-  margin-bottom: 35px;
   padding-left: 27px;
   font-family: $main-font;
   font-style: normal;
@@ -33,15 +40,14 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.countries-filter__main-title {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 
   @media (min-width: $desktop-width) {
-    display: inline;
+    display: block;
+    grid-row: 1;
+    margin: 0;
+    padding-left: 55px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -57,10 +63,6 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }
 
@@ -84,52 +86,122 @@
   }
 }
 
-.countries-filter__continents {
-  grid-column: 1/3;
-  grid-row: 2;
-
+.countries-filter--closed {
   @media (min-width: $tablet-width) {
-    grid-row: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    padding-top: 63px;
+    padding-bottom: 56px;
+  }
+
+  .countries-filter__title {
+    margin-bottom: 0;
+  }
+
+  .countries-filter__continents {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      grid-column: 1/3;
+    }
+  }
+
+  .countries-filter__alphabet {
+    display: none;
+  }
+
+  .countries-filter__countries {
+    display: none;
+  }
+
+  .countries-filter__button {
+    display: none;
   }
 }
 
-.countries-filter__alphabet {
-  margin-left: 25px;
-  margin-bottom: 14px;
-  grid-column: 1/3;
-  grid-row: 3;
+.countries-filter--nojs {
+  .countries-filter__toggle {
+    display: none;
+  }
+}
 
-  @media (min-width: $tablet-width) {
+.countries-filter--opened {
+  .countries-filter__toggle {
+    display: block;
+  }
+}
+
+.countries-filter--nojs,
+.countries-filter--opened {
+  .countries-filter__title {
+    margin-bottom: 35px;
+  }
+
+  .countries-filter__continents {
+    display: block;
+    grid-column: 1/3;
     grid-row: 2;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 2;
+    }
   }
-}
 
-.countries-filter__countries {
-  grid-column: 1/3;
-  grid-row: 4;
-  margin: 0;
-  padding-left: 25px;
-  padding-top: 0;
-  margin-bottom: 28px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3;
-    grid-row: 2;
+  .countries-filter__toggle {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
-}
 
-.countries-filter__button {
-  grid-column: 1/4;
-  grid-row: 5;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  background-color: $contries-filter-button;
-  color: $light-blue;
-
-  @media (min-width: $tablet-width) {
+  .countries-filter__alphabet {
+    display: table;
+    margin-left: 25px;
+    margin-bottom: 14px;
+    grid-column: 1/3;
     grid-row: 3;
-    font-size: 20px;
-    letter-spacing: 0;
+
+    @media (min-width: $tablet-width) {
+      grid-row: 2;
+    }
+  }
+
+  .countries-filter__countries {
+    display: block;
+    grid-column: 1/3;
+    grid-row: 4;
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 0;
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  }
+
+  .countries-filter__button {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 5;
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    background-color: $contries-filter-button;
+    color: $light-blue;
+
+    @media (min-width: $tablet-width) {
+      grid-row: 3;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
   }
 }
