@@ -4,6 +4,10 @@
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
 
+  &--form {
+    box-shadow: 0 20px 0 $dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
   }

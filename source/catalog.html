@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header container container--padding-none">
+    <header class="page-header page-header--form  container container--padding-none">
       <nav class="nav page-header__nav nav--index nav--closed nav--nojs container">
         <a class="nav__logo">
           <picture>
@@ -114,34 +114,122 @@
         </a>
       </div>
     </header>
-    <main class="travelers-to-choose container">
-      <div class="travelers-to-choose__wrapper">
+    <main class="travelers-to-choose">
+      <section class="countries-filter container">
+        <h3 class="countries-filter__title">
+          Фильтрация по странам:
+          <svg class="icon icon--contries-filter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 15 10" style="enable-background:new 0 0 15 10;" xml:space="preserve">
+          <rect x="4" width="2" height="2" fill="currentColor"/>
+          <rect width="3" height="2" fill="currentColor"/>
+          <rect x="7" width="8" height="2" fill="currentColor"/>
+          <rect x="4" y="8" width="2" height="2" fill="currentColor"/>
+          <rect y="8" width="3" height="2" fill="currentColor"/>
+          <rect x="7" y="8" width="8" height="2" fill="currentColor"/>
+          <rect x="9" y="4" width="2" height="2" fill="currentColor"/>
+          <rect x="12" y="4" width="3" height="2" fill="currentColor"/>
+          <rect y="4" width="8" height="2" fill="currentColor"/>
+          </svg>
+        </h3>
+        <button type="button" class="countries-filter__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="icon icon--contries-filter-toggle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27 5" style="enable-background:new 0 0 27 5;" xml:space="preserve">
+          <circle class="st0" cx="2.5" cy="2.5" r="2.5" fill="currentColor"/>
+          <circle class="st0" cx="13.5" cy="2.5" r="2.5" fill="currentColor"/>
+          <circle class="st0" cx="24.5" cy="2.5" r="2.5" fill="currentColor"/>
+          </svg>
+        </button>
+        <ul class="continents countries-filter__continents">
+          <li class="continents__item continents__item--active">Европа</li>
+          <li class="continents__item">Азия</li>
+          <li class="continents__item">Америка</li>
+          <li class="continents__item">Острова</li>
+        </ul>
+        <table class="alphabet countries-filter__alphabet">
+          <tr class="alphabet__row">
+            <td class="alphabet__cell">А</td>
+            <td class="alphabet__cell">Б</td>
+            <td class="alphabet__cell">В</td>
+            <td class="alphabet__cell">Г</td>
+            <td class="alphabet__cell">Д</td>
+          </tr>
+          <tr class="alphabet__row">
+            <td class="alphabet__cell">Е</td>
+            <td class="alphabet__cell">З</td>
+            <td class="alphabet__cell">И</td>
+            <td class="alphabet__cell">К</td>
+            <td class="alphabet__cell">Л</td>
+          </tr>
+          <tr class="alphabet__row">
+            <td class="alphabet__cell">М</td>
+            <td class="alphabet__cell">Н</td>
+            <td class="alphabet__cell">О</td>
+            <td class="alphabet__cell">П</td>
+            <td class="alphabet__cell">Р</td>
+          </tr>
+          <tr class="alphabet__row">
+            <td class="alphabet__cell">С</td>
+            <td class="alphabet__cell">Т</td>
+            <td class="alphabet__cell">У</td>
+            <td class="alphabet__cell">Ф</td>
+            <td class="alphabet__cell">Х</td>
+          </tr>
+          <tr class="alphabet__row">
+            <td class="alphabet__cell">Ч</td>
+            <td class="alphabet__cell">Ш</td>
+            <td class="alphabet__cell">Щ</td>
+            <td class="alphabet__cell">Э</td>
+            <td class="alphabet__cell">Ю</td>
+          </tr>
+        </table>
+        <ul class="countries-filter__countries countries-to-choose">
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="australia" value="Австралия" class="visually-hidden">
+            <label for="australia">Австралия</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="austria" value="Австрия" class="visually-hidden">
+            <label for="austria">Австрия</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="azerbaijan" value="Азербайджан" class="visually-hidden">
+            <label for="azerbaijan">Азербайджан</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="albania" value="Албания" class="visually-hidden">
+            <label for="albania">Албания</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="algeria" value="Алжир" class="visually-hidden">
+            <label for="algeria">Алжир</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="angola" value="Ангола" class="visually-hidden">
+            <label for="angola">Ангола</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="andorra" value="Андорра" class="visually-hidden">
+            <label for="andorra">Андорра</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда" class="visually-hidden">
+            <label for="antigua">Антигуа и Барбуда</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="argentina" value="Аргентина" class="visually-hidden">
+            <label for="argentina">Аргентина</label>
+          </li>
+          <li class="countries-to-choose__item">
+            <input type="radio" name="country" id="armenia" value="Армения" class="visually-hidden">
+            <label for="armenia">Армения</label>
+          </li>
+        </ul>
+        <button class="button countries-filter__button button--rounded button--text_upper button--text-align_center">
+          Свернуть
+        </button>
+      </section>
+      <div class="travelers-to-choose__wrapper container">
         <h2 class="visually-hidden">Фильтр попутчиков</h2>
-        <section class="countries-filter">
-          <h3 class="countries-filter__title">
-            Фильтрация по странам:
-            <svg class="icon icon--contries-filter" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 15 10" style="enable-background:new 0 0 15 10;" xml:space="preserve">
-            <rect x="4" width="2" height="2" fill="currentColor"/>
-            <rect width="3" height="2" fill="currentColor"/>
-            <rect x="7" width="8" height="2" fill="currentColor"/>
-            <rect x="4" y="8" width="2" height="2" fill="currentColor"/>
-            <rect y="8" width="3" height="2" fill="currentColor"/>
-            <rect x="7" y="8" width="8" height="2" fill="currentColor"/>
-            <rect x="9" y="4" width="2" height="2" fill="currentColor"/>
-            <rect x="12" y="4" width="3" height="2" fill="currentColor"/>
-            <rect y="4" width="8" height="2" fill="currentColor"/>
-            </svg>
-          </h3>
-          <button type="button" class="countries-filter__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg class="icon icon--contries-filter-toggle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27 5" style="enable-background:new 0 0 27 5;" xml:space="preserve">
-            <circle class="st0" cx="2.5" cy="2.5" r="2.5" fill="currentColor"/>
-            <circle class="st0" cx="13.5" cy="2.5" r="2.5" fill="currentColor"/>
-            <circle class="st0" cx="24.5" cy="2.5" r="2.5" fill="currentColor"/>
-            </svg>
-          </button>
-        </section>
         <section class="filters">
           <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
             <h3 class="filters__title">Подберите идеального попутчика</h3>

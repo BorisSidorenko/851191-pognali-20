@@ -1,0 +1,26 @@
+.continents {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.continents__item {
+  margin-bottom: 9px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba($light-blue, 0.3);
+
+  &--active {
+    color: $light-blue;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

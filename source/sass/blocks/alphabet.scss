@@ -1,5 +1,4 @@
 .alphabet {
-  width: 100%;
   border-collapse: collapse;
 }
 
@@ -16,5 +15,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $main-color;
+  background-color: $basic-white;
   border: 1px solid $calendar-grey;
 }
