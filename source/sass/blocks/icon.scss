@@ -34,6 +34,21 @@
     fill: $basic-blue;
   }
 
+  &--contries-filter {
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 10px;
+  }
+
+  &--contries-filter-toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 3px;
+  }
+
   @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;
