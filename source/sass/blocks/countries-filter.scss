@@ -189,6 +189,10 @@
     @media (min-width: $tablet-width) {
       grid-row: 2;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/4;
+    }
   }
 
   .countries-filter__countries {
@@ -203,6 +207,10 @@
     @media (min-width: $tablet-width) {
       grid-column: 3;
       grid-row: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 
