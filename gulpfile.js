@@ -23,9 +23,9 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 };
 
@@ -40,7 +40,7 @@ const svgo = () => {
     ]));
 };
 
-exports.images = svgo;
+exports.svgo = svgo;
 
 const webpImg = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
@@ -56,7 +56,7 @@ const spriteFlags = () => {
   return gulp.src("source/img/**/flag-*.svg")
     .pipe(svgstore())
     .pipe(rename("spriteFlags.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 };
 
 exports.spriteFlags = spriteFlags;
@@ -81,20 +81,27 @@ exports.copy = copy;
 
 const clean = () => {
   return del("build");
-}
+};
+
+exports.clean = clean;
 
 // Build
 
-const build = () => gulp.series(
-  clean, copy, styles, spriteFlags,
-);
+const build = (done) => {
+  gulp.series(
+    clean, copy, styles
+  )();
+  done();
+};
+
+exports.build = build;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
