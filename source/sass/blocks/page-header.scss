@@ -1,76 +1,61 @@
 .page-header {
-  padding-top: 28px;
-  padding-left: 26px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  background-color: $header-bg_color;
+  min-width: 320px;
+  background-color: $header-blue;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
 
-  &--index {
-    padding-bottom: 39px;
-    background:  url("../../img/traveller-illustration-mobile@1x.png") top 314px right 48px no-repeat,
-      url("../../img/globe-back-mobile@1x.jpg") top center no-repeat;
-    background-repeat: no-repeat;
-    background-color: $basic-blue;
-    border-radius: 0;
-    box-shadow: inset 0 -279px 0 $additional-bg_color;
+  &--form {
+    box-shadow: 0 20px 0 $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content;
-    row-gap: 134px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 66px;
-
-    &--index {
-      row-gap: 0;
-      padding-top: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-bottom: 96px;
-      background: url("../../img/traveller-illustration-tablet@1x.png") top 567px right 111px no-repeat,
-        url("../../img/globe-back-tablet@1x.jpg") top 540px center no-repeat;
-      background-color: $header-bg_color;
-      border-radius: 0;
-      box-shadow: none;
-    }
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr min-content;
-
-    &--index {
-      row-gap: 0;
-      padding-top: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
-      background: url("../../img/traveller-illustration-desktop@1x.png") top right 111px no-repeat,
-        url("../../img/globe-back-desktop@1x.jpg") top  center no-repeat;
-      background-color: $header-bg_color;
-      border-radius: 0;
-    }
+    background-color: $light-blue;
   }
 }
 
-.page-header__logo {
+.page-header--index {
+  padding-bottom: 39px;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
+  background-position: calc(50% + 16px) 223px, top center;
+  background-repeat: no-repeat;
+  background-color: $basic-blue;
+  border-radius: 0;
+  box-shadow: inset 0 -279px 0 $additional-bg_color,
+    inset 0 -564px 0 $basic-blue;
+
   @media (min-width: $tablet-width) {
-    grid-row: 1;
-    grid-column: 1 / -1;
+    row-gap: 0;
+    padding-bottom: 96px;
+    background-image: url("../../img/traveller-illustration-tablet@1x.png"),
+      url("../../img/globe-back-tablet@1x.jpg");
+    background-position: calc(50% + 111px) 404px, 50% 382px;
+    background-repeat: no-repeat;
+    background-color: $header-bg_color;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 110px;
+    padding-bottom: 123px;
+    background: url("../../img/traveller-illustration-desktop@1x.png") top 110px right 405px no-repeat,
+      url("../../img/globe-back-desktop@1x.jpg") top center no-repeat;
+    background-color: $header-bg_color;
+    border-radius: 0;
   }
 }
 
 .page-header__slogan {
-  margin: 0;
   padding: 0;
   padding-top: 52px;
   padding-left: 16px;
   padding-right: 16px;
-  min-height: 503px;
+  min-height: 411px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -80,8 +65,6 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2;
-    grid-column: 1 / -1;
     padding-top: 72px;
     min-height: 300px;
     padding-bottom: 86px;
@@ -90,9 +73,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1;
     padding: 0;
     padding-left: 67px;
+    min-height: 0;
     text-align: left;
   }
 }
@@ -100,19 +83,14 @@
 .page-header__header-buttons {
   display: flex;
   width: 270px;
-  margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    grid-row: 1;
-    grid-column: 2;
-    width: 100%;
+    display: none;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1;
-    grid-column: 3;
     width: 100%;
   }
 }
@@ -120,7 +98,5 @@
 .page-header__reviews {
   @media (min-width: $tablet-width) {
     display: block;
-    grid-row: 3;
-    grid-column: 1 / -1;
   }
 }

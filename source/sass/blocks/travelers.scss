@@ -51,6 +51,15 @@
   }
 }
 
+.travelers__card {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 9px rgba($basic-black, 0.16));
+  }
+}
+
 .travelers__header {
   position: relative;
   padding-top: 34px;
@@ -144,10 +153,25 @@
   }
 }
 
-.travelers__link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+.travelers__status {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $offline-orange;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--online {
+    &::before {
+      background-color: $online-green;
+    }
+  }
 }
 
 .travelers__info {
@@ -166,6 +190,7 @@
 }
 
 .travelers__image {
+  display: block;
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
@@ -181,7 +206,6 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: $main-color;
 }
 
 .travelers__button {
@@ -189,25 +213,6 @@
     grid-column: 1;
     grid-row: 4;
     width: 280px;
-  }
-}
-
-.travelers__level {
-  position: absolute;
-  top: 20px;
-  left: 22px;
-  background-color: rgba($basic-black, 0.6);
-
-  .level__text {
-    color: $basic-white;
-  }
-
-  .level__title {
-    color: $basic-white;
-
-    &::before {
-      background-color: rgba($basic-white, 0.3);
-    }
   }
 }
 

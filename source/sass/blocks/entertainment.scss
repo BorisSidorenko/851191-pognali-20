@@ -56,7 +56,16 @@
   line-height: 22px;
   color: $special-grey;
   border-color: $input-grey;
+  outline: none;
   resize: none;
+
+  &:hover {
+    border-color: $input-border_hover_grey;
+  }
+
+  &:focus {
+    border-color: $basic-blue;
+  }
 
   &::placeholder {
     color: rgba($special-grey, 0.3);

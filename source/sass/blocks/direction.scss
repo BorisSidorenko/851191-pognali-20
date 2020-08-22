@@ -10,25 +10,28 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin-bottom: 44px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 11px;
+    }
+  }
 }
 
 .direction__image {
+  display: block;
   border-radius: 10px 10px 0 0;
 
   @media (min-width: $tablet-width) {
     width: 186px;
     height: 140px;
     border-radius: 0 20px 20px 0;
-
-    &--thai {
-      background: url("../../img/thailand-desktop@1x.jpg") center center no-repeat;
-    }
   }
 }
 
@@ -54,12 +57,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     row-gap: 5px;
-    width: 616px;
+    width: 430px;
     border-radius: 20px 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 560px;
+    padding-top: 24px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 23px;
+    width: 374px;
   }
 }
 

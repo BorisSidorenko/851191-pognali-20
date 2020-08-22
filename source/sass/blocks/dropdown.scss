@@ -1,4 +1,6 @@
 .dropdown {
+  outline: none;
+
   &--rectangle {
     width: 220px;
   }
@@ -13,6 +15,15 @@
 
   &--border_grey {
     border: 1px solid $input-grey;
+
+    &:hover {
+      border-color: $input-border_hover_grey;
+    }
+
+    &:focus {
+      color: $basic-white;
+      background-color: $special-blue_dark;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -26,6 +37,40 @@
     &--rectangle,
     &--rectangle_s {
       width: 730px;
+    }
+  }
+}
+
+.dropdown__icon {
+  position: absolute;
+  top: 15px;
+  right: 26px;
+  width: 10px;
+  height: 14px;
+  fill: rgba($basic-black, 0.6);
+
+  &--offset {
+    right: 78px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    right: 180px;
+    width: 17px;
+    height: 9px;
+
+    &--offset {
+      right: 180px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 11px;
+    right: 25px;
+
+    &--offset {
+      right: 25px;
     }
   }
 }

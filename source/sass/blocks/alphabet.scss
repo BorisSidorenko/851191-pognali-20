@@ -1,5 +1,4 @@
 .alphabet {
-  width: 100%;
   border-collapse: collapse;
 }
 
@@ -16,5 +15,44 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $main-color;
+  background-color: $basic-white;
   border: 1px solid $calendar-grey;
+
+  @media (min-width: $tablet-width) {
+    &--form {
+      padding: 0;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 60px;
+      color: rgba($main-color, 0.3);
+      background-color: transparent;
+      border: none;
+    }
+
+    &--form-active {
+      color: $main-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    vertical-align: top;
+  }
+}
+
+
+.alphabet__countries {
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &--no-padding {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

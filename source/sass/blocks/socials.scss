@@ -4,20 +4,9 @@
   align-items: center;
   margin: 0 auto;
   width: 105px;
-}
 
-.socials__item {
-  &--footer {
-    display: flex;
-    width: 45px;
-    height: 44px;
-    background-color: $basic-yellow;
-    border-radius: 50%;
-
-    @media (min-width: $tablet-width) {
-      width: 62px;
-      height: 62px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 139px;
   }
 }
 
@@ -67,16 +56,21 @@
 
 .socials__link {
   &--footer {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 44px;
+    background-color: $basic-yellow;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $special-yellow_dark;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 62px;
+      height: 62px;
+    }
   }
-  // &--footer::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 45px;
-  //   height: 45px;
-  //   background-color: $basic-yellow;
-  //   border-radius: 50%;
-  //   content: "";
-  // }
 }

@@ -9,10 +9,11 @@
   box-shadow: 0 20px 0 $main-bg_color;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 308px 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 384px;
     grid-template-rows: 47px 1fr;
     row-gap: 27px;
     padding-top: 0;
@@ -81,6 +82,14 @@
   margin-top: 16px;
   margin-bottom: 25px;
   background-color: $special-blue_light;
+
+  &:hover {
+    background-color: $btn-photo_hover_grey;
+  }
+
+  &:active {
+    color: rgba($basic_blue, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 3;

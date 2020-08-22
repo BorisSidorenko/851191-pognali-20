@@ -38,4 +38,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $special-blue_dark;
+
+  &:hover {
+    color: rgba($special-blue_dark, 0.6);
+  }
 }

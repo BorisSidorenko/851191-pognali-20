@@ -10,6 +10,16 @@
   border: 3px solid $special-orange;
   border-radius: 50%;
 
+  &--travelers {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    background-color: rgba($basic-black, 0.6);
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 60px;
@@ -21,6 +31,10 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+
+  &--travelers {
+    color: $basic-white;
+  }
 }
 
 .level__title {
@@ -29,6 +43,22 @@
   font-size: 14px;
   line-height: 14px;
   color: rgba($basic-black, 0.4);
+
+  &--travelers {
+    position: relative;
+    display: block;
+    padding-top: 3px;
+    color: $basic-white;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 31px;
+      border-top: 1px solid rgba($basic-white, 0.3);
+      content: "";
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -42,6 +72,12 @@
       width: 31px;
       border-top: 1px solid rgba($special-grey, 0.3);
       content: "";
+    }
+
+    &--travelers {
+      &::before {
+        border-top: 1px solid rgba($basic-white, 0.3);
+      }
     }
   }
 }

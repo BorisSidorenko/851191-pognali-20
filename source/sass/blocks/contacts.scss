@@ -1,7 +1,12 @@
 .contacts {
   padding-top: 66px;
   padding-bottom: 41px;
-  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 129px;
+    width: 100%;
+  }
 }
 
 .contacts__item {
@@ -28,6 +33,15 @@
     padding-left: 121px;
     padding-top: 31px;
     padding-bottom: 31px;
+  }
+}
+
+.contacts__item--header {
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 0;
   }
 }
 
@@ -65,5 +79,54 @@
       width: 90px;
       height: 90px;
     }
+  }
+}
+
+.contacts__link--header {
+  @media (min-width: $desktop-width) {
+    color: $basic-blue;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:active {
+      color: rgba($basic-blue, 0.5);
+    }
+  }
+}
+
+.contacts__link--phone {
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-color: $special-orange;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $btn-phone_hover_orange;
+      }
+    }
+  }
+}
+
+.contacts__link--mail {
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-color: $special_yellow_dark;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $special-orange;
+      }
+    }
+  }
+}
+
+.contacts__text {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

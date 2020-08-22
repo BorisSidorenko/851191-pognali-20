@@ -29,14 +29,28 @@ $input-grey : #cbced9;
 $calendar-orange : #ff5c23;
 $calendar-grey : #d6d9e6;
 $offline-orange : #f97676;
-$online-green: #bbf085;
+$online-green: #81e31e;
 $like-active : #f9eaea;
 $heart-red : #f02323;
 $badge_blue : #101d41;
+$nav-button_close : #cccccc;
+$contries-filter-button : #d6daed;
+
+//effects colors
+$btn-phone_hover_orange : #f26926;
+$btn-mail_hover_orange : $special-orange;
+$btn-auth_hover_yellow : #ffbd30;
+$btn-photo_hover_grey : #d1d7e9;
+$input-border_hover_grey : #959bb2;
+$btn-rectangle_hover_orange : $special-yellow_dark;
+$btn-transport_down : #e2e5f1;
+$number-control_hover : #999999;
+$number-control_down :  #e5e5e5;
+$transport-icon_hover : #b2b2b2;
 
 //main colors
 $main-bg_color : $basic-blue_light;
-$additional-bg_color  : $light-blue;
+$additional-bg_color : $light-blue;
 $main-color : $special-blue_dark;
 $additional-text_color : $basic-blue;
 $additional-text_color_30 : rgba($additional-text_color, 0.3);

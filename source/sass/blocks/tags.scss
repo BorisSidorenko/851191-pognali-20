@@ -7,6 +7,18 @@
   border: 1px solid $input-grey;
   border-radius: 10px;
 
+  &:hover {
+    border-color: $input-border_hover_grey;
+  }
+
+  &:focus-within {
+    border-color: $basic-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(180deg);
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -24,6 +36,11 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.08em;
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
   }
 }
 
@@ -39,13 +56,23 @@
   list-style-type: none;
 }
 
-.tags_item {
+.tags__input {
+  padding-top: 18px;
+  padding-bottom: 27px;
+  padding-left: 25px;
+  padding-right: 28px;
+  width: 100%;
+  font-family: $main-font;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
   color: rgba($special-grey, 0.6);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
 
-  &::after {
-    content: "\00a0";
+  @media (min-width: $tablet-width) {
+    transform: rotate(180deg);
   }
 }

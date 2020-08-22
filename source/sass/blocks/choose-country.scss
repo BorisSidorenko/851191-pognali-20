@@ -1,21 +1,3 @@
 .choose-country {
   display: none;
 }
-
-.choose-country__list {
-  margin: 0;
-  padding-top: 19px;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-bottom: 27px;
-  list-style-type: none;
-}
-
-.choose-country__item {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: $special-grey;
-}

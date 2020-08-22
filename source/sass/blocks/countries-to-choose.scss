@@ -1,0 +1,17 @@
+.countries-to-choose {
+  list-style-type: none;
+}
+
+.countries-to-choose__item {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

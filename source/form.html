@@ -9,79 +9,101 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-mobile-white@1x.png" width="96px" height="15px" alt="Погнали?">
-    </a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button">
+  <header class="page-header container container--padding-none">
+    <nav class="nav page-header__nav nav--index nav--closed nav--nojs container">
+      <a class="nav__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+          <img class="nav__logo-img" src="img/logo-mobile-white@1x.png" width="96px" height="15px" alt="Погнали?">
+        </picture>
+      </a>
+      <button class="nav__toggle nav__toggle--index" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="nav__wrapper">
-        <ul class="site-list nav__list">
+        <ul class="site-list nav__list nav__list--site">
           <li class="site-list__item">
-            <a href="#">
+            <a href="#" class="site-list__link">
               О сервисе
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="#" class="site-list__link">
               Направления
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="#" class="site-list__link">
               Попутчики
             </a>
           </li>
         </ul>
-        <a href="#" class="button nav__button button--bg-color_yellow button--rounded button--text-align_center button--text_upper">Авторизация</a>
-        <ul class="contacts-list nav__list">
-          <li class="contacts-list__item">
-            <a href="tel:88005558628">
+        <div class="nav__wrapper nav__wrapper--button">
+          <a href="#" class="button nav__button button--bg-color_yellow button--rounded button--text-align_center button--text_upper">Авторизация</a>
+        </div>
+        <ul class="nav__list contacts nav__list--contacts">
+          <li class="contacts__item">
+            <a href="tel:88005558628" class="contacts__link">
+              <svg class="icon icon--phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                <path
+                  d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5 c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3 c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3 c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9 c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3 c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6 c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
+              </svg>
               8 800 555-86-28
             </a>
           </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru">
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+              <svg class="icon icon--mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                <path
+                  d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2 c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2 L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1 c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z" />
+              </svg>
               mail@htmlacademy.ru
             </a>
           </li>
         </ul>
-        <ul class="socials nav__list">
+        <ul class="socials nav__list nav__list--socials">
           <li class="socials__item socials__item--fb">
             <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__link-fb">
               <span class="visually-hidden">Фейсбук</span>
+              <svg class="socials__icon socials__icon--fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 11 21"
+                style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                <g>
+                  <path
+                    d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8 V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3 C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z" />
+                </g>
+              </svg>
             </a>
           </li>
           <li class="socials__item socials__item--vk">
             <a href="https://vk.com/htmlacademy" class="socials__link socials__link-vk">
               <span class="visually-hidden">Вконтакте</span>
+              <svg class="socials__icon socials__icon--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 30 15.8"
+                style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                <g>
+                  <path
+                    d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6 c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1 c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6 c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4 C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5 c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0 c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10 c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9 c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2 c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3 c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1 c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0 c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1 c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0 C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3 C18.4,10.9,18.5,10.9,18.6,10.9z" />
+                </g>
+              </svg>
             </a>
           </li>
-          <li class="socials__item socials__item-inst">
-            <a href="https://www.instagram.com/htmlacademy" class="socials__link socials__link-inst">
+          <li class="socials__item socials__item--inst">
+            <a href="https://www.instagram.com/htmlacademy" class="socials__link socials__link--inst">
               <span class="visually-hidden">Инстаграм</span>
+              <svg class="socials__icon socials__icon--inst" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                <path class="st0"
+                  d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z" />
+                <path class="st0"
+                  d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6 c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z" />
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+              </svg>
             </a>
           </li>
         </ul>
-      </div>
     </nav>
-    <ul class="header-buttons header-buttons--hide page-header__header-buttons">
-      <li class="header-buttons__item">
-        <a href="#" class="button header-buttons__button header-buttons__button--phone button--circle button--circle_phone button--bg-color_orange">
-          <span class="visually-hidden">Телефон</span>
-        </a>
-      </li>
-      <li class="header-buttons__item">
-        <a href="#" class="button header-buttons__button header-buttons__button--mail button--circle button--bg-color_yellow button--circle_mail">
-          <span class="visually-hidden">Почта</span>
-        </a>
-      </li>
-      <li class="header-buttons__item">
-        <a href="#" class="button header-buttons__button header-buttons__button--auth button--rounded button--bg-color_yellow button--rounded_s button--text-align_center button--text_upper">Авторизация</a>
-      </li>
-    </ul>
     <div class="header-title">
       <h1 class="title">Направления</h1>
     </div>
@@ -106,13 +128,8 @@
         <legend class="tags__title">
           тэги
         </legend>
-        <ul class="tags__list">
-          <li class="tags_item">#бургер</li>
-          <li class="tags_item">#бар</li>
-          <li class="tags_item">#футбол</li>
-          <li class="tags_item">#концерт</li>
-          <li class="tags_item">#крафт</li>
-        </ul>
+        <label for="tags" class="visually-hidden">Введите хэштег</label>
+        <textarea class="tags__input" name="tags" id="tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
       </fieldset>
       <fieldset class="transport profile__transport transport--profile">
         <legend class="transport__title">
@@ -121,14 +138,14 @@
         <ul class="transport__list transport__list--profile">
           <li class="transport__item">
             <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle button--bg-color_white button--padding_none" aria-label="Самолёт">
-              <svg class="transport__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+              <svg class="transport__icon transport__icon--plane" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                 <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8 c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6 C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1 c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1 c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9 c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
             </svg>
             </button>
           </li>
           <li class="transport__item">
             <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle button--bg-color_white button--padding_none" aria-label="Автобус">
-              <svg class="transport__icon" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+              <svg class="transport__icon transport__icon--bus" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                 <path
                   d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4 c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5 C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
               </svg>
@@ -136,14 +153,14 @@
           </li>
           <li class="transport__item">
             <button type="button" class="button transport__toggle button--circle_toggle button--bg-color_white button--padding_none" aria-label="Велосипед">
-              <svg class="transport__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+              <svg class="transport__icon transport__icon--bike" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                 <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
               </svg>
             </button>
           </li>
           <li class="transport__item">
             <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle button--bg-color_white button--padding_none" aria-label="Пешеход">
-              <svg class="transport__icon" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+              <svg class="transport__icon transport__icon--run" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                 <g>
                   <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
                   <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6 C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5 c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4 c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6 z" />
@@ -209,91 +226,108 @@
               <span class="number__title">ищу попутчиков:</span>
               <span class="number__title number__title--unit">чел.</span>
               <label for="travelers-amount" class="input input__label visually-hidden">Колличество попутчиков</label>
-              <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="travelers-amount" id="travelers-amount" value="2">
+              <div class="number__group">
+                <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="travelers-amount" id="travelers-amount" value="2">
+                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
+                <button type="button" class="number__add number__button" aria-label="Добавить"></button>
+              </div>
             </div>
             <div class="number step__group step__group--duration">
               <span class="number__title">длительность:</span>
               <span class="number__title number__title--unit">дн.</span>
               <label for="days-amount" class="input input__label visually-hidden">Колличество дней</label>
-              <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="days-amount" id="days-amount" value="2">
+              <div class="number__group">
+                <input class="input number__control input--border_grey input--rectangle input--rounded" type="number" name="days-amount" id="days-amount" value="2">
+                <button type="button" class="number__remove number__button" aria-label="Убрать"></button>
+                <button type="button" class="number__add number__button" aria-label="Добавить"></button>
+              </div>
             </div>
             <div class="checkbox step__checkbox">
-              <input class="checkbox__control" type="checkbox" name="children-allowed" id="children-allowed" checked>
-              <label class="checkbox__label" for="children-allowed">Можно с детьми</label>
+              <input class="checkbox__control visually-hidden" type="checkbox" name="children-allowed" id="children-allowed" checked>
+              <label class="checkbox__label" for="children-allowed">
+                <svg class="checkbox__tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                  <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 " />
+                </svg>
+                Можно с детьми
+              </label>
             </div>
             <div class="dates step__dates">
               <div class="month dates__month">
-                <a href="#" class="month__prev month__prev--link">
-                  <span class="visually-hidden">Предыдущий месяц</span>
-                </a>
-                <span class="month__current month__current--text">Март 2019</span>
-                <a href="#" class="month__next month__next--link">
-                  <span class="visually-hidden">Следующий месяц</span>
-                </a>
+                <button class="month__prev month__button" type="button" aria-label="Предыдущий месяц">
+                  <svg class="month__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5 c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z" />
+                  </svg>
+                </button>
+                <span class="month__current">Март 2019</span>
+                <button class="month__next month__button" type="button" aria-label="Следующий месяц">
+                  <svg class="month__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6 c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z" />
+                  </svg>
+                </button>
               </div>
               <table class="calendar step__calendar">
                 <tr class="calendar__row calendar__row--header">
-                  <th class="calendar__day">П<span class="calendar__extended-day">н</span></th>
-                  <th class="calendar__day">В<span class="calendar__extended-day">т</span></th>
-                  <th class="calendar__day">С<span class="calendar__extended-day">р</span></th>
-                  <th class="calendar__day">Ч<span class="calendar__extended-day">т</span></th>
-                  <th class="calendar__day">П<span class="calendar__extended-day">т</span></th>
-                  <th class="calendar__day calendar__day--weekend">С<span class="calendar__extended-day">б</span></th>
-                  <th class="calendar__day calendar__day--weekend">В<span class="calendar__extended-day">с</span></th>
+                  <th class="calendar__day">П<span class="calendar__extended calendar__extended--day">н</span></th>
+                  <th class="calendar__day">В<span class="calendar__extended calendar__extended--day">т</span></th>
+                  <th class="calendar__day">С<span class="calendar__extended calendar__extended--day">р</span></th>
+                  <th class="calendar__day">Ч<span class="calendar__extended calendar__extended--day">т</span></th>
+                  <th class="calendar__day">П<span class="calendar__extended calendar__extended--day">т</span></th>
+                  <th class="calendar__day calendar__day--weekend">С<span class="calendar__extended calendar__extended--day">б</span></th>
+                  <th class="calendar__day calendar__day--weekend">В<span class="calendar__extended calendar__extended--day">с</span></th>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">23</td>
-                  <td class="calendar__date">24</td>
-                  <td class="calendar__date">25</td>
-                  <td class="calendar__date">26</td>
-                  <td class="calendar__date">27</td>
-                  <td class="calendar__date">28</td>
-                  <td class="calendar__date">1</td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">23</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">24</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">25</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">26</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">27</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">28</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">1<span class="calendar__extended calendar__extended--month">мар</span></button></td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">2</td>
-                  <td class="calendar__date">3</td>
-                  <td class="calendar__date">4</td>
-                  <td class="calendar__date">5</td>
-                  <td class="calendar__date">6</td>
-                  <td class="calendar__date">7</td>
-                  <td class="calendar__date">8</td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">2</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">3</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">4</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">5</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">6</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">7</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">8</button></td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">9</td>
-                  <td class="calendar__date">10</td>
-                  <td class="calendar__date">11</td>
-                  <td class="calendar__date">12</td>
-                  <td class="calendar__date">13</td>
-                  <td class="calendar__date">14</td>
-                  <td class="calendar__date">15</td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">9</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">10</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">11</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">12</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">13</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">14</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">15</button></td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">16</td>
-                  <td class="calendar__date">17</td>
-                  <td class="calendar__date">18</td>
-                  <td class="calendar__date">19</td>
-                  <td class="calendar__date">20</td>
-                  <td class="calendar__date">21</td>
-                  <td class="calendar__date">22</td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">16</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">17</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">18</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">19</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">20</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">21</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">22</button></td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">23</td>
-                  <td class="calendar__date">24</td>
-                  <td class="calendar__date">25</td>
-                  <td class="calendar__date">26</td>
-                  <td class="calendar__date">27</td>
-                  <td class="calendar__date">28</td>
-                  <td class="calendar__date">29</td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">23</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">24</button></td>
+                  <td class="calendar__date"><button class="calendar__button" type="button">25</button></td>
+                  <td class="calendar__date calendar__date--selected"><button class="calendar__button calendar__button--selected" type="button">26<span class="calendar__hint calendar__arrival">Заезд</span></button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--selected" type="button">27</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--selected" type="button">28<span class="calendar__hint calendar__depature">Выезд</span></button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">29</button></td>
                 </tr>
                 <tr class="calendar__row">
-                  <td class="calendar__date">30</td>
-                  <td class="calendar__date">31</td>
-                  <td class="calendar__date">1</td>
-                  <td class="calendar__date">2</td>
-                  <td class="calendar__date">3</td>
-                  <td class="calendar__date">4</td>
-                  <td class="calendar__date">5</td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">30</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">31</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">1<span class="calendar__extended calendar__extended--month">апр</span></button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">2</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">3</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">4</button></td>
+                  <td class="calendar__date"><button class="calendar__button calendar__button--available" type="button">5</button></td>
                 </tr>
               </table>
             </div>
@@ -315,18 +349,27 @@
               <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                 <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
               </select>
+              <svg class="dropdown__icon dropdown__icon--offset" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
+              </svg>
               <div class="country__flag"></div>
             </div>
             <div class="country step__country">
               <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                 <option value="Чехия" selected>Чехия</option>
               </select>
+              <svg class="dropdown__icon dropdown__icon--offset" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
+              </svg>
               <div class="country__flag"></div>
             </div>
             <div class="country step__country">
               <select class="dropdown country__select dropdown--rectangle dropdown--rounded dropdown--border_grey">
                 <option value="Чехия" selected>Выберите страну</option>
               </select>
+              <svg class="dropdown__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
+              </svg>
               <div class="country__flag"></div>
             </div>
             <div class="choose-country step__choose-country">
@@ -367,44 +410,44 @@
                   <td class="alphabet__cell">Ю</td>
                 </tr>
               </table>
-              <ul class="choose-country__list">
-                <li class="choose-country__item">
+              <ul class="choose-country__list countries-to-choose">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="australia" value="Австралия" class="visually-hidden">
                   <label for="australia">Австралия</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="austria" value="Австрия" class="visually-hidden">
                   <label for="austria">Австрия</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="azerbaijan" value="Азербайджан" class="visually-hidden">
                   <label for="azerbaijan">Азербайджан</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="albania" value="Албания" class="visually-hidden">
                   <label for="albania">Албания</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="algeria" value="Алжир" class="visually-hidden">
                   <label for="algeria">Алжир</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="angola" value="Ангола" class="visually-hidden">
                   <label for="angola">Ангола</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="andorra" value="Андорра" class="visually-hidden">
                   <label for="andorra">Андорра</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда" class="visually-hidden">
                   <label for="antigua">Антигуа и Барбуда</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="argentina" value="Аргентина" class="visually-hidden">
                   <label for="argentina">Аргентина</label>
                 </li>
-                <li class="choose-country__item">
+                <li class="countries-to-choose__item">
                   <input type="radio" name="country" id="armenia" value="Армения" class="visually-hidden">
                   <label for="armenia">Армения</label>
                 </li>
@@ -414,6 +457,9 @@
               <select class="dropdown country__add dropdown--rectangle dropdown--rounded dropdown--border_grey">
                 <option value="Чехия" selected disabled>Добавить страну</option>
               </select>
+              <svg class="dropdown__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
+              </svg>
               <div class="country__flag"></div>
             </div>
           </div>
@@ -513,6 +559,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

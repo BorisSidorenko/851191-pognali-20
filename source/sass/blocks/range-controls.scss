@@ -1,0 +1,88 @@
+.range-controls {
+  position: relative;
+}
+
+.range-controls__scale {
+  width: 100%;
+  height: 2px;
+  background-color: rgba($special-blue_dark, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    height: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+  }
+}
+
+.range-controls__bar {
+  margin-left: auto;
+  width: 69%;
+  height: 2px;
+  background-color: $special-blue_dark;
+
+  @media (min-width: $tablet-width) {
+    width: 73%;
+    height: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: $special-blue_dark;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  content: "";
+
+  &--min {
+    left: 67px;
+  }
+
+  &--max {
+    left: calc(100% - 10px);
+  }
+
+  &:hover {
+    top: -7px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 3px 7px rgba($basic-black, 0.24);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+
+    &--min,
+    &--max {
+      top: -5px;
+    }
+
+    &:hover {
+      top: -9px;
+      width: 19px;
+      height: 19px;
+    }
+  }
+}

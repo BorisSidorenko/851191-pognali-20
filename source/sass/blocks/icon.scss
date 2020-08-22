@@ -19,6 +19,42 @@
     top: 12px;
   }
 
+  &--handset {
+    top: 17px;
+    left: 17px;
+    width: 16px;
+    fill: $basic-blue;
+  }
+
+  &--mail-s {
+    top: 19px;
+    left: 17px;
+    width: 14px;
+    height: 11px;
+    fill: $basic-blue;
+  }
+
+  &--contries-filter {
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 10px;
+  }
+
+  &--contries-dots-toggle,
+  &--contries-cross-toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 3px;
+  }
+
+  &--contries-cross-toggle {
+    width: 16px;
+    height: 16px;
+  }
+
   @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;
@@ -39,6 +75,28 @@
       left: 21px;
       width: 24px;
       height: 32px;
+    }
+
+    &--return {
+      top: 0;
+      left: auto;
+      right: 0;
+      width: 32px;
+      height: 16px;
+    }
+
+    &--contries-dots-toggle {
+      width: 30px;
+      height: 6px;
+    }
+
+    &--contries-cross-toggle {
+      width: 17px;
+      height: 18px;
+    }
+
+    &--contries-filter {
+      display: none;
     }
   }
 
@@ -62,6 +120,31 @@
       left: 29px;
       width: 32px;
       height: 42px;
+    }
+
+    &--contries-filter {
+      display: block;
+      width: 23px;
+      height: 15px;
+    }
+  }
+}
+
+.icon__header {
+  &--handset,
+  &--mail-s  {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--phone,
+    &--mail  {
+      display: none;
+    }
+
+    &--handset,
+    &--mail-s {
+      display: block;
     }
   }
 }

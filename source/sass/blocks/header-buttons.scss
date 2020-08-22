@@ -11,14 +11,26 @@
 }
 
 .header-buttons__button {
+  &--phone:hover {
+    background-color: $btn-phone_hover_orange;
+  }
+
+  &--mail:hover {
+    background-color: $btn-mail_hover_orange;
+  }
+
+  &--auth:hover {
+    background-color: $btn-auth_hover_yellow;
+  }
+
+  &--auth:active {
+    color: rgba($basic_blue, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     &--phone,
     &--mail {
       display: none;
-    }
-
-    &--auth {
-      grid-row: 1;
     }
   }
 

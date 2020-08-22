@@ -1,4 +1,13 @@
+.checkbox {
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
 .checkbox__label {
+  position: relative;
+  padding-left: 39px;
+  padding-top: 5px;
+  padding-bottom: 3px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -6,11 +15,70 @@
   line-height: 15px;
   color: $main-color;
 
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $input-grey;
+    border-radius: 4px;
+    content: "";
+  }
+
+  &:hover {
+    &::before {
+      border-color: $input-border_hover_grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $btn-transport_down;
+      border: none;
+    }
+
+    .checkbox__tick {
+      fill: rgba($basic-blue, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding-left: 58px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+    }
   }
+}
+
+.checkbox__control:checked + .checkbox__label {
+  .checkbox__tick {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    .checkbox__tick {
+      top: 13px;
+      left: 13px;
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.checkbox__tick {
+  display: none;
+  top: 9px;
+  left: 9px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  fill: $basic-blue;
 }
