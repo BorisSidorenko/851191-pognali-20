@@ -41,12 +41,18 @@
     height: 10px;
   }
 
-  &--contries-filter-toggle {
+  &--contries-dots-toggle,
+  &--contries-cross-toggle {
     position: relative;
     top: 0;
     left: 0;
     width: 17px;
     height: 3px;
+  }
+
+  &--contries-cross-toggle {
+    width: 16px;
+    height: 16px;
   }
 
   @media (min-width: $tablet-width) {
@@ -79,9 +85,14 @@
       height: 16px;
     }
 
-    &--contries-filter-toggle {
+    &--contries-dots-toggle {
       width: 30px;
       height: 6px;
+    }
+
+    &--contries-cross-toggle {
+      width: 17px;
+      height: 18px;
     }
 
     &--contries-filter {
