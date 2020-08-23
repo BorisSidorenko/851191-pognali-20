@@ -38,7 +38,7 @@ const svgo = () => {
     .pipe(imagemin([
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("./source/img"));
+    .pipe(gulp.dest("./build/img"));
 };
 
 exports.svgo = svgo;
