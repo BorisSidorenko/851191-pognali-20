@@ -68,7 +68,7 @@
 .site-list__data-hover {
   @media (min-width: $desktop-width) {
     display: inline-block;
-    position:relative;
+    position: relative;
     transition: transform 500ms;
     -webkit-transition: -webkit-transform 500ms;
     -moz-transition: transform 500ms;
@@ -77,10 +77,10 @@
       content: attr(data-hover);
       position: absolute;
       top: 30px;
-      left:0;
-      transform: translate3d(0,0,0);
-      -moz-transform: translate3d(0,0,0);
-      -webkit-transform: translate3d(0,0,0);
+      left: 0;
+      transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
       color: $basic-yellow;
     }
   }

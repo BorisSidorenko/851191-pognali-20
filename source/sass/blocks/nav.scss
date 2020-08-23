@@ -67,6 +67,7 @@
 
   .nav__button {
     display: none;
+
     @media (min-width: $tablet-width) {
       display: block;
     }
@@ -219,6 +220,14 @@
     &--site {
       grid-column: 2;
       grid-row: 1;
+
+      &::before {
+        margin-right: 45px;
+        width: 63px;
+        height: 2px;
+        background-color: $basic-white;
+        content: "";
+      }
     }
 
     &--contacts {
@@ -228,18 +237,6 @@
 
     &--socials {
       display: none;
-    }
-  }
-}
-
-.nav__list--site {
-  @media (min-width: $desktop-width) {
-    &::before {
-      margin-right: 45px;
-      width: 63px;
-      height: 2px;
-      background-color: $basic-white;
-      content: "";
     }
   }
 }

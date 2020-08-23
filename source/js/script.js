@@ -33,4 +33,3 @@ closeFilterBtn.addEventListener('click', function() {
   countriesFilter.classList.remove('countries-filter--opened')
   countriesFilter.classList.add('countries-filter--closed')
 });
-

@@ -132,13 +132,13 @@
 
 .icon__header {
   &--handset,
-  &--mail-s  {
+  &--mail-s {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     &--phone,
-    &--mail  {
+    &--mail {
       display: none;
     }
 

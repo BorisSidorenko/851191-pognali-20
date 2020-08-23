@@ -34,11 +34,11 @@ exports.styles = styles;
 // Images
 
 const svgo = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{svg}")
     .pipe(imagemin([
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("./build/img"));
+    .pipe(gulp.dest("./source/img"));
 };
 
 exports.svgo = svgo;
