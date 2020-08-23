@@ -148,6 +148,10 @@
   position: relative;
   padding-bottom: 9px;
 
+  &:hover {
+    z-index: 1;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
   }
@@ -175,7 +179,8 @@
 }
 
 .travelers__info {
-  padding-top: 27px;
+  position: relative;
+  padding-top: 0;
   padding-bottom: 20px;
   width: 270px;
   text-align: center;
@@ -183,9 +188,31 @@
   border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 31px;
+    padding-top: 0;
     width: 285px;
     border-radius: 0 0 20px 20px;
+  }
+}
+
+.travelers__flags {
+  position: relative;
+  top: -11px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 145px;
+}
+
+.travelers__flag {
+  margin-right: 20px;
+
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin: 0;
+    margin-right: auto;
   }
 }
 

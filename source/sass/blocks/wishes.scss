@@ -53,23 +53,9 @@
   text-transform: uppercase;
   color: $main-color;
 
-  &::before {
-    width: 26px;
-    height: 18px;
-    background-color: $main-bg_color;
-    content: "";
-  }
-
   @media (min-width: $tablet-width) {
     margin-right: 25px;
     font-size: 20px;
     line-height: 20px;
-
-    &::before {
-      width: 35px;
-      height: 24px;
-      background-color: $main-bg_color;
-      content: "";
-    }
   }
 }

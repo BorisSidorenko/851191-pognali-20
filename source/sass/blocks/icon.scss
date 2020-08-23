@@ -34,6 +34,30 @@
     fill: $basic-blue;
   }
 
+  &--flag {
+    width: 35px;
+    height: 25px;
+  }
+
+  &--flag-catalog {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 18px;
+  }
+
+  &--country-flag {
+    top: 86px;
+    left: 25px;
+  }
+
+  &--travelers-flag {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
   &--contries-filter {
     top: 3px;
     left: 0;
@@ -98,6 +122,20 @@
     &--contries-filter {
       display: none;
     }
+
+    &--flag-catalog {
+      width: 35px;
+      height: 24px;
+    }
+
+
+    &--country-flag {
+      top: 17px;
+      left: auto;
+      right: 150px;
+      width: 70px;
+      height: 47px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -126,6 +164,11 @@
       display: block;
       width: 23px;
       height: 15px;
+    }
+
+    &--country-flag {
+      top: 23px;
+      right: 152px;
     }
   }
 }
