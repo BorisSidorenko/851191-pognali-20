@@ -25,7 +25,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(sync.stream());
 };
 
@@ -37,7 +37,8 @@ const svgo = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.svgo()
-    ]));
+    ]))
+    .pipe(gulp.dest("./build/img"));
 };
 
 exports.svgo = svgo;
@@ -45,7 +46,7 @@ exports.svgo = svgo;
 const webpImg = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp())
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("./build/img"));
 };
 
 exports.webpImg = webpImg;
@@ -56,7 +57,7 @@ const spriteFlags = () => {
   return gulp.src("source/img/**/flag-*.svg")
     .pipe(svgstore())
     .pipe(rename("spriteFlags.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("./build/img"));
 };
 
 exports.spriteFlags = spriteFlags;
@@ -67,8 +68,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/js/**"
   ], {
     base: "source"
   })
@@ -76,6 +76,16 @@ const copy = () => {
 };
 
 exports.copy = copy;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("./build"))
+    .pipe(sync.stream());
+};
+
+exports.html = html;
 
 // Clean
 
@@ -87,12 +97,7 @@ exports.clean = clean;
 
 // Build
 
-const build = (done) => {
-  gulp.series(
-    clean, copy, styles
-  )();
-  done();
-};
+const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags, html);
 
 exports.build = build;
 
