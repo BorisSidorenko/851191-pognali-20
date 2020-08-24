@@ -154,10 +154,11 @@
         </div>
         <div class="current-photo profile__current-photo">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/photo-account-tablet@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg">
-              <img src="img/photo-account-mobile@1x.jpg" width="100px" height="100px" alt="Ваша фотография"
-            class="current-photo__image">
+            <source type="image/webp" media="(min-width: 768px)"  srcset="img/photo-account-tablet@1x.webp 1x, img/photo-account-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg 1x, photo-account-tablet@2x.jpg 2x">
+            <source media="(max-width: 768px)" srcset="img/photo-account-mobile@1x.webp, img/photo-account-mobile@2x.webp 2x">
+            <img src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@2x.jpg 2x" width="100px" height="100px" alt="Ваша фотография"
+          class="current-photo__image">
           </picture>
         </div>
       <a href="#" class="button profile__button button--rounded button--text_upper button--text-align_center"><span class="profile__button-text profile__button-text--hide">сменить </span>фото</a>

@@ -33,6 +33,11 @@
       background-size: cover;
       border-radius: 20px;
       content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/rates@2x.png");
+        background-size: cover;
+      }
     }
   }
 

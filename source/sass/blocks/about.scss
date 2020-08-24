@@ -8,6 +8,11 @@
   border-radius: 0 0 25px 25px;
   box-shadow: 0 20px 0 $main-bg_color;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/about-mobile@2x.png");
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 41px;
@@ -36,26 +41,36 @@
       right: 8px;
       background-image: url("../../img/about-tablet@1x.png");
       content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/about-tablet@2x.png");
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 132px;
+    padding-left: 130px;
+    padding-bottom: 163px;
+
+    &::before {
+      width: 212px;
+      height: 212px;
+      top: 70px;
+      left: 60px;
     }
 
-    @media (min-width: $desktop-width) {
-      padding-top: 132px;
-      padding-left: 130px;
-      padding-bottom: 163px;
+    &::after {
+      width: 630px;
+      height: 665px;
+      top: 85px;
+      right: 60px;
+      background-image: url("../../img/about-desktop@1x.png");
 
-      &::before {
-        width: 212px;
-        height: 212px;
-        top: 70px;
-        left: 60px;
-      }
-
-      &::after {
-        width: 630px;
-        height: 665px;
-        top: 85px;
-        right: 60px;
-        background-image: url("../../img/about-desktop@1x.png");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/about-desktop@2x.png");
+        background-size: cover;
       }
     }
   }
