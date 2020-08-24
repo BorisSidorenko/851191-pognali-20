@@ -1,0 +1,13 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  margin: auto;
+}
+
+.modal--display {
+  display: block;
+}

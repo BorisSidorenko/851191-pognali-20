@@ -34,8 +34,28 @@ if (countriesFilterToggle)  {
   });
 
   closeFilterBtn.addEventListener('click', function() {
-    countriesFilter.classList.remove('countries-filter--opened')
-    countriesFilter.classList.add('countries-filter--closed')
+    countriesFilter.classList.remove('countries-filter--opened');
+    countriesFilter.classList.add('countries-filter--closed');
   });
 }
 
+var tariffsButton = document.querySelector('.tariffs__button');
+var tariffsBusinessButton = document.querySelector('.business-tariffs__button');
+var tariffsBusinessModal = document.querySelector('.business-tariffs');
+
+if (tariffsButton) {
+  tariffsButton.addEventListener('click',  function(evt) {
+    evt.preventDefault();
+    if (!tariffsBusinessModal.classList.contains('modal--display')) {
+      tariffsBusinessModal.classList.add('modal--display');
+    }
+  });
+}
+
+if (tariffsBusinessButton) {
+  tariffsBusinessButton.addEventListener('click',  function() {
+    if (tariffsBusinessModal.classList.contains('modal--display')) {
+      tariffsBusinessModal.classList.remove('modal--display');
+    }
+  });
+}
