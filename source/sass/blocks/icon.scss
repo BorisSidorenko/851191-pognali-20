@@ -19,6 +19,14 @@
     top: 12px;
   }
 
+  &--arrow-btn {
+    top: 25px;
+    left: auto;
+    right: 23px;
+    width: 13px;
+    height: 13px;
+  }
+
   &--handset {
     top: 17px;
     left: 17px;
@@ -79,6 +87,12 @@
     height: 16px;
   }
 
+  @media (max-width: $mobile-width) {
+    &--hide-arrow-btn {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;
@@ -99,6 +113,20 @@
       left: 21px;
       width: 24px;
       height: 32px;
+    }
+
+    &--arrow-btn {
+      top: 33px;
+      right: 36px;
+      width: 14px;
+      height: 14px;
+    }
+
+    &--left-arrow-btn {
+      top: 0;
+      left: -35px;
+      width: 16px;
+      height: 16px;
     }
 
     &--return {
