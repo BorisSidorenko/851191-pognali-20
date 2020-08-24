@@ -62,6 +62,15 @@ const spriteFlags = () => {
 
 exports.spriteFlags = spriteFlags;
 
+const spriteTransport = () => {
+  return gulp.src("source/img/**/transport-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteTransport.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteTransport = spriteTransport;
+
 // Copy
 
 const copy = () => {
@@ -97,7 +106,7 @@ exports.clean = clean;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags, html);
+const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags, spriteTransport, html);
 
 exports.build = build;
 
