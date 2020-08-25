@@ -10,14 +10,16 @@
     padding-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    padding-right: 30px;
+    padding-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 18px;
-    padding-bottom: 52px;
+    padding-bottom: 47px;
+    padding-right: 115px;
 
     &:last-of-type {
       padding-top: 0;
@@ -43,6 +45,10 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
   }
 }
 

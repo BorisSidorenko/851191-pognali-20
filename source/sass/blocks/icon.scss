@@ -103,6 +103,10 @@
     height: 287px;
   }
 
+  &--straight-line {
+    display: none;
+  }
+
   &--contries-filter {
     top: 3px;
     left: 0;
@@ -177,6 +181,19 @@
       height: 16px;
     }
 
+    &--connection-line {
+      display: none;
+    }
+
+    &--straight-line {
+      display: block;
+      top: 45px;
+      left: auto;
+      right: 0;
+      width: 14px;
+      height: 274px;
+    }
+
     &--return {
       top: 0;
       left: auto;
@@ -205,6 +222,11 @@
     }
 
     &--flag-dropdown {
+      width: 70px;
+      height: 47px;
+    }
+
+    &--flag-entertainment {
       width: 70px;
       height: 47px;
     }
@@ -249,6 +271,11 @@
     &--country-flag {
       top: 23px;
       right: 152px;
+    }
+
+    &--straight-line {
+      top: 89px;
+      right: 218px;
     }
   }
 }
