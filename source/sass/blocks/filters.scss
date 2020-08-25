@@ -95,6 +95,10 @@
   padding-bottom: 14px;
   border: none;
 
+  &--transport {
+    z-index: 1;
+  }
+
   &::before {
     position: absolute;
     top: 0;

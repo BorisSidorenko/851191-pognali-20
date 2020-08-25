@@ -70,26 +70,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba($special-blue_dark, 0.15);
   cursor: pointer;
 
   &:hover {
-    opacity: 0.6;
+    color: rgba($transport-icon_hover, 0.3);
     filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
-
-    .transport__icon {
-      fill: $transport-icon_hover;
-    }
   }
 
   &--active {
-    .transport__icon {
-      fill: $main-color;
-    }
+    color: $main-color;
 
     &:hover {
-      .transport__icon {
-        fill: $main-color;
-      }
+      color: rgba($main-color, 0.5);
     }
   }
 
