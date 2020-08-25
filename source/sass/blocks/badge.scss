@@ -4,19 +4,16 @@
   align-items: center;
   width: 32px;
   height: 32px;
+  color: rgba($special-blue_dark, 0.15);
   background-color: $basic-blue_light;
   border-radius: 50%;
 
   &--active {
-    .badge__icon {
-      fill: $special-blue_dark;
-    }
+    color: $special-blue_dark;
   }
 
   &--special {
-    .badge__icon {
-      fill: $badge_blue;
-    }
+    color: $badge_blue;
   }
 
   &--bg_none {
@@ -53,8 +50,6 @@
 }
 
 .badge__icon {
-  fill: rgba($special-blue_dark, 0.15);
-
   &--plane {
     width: 12px;
     height: 14px;

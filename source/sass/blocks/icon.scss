@@ -35,6 +35,15 @@
     height: 10px;
   }
 
+  &--arrow-dwn {
+    top: 48px;
+    left: auto;
+    right: 54px;
+    width: 6px;
+    height: 10px;
+    fill: $input-grey;
+  }
+
   &--handset {
     top: 17px;
     left: 17px;
@@ -63,6 +72,13 @@
     height: 18px;
   }
 
+  &--flag-dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+
   &--country-flag {
     top: 86px;
     left: 25px;
@@ -79,6 +95,15 @@
     left: 0;
     width: 15px;
     height: 10px;
+  }
+
+  &--cross-remove {
+    position: relative;
+    top: -1px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    fill: $contries-cross-button;
   }
 
   &--contries-dots-toggle,

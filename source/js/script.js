@@ -60,55 +60,45 @@ if (tariffsBusinessButton) {
   });
 }
 
-
-var filter = document.querySelector('.filters__form');
-var filterBtnHobbies = document.querySelector('.filters__hobbies-btn');
-var hobbiesOptions = document.querySelector('.filters__hobbies');
-
-if (filterBtnHobbies) {
-  filterBtnHobbies.addEventListener('click',  function() {
-    if (hobbiesOptions.classList.contains('filters__list--collapsed')) {
-      hobbiesOptions.classList.remove('filters__list--collapsed');
-      hobbiesOptions.classList.add('filters__list--expanded');
-    }
-  });
-}
-
-
 var filterBtnToggles = document.querySelectorAll('.filters__category-toggle');
 var filtersOptions = document.querySelectorAll('.filters__options');
 
-for  (let i = 0; i < filterBtnToggles.length; i++) {
-  filterBtnToggles[i].addEventListener('click', function() {
-    if (filterBtnToggles[i].classList.contains('filters__category-toggle--closed')) {
-      filterBtnToggles[i].classList.remove('filters__category-toggle--closed');
-      filterBtnToggles[i].classList.add('filters__category-toggle--opened');
-    } else {
-      filterBtnToggles[i].classList.add('filters__category-toggle--closed');
-      filterBtnToggles[i].classList.remove('filters__category-toggle--opened');
-    };
-    for (let j = 0; j < filtersOptions.length; j++) {
-      if (i == j) {
-        if (filtersOptions[j].classList.contains('filters__options--collapsed')) {
-          filtersOptions[j].classList.remove('filters__options--collapsed');
-          filtersOptions[j].classList.add('filters__options--expanded');
-        } else {
-          filtersOptions[j].classList.remove('filters__options--expanded');
-          filtersOptions[j].classList.add('filters__options--collapsed');
+if (filterBtnToggles) {
+  for  (let i = 0; i < filterBtnToggles.length; i++) {
+    filterBtnToggles[i].addEventListener('click', function() {
+      if (filterBtnToggles[i].classList.contains('filters__category-toggle--closed')) {
+        filterBtnToggles[i].classList.remove('filters__category-toggle--closed');
+        filterBtnToggles[i].classList.add('filters__category-toggle--opened');
+      } else {
+        filterBtnToggles[i].classList.add('filters__category-toggle--closed');
+        filterBtnToggles[i].classList.remove('filters__category-toggle--opened');
+      };
+      for (let j = 0; j < filtersOptions.length; j++) {
+        if (i == j) {
+          if (filtersOptions[j].classList.contains('filters__options--collapsed')) {
+            filtersOptions[j].classList.remove('filters__options--collapsed');
+            filtersOptions[j].classList.add('filters__options--expanded');
+          } else {
+            filtersOptions[j].classList.remove('filters__options--expanded');
+            filtersOptions[j].classList.add('filters__options--collapsed');
+          }
         }
       }
-    }
-  });
+    });
+  }
 }
 
 var transportToggles = document.querySelectorAll('.transport__toggle');
 
-for (let i = 0; i , transportToggles.length; i++) {
-  transportToggles[i].addEventListener('click', function() {
-    if (transportToggles[i].classList.contains('transport__toggle--active')) {
-      transportToggles[i].classList.remove('transport__toggle--active');
-    } else {
-      transportToggles[i].classList.add('transport__toggle--active');
-    }
-  });
+if (transportToggles) {
+  for (let i = 0; i < transportToggles.length; i++) {
+    transportToggles[i].addEventListener('click', function() {
+      if (transportToggles[i].classList.contains('transport__toggle--active')) {
+        transportToggles[i].classList.remove('transport__toggle--active');
+      } else {
+        transportToggles[i].classList.add('transport__toggle--active');
+      }
+    });
+  }
 }
+
