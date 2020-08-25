@@ -291,6 +291,12 @@
       content: "";
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 53px;
+    }
+  }
 }
 
 .step__country {

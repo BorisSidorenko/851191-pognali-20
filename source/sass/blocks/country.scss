@@ -40,6 +40,11 @@
     width: auto;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 85px;
+    padding-right: 112px;
+  }
 }
 
 .country__wrapper {
@@ -77,6 +82,12 @@
       height: 14px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 210px;
+    }
+  }
 }
 
 .country__remove-btn {
@@ -106,6 +117,7 @@
 
   @media (min-width: $tablet-width) {
     top: 26px;
+    right: 0;
     background-color: transparent;
 
     &::before,
