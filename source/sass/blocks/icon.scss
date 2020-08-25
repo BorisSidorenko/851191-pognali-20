@@ -79,6 +79,12 @@
     margin: auto;
   }
 
+  &--flag-entertainment {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
   &--country-flag {
     top: 86px;
     left: 25px;
@@ -88,6 +94,13 @@
     position: relative;
     top: 0;
     left: 0;
+  }
+
+  &--connection-line {
+    top: 6px;
+    left: -10px;
+    width: 17px;
+    height: 287px;
   }
 
   &--contries-filter {
