@@ -33,7 +33,6 @@
     right: 2px;
     width: 6px;
     height: 10px;
-    transform: rotate(90deg);
   }
 
   &--handset {
@@ -98,6 +97,13 @@
 
   @media (max-width: $mobile-width) {
     &--hide-arrow-btn {
+      display: none;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &--arrow-filter {
       display: none;
     }
   }

@@ -80,6 +80,13 @@ var filtersOptions = document.querySelectorAll('.filters__options');
 
 for  (let i = 0; i < filterBtnToggles.length; i++) {
   filterBtnToggles[i].addEventListener('click', function() {
+    if (filterBtnToggles[i].classList.contains('filters__category-toggle--closed')) {
+      filterBtnToggles[i].classList.remove('filters__category-toggle--closed');
+      filterBtnToggles[i].classList.add('filters__category-toggle--opened');
+    } else {
+      filterBtnToggles[i].classList.add('filters__category-toggle--closed');
+      filterBtnToggles[i].classList.remove('filters__category-toggle--opened');
+    };
     for (let j = 0; j < filtersOptions.length; j++) {
       if (i == j) {
         if (filtersOptions[j].classList.contains('filters__options--collapsed')) {

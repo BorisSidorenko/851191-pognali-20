@@ -38,4 +38,8 @@
     border-color: transparent transparent $badge_blue transparent;
     content: " ";
   }
+
+  @media (min-width: $tablet-width) {
+    top: 48px;
+  }
 }
