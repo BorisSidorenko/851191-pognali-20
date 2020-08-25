@@ -277,6 +277,22 @@
   }
 }
 
+.step__wrapper--special {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 163px;
+      right: -26px;
+      width: 326px;
+      border-bottom: 1px solid $dilimeter-grey;
+      transform: rotate(90deg);
+      content: "";
+    }
+  }
+}
+
 .step__country {
   position: relative;
   padding-bottom: 22px;
