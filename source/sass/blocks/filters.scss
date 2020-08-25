@@ -89,6 +89,7 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 14px;
@@ -138,16 +139,25 @@
   }
 }
 
-.filters__category {
+.filters__category-toggle {
+  position: relative;
+  display: flex;
   margin: 0;
-  padding-top: 12px;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $main-color;
+  padding: 0;
+  width: 100%;
+  outline: none;
+
+  &:hover {
+    color: rgba($main-color, 0.6);
+
+    .filters__category {
+      color: rgba($main-color, 0.6);
+    }
+  }
+
+  &:active {
+    color: rgba($main-color, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -161,15 +171,21 @@
   }
 }
 
+.filters__category {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
 .filters__list {
   margin: 0;
   padding: 0;
   padding-top: 17px;
   list-style-type: none;
-
-  &--hobbies {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -181,6 +197,14 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.filters__options--collapsed {
+  display: none;
+}
+
+.filters__options--expanded {
+  display: block;
 }
 
 .filters__item {
@@ -202,6 +226,8 @@
 .filters__label {
   position: relative;
   padding-left: 34px;
+  padding-top: 3px;
+  padding-bottom: 4px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;

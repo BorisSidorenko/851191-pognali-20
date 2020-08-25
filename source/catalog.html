@@ -1029,8 +1029,11 @@
             <h3 class="filters__title">Подберите идеального попутчика</h3>
             <div class="filters__wrapper">
               <div class="filters__group filters__group--hobbies">
-                <h4 class="filters__category">хобби:</h4>
-                <ul class="filters__list">
+                <button type="button" class="button filters__category-toggle button--bg_none">
+                  <span class="filters__category">хобби:</span>
+                  <svg class="icon icon--arrow-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
+                </button>
+                <ul class="filters__list filters__options filters__options--collapsed">
                   <li class="filters__item">
                     <input type="checkbox" name="gym" id="gym" class="visually-hidden filters__checkbox">
                     <label for="gym" class="filters__label">Спортзал</label>
@@ -1046,8 +1049,11 @@
                 </ul>
               </div>
               <div class="filters__group filters__group--music">
-                <h4 class="filters__category">музыка:</h4>
-                <ul class="filters__list">
+                <button type="button" class="button filters__category-toggle button--bg_none">
+                  <span class="filters__category">музыка:</span>
+                  <svg class="icon icon--arrow-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
+                </button>
+                <ul class="filters__list filters__options filters__options--collapsed">
                   <li class="filters__item">
                     <input type="checkbox" name="rock" id="rock" class="visually-hidden filters__checkbox" checked>
                     <label for="rock" class="filters__label">Тяжелый рок</label>
@@ -1063,8 +1069,11 @@
                 </ul>
               </div>
               <div class="filters__group filters__group--food">
-                <h4 class="filters__category">еда:</h4>
-                <ul class="filters__list">
+                <button type="button" class="button filters__category-toggle button--bg_none">
+                  <span class="filters__category">еда:</span>
+                  <svg class="icon icon--arrow-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
+                </button>
+                <ul class="filters__list filters__options filters__options--collapsed">
                   <li class="filters__item">
                     <input type="checkbox" name="meat" id="meat" class="visually-hidden filters__checkbox">
                     <label for="meat" class="filters__label">Мясоед</label>
@@ -1080,8 +1089,11 @@
                 </ul>
               </div>
               <div class="filters__group filters__group--transport">
-                <h4 class="filters__category">транспорт:</h4>
-                <div class="transport">
+                <button type="button" class="button filters__category-toggle button--bg_none">
+                  <span class="filters__category">транспорт:</span>
+                  <svg class="icon icon--arrow-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
+                </button>
+                <div class="transport filters__options filters__options--collapsed">
                   <ul class="transport__list transport__list--form">
                     <li class="transport__item">
                       <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Самолёт">
@@ -1119,8 +1131,11 @@
                 </div>
               </div>
               <div class="filters__group filters__group--level">
-                <h4 class="filters__category">левел:</h4>
-                <div class="filters__controls">
+                <button type="button" class="button filters__category-toggle button--bg_none">
+                  <span class="filters__category">левел:</span>
+                  <svg class="icon icon--arrow-filter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
+                </button>
+                <div class="filters__controls filters__options filters__options--collapsed">
                   <div class="level-controls">
                     <label for="level-min" class="visually-hidden">Левел от:</label>
                     <input type="text" name="level-min" id="level-min" class="level-controls__input level-controls__input--min" value="30">
