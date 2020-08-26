@@ -101,3 +101,19 @@ if (transportToggles) {
     });
   }
 }
+
+var nav = document.querySelector('.nav');
+var navOffset = 0;
+
+window.onscroll = function() {
+  if (window.pageYOffset >= navOffset) {
+    nav.classList.add('nav--sticky');
+  } else {
+    nav.classList.remove('nav--sticky');
+  }
+};
+
+window.addEventListener("resize", function() {
+  navOffset = document.documentElement.clientWidth < 1440 ? 5 : 750;
+  return navOffset;
+});
