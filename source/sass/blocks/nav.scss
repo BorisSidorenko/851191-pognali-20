@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 41px;
     padding-left: 40px;
-    padding-right: 0;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,13 +70,16 @@
 
     @media (min-width: $tablet-width) {
       display: block;
+      margin-left: auto;
     }
   }
 }
 
 .nav--opened {
+  position: absolute;
   padding-bottom: 41px;
   background-color: $basic-white;
+  z-index: 2;
 
   .nav__toggle {
     &::before,
@@ -102,6 +105,7 @@
 
   .nav__button {
     display: block;
+    margin-left: auto;
   }
 
   .nav__logo--header {
@@ -132,6 +136,18 @@
   .nav__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .nav__list--contacts {
+    grid-column: 1;
+  }
+
+  .nav__logo--header {
+    display: none;
+  }
+
+  .nav__logo--menu {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -285,7 +301,6 @@
     grid-row: 1;
   }
 }
-
 
 .nav__wrapper--button {
   grid-column: 1/4;
