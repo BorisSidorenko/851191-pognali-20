@@ -160,6 +160,29 @@
   }
 }
 
+.nav--sticky {
+  position: fixed;
+  top: 0;
+  padding-bottom: 27px;
+  z-index: 5;
+  background-color: $basic-white;
+
+  .nav__toggle {
+    &::before,
+    &::after {
+      background-color: $nav-button_close;
+    }
+  }
+
+  .nav__logo--header {
+    display: none;
+  }
+
+  .nav__logo--menu {
+    display: block;
+  }
+}
+
 .nav__logo {
   grid-column: 1;
   grid-row: 1;
