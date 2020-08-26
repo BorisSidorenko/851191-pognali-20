@@ -1,0 +1,40 @@
+.circular-chart {
+  position: absolute;
+  display: block;
+  width: 47px;
+  height: 47px;
+
+  &--index {
+    width: 65px;
+    height: 65px;
+  }
+
+  &--form {
+    width: 105px;
+    height: 105px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 65px;
+    height: 65px;
+
+    &--form {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.circular-chart__circle {
+  stroke: $special-orange;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  animation: progress 3s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
