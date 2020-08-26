@@ -103,7 +103,7 @@ if (transportToggles) {
 }
 
 var nav = document.querySelector('.nav');
-var navOffset = 0;
+var navOffset = 5;
 
 window.onscroll = function() {
   if (window.pageYOffset >= navOffset) {

@@ -1,3 +1,7 @@
+.country {
+  position: relative;
+}
+
 .country__selected,
 .country__select,
 .country__add {
@@ -98,6 +102,7 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
+  outline: none;
   cursor: pointer;
 
   &::before,

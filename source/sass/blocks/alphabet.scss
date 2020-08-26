@@ -2,6 +2,20 @@
   border-collapse: collapse;
 }
 
+.alphabet--form {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 262px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 361px;
+  }
+}
+
 .alphabet__cell {
   padding-top: 12px;
   padding-bottom: 15px;
@@ -19,7 +33,7 @@
   border: 1px solid $calendar-grey;
 
   @media (min-width: $tablet-width) {
-    &--form {
+    &--catalog {
       padding: 0;
       font-weight: bold;
       font-size: 60px;
@@ -29,7 +43,7 @@
       border: none;
     }
 
-    &--form-active {
+    &--catalog-active {
       color: $main-color;
     }
   }
@@ -37,6 +51,19 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     vertical-align: top;
+  }
+}
+
+.alphabet__cell--form {
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 

@@ -41,36 +41,6 @@
   }
 }
 
-.dropdown__icon {
-  position: absolute;
-  top: 15px;
-  right: 26px;
-  width: 10px;
-  height: 14px;
-  fill: rgba($basic-black, 0.6);
-
-  &--offset {
-    right: 78px;
-  }
-
-  @media (min-width: $tablet-width) {
-    top: 36px;
-    right: 180px;
-    width: 17px;
-    height: 9px;
-
-    &--offset {
-      right: 180px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 21px;
-    height: 11px;
-    right: 300px;
-
-    &--offset {
-      right: 300px;
-    }
-  }
+.dropdown__default-option {
+  display: none;
 }

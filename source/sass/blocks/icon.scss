@@ -128,6 +128,20 @@
     height: 16px;
   }
 
+  &--dropdown {
+    position: absolute;
+    top: 15px;
+    left: auto;
+    right: 26px;
+    width: 10px;
+    height: 14px;
+    fill: rgba($basic-black, 0.6);
+  }
+
+  &--dropdown-offset {
+    right: 78px;
+  }
+
   @media (max-width: $mobile-width) {
     &--hide-arrow-btn {
       display: none;
@@ -238,6 +252,17 @@
       width: 70px;
       height: 47px;
     }
+
+    &--dropdown {
+      top: 36px;
+      right: 180px;
+      width: 17px;
+      height: 9px;
+    }
+
+    &--dropdown-offset {
+      right: 180px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -276,6 +301,16 @@
     &--straight-line {
       top: 89px;
       right: 218px;
+    }
+
+    &--dropdown {
+      width: 21px;
+      height: 11px;
+      right: 300px;
+    }
+
+    &--dropdown-offset {
+      right: 300px;
     }
   }
 }

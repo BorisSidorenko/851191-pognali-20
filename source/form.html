@@ -407,14 +407,14 @@
                 <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                   <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
                 </select>
-                <svg class="dropdown__icon dropdown__icon--offset" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <svg class="icon icon--dropdown icon--dropdown-offset" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
                   <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
                 </svg>
                 <div class="country__flag">
                   <svg class="icon icon--flag icon--flag-dropdown">
                     <use xlink:href="../img/spriteFlags.svg#flag-bosnia"></use>
                   </svg>
-                  <button class="button country__remove-btn button--bg-color_blue">
+                  <button type="button" class="button country__remove-btn button--bg-color_blue">
                     <span class="visually-hidden">Удалить страну</span>
                   </button>
                 </div>
@@ -426,14 +426,14 @@
                 <select class="dropdown country__selected dropdown--rectangle_s dropdown--rounded dropdown--border_grey">
                   <option value="Чехия" selected>Чехия</option>
                 </select>
-                <svg class="dropdown__icon dropdown__icon--offset" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <svg class="icon icon--dropdown icon--dropdown-offset" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
                   <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
                 </svg>
                 <div class="country__flag">
                   <svg class="icon icon--flag icon--flag-dropdown">
                     <use xlink:href="../img/spriteFlags.svg#flag-czech"></use>
                   </svg>
-                  <button class="button country__remove-btn button--bg-color_blue">
+                  <button type="button" class="button country__remove-btn button--bg-color_blue">
                     <span class="visually-hidden">Удалить страну</span>
                   </button>
                 </div>
@@ -441,106 +441,110 @@
               <svg class="icon icon--arrow-dwn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 10"><path d="M3 8.1V0H2v8.1l-2-2v1.4L2.5 10 5 7.5V6.1z"/></svg>
             </div>
             <div class="country step__country">
-              <div class="country__wrapper country__wrapper--not-selected">
-                <select class="dropdown country__select dropdown--rectangle dropdown--rounded dropdown--border_grey">
-                  <option value="Чехия" selected>Выберите страну</option>
+              <div class="country__wrapper country__wrapper--not-selected choose-country choose-country--collapsed">
+                <select class="dropdown choose-country__dropdown country__select dropdown--rectangle dropdown--rounded dropdown--border_grey">
+                  <option class="dropdown__default-option" value="Чехия" selected>Выберите страну</option>
                 </select>
-                <svg class="dropdown__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <svg class="icon icon--dropdown" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
                   <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
                 </svg>
-                <button class="button country__remove-btn button--bg-color_blue">
+                <button type="button" class="button country__remove-btn button--bg-color_blue">
                   <span class="visually-hidden">Удалить страну</span>
                 </button>
+                <div class="choose-country__countries step__choose-country">
+                  <table class="alphabet alphabet--form">
+                    <tr class="alphabet__row">
+                      <td class="alphabet__cell alphabet__cell--form">А</td>
+                      <td class="alphabet__cell alphabet__cell--form">Б</td>
+                      <td class="alphabet__cell alphabet__cell--form">В</td>
+                      <td class="alphabet__cell alphabet__cell--form">Г</td>
+                      <td class="alphabet__cell alphabet__cell--form">Д</td>
+                    </tr>
+                    <tr class="alphabet__row">
+                      <td class="alphabet__cell alphabet__cell--form">Е</td>
+                      <td class="alphabet__cell alphabet__cell--form">З</td>
+                      <td class="alphabet__cell alphabet__cell--form">И</td>
+                      <td class="alphabet__cell alphabet__cell--form">К</td>
+                      <td class="alphabet__cell alphabet__cell--form">Л</td>
+                    </tr>
+                    <tr class="alphabet__row">
+                      <td class="alphabet__cell alphabet__cell--form">М</td>
+                      <td class="alphabet__cell alphabet__cell--form">Н</td>
+                      <td class="alphabet__cell alphabet__cell--form">О</td>
+                      <td class="alphabet__cell alphabet__cell--form">П</td>
+                      <td class="alphabet__cell alphabet__cell--form">Р</td>
+                    </tr>
+                    <tr class="alphabet__row">
+                      <td class="alphabet__cell alphabet__cell--form">С</td>
+                      <td class="alphabet__cell alphabet__cell--form">Т</td>
+                      <td class="alphabet__cell alphabet__cell--form">У</td>
+                      <td class="alphabet__cell alphabet__cell--form">Ф</td>
+                      <td class="alphabet__cell alphabet__cell--form">Х</td>
+                    </tr>
+                    <tr class="alphabet__row">
+                      <td class="alphabet__cell alphabet__cell--form">Ч</td>
+                      <td class="alphabet__cell alphabet__cell--form">Ш</td>
+                      <td class="alphabet__cell alphabet__cell--form">Щ</td>
+                      <td class="alphabet__cell alphabet__cell--form">Э</td>
+                      <td class="alphabet__cell alphabet__cell--form">Ю</td>
+                    </tr>
+                  </table>
+                  <ul class="choose-country__list countries-to-choose countries-to-choose--form">
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="australia" value="Австралия" class="visually-hidden">
+                      <label for="australia">Австралия</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="austria" value="Австрия" class="visually-hidden">
+                      <label for="austria">Австрия</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="azerbaijan" value="Азербайджан" class="visually-hidden">
+                      <label for="azerbaijan">Азербайджан</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="albania" value="Албания" class="visually-hidden">
+                      <label for="albania">Албания</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="algeria" value="Алжир" class="visually-hidden">
+                      <label for="algeria">Алжир</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="angola" value="Ангола" class="visually-hidden">
+                      <label for="angola">Ангола</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="andorra" value="Андорра" class="visually-hidden">
+                      <label for="andorra">Андорра</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда" class="visually-hidden">
+                      <label for="antigua">Антигуа и Барбуда</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="argentina" value="Аргентина" class="visually-hidden">
+                      <label for="argentina">Аргентина</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="armenia" value="Армения" class="visually-hidden">
+                      <label for="armenia">Армения</label>
+                    </li>
+                    <li class="countries-to-choose__item countries-to-choose__item--form">
+                      <input type="radio" name="country" id="afganistan" value="Афганистан" class="visually-hidden">
+                      <label for="afganistan">Афганистан</label>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <svg class="icon icon--arrow-dwn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 10"><path d="M3 8.1V0H2v8.1l-2-2v1.4L2.5 10 5 7.5V6.1z"/></svg>
-            </div>
-            <div class="choose-country step__choose-country">
-              <table class="alphabet choose-country__alphabet">
-                <tr class="alphabet__row">
-                  <td class="alphabet__cell">А</td>
-                  <td class="alphabet__cell">Б</td>
-                  <td class="alphabet__cell">В</td>
-                  <td class="alphabet__cell">Г</td>
-                  <td class="alphabet__cell">Д</td>
-                </tr>
-                <tr class="alphabet__row">
-                  <td class="alphabet__cell">Е</td>
-                  <td class="alphabet__cell">З</td>
-                  <td class="alphabet__cell">И</td>
-                  <td class="alphabet__cell">К</td>
-                  <td class="alphabet__cell">Л</td>
-                </tr>
-                <tr class="alphabet__row">
-                  <td class="alphabet__cell">М</td>
-                  <td class="alphabet__cell">Н</td>
-                  <td class="alphabet__cell">О</td>
-                  <td class="alphabet__cell">П</td>
-                  <td class="alphabet__cell">Р</td>
-                </tr>
-                <tr class="alphabet__row">
-                  <td class="alphabet__cell">С</td>
-                  <td class="alphabet__cell">Т</td>
-                  <td class="alphabet__cell">У</td>
-                  <td class="alphabet__cell">Ф</td>
-                  <td class="alphabet__cell">Х</td>
-                </tr>
-                <tr class="alphabet__row">
-                  <td class="alphabet__cell">Ч</td>
-                  <td class="alphabet__cell">Ш</td>
-                  <td class="alphabet__cell">Щ</td>
-                  <td class="alphabet__cell">Э</td>
-                  <td class="alphabet__cell">Ю</td>
-                </tr>
-              </table>
-              <ul class="choose-country__list countries-to-choose">
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="australia" value="Австралия" class="visually-hidden">
-                  <label for="australia">Австралия</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="austria" value="Австрия" class="visually-hidden">
-                  <label for="austria">Австрия</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="azerbaijan" value="Азербайджан" class="visually-hidden">
-                  <label for="azerbaijan">Азербайджан</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="albania" value="Албания" class="visually-hidden">
-                  <label for="albania">Албания</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="algeria" value="Алжир" class="visually-hidden">
-                  <label for="algeria">Алжир</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="angola" value="Ангола" class="visually-hidden">
-                  <label for="angola">Ангола</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="andorra" value="Андорра" class="visually-hidden">
-                  <label for="andorra">Андорра</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="antigua" value="Антигуа и Барбуда" class="visually-hidden">
-                  <label for="antigua">Антигуа и Барбуда</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="argentina" value="Аргентина" class="visually-hidden">
-                  <label for="argentina">Аргентина</label>
-                </li>
-                <li class="countries-to-choose__item">
-                  <input type="radio" name="country" id="armenia" value="Армения" class="visually-hidden">
-                  <label for="armenia">Армения</label>
-                </li>
-              </ul>
             </div>
             <div class="country step__country">
               <div class="country__wrapper country__wrapper--not-selected">
                 <select class="dropdown country__add dropdown--rectangle dropdown--rounded dropdown--border_grey">
                   <option value="Чехия" selected disabled>Добавить страну</option>
                 </select>
-                <svg class="dropdown__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                <svg class="icon icon--dropdown" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
                   <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z" />
                 </svg>
               </div>
