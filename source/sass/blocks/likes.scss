@@ -12,7 +12,6 @@
   margin-right: 5px;
   width: 30px;
   height: 30px;
-  background-color: $dark-grey;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -25,8 +24,11 @@
   margin: auto;
   width: 12px;
   height: 12px;
-  fill: $dark-grey;
-  stroke: $light-blue;
+  fill: $light-blue;
+
+  &--active {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 20px;
@@ -50,14 +52,43 @@
   text-decoration: none;
   color: $basic-blue;
 
-  &--active {
-    .likes__icon {
-      stroke: none;
-      fill: $heart-red;
-    }
-
+  &:hover {
     .likes__icon-wrapper {
-      background-color: $like-active;
+      background-color: $dark-grey;
+    }
+  }
+
+  &:active {
+    .likes__icon {
+      fill: rgba($light-blue, 0.3);
+    }
+  }
+}
+
+.likes__link--active {
+  .likes__icon {
+    display: none;
+  }
+
+  .likes__icon--active {
+    display: block;
+    stroke: none;
+    fill: $heart-red;
+  }
+
+  .likes__icon-wrapper {
+    background-color: $like-active;
+  }
+
+  &:hover {
+    .likes__icon-wrapper {
+      background-color: $like-active_bg-hover;
+    }
+  }
+
+  &:active {
+    .likes__icon--active {
+      fill: rgba($heart-red, 0.3);
     }
   }
 }

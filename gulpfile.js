@@ -80,6 +80,15 @@ const spriteSocial = () => {
 
 exports.spriteSocial = spriteSocial;
 
+const spriteLike = () => {
+  return gulp.src("source/img/**/like-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteLike.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteLike = spriteLike;
+
 // Copy
 
 const copy = () => {
@@ -115,7 +124,8 @@ exports.clean = clean;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags, spriteTransport, html);
+const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
+  spriteTransport, spriteSocial, spriteLike, html);
 
 exports.build = build;
 
