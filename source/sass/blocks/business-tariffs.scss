@@ -123,6 +123,15 @@
   text-transform: uppercase;
   color: $special-blue_dark;
   border-radius: 0 0 20px 20px;
+  outline: none;
+
+  &:hover {
+    background-color: $basic-blue_light;
+  }
+
+  &:active {
+    color: rgba($special-blue_dark, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;

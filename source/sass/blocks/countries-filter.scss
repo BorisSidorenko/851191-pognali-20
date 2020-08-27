@@ -81,6 +81,14 @@
   cursor: pointer;
   outline: none;
 
+  &:hover {
+    color: rgba($light-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($light-blue, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 1;
     display: flex;
@@ -245,15 +253,24 @@
   }
 
   .countries-filter__button {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/4;
     grid-row: 5;
     margin-bottom: 11px;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
     background-color: $contries-filter-button;
+    outline: none;
     color: $light-blue;
+
+    &:hover {
+      background-color: $contries-filter-button_hover;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.3);
+    }
 
     @media (min-width: $tablet-width) {
       grid-row: 3;
@@ -265,5 +282,17 @@
     @media (min-width: $tablet-width) {
       width: 100%;
     }
+  }
+}
+
+.countries-filter__button-text {
+  margin-left: 11px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: 0;
   }
 }

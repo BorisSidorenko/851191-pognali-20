@@ -41,3 +41,16 @@
     }
   }
 }
+
+.continents__link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: rgba($light-blue, 0.6);
+  }
+
+  &:active {
+    color: $light-blue;
+  }
+}

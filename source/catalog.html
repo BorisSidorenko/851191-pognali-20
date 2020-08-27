@@ -192,10 +192,18 @@
           </svg>
         </button>
         <ul class="continents countries-filter__continents">
-          <li class="continents__item continents__item--active">Европа</li>
-          <li class="continents__item">Азия</li>
-          <li class="continents__item">Америка</li>
-          <li class="continents__item">Острова</li>
+          <li class="continents__item continents__item--active">
+            <a href="europe.html" class="continents__link">Европа</a>
+          </li>
+          <li class="continents__item">
+            <a href="asia.html" class="continents__link">Азия</a>
+          </li>
+          <li class="continents__item">
+            <a href="america.html" class="continents__link">Америка</a>
+          </li>
+          <li class="continents__item">
+            <a href="islands.html" class="continents__link">Острова</a>
+          </li>
         </ul>
         <table class="alphabet countries-filter__alphabet">
           <tr class="alphabet__row">
@@ -1021,7 +1029,12 @@
           </li>
         </ul>
         <button class="button countries-filter__button button--rounded button--text_upper button--text-align_center">
-          Свернуть
+          <span class="countries-filter__button-text">Свернуть</span>
+          <svg class="icon icon--contries-cross-toggle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
+            <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7
+              L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z" fill="currentColor"/>
+          </svg>
         </button>
       </section>
       <div class="travelers-to-choose__wrapper container">
@@ -1165,16 +1178,18 @@
             <li class="cards__item">
               <article class="card">
                 <div class="card__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
-                    <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Тани Фирсовой">
-                  </picture>
+                  <a href="user.html">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 768px)" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                      <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Тани Фирсовой">
+                    </picture>
+                  </a>
                 </div>
-                <a href="#" class="traveler-link">
+                <a href="user.html" class="traveler-link">
                   <h3 class="card__title">
                     <span class="card__first-name">Таня</span>
                     <span class="card__last-name">Фирсова</span>
@@ -1272,7 +1287,7 @@
                   </div>
                 </div>
                 <div class="card__link-wrapper">
-                  <a href="#" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                  <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
                     Позвать!
                   </a>
                 </div>
@@ -1281,16 +1296,18 @@
             <li class="cards__item">
               <article class="card">
                 <div class="card__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-                    <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Пети Демина">
-                  </picture>
+                  <a href="user.html">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 768px)" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                      <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Пети Демина">
+                    </picture>
+                  </a>
                 </div>
-                <a href="#" class="traveler-link">
+                <a href="user.html" class="traveler-link">
                   <h3 class="card__title">
                     <span class="card__first-name">Петя</span>
                     <span class="card__last-name">Демин</span>
@@ -1381,7 +1398,7 @@
                   </div>
                 </div>
                 <div class="card__link-wrapper">
-                  <a href="#" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                  <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
                     Позвать!
                   </a>
                 </div>
@@ -1390,16 +1407,18 @@
             <li class="cards__item">
               <article class="card">
                 <div class="card__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-                    <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Марка Смолова">
-                  </picture>
+                  <a href="user.html">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 768px)" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                      <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Марка Смолова">
+                    </picture>
+                  </a>
                 </div>
-                <a href="#" class="traveler-link">
+                <a href="user.html" class="traveler-link">
                   <h3 class="card__title">
                     <span class="card__first-name">Марк</span>
                     <span class="card__last-name">Смолов</span>
@@ -1496,7 +1515,7 @@
                   </div>
                 </div>
                 <div class="card__link-wrapper">
-                  <a href="#" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                  <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
                     Позвать!
                   </a>
                 </div>
@@ -1505,16 +1524,18 @@
             <li class="cards__item">
               <article class="card">
                 <div class="card__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-                    <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Ларисы Роговой">
-                  </picture>
+                  <a href="user.html">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                      <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 768px)" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+                      <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Ларисы Роговой">
+                    </picture>
+                  </a>
                 </div>
-                <a href="#" class="traveler-link">
+                <a href="user.html" class="traveler-link">
                   <h3 class="card__title card__title--online">
                     <span class="card__first-name">Лариса</span>
                     <span class="card__last-name">Роговая</span>
@@ -1604,14 +1625,14 @@
                   </div>
                 </div>
                 <div class="card__link-wrapper">
-                  <a href="#" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                  <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
                     Позвать!
                   </a>
                 </div>
               </article>
             </li>
           </ul>
-          <a href="#" class="button catalog__link button--bg_none button--text_upper button--text-align_center button--text_dark-blue">
+          <a href="travelers.html" class="button catalog__link button--bg_none button--text_upper button--text-align_center button--text_dark-blue">
             показать еще
           </a>
           <h2 class="visually-hidden">Другие страницы</h2>
@@ -1640,12 +1661,12 @@
             </ul>
             <ul class="pagination__page-controls page-controls">
               <li class="page-controls__item">
-                <a href="#" class="button page-controls__button page-controls__button--prev button--bg-color_white button--left-rounded">
+                <a href="prev.html" class="button page-controls__button page-controls__button--prev button--bg-color_white button--left-rounded">
                   <span class="visually-hidden">Предыдущая страница</span>
                 </a>
               </li>
               <li class="page-controls__item">
-                <a href="#" class="button page-controls__button page-controls__button--next button--bg-color_white button--right-rounded">
+                <a href="next.html" class="button page-controls__button page-controls__button--next button--bg-color_white button--right-rounded">
                   <span class="visually-hidden">Следующая страница</span>
                 </a>
               </li>
@@ -1709,10 +1730,9 @@
         </li>
       </ul>
       <div class="copyright page-footer__copyright">
-        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__link copyright__link--icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0" y="0" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
             <path
               d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8 l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8 l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9 L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z" />
