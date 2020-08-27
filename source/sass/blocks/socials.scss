@@ -55,6 +55,16 @@
 }
 
 .socials__link {
+  color: $light-blue;
+
+  &:hover {
+    color: rgba($light-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($light-blue, 0.3);
+  }
+
   &--footer {
     display: flex;
     justify-content: center;
@@ -65,7 +75,12 @@
     border-radius: 50%;
 
     &:hover {
+      color: $light-blue;
       background-color: $special-yellow_dark;
+    }
+
+    &:active {
+      color: rgba($light-blue, 0.3);
     }
 
     @media (min-width: $tablet-width) {

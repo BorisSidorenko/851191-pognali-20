@@ -71,6 +71,15 @@ const spriteTransport = () => {
 
 exports.spriteTransport = spriteTransport;
 
+const spriteSocial = () => {
+  return gulp.src("source/img/**/social-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteSocial.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteSocial = spriteSocial;
+
 // Copy
 
 const copy = () => {
