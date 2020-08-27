@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header page-header--index">
     <div class="container container--nav">
       <nav class="nav page-header__nav nav--index nav--closed nav--nojs container">
@@ -301,7 +301,7 @@
           </div>
         </a>
       </div>
-      <a href="#" class="button directions__link button--rectangle button--bg-color_yellow button--text-align_left">
+      <a href="form.html" class="button directions__link button--rectangle button--bg-color_yellow button--text-align_left">
         Показать все
         <svg class="icon icon--arrow-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
       </a>
@@ -567,7 +567,7 @@
           ул. Большая<br class="break break--hide-tablet">
           Конюшенная, 19/8
         </p>
-        <a href="address.html" class="address__link button button--rectangle button--border">
+        <a href="https://yandex.ru/maps/-/CCQtbKwHDA" class="address__link button button--rectangle button--border">
           Проложить маршрут
           <svg class="icon icon--arrow-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M0 14V.1l10 7z" fill="currentColor"/></svg>
         </a>
@@ -575,13 +575,10 @@
     </section>
     <section class="map container">
       <h2 class="visually-hidden">Карта</h2>
-      <a href="map.html" class="map__link">
-        <img src="https://via.placeholder.com/150x150" width="320" height="424"
-          alt="Офис по адресу ул. Большая Конюшенная, 19/8">
-      </a>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCQtbKW-2D" width="320" height="424" frameborder="0" allowfullscreen="true" title="Офис по адресу ул. Большая Конюшенная, 19/8"></iframe>
     </section>
   </main>
-  <footer class="page-footer container">
+  <footer class="page-footer container page-footer--index">
     <a class="page-footer__logo">
       <picture>
         <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
@@ -589,7 +586,7 @@
         <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
         <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
         <source type="image/webp" media="(max-width: 768px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-        <img class="nav__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали?">
+        <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали?">
       </picture>
     </a>
     <ul class="socials page-footer__socials socials--footer">
@@ -636,10 +633,9 @@
       </li>
     </ul>
     <div class="copyright page-footer__copyright">
-      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">HTML Academy</span>
-        <svg class="copyright__link copyright__link--icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0" y="0" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
           <path
             d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8 l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8 l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9 L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z" />

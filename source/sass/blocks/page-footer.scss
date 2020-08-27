@@ -22,6 +22,12 @@
   }
 }
 
+.page-footer--index {
+  position: relative;
+  padding-top: 0;
+  box-shadow: 0 -50px 0 $basic-white;
+}
+
 .page-footer__logo {
   display: block;
   padding-bottom: 40px;
@@ -29,6 +35,18 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+  }
+}
+
+.page-footer__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
   }
 }
 
