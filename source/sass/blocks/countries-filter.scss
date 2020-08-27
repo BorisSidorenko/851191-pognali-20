@@ -196,7 +196,6 @@
   }
 
   .countries-filter__continents {
-    display: block;
     grid-column: 1/3;
     grid-row: 2;
 
@@ -234,7 +233,8 @@
   }
 
   .countries-filter__countries {
-    display: block;
+    display: flex;
+    flex-direction: column;
     grid-column: 1/3;
     grid-row: 4;
     margin: 0;
@@ -280,6 +280,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      grid-column: 1/6;
       width: 100%;
     }
   }

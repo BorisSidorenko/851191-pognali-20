@@ -23,6 +23,7 @@
     &:focus {
       color: $basic-white;
       background-color: $special-blue_dark;
+      z-index: 1;
     }
   }
 

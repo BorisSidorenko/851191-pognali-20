@@ -102,20 +102,6 @@ if (transportToggles) {
   }
 }
 
-var dropdown = document.querySelector('.country__select');
-
-if (dropdown) {
-  dropdown.addEventListener('click', function() {
-    if (dropdown.classList.contains('dropdown--collapsed')) {
-      dropdown.classList.remove('dropdown--collapsed');
-      dropdown.classList.add('dropdown--expanded');
-    } else {
-      dropdown.classList.remove('dropdown--expanded');
-      dropdown.classList.add('dropdown--collapsed');
-    }
-  });
-};
-
 var nav = document.querySelector('.nav');
 var navOffset = 5;
 
@@ -156,7 +142,6 @@ var entertaimentDescription = document.querySelectorAll('.entertainment__descrip
 var planForm = document.querySelector('.new-plan__form');
 
 if (planForm) {
-  console.log(planForm);
   planForm.addEventListener('submit', function(evt) {
     for (let i = 0; i < entertaimentDescription.length; i++) {
       if (!entertaimentDescription[i].querySelector('.entertainment__textarea').value) {

@@ -25,12 +25,6 @@
 
 .countries-to-choose__item {
   padding-bottom: 4px;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: $special-grey;
 
   &:last-child {
     padding-bottom: 0;
@@ -42,10 +36,32 @@
   }
 }
 
+.countries-to-choose__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+
+  &:hover {
+    color: $special-blue_dark;
+  }
+
+  &:active {
+    color: rgba($special-blue_dark, 0.3);
+  }
+}
+
 .countries-to-choose__item--form {
   @media (min-width: $tablet-width) {
     padding-bottom: 9px;
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.countries-to-choose__link {
+  text-decoration: none;
+  margin-right: auto;
 }

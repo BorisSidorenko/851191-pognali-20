@@ -32,6 +32,11 @@
   background-color: $basic-white;
   border: 1px solid $calendar-grey;
 
+  &--catalog-active {
+    color: $basic-white;
+    background-color: $special-blue_dark;
+  }
+
   @media (min-width: $tablet-width) {
     &--catalog {
       padding: 0;
@@ -55,6 +60,10 @@
 }
 
 .alphabet__cell--form {
+  &:hover {
+    border: 1px solid $input-border_hover_grey;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 27px;
     padding-bottom: 27px;
@@ -65,6 +74,11 @@
   @media (min-width: $desktop-width) {
     text-align: center;
   }
+}
+
+.alphabet__cell--form-active {
+  color: $basic-white;
+  background-color: $special-blue_dark;
 }
 
 
