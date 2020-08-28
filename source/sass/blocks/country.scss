@@ -3,8 +3,7 @@
 }
 
 .country__selected,
-.country__select,
-.country__add {
+.country__select {
   padding-top: 13px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -13,7 +12,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $main-color;
 
@@ -24,12 +23,86 @@
     padding-bottom: 23px;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.1em;
   }
 }
 
-.country__add {
+.country__add-btn {
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 220px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $main-color;
+  text-align: left;
   background-color: $main-bg_color;
+  border-radius: 4px;
+  border: none;
+
+  &::before,
+  &:after {
+    position: absolute;
+    top: 21px;
+    right: 16px;
+    width: 14px;
+    border-top: 2px solid $contries-add-button_icon;
+    content: "";
+  }
+
+  &:after {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: $special-blue_light;
+  }
+
+  &:active {
+    &::before,
+    &:after {
+      border-color: rgba($contries-add-button_icon, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 369px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+    &::before,
+    &:after {
+      top: 36px;
+      right: 26px;
+      width: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 730px;
+
+    &::before,
+    &:after {
+      top: 36px;
+      right: 26px;
+      width: 20px;
+    }
+  }
 }
 
 .country__flag {
@@ -71,6 +144,7 @@
     &::before {
       background-color: transparent;
       border: 1px solid $input-grey;
+      z-index: 1;
     }
   }
 
