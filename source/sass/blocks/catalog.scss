@@ -23,13 +23,19 @@
   padding-right: 0;
   line-height: 30px;
 
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    background: url("../../img/show-more-plus.svg");
-    content: "";
+  &:hover {
+    .catalog__link-icon {
+      fill: rgba($special-blue_dark, 0.6);
+    }
   }
+
+  &:active {
+    .catalog__link-icon {
+      fill: rgba($special-blue_dark, 0.3);
+    }
+  }
+}
+
+.catalog__link-icon {
+  fill: $special-blue_dark;
 }

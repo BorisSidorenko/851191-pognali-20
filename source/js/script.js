@@ -153,3 +153,14 @@ if (planForm) {
     }
   });
 }
+
+var likeBtns = document.querySelectorAll('.likes__link');
+
+if (likeBtns) {
+  for (let i = 0; i < likeBtns.length; i++) {
+    likeBtns[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
+      likeBtns[i].classList.toggle('likes__link--active');
+    });
+  }
+}

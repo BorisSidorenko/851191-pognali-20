@@ -2,8 +2,10 @@
   position: relative;
   padding-top: 34px;
   padding-bottom: 31px;
-  background: url("../../img/smolov-back-desktop@1x.png") top 34px right 25px no-repeat,
-    url("../../img/rogovaya-back-mobile@1x.png") top 307px left no-repeat;
+  background-image: url("../../img/smolov-back-desktop@1x.png"),
+    url("../../img/rogovaya-back-mobile@1x.png");
+  background-position: top 34px right 25px, top 307px left;
+  background-repeat: no-repeat, no-repeat;
   background-color: $additional-bg_color;
   box-shadow: 0 20px 0 $light-grey;
   border-radius: 0 0 25px 25px;
@@ -19,11 +21,19 @@
     content: "";
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/smolov-back-desktop@2x.png"),
+    url("../../img/rogovaya-back-mobile@2x.png");
+    background-size: 143px auto, 64px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 141px;
     padding-bottom: 87px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") top 80px right 74px no-repeat,
-      url("../../img/smolov-back-desktop@1x.png") top 426px left 40px no-repeat;
+    background-image: url("../../img/rogovaya-back-desktop@1x.png"),
+      url("../../img/smolov-back-desktop@1x.png");
+    background-position: top 80px right 74px, top 426px left 40px;
+    background-repeat: no-repeat, no-repeat;
     background-color: $additional-bg_color;
 
     &::before {
@@ -32,6 +42,12 @@
       width: 212px;
       height: 212px;
       border-radius: 20px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/rogovaya-back-desktop@2x.png"),
+        url("../../img/smolov-back-desktop@2x.png");
+      background-size: 285px auto, 143px auto;
     }
   }
 
@@ -200,7 +216,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 145px;
 }
 
 .travelers__flag {
