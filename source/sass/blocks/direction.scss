@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-decoration: none;
 
   &:last-child {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 270px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
@@ -52,7 +52,7 @@
   font-size: 16px;
   background-color: $basic-white;
   border-radius: 10px;
-  box-shadow: 0 -11px 0 $basic-white;
+  box-shadow: 0 -10px 0 $basic-white;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -73,6 +73,10 @@
   }
 }
 
+.direction__description--padding-bottom-6 {
+  padding-bottom: 6px;
+}
+
 .direction__country {
   width: 70%;
   font-weight: bold;
@@ -87,6 +91,9 @@
 }
 
 .direction__popularity {
+  position: relative;
+  padding-left: 19px;
+  min-width: 61px;
   line-height: 20px;
   color: $additional-text_color_30;
 

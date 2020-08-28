@@ -11,8 +11,8 @@
 
   &--travelers {
     position: absolute;
-    top: 20px;
-    left: 22px;
+    top: 17px;
+    left: 18px;
     flex-direction: column;
     width: 60px;
     height: 60px;
@@ -27,6 +27,8 @@
 }
 
 .level__text {
+  display: inline-block;
+  padding-top: 8px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
@@ -38,7 +40,7 @@
 
 .level__title {
   display: none;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 14px;
   color: rgba($basic-black, 0.4);
@@ -46,12 +48,13 @@
   &--travelers {
     position: relative;
     display: block;
-    padding-top: 3px;
+    padding-top: 2px;
+    padding-right: 1px;
     color: $basic-white;
 
     &::before {
       position: absolute;
-      top: 0;
+      top: -1px;
       left: -3px;
       width: 31px;
       border-top: 1px solid rgba($basic-white, 0.3);

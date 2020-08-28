@@ -86,8 +86,16 @@
   }
 
   &--country-flag {
-    top: 86px;
+    top: 88px;
     left: 25px;
+  }
+
+  &--popularity {
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    fill: rgba($light-blue, 0.1);
   }
 
   &--travelers-flag {

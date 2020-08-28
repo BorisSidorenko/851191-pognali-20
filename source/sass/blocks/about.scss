@@ -1,11 +1,11 @@
 .about {
-  padding-top: 33px;
+  padding-top: 31px;
   padding-right: 52px;
   padding-left: 49px;
-  padding-bottom: 82px;
+  padding-bottom: 83px;
   background: url("../../img/about-mobile@1x.png") center no-repeat;
   background-color: $additional-bg_color;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   box-shadow: 0 20px 0 $main-bg_color;
 
   @media (min-resolution: 2dppx) {
@@ -89,6 +89,7 @@
 
 .about__text {
   margin: 0;
+  padding-right: 8px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 300;
@@ -112,7 +113,7 @@
 }
 
 .about__text--emphasis {
-  padding-top: 20px;
+  padding-top: 19px;
   font-weight: bold;
 
   @media (min-width: $tablet-width) {

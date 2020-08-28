@@ -25,14 +25,14 @@
 .reviews__text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 18px;
 
   &:last-child {
     padding-top: 0;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {

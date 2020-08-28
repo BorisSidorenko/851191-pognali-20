@@ -19,8 +19,12 @@
     background-color: $btn-mail_hover_orange;
   }
 
-  &--auth:hover {
-    background-color: $btn-auth_hover_yellow;
+  &--auth {
+    font-size: 20px;
+
+    &:hover {
+      background-color: $btn-auth_hover_yellow;
+    }
   }
 
   &--auth:active {
