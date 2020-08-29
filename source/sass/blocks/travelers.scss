@@ -1,18 +1,36 @@
 .travelers {
   position: relative;
   padding-top: 34px;
-  padding-bottom: 31px;
-  background-image: url("../../img/smolov-back-desktop@1x.png"),
-    url("../../img/rogovaya-back-mobile@1x.png");
-  background-position: top 34px right 25px, top 307px left;
-  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 30px;
   background-color: $additional-bg_color;
   box-shadow: 0 20px 0 $light-grey;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 141px;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    padding-top: 130px;
+    padding-left: 130px;
+    padding-bottom: 134px;
+  }
+}
+
+.travelers__container {
+  position: relative;
+  background-image: url("../../img/smolov-back-desktop@1x.png"),
+    url("../../img/rogovaya-back-mobile@1x.png");
+  background-position: top 0 right 25px, top 273px left -9px;
+  background-repeat: no-repeat, no-repeat;
 
   &::before {
     position: absolute;
-    top: 34px;
+    top: 0;
     left: 0;
     width: 113px;
     height: 132px;
@@ -28,8 +46,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 141px;
-    padding-bottom: 87px;
     background-image: url("../../img/rogovaya-back-desktop@1x.png"),
       url("../../img/smolov-back-desktop@1x.png");
     background-position: top 80px right 74px, top 426px left 40px;
@@ -52,12 +68,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
-    padding-top: 130px;
-    padding-left: 130px;
-    padding-bottom: 134px;
     background-position: top 386px left 190px, top 134px left 547px;
 
     &::before {
@@ -79,7 +89,7 @@
 .travelers__header {
   position: relative;
   padding-top: 32px;
-  padding-left: 25px;
+  padding-left: 24px;
   padding-right: 25px;
 
   @media (min-width: $tablet-width) {
@@ -97,7 +107,7 @@
   position: relative;
   margin: 0;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 24px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 300;
@@ -196,7 +206,7 @@
 
 .travelers__info {
   position: relative;
-  padding-top: 0;
+  padding-top: 25px;
   padding-bottom: 20px;
   width: 270px;
   text-align: center;
@@ -211,24 +221,27 @@
 }
 
 .travelers__flags {
-  position: relative;
-  top: -11px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  position: absolute;
+  top: -10px;
+  width: 100%;
 }
 
 .travelers__flag {
+  display: flex;
+  justify-content: center;
   margin-right: 20px;
 
-  &:first-child {
-    margin-left: auto;
-  }
-
   &:last-child {
-    margin: 0;
     margin-right: auto;
   }
+}
+
+.travelers__flags-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: min-content;
 }
 
 .travelers__image {

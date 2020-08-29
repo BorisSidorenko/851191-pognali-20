@@ -1,6 +1,6 @@
 .email-form {
   display: flex;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
@@ -58,8 +58,8 @@
 }
 
 .email-form__input {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 23px;
   border: none;
 
   &:focus {
