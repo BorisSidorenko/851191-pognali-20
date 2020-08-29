@@ -116,7 +116,6 @@ const spriteTriangleArrows = () => {
 
 exports.spriteTriangleArrows = spriteTriangleArrows;
 
-
 const spriteUser = () => {
   return gulp.src("source/img/**/user.svg")
     .pipe(svgstore())
@@ -125,6 +124,15 @@ const spriteUser = () => {
 };
 
 exports.spriteUser = spriteUser;
+
+const spriteLevel = () => {
+  return gulp.src("source/img/**/level.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteLevel.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteLevel = spriteLevel;
 
 // Copy
 
