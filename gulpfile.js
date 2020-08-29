@@ -179,6 +179,42 @@ const spriteShowMore = () => {
 
 exports.spriteShowMore = spriteShowMore;
 
+const spriteTick = () => {
+  return gulp.src("source/img/**/tick.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteTick.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteTick = spriteTick;
+
+const spriteMonthArrow = () => {
+  return gulp.src("source/img/**/month-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteMonthArrow.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteMonthArrow = spriteMonthArrow;
+
+const spriteSmallArrowCross = () => {
+  return gulp.src("source/img/**/small-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteSmallArrowCross.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteSmallArrowCross = spriteSmallArrowCross;
+
+const spriteDropDown = () => {
+  return gulp.src("source/img/**/dropdown-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteDropDown.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteDropDown = spriteDropDown;
+
 // Copy
 
 const copy = () => {
@@ -216,7 +252,8 @@ exports.clean = clean;
 
 const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
   spriteTransport, spriteSocial, spriteLike, spriteTopMenu, spriteContacts, spriteUser,
-  spriteCopyright, spriteLevel, spriteReturn, spriteFilterCountries, spriteDots, html);
+  spriteCopyright, spriteLevel, spriteReturn, spriteFilterCountries, spriteDots, spriteTick, spriteMonthArrow,
+  spriteSmallArrowCross, spriteDropDown, html);
 
 exports.build = build;
 
