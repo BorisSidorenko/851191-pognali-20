@@ -134,7 +134,23 @@ const spriteLevel = () => {
 
 exports.spriteLevel = spriteLevel;
 
-// Copy
+const spriteReturn = () => {
+  return gulp.src("source/img/**/return.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteReturn.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteReturn = spriteReturn;
+
+const spriteFilterCountries = () => {
+  return gulp.src("source/img/**/filter*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteFilterCountries.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteFilterCountries = spriteFilterCountries;
 
 const spriteCopyright = () => {
   return gulp.src("source/img/**/htmlacademy.svg")
@@ -144,6 +160,24 @@ const spriteCopyright = () => {
 };
 
 exports.spriteCopyright = spriteCopyright;
+
+const spriteDots = () => {
+  return gulp.src("source/img/**/dots.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteDots.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteDots = spriteDots;
+
+const spriteShowMore = () => {
+  return gulp.src("source/img/**/show-more-plus.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteShowMore.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteShowMore = spriteShowMore;
 
 // Copy
 
@@ -182,7 +216,7 @@ exports.clean = clean;
 
 const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
   spriteTransport, spriteSocial, spriteLike, spriteTopMenu, spriteContacts, spriteUser,
-  spriteCopyright, html);
+  spriteCopyright, spriteLevel, spriteReturn, spriteFilterCountries, spriteDots, html);
 
 exports.build = build;
 

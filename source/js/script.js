@@ -103,13 +103,16 @@ if (transportToggles) {
 }
 
 var nav = document.querySelector('.nav');
+var siteList =  nav.querySelector('.site-list');
 var navOffset = 5;
 
 window.onscroll = function() {
   if (window.pageYOffset >= navOffset) {
     nav.classList.add('nav--sticky');
+    siteList.classList.add('site-list--sticky');
   } else {
     nav.classList.remove('nav--sticky');
+    siteList.classList.remove('site-list--sticky');
   }
 };
 
