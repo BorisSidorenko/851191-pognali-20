@@ -11,12 +11,22 @@
 }
 
 .header-buttons__button {
+  color: $basic-blue;
+
   &--phone:hover {
     background-color: $btn-phone_hover_orange;
   }
 
+  &--phone:active {
+    color: rgba($basic-blue, 0.6);
+  }
+
   &--mail:hover {
     background-color: $btn-mail_hover_orange;
+  }
+
+  &--mail:active {
+    color: rgba($basic-blue, 0.6);
   }
 
   &--auth {

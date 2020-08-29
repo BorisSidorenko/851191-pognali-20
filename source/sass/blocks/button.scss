@@ -113,26 +113,6 @@
     border-radius: 50%;
   }
 
-  &--circle_phone::before,
-  &--circle_mail::before {
-    position: absolute;
-    top: 12px;
-    left: 14px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../img/topmenu-phone.svg");
-    background-repeat: no-repeat;
-    content: "";
-  }
-
-  &--circle_mail::before {
-    top: 14px;
-    left: 13px;
-    height: 13px;
-    background-image: url("../../img/topmenu-mail.svg");
-    background-repeat: no-repeat;
-  }
-
   &--circle_toggle {
     width: 32px;
     height: 32px;
@@ -210,20 +190,6 @@
       padding-top: 25px;
       padding-bottom: 25px;
       border-radius: 50%;
-    }
-
-    &--circle_phone::before {
-      top: 17px;
-      left: 17px;
-      width: 16px;
-      height: 16px;
-    }
-
-    &--circle_mail::before {
-      top: 18px;
-      left: 17px;
-      width: 16px;
-      height: 14px;
     }
   }
 }

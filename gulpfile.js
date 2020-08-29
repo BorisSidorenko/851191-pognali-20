@@ -89,6 +89,54 @@ const spriteLike = () => {
 
 exports.spriteLike = spriteLike;
 
+const spriteTopMenu = () => {
+  return gulp.src("source/img/**/topmenu-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteTopMenu.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteTopMenu = spriteTopMenu;
+
+const spriteContacts = () => {
+  return gulp.src("source/img/**/contacts-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteContacts.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteContacts = spriteContacts;
+
+const spriteTriangleArrows = () => {
+  return gulp.src("source/img/**/triangle-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteTriangleArrows.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteTriangleArrows = spriteTriangleArrows;
+
+
+const spriteUser = () => {
+  return gulp.src("source/img/**/user.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteUser.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteUser = spriteUser;
+
+// Copy
+
+const spriteCopyright = () => {
+  return gulp.src("source/img/**/htmlacademy.svg")
+    .pipe(svgstore())
+    .pipe(rename("spriteCopyright.svg"))
+    .pipe(gulp.dest("./build/img"));
+};
+
+exports.spriteCopyright = spriteCopyright;
+
 // Copy
 
 const copy = () => {
@@ -125,7 +173,8 @@ exports.clean = clean;
 // Build
 
 const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
-  spriteTransport, spriteSocial, spriteLike, html);
+  spriteTransport, spriteSocial, spriteLike, spriteTopMenu, spriteContacts, spriteUser,
+  spriteCopyright, html);
 
 exports.build = build;
 

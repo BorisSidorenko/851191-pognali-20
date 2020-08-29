@@ -8,6 +8,7 @@
   fill: $basic-yellow;
 
   &--mail {
+    top: 18px;
     left: 14px;
     width: 18px;
     height: 13px;
@@ -42,6 +43,20 @@
     width: 6px;
     height: 10px;
     fill: $input-grey;
+  }
+
+  &--topmenu-phone {
+    top: 12px;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--topmenu-mail {
+    top: 14px;
+    left: 13px;
+    width: 16px;
+    height: 13px;
   }
 
   &--handset {
@@ -327,6 +342,20 @@
 
     &--dropdown-offset {
       right: 300px;
+    }
+
+    &--topmenu-phone {
+      top: 17px;
+      left: 17px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--topmenu-mail {
+      top: 18px;
+      left: 17px;
+      width: 16px;
+      height: 14px;
     }
   }
 }
