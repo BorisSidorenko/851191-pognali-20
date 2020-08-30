@@ -64,7 +64,7 @@ var filterBtnToggles = document.querySelectorAll('.filters__category-toggle');
 var filtersOptions = document.querySelectorAll('.filters__options');
 
 if (filterBtnToggles) {
-  for  (let i = 0; i < filterBtnToggles.length; i++) {
+  for (let i = 0; i < filterBtnToggles.length; i++) {
     filterBtnToggles[i].addEventListener('click', function() {
       if (filterBtnToggles[i].classList.contains('filters__category-toggle--closed')) {
         filterBtnToggles[i].classList.remove('filters__category-toggle--closed');
