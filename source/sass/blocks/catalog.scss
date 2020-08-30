@@ -5,7 +5,18 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    width: 951px;
+  }
+}
+
+.catalog__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 84px;
+    width: auto;
   }
 }
 
