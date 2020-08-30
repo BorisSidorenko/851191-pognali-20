@@ -1,9 +1,13 @@
 .new-plan {
-  padding-top: 30px;
-  padding-bottom: 43px;
   background-color: $plan-light_blue;
   box-shadow: 0 20px 0 $plan-light_blue;
   border-radius: 25px 25px 0 0;
+
+}
+
+.new-plan__container {
+  padding-top: 30px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     padding-top: 53px;

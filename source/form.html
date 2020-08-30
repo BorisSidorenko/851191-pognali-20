@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header container container--padding-none">
+  <header class="page-header">
     <div class="container container--nav">
       <nav class="nav page-header__nav nav--closed nav--nojs container">
       <a class="nav__logo nav__logo--header" href="index.html">
@@ -107,13 +107,14 @@
         </ul>
       </nav>
     </div>
-    <div class="header-title">
+    <div class="container header-title">
       <h1 class="title">Направления</h1>
     </div>
   </header>
   <main class="main">
-    <section class="profile container">
-      <h2 class="visually-hidden">Ваш профиль</h2>
+    <section class="profile">
+      <div class="container profile__container">
+        <h2 class="visually-hidden">Ваш профиль</h2>
         <div class="current-level profile__current-level">
           <span class="current-level__text">80</span>
           <span class="current-level__title">level</span>
@@ -182,8 +183,10 @@
           </li>
         </ul>
       </fieldset>
+      </div>
     </section>
-    <section class="plans container">
+    <section class="plans">
+     <div class="container plans__container">
       <h2 class="plans__title">Мои планы:</h2>
       <ul class="plans__list">
         <li class="plans__item">
@@ -213,8 +216,10 @@
           </div>
         </li>
       </ul>
+     </div>
     </section>
-    <section class="new-plan container">
+    <section class="new-plan">
+     <div class="container new-plan__container">
       <h2 class="new-plan__title">Добавить план:</h2>
       <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="slider">
@@ -588,53 +593,56 @@
           </div>
         </div>
       </form>
+     </div>
     </section>
   </main>
-  <footer class="page-footer container">
-    <a class="page-footer__logo" href="index.html">
-      <picture>
-        <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-        <source type="image/webp" media="(max-width: 768px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-        <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали?">
-      </picture>
-    </a>
-    <ul class="socials page-footer__socials socials--footer">
-      <li class="socials__item socials__item--footer socials__item--fb">
-        <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__link-fb socials__link--footer">
-          <span class="visually-hidden">Фейсбук</span>
-          <svg class="socials__icon socials__icon--fb">
-            <use xlink:href="../img/spriteSocial.svg#social-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item socials__item--footer socials__item--vk">
-        <a href="https://vk.com/htmlacademy" class="socials__link socials__link-vk socials__link--footer">
-          <span class="visually-hidden">Вконтакте</span>
-          <svg class="socials__icon socials__icon--vk">
-            <use xlink:href="../img/spriteSocial.svg#social-vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item socials__item--footer socials__item-inst">
-        <a href="https://www.instagram.com/htmlacademy"
-          class="socials__link socials__link-inst socials__link--footer">
-          <span class="visually-hidden">Инстаграм</span>
-          <svg class="socials__icon socials__icon--inst">
-            <use xlink:href="../img/spriteSocial.svg#social-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="copyright page-footer__copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано</span>
-        <svg class="copyright__icon">
-          <use xlink:href="../img/spriteCopyright.svg#htmlacademy"></use>
-        </svg>
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <a class="page-footer__logo" href="index.html">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+          <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="96" height="15" alt="Погнали?">
+        </picture>
       </a>
+      <ul class="socials page-footer__socials socials--footer">
+        <li class="socials__item socials__item--footer socials__item--fb">
+          <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__link-fb socials__link--footer">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg class="socials__icon socials__icon--fb">
+              <use xlink:href="../img/spriteSocial.svg#social-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item socials__item--footer socials__item--vk">
+          <a href="https://vk.com/htmlacademy" class="socials__link socials__link-vk socials__link--footer">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class="socials__icon socials__icon--vk">
+              <use xlink:href="../img/spriteSocial.svg#social-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item socials__item--footer socials__item-inst">
+          <a href="https://www.instagram.com/htmlacademy"
+            class="socials__link socials__link-inst socials__link--footer">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg class="socials__icon socials__icon--inst">
+              <use xlink:href="../img/spriteSocial.svg#social-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon">
+            <use xlink:href="../img/spriteCopyright.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>

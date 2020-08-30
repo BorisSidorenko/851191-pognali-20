@@ -1,9 +1,12 @@
 .plans {
-  padding-top: 28px;
-  padding-bottom: 30px;
   background-color: $special-blue_light;
   border-radius: 25px 25px 0 0;
   box-shadow: 0 20px 0 $special-blue_light;
+}
+
+.plans__container {
+  padding-top: 28px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;

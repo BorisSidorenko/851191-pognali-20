@@ -1,12 +1,15 @@
 .profile {
+  background-color: $main-bg_color;
+  box-shadow: 0 20px 0 $main-bg_color;
+}
+
+.profile__container {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
   padding-top: 20px;
   padding-bottom: 34px;
-  background-color: $main-bg_color;
-  box-shadow: 0 20px 0 $main-bg_color;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 308px 1fr;
