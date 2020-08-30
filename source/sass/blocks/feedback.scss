@@ -1,9 +1,12 @@
 .feedback {
-  padding-top: 70px;
-  padding-bottom: 30px;
   background-color: $additional-bg_color;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 30px 0 $basic-yellow;
+}
+
+.feedback__container {
+  padding-top: 70px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;

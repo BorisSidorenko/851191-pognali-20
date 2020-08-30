@@ -2,6 +2,19 @@
   background-color: $additional-bg_color;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 20px 0 $main-bg_color;
+}
+
+.about__container {
+  padding-top: 31px;
+  padding-right: 52px;
+  padding-left: 49px;
+  padding-bottom: 83px;
+  background: url("../../img/about-mobile@1x.png") center no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/about-mobile@2x.png");
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -11,17 +24,6 @@
     padding-bottom: 89px;
     background-color: $additional-bg_color;
     background-image: none;
-
-    &::before {
-      position: absolute;
-      width: 688px;
-      height: 212px;
-      top: 0;
-      left: 40px;
-      background-color: $dark-blue;
-      border-radius: 20px;
-      content: "";
-    }
 
     &::after {
       position: absolute;
@@ -36,6 +38,17 @@
         background-image: url("../../img/about-tablet@2x.png");
         background-size: cover;
       }
+    }
+
+    &::before {
+      position: absolute;
+      width: 688px;
+      height: 212px;
+      top: 0;
+      left: 40px;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      content: "";
     }
   }
 
@@ -63,19 +76,6 @@
         background-size: cover;
       }
     }
-  }
-}
-
-.about__container {
-  padding-top: 31px;
-  padding-right: 52px;
-  padding-left: 49px;
-  padding-bottom: 83px;
-  background: url("../../img/about-mobile@1x.png") center no-repeat;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/about-mobile@2x.png");
-    background-size: cover;
   }
 }
 

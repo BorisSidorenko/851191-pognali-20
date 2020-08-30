@@ -1,9 +1,13 @@
 .address {
   position: relative;
-  padding-top: 32px;
   background-color: $basic-yellow;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 35px 0 $basic-yellow;
+}
+
+.address__container {
+  position: relative;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
@@ -17,7 +21,6 @@
     padding-right: 135px;
   }
 }
-
 
 .address__wrapper {
   @media (min-width: $desktop-width) {

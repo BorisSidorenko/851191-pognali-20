@@ -1,28 +1,13 @@
 .travelers {
-  position: relative;
-  padding-top: 34px;
-  padding-bottom: 30px;
   background-color: $additional-bg_color;
   box-shadow: 0 20px 0 $light-grey;
   border-radius: 0 0 30px 30px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 141px;
-    padding-bottom: 87px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
-    padding-top: 130px;
-    padding-left: 130px;
-    padding-bottom: 134px;
-  }
 }
 
 .travelers__container {
   position: relative;
+  padding-top: 34px;
+  padding-bottom: 30px;
   background-image: url("../../img/smolov-back-desktop@1x.png"),
     url("../../img/rogovaya-back-mobile@1x.png");
   background-position: top 0 right 25px, top 273px left -9px;
@@ -46,6 +31,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 141px;
+    padding-bottom: 87px;
     background-image: url("../../img/rogovaya-back-desktop@1x.png"),
       url("../../img/smolov-back-desktop@1x.png");
     background-position: top 80px right 74px, top 426px left 40px;
@@ -68,6 +55,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    padding-top: 130px;
+    padding-left: 130px;
+    padding-bottom: 134px;
     background-position: top 386px left 190px, top 134px left 547px;
 
     &::before {
@@ -214,7 +207,6 @@
   border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
     width: 285px;
     border-radius: 0 0 20px 20px;
   }
