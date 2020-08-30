@@ -54,10 +54,12 @@
 
   @media (min-width: $desktop-width) {
     row-gap: 110px;
-    padding-bottom: 123px;
-    background: url("../../img/traveller-illustration-desktop@1x.png") top 110px right 405px no-repeat,
-      url("../../img/globe-back-desktop@1x.jpg") top center no-repeat;
-    background-color: $header-bg_color;
+    padding-bottom: 70px;
+    background-image: url("../../img/traveller-illustration-desktop@1x.png"),
+      url("../../img/globe-back-desktop@1x.jpg")  ;
+    background-position: calc(50% + 116px) 110px, bottom center;
+    background-repeat: no-repeat;
+    background-color: $basic-blue;
     border-radius: 0;
 
     @media (min-resolution: 2dppx) {
