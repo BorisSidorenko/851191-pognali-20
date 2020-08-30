@@ -97,3 +97,9 @@
     display: block;
   }
 }
+
+.alphabet__letter {
+  @media (min-width: $desktop-width) {
+    color: $light-blue;
+  }
+}
