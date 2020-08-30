@@ -11,10 +11,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 
     &:last-child {
-      margin-bottom: 44px;
+      margin-bottom: 46px;
     }
   }
 
@@ -59,6 +59,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     row-gap: 5px;
+    padding-top: 28px;
+    padding-left: 28px;
     width: 430px;
     border-radius: 20px 0 0 20px;
     box-shadow: none;
@@ -75,6 +77,10 @@
 
 .direction__description--padding-bottom-6 {
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .direction__country {
@@ -99,6 +105,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: end;
+    padding-left: 29px;
     font-size: 20px;
     line-height: 20px;
   }

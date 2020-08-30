@@ -39,7 +39,7 @@
     padding-bottom: 96px;
     background-image: url("../../img/traveller-illustration-tablet@1x.png"),
       url("../../img/globe-back-tablet@1x.jpg");
-    background-position: calc(50% + 111px) 404px, 50% 382px;
+    background-position: calc(50% + 87px) 404px, 50% 382px;
     background-repeat: no-repeat;
     background-color: $header-bg_color;
     border-radius: 0;
@@ -85,9 +85,9 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 72px;
+    padding-top: 67px;
     min-height: 300px;
-    padding-bottom: 86px;
+    padding-bottom: 61px;
     font-size: 60px;
     line-height: 70px;
   }

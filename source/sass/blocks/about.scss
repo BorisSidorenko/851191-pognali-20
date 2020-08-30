@@ -2,6 +2,11 @@
   background-color: $additional-bg_color;
   border-radius: 0 0 30px 30px;
   box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 40px 0 $main-bg_color;
+  }
 }
 
 .about__container {
@@ -18,18 +23,19 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 41px;
+    padding-top: 37px;
     padding-right: 384px;
     padding-left: 74px;
     padding-bottom: 89px;
     background-color: $additional-bg_color;
     background-image: none;
+    border-radius: 0 0 60px 60px;
 
     &::after {
       position: absolute;
       width: 376px;
       height: 548px;
-      top: 41px;
+      top: 48px;
       right: 8px;
       background-image: url("../../img/about-tablet@1x.png");
       content: "";
@@ -83,6 +89,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 0;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +109,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-left: 0;
+    padding-left: 2px;
     padding-bottom: 31px;
     font-size: 28px;
     line-height: 33px;
@@ -121,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 52px;
+    padding-bottom: 55px;
     font-size: 21px;
     line-height: 25px;
   }

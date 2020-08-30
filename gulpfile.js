@@ -125,15 +125,6 @@ const spriteUser = () => {
 
 exports.spriteUser = spriteUser;
 
-const spriteLevel = () => {
-  return gulp.src("source/img/**/level.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteLevel.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteLevel = spriteLevel;
-
 const spriteReturn = () => {
   return gulp.src("source/img/**/return.svg")
     .pipe(svgstore())
@@ -252,7 +243,7 @@ exports.clean = clean;
 
 const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
   spriteTransport, spriteSocial, spriteLike, spriteTopMenu, spriteContacts, spriteUser,
-  spriteCopyright, spriteLevel, spriteReturn, spriteFilterCountries, spriteDots, spriteTick, spriteMonthArrow,
+  spriteCopyright, spriteReturn, spriteFilterCountries, spriteDots, spriteTick, spriteMonthArrow,
   spriteSmallArrowCross, spriteDropDown, html);
 
 exports.build = build;

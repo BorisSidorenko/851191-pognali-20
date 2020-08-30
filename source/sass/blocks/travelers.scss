@@ -2,6 +2,11 @@
   background-color: $additional-bg_color;
   box-shadow: 0 20px 0 $light-grey;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 50px 0 $light-grey;
+  }
 }
 
 .travelers__container {
@@ -31,13 +36,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 141px;
+    padding-top: 137px;
     padding-bottom: 87px;
     background-image: url("../../img/rogovaya-back-desktop@1x.png"),
       url("../../img/smolov-back-desktop@1x.png");
     background-position: top 80px right 74px, top 426px left 40px;
     background-repeat: no-repeat, no-repeat;
     background-color: $additional-bg_color;
+    border-radius: 0 0 60px 60px;
 
     &::before {
       top: 71px;
@@ -122,7 +128,7 @@
     line-height: 34px;
 
     &--emphasis {
-      padding-bottom: 59px;
+      padding-bottom: 63px;
       font-size: 21px;
       line-height: 24px;
     }
@@ -195,6 +201,15 @@
       background-color: $online-green;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 5px;
+      left: -23px;
+      width: 8px;
+      height: 8px;
+    }
+  }
 }
 
 .travelers__info {
@@ -207,7 +222,10 @@
   border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 26px;
     width: 285px;
+    text-align: left;
     border-radius: 0 0 20px 20px;
   }
 }
@@ -216,6 +234,10 @@
   position: absolute;
   top: -10px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    top: -12px;
+  }
 }
 
 .travelers__flag {
@@ -253,6 +275,11 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .travelers__button {

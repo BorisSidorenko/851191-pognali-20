@@ -139,8 +139,8 @@
       <p class="reviews__text">
         <cite class="reviews__text reviews__text--cite">
           Мурат Эльтазин<br>
-          главный редактор<br>
-          газеты «гаджетлайф»
+          главный редактор<br class="break--hide-tablet">
+          газеты <br class="break--hide-mobile"> «гаджетлайф»
         </cite>
       </p>
     </blockquote>
@@ -194,7 +194,7 @@
         Любое путешествие веселее
         с попутчиками, которые на
         одной волне с тобой! Делитесь
-        своими идеями путешествий и
+        своими идеями путешествий<br class="break--hide-mobile"> и
         черпайте вдохновение в чужих.
       </p>
       <p class="about__text about__text--emphasis">
@@ -300,11 +300,11 @@
           Все мы индивидуальны и у
           каждого свой взгляд на
           идеальный отдых. Одному
-          нужен пляж и коктейль, а
+          нужен пляж и коктейль,<br class="break--hide-mobile"> а
           другому маршрут для хайкинга.
         </p>
         <p class="travelers__text travelers__text--emphasis">
-          Теперь можно легко найти
+          Теперь можно легко<br class="break--hide-mobile"> найти
           единомышленников!
         </p>
         <ul class="travelers__list">
@@ -318,8 +318,13 @@
               <div class="level level--travelers">
                 <span class="level__text level__text--travelers">99</span>
                 <span class="level__title level__title--travelers">level</span>
-                <svg class="circular-chart circular-chart--index" stroke-dasharray="82, 100">
-                  <use xlink:href="../img/spriteLevel.svg#level"></use>
+                <svg viewBox="0 0 36 36" class="circular-chart circular-chart--index">
+                  <path class="circular-chart__circle"
+                    stroke-dasharray="95, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
                 </svg>
               </div>
               <div class="travelers__info">
@@ -581,7 +586,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A85ddf775727b39cee6632507508f7746c15862af88530abf2219e212993f7c03&amp;source=constructor" width="100%" height="300"></iframe>
+      <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A85ddf775727b39cee6632507508f7746c15862af88530abf2219e212993f7c03&amp;source=constructor"></iframe>
     </section>
   </main>
   <footer class="page-footer page-footer--index">

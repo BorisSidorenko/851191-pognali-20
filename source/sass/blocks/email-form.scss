@@ -3,7 +3,7 @@
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,8 +48,8 @@
   fill: $special-blue_dark;
 
   @media (min-width: $tablet-width) {
-    top: 29px;
-    left: 31px;
+    top: 32px;
+    left: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +71,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 28px;
     border-radius: 20px 0 0 20px;
   }
 }

@@ -1,6 +1,10 @@
 .page-footer {
   border-radius: 25px 25px 0 0;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .page-footer__container {
@@ -20,7 +24,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding-top: 56px;
+    padding-top: 16px;
     padding-bottom: 42px;
     padding-left: 38px;
     padding-right: 40px;
@@ -52,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    padding-top: 4px;
   }
 }
 
