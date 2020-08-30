@@ -65,7 +65,7 @@
     margin-bottom: 0;
   }
 
-  &:before {
+  &::before {
     position: absolute;
     top: 9px;
     left: 0;
@@ -79,7 +79,7 @@
   &--current {
     color: $basic-black;
 
-    &:before {
+    &::before {
       background-color: $special-blue_dark;
     }
   }
