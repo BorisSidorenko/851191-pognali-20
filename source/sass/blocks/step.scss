@@ -24,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 101px;
@@ -31,6 +32,56 @@
     padding-right: 160px;
     padding-bottom: 160px;
     border-radius: 60px;
+  }
+}
+
+.step__progress {
+  position: absolute;
+  top: 107px;
+  right: 200px;
+  display: none;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.step__progress-text {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 42px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: rgba($basic-black, 0.6);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba($special-blue_dark, 0.3);
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--current {
+    color: $basic-black;
+
+    &:before {
+      background-color: $special-blue_dark;
+    }
   }
 }
 

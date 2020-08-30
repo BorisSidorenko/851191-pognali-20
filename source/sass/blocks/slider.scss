@@ -18,6 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: none;
     top: 116px;
     right: 382px;
     flex-direction: column;
