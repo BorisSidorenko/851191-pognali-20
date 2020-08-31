@@ -37,9 +37,9 @@
   }
 
   &--arrow-dwn {
-    top: 48px;
+    top: 49px;
     left: auto;
-    right: 54px;
+    right: 55px;
     width: 6px;
     height: 10px;
     fill: $input-grey;
@@ -127,8 +127,8 @@
   }
 
   &--connection-line {
-    top: 6px;
-    left: -10px;
+    top: 8px;
+    left: -8px;
     width: 17px;
     height: 287px;
   }
@@ -160,9 +160,9 @@
 
   &--dropdown {
     position: absolute;
-    top: 15px;
+    top: 16px;
     left: auto;
-    right: 26px;
+    right: 21px;
     width: 10px;
     height: 14px;
     fill: rgba($basic-black, 0.6);
@@ -170,7 +170,8 @@
   }
 
   &--dropdown-offset {
-    right: 78px;
+    right: 73px;
+    top: 16px;
   }
 
   @media (max-width: $mobile-width) {

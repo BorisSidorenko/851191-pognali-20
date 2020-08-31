@@ -217,6 +217,9 @@
 }
 
 .nav__logo-img {
+  width: 96px;
+  height: 15px;
+
   @media (min-width: $tablet-width) {
     width: 164px;
     height: 42px;

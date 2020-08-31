@@ -22,6 +22,7 @@
 }
 
 .current-level__text {
+  padding-bottom: 9px;
   font-weight: bold;
   font-size: 38px;
   line-height: 38px;
@@ -34,7 +35,7 @@
 
 .current-level__title {
   position: relative;
-  padding-top: 6px;
+  padding-bottom: 3px;
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
@@ -42,8 +43,8 @@
 
   &::before {
     position: absolute;
-    top: 0;
-    left: -7px;
+    top: -7px;
+    left: -8px;
     width: 51px;
     border-top: 1px solid rgba($special-grey, 0.3);
     content: "";

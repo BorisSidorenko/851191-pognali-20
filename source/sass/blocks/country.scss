@@ -4,7 +4,7 @@
 
 .country__selected,
 .country__select {
-  padding-top: 13px;
+  padding-top: 12px;
   padding-left: 10px;
   padding-bottom: 10px;
   padding-right: 35px;
@@ -29,9 +29,9 @@
 
 .country__add-btn {
   position: relative;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 11px;
-  padding-left: 11px;
+  padding-left: 12px;
   padding-right: 11px;
   width: 220px;
   font-family: $main-font;
@@ -51,7 +51,7 @@
   &::after {
     position: absolute;
     top: 21px;
-    right: 16px;
+    right: 14px;
     width: 14px;
     border-top: 2px solid $contries-add-button_icon;
     content: "";

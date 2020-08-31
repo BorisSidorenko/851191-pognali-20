@@ -21,7 +21,8 @@
 }
 
 .calendar__day {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  padding-left: 4px;
 
   &--weekend {
     color: $calendar-orange;
