@@ -1,6 +1,10 @@
 .profile {
   background-color: $main-bg_color;
   box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 50px 0 $main-bg_color;
+  }
 }
 
 .profile__container {
@@ -22,6 +26,8 @@
     grid-template-rows: 47px 1fr;
     row-gap: 27px;
     padding-top: 0;
+    padding-left: 124px;
+    padding-bottom: 56px;
   }
 }
 
@@ -114,11 +120,11 @@
     margin: 0;
     margin-left: auto;
     margin-right: 95px;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 12px;
     width: 190px;
     letter-spacing: 0;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
   }
 }
 

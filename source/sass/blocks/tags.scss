@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 20px;
+    margin-right: 25px;
   }
 }
 
@@ -81,5 +81,9 @@
     font-size: 20px;
     line-height: 22px;
     transform: rotate(180deg);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
   }
 }

@@ -30,4 +30,10 @@
       height: 8px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -75px;
+    }
+  }
 }

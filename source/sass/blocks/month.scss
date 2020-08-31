@@ -52,7 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: -6px;
+    top: 26px;
   }
 }
 
@@ -65,7 +66,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: -6px;
+    top: 26px;
   }
 }
 
