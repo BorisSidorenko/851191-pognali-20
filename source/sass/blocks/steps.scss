@@ -93,23 +93,34 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    padding-right: 34px;
+    padding-bottom: 29px;
     border-radius: 20px 0 0 20px;
 
     &--first {
+      padding-right: 48px;
+      padding-top: 27px;
       box-shadow: 20px 0 0 $special-orange;
     }
 
     &--second {
-      box-shadow: 20px 0 0 $special-orange_light;
+      padding-left: 15px;
+      padding-top: 27px;
+      padding-right: 32px;
+      box-shadow: -15px 0 0 $special-orange_light, 15px 0 0 $special-orange_light;
     }
 
     &--third {
+      padding-top: 27px;
+      padding-right: 17px;
       box-shadow: 20px 0 0 $special-yellow_dark;
     }
 
     &--fourth {
+      padding-left: 45px;
+      padding-right: 32px;
+      padding-top: 28px;
       border-radius: 20px;
+      padding-bottom: 31px;
     }
   }
 }
@@ -123,6 +134,11 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
