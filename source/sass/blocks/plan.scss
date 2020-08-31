@@ -17,14 +17,14 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-left: 36px;
+    padding-top: 38px;
+    padding-left: 33px;
     padding-bottom: 15px;
     padding-right: 31px;
 
     &::after {
       position: absolute;
-      bottom: 55px;
+      bottom: 52px;
       left: 0;
       width: 100%;
       border-bottom: 1px solid rgba($input-grey, 0.3);
@@ -56,6 +56,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     padding-bottom: 53px;
+    padding-left: 3px;
     width: 100%;
     font-size: 24px;
     line-height: 24px;
@@ -123,7 +124,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 107px;
+    padding-left: 0;
+    width: 109px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
@@ -131,5 +133,13 @@
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
+  }
+}
+
+.plan__number {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
   }
 }

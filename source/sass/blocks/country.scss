@@ -18,10 +18,10 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    padding-top: 27px;
+    padding-top: 24px;
     padding-left: 26px;
     padding-right: 26px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -73,8 +73,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     padding-left: 26px;
     padding-right: 26px;
     width: 369px;
@@ -84,7 +84,7 @@
 
     &::before,
     &::after {
-      top: 36px;
+      top: 34px;
       right: 26px;
       width: 20px;
     }
@@ -197,8 +197,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 26px;
-    right: 0;
+    top: 25px;
+    right: -3px;
     background-color: transparent;
 
     &::before,

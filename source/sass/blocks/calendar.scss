@@ -27,6 +27,11 @@
   &--weekend {
     color: $calendar-orange;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    padding-left: 2px;
+  }
 }
 
 .calendar__extended {

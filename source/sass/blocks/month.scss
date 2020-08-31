@@ -47,7 +47,8 @@
   left: -6px;
 
   @media (min-width: $tablet-width) {
-    left: 17px;
+    left: 11px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +60,8 @@
   right: -6px;
 
   @media (min-width: $tablet-width) {
-    right: 17px;
+    right: 10px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {

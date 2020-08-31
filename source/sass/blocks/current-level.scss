@@ -28,6 +28,10 @@
   line-height: 38px;
   color: $additional-text_color;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     color: $basic-white;
   }
@@ -48,6 +52,11 @@
     width: 51px;
     border-top: 1px solid rgba($special-grey, 0.3);
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    padding-top: 1px;
   }
 
   @media (min-width: $desktop-width) {

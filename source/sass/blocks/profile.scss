@@ -13,6 +13,8 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 308px 1fr;
+    padding-top: 64px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +99,14 @@
 
   &:active {
     color: rgba($basic_blue, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    margin-top: 43px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-radius: 10px;
   }
 
   @media (min-width: $desktop-width) {

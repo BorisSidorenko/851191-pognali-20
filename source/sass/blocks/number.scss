@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 24px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +37,11 @@
 
     &--unit {
       letter-spacing: 0.08em;
+      margin-right: 2px;
+    }
+
+    &--unit-days {
+      margin-right: 0;
     }
   }
 
@@ -89,8 +94,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 24px;
+    margin-top: 26px;
+    margin-left: 1px;
+    margin-bottom: 3px;
     padding-top: 0;
+    padding-right: 36px;
+    padding-left: 36px;
+    width: 531px;
     height: 70px;
     font-size: 20px;
     line-height: 18px;
@@ -142,7 +152,7 @@
   @media (min-width: $tablet-width) {
     &::before {
       top: 60px;
-      right: 489px;
+      right: 488px;
       width: 20px;
     }
   }
@@ -180,13 +190,13 @@
   @media (min-width: $tablet-width) {
     &::before {
       top: 60px;
-      right: 23px;
+      right: 20px;
       width: 20px;
     }
 
     &::after {
       top: 51px;
-      right: 31px;
+      right: 29px;
       height: 20px;
     }
   }

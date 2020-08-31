@@ -33,6 +33,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-left: 13px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -74,6 +75,11 @@
   resize: none;
 
   @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 6px;
+    padding-left: 38px;
+    font-size: 20px;
+    line-height: 22px;
     transform: rotate(180deg);
   }
 }
