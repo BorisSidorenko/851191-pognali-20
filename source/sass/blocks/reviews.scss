@@ -14,12 +14,14 @@
 
 
   @media (min-width: $desktop-width) {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 2;
     padding-left: 0;
     padding-top: 13px;
     padding-right: 0;
     min-height: 0;
+    margin-right: auto;
+    margin-left: 340px;
   }
 }
 

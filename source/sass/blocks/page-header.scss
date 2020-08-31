@@ -53,10 +53,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     row-gap: 74px;
-    padding-bottom: 70px;
+    padding-bottom: 122px;
     background-image: url("../../img/traveller-illustration-desktop@1x.png"),
       url("../../img/globe-back-desktop@1x.jpg");
     background-position: calc(50% + 100px) 110px, bottom center;
@@ -95,11 +95,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 0 0 131px;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+    padding-top: 28px;
+    margin-left: auto;
+    margin-right: 198px;
     min-height: 0;
-    text-align: left;
-    margin: 0;
     width: min-content;
+    text-align: left;
     white-space: nowrap;
   }
 }
@@ -129,4 +133,8 @@
     width: min-content;
     white-space: nowrap;
   }
+}
+
+.page-header__container {
+  grid-column: 1/3;
 }

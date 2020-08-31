@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 67px;
   }
 }
 
@@ -27,8 +27,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 20px;
     padding-left: 36px;
-    width: 330px;
+    width: 324px;
     text-align: left;
   }
 }
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 274px;
+    left: 276px;
   }
 }
 
@@ -74,5 +75,9 @@
     padding-top: 24px;
     padding-bottom: 28px;
     border-radius: 20px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 29px;
   }
 }

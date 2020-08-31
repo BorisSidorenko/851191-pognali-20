@@ -7,6 +7,10 @@
     border-radius: 0 0 60px 60px;
     box-shadow: 0 60px 0 $additional-bg_color;
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 56px 56px;
+  }
 }
 
 .directions__container {
@@ -40,7 +44,7 @@
     column-gap: 172px;
     padding-top: 161px;
     padding-left: 130px;
-    padding-bottom: 138px;
+    padding-bottom: 136px;
     background-position: top 88px right 60px;
 
     &::before {

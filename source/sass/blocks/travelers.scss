@@ -7,6 +7,10 @@
     border-radius: 0 0 60px 60px;
     box-shadow: 0 50px 0 $light-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 56px 56px;
+  }
 }
 
 .travelers__container {
@@ -62,11 +66,11 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 620px 1fr;
     grid-template-rows: min-content min-content min-content min-content;
-    padding-top: 130px;
+    padding-top: 126px;
     padding-left: 130px;
-    padding-bottom: 134px;
+    padding-bottom: 53px;
     background-position: top 386px left 190px, top 134px left 547px;
 
     &::before {
@@ -143,7 +147,7 @@
     &--emphasis {
       grid-row: 3;
       grid-column: 1;
-      margin-bottom: 85px;
+      margin-bottom: 89px;
       padding-bottom: 0;
       line-height: 24px;
     }
@@ -166,6 +170,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
     grid-row: 1/6;
+    padding-top: 8px;
   }
 }
 

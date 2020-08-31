@@ -58,8 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 107px;
-    padding-left: 130px;
+    padding-top: 103px;
+    padding-left: 45px;
     padding-bottom: 165px;
 
     &::before {
@@ -91,7 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 134px;
+    padding-bottom: 135px;
   }
 }
 
@@ -133,6 +133,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 238px;
+    margin-left: 85px;
   }
 }
 
@@ -209,6 +210,10 @@
     &::before {
       width: 812px;
     }
+
+    &::after {
+      top: 2px;
+    }
   }
 }
 
@@ -258,6 +263,10 @@
       background-color: $dark-grey;
       content: "";
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 85px;
   }
 }
 

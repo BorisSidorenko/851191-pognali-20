@@ -7,6 +7,10 @@
     border-radius: 0 0 60px 60px;
     box-shadow: 0 40px 0 $main-bg_color;
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 56px 56px;
+  }
 }
 
 .about__container {
@@ -59,7 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 132px;
+    padding-top: 129px;
     padding-left: 130px;
     padding-bottom: 163px;
 
@@ -73,7 +77,7 @@
     &::after {
       width: 630px;
       height: 665px;
-      top: 85px;
+      top: 86px;
       right: 60px;
       background-image: url("../../img/about-desktop@1x.png");
 
@@ -117,7 +121,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 38px;
-    max-width: 619px;
+    max-width: 630px;
     line-height: 34px;
   }
 }
@@ -134,7 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 85px;
+    padding-bottom: 89px;
     max-width: 425px;
     line-height: 24px;
   }
