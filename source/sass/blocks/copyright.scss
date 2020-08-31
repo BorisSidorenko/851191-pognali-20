@@ -12,6 +12,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+  }
 }
 
 .copyright__text {
@@ -23,6 +27,7 @@
   color: $special-grey;
 
   @media (min-width: $tablet-width) {
+    align-self: flex-start;
     margin-right: 23px;
     font-size: 20px;
     line-height: 20px;

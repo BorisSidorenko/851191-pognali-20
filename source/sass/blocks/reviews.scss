@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     padding-right: 32px;
-    padding-bottom: 39px;
+    padding-bottom: 43px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -60,5 +60,11 @@
     @media (min-width: $desktop-width) {
       line-height: 24px;
     }
+  }
+}
+
+.reviews__text--author {
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
   }
 }

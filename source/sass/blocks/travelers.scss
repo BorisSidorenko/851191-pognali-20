@@ -283,6 +283,11 @@
 }
 
 .travelers__button {
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 30px;;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1;
     grid-row: 4;
