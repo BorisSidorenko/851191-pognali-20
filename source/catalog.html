@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="page-header page-header--form">
+    <header class="page-header page-header--catalog">
       <div class="container container--nav">
-        <nav class="nav page-header__nav nav--index nav--closed nav--nojs container">
+        <nav class="nav page-header__nav nav--closed nav--nojs container">
           <a class="nav__logo nav__logo--header" href="index.html">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
@@ -829,7 +829,7 @@
                       <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
                     </svg>
                   </button>
-                  <ul class="filters__list filters__options">
+                  <ul class="filters__list filters__options filters__options--collapsed">
                     <li class="filters__item">
                       <input type="checkbox" name="rock" id="rock" class="visually-hidden filters__checkbox" checked>
                       <label for="rock" class="filters__label">Тяжелый рок</label>
@@ -873,7 +873,7 @@
                       <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
                     </svg>
                   </button>
-                  <div class="transport filters__options">
+                  <div class="transport filters__options filters__options--collapsed">
                     <ul class="transport__list transport__list--form">
                       <li class="transport__item tooltip">
                         <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Самолёт">
@@ -917,7 +917,7 @@
                       <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
                     </svg>
                   </button>
-                  <div class="filters__controls filters__options">
+                  <div class="filters__controls filters__options filters__options--collapsed">
                     <div class="level-controls">
                       <label for="level-min" class="visually-hidden">Левел от:</label>
                       <input type="text" name="level-min" id="level-min" class="level-controls__input level-controls__input--min" value="30">

@@ -12,7 +12,7 @@
 }
 
 .filters__form {
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
@@ -37,6 +37,7 @@
 .filters__title {
   margin: 0;
   padding-bottom: 23px;
+  padding-left: 5px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -60,6 +61,8 @@
 }
 
 .filters__wrapper {
+  margin-bottom:  16px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 34px;
@@ -105,11 +108,15 @@
   padding-top: 12px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
   border: none;
 
   &--transport {
     z-index: 1;
+  }
+
+  &--level {
+    padding-top: 10px;
   }
 
   &::before {
@@ -221,7 +228,8 @@
 .filters__list {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 14px;
+  padding-bottom: 8px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -249,7 +257,7 @@
 }
 
 .filters__item {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 
   &:last-child {
     padding-bottom: 0;
@@ -266,16 +274,13 @@
 
 .filters__label {
   position: relative;
-  padding-left: 34px;
-  padding-top: 3px;
-  padding-bottom: 4px;
+  padding-left: 28px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
-  text-transform: capitalize;
 
   &:hover {
     color: rgba($basic-black, 0.6);
@@ -295,6 +300,8 @@
 }
 
 .filters__button {
+  padding-top: 13px;
+  padding-bottom: 11px;
   outline: none;
 
   &:hover {
@@ -316,8 +323,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background-color: $basic-white;
     border-radius: 4px;
     content: "";
@@ -327,10 +334,10 @@
 .filters__checkbox:checked + .filters__label {
   &::after {
     position: absolute;
-    top: 6px;
-    left: 7px;
-    width: 11px;
-    height: 11px;
+    top: 4px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
     background-image: url("../../img/tick.svg");
     content: "";
   }
