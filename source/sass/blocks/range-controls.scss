@@ -76,7 +76,15 @@
 
     &--min,
     &--max {
-      top: -5px;
+      top: -7px;
+    }
+
+    &--min {
+      left: 72px;
+    }
+
+    &--max {
+      left: calc(100% - 7px);
     }
 
     &:hover {

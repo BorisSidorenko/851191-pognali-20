@@ -2,6 +2,11 @@
   position: relative;
   background-color: $dark-grey;
   border-radius: 0 0 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 40px 0 $main-bg_color;
+  }
 }
 
 .countries-filter__container {
@@ -17,6 +22,7 @@
     row-gap: 60px;
     padding-top: 60px;
     padding-bottom: 75px;
+    padding-left: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +107,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: auto;
+    margin-left: 23px;
+    margin-right: 0;
     width: min-content;
     white-space: nowrap;
     height: 20px;
@@ -117,7 +124,7 @@
     @media (min-width: $tablet-width) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: min-content;
-      padding-bottom: 56px;
+      padding-bottom: 58px;
     }
 
     @media (min-width: $desktop-width) {

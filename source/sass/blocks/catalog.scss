@@ -3,6 +3,11 @@
   padding-bottom: 46px;
   background-color: $main-bg_color;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+    box-shadow: 0 60px 0 $main-bg_color;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
@@ -46,6 +51,14 @@
     .catalog__link-icon {
       fill: rgba($special-blue_dark, 0.3);
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding-left: 45px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

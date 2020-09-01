@@ -243,8 +243,15 @@
       height: 274px;
     }
 
+    &--show-more {
+      top: -3px;
+      left: 4px;
+      width: 26px;
+      height: 26px;
+    }
+
     &--return {
-      top: 0;
+      top: 4px;
       left: auto;
       right: 0;
       width: 32px;
@@ -252,6 +259,8 @@
     }
 
     &--contries-dots-toggle {
+      top: 1px;
+      left: 6px;
       width: 30px;
       height: 6px;
     }
