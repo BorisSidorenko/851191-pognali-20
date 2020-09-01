@@ -16,8 +16,8 @@
   &--prev::before,
   &--next::before {
     position: absolute;
-    top: 17px;
-    left: 63px;
+    top: 20px;
+    left: 59px;
     width: 20px;
     height: 13px;
     background: url("../../img/triangle-arrow-left.svg") center no-repeat;
@@ -26,6 +26,7 @@
 
   &--next::before {
     position: absolute;
+    top: 18px;
     right: 63px;
     background: url("../../img/triangle-arrow-right.svg") center no-repeat;
     content: "";

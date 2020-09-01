@@ -8,6 +8,11 @@
   background-color: $basic-blue_light;
   border-radius: 50%;
 
+  &--catalog {
+    width: 32px;
+    height: 32px;
+  }
+
   &--active {
     color: $special-blue_dark;
   }
