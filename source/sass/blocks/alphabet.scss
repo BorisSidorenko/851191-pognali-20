@@ -103,3 +103,13 @@
     color: $light-blue;
   }
 }
+
+.alphabet__row {
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      .alphabet__countries {
+        margin-bottom: 55px;
+      }
+    }
+  }
+}

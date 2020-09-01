@@ -1,5 +1,11 @@
 .countries-to-choose {
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    padding-top: 34px;
+    min-width: 251px;
+  }
 }
 
 .countries-to-choose--form {
