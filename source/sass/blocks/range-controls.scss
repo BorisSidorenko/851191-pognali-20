@@ -76,13 +76,33 @@
 
     &--min,
     &--max {
-      top: -5px;
+      top: -7px;
+    }
+
+    &--min {
+      left: 72px;
+    }
+
+    &--max {
+      left: calc(100% - 7px);
     }
 
     &:hover {
       top: -9px;
       width: 19px;
       height: 19px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--min {
+      left: 60px;
+      top: -5px;
+    }
+
+    &--max {
+      left: calc(100% - 20px);
+      top: -6px;
     }
   }
 }

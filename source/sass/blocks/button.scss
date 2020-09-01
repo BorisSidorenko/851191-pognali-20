@@ -97,31 +97,20 @@
     background-color: $special-orange;
   }
 
+  &--bg-color_grey {
+    background-color: $tariffs-grey;
+  }
+
+  &--bg-color_blue {
+    background-color: $basic-blue_light;
+  }
+
   &--circle {
     position: relative;
     width: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 50%;
-  }
-
-  &--circle_phone::before,
-  &--circle_mail::before {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../../img/topmenu-phone.svg");
-    background-repeat: no-repeat;
-    content: "";
-  }
-
-  &--circle_mail::before {
-    top: 14px;
-    height: 13px;
-    background-image: url("../../img/topmenu-mail.svg");
-    background-repeat: no-repeat;
   }
 
   &--circle_toggle {
@@ -201,20 +190,6 @@
       padding-top: 25px;
       padding-bottom: 25px;
       border-radius: 50%;
-    }
-
-    &--circle_phone::before {
-      top: 17px;
-      left: 17px;
-      width: 16px;
-      height: 16px;
-    }
-
-    &--circle_mail::before {
-      top: 18px;
-      left: 17px;
-      width: 16px;
-      height: 14px;
     }
   }
 }

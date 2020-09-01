@@ -1,5 +1,5 @@
 .dates {
-  padding-top: 23px;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
@@ -12,15 +12,20 @@
 }
 
 .dates__month {
-  margin-bottom: 22px;
-  padding-top: 11px;
+  margin-bottom: 20px;
+  padding-top: 10px;
   padding-bottom: 11px;
   border-top: 1px solid $calendar-grey;
   border-bottom: 1px solid $calendar-grey;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 39px;
-    padding-top: 27px;
-    padding-bottom: 23px;
+    margin-bottom: 37px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    padding-top: 25px;
   }
 }

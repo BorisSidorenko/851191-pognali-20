@@ -1,7 +1,8 @@
 .direction {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-decoration: none;
 
   &:last-child {
@@ -10,10 +11,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 
     &:last-child {
-      margin-bottom: 44px;
+      margin-bottom: 46px;
     }
   }
 
@@ -41,7 +42,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 270px;
-  padding-top: 26px;
+  padding-top: 14px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
@@ -51,22 +52,34 @@
   font-size: 16px;
   background-color: $basic-white;
   border-radius: 10px;
+  box-shadow: 0 -10px 0 $basic-white;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
     row-gap: 5px;
+    padding-top: 28px;
+    padding-left: 28px;
     width: 430px;
     border-radius: 20px 0 0 20px;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 24px;
+    padding-top: 21px;
     padding-left: 29px;
     padding-right: 29px;
     padding-bottom: 23px;
     width: 374px;
+  }
+}
+
+.direction__description--padding-bottom-6 {
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
   }
 }
 
@@ -84,13 +97,21 @@
 }
 
 .direction__popularity {
+  position: relative;
+  padding-left: 19px;
+  min-width: 61px;
   line-height: 20px;
   color: $additional-text_color_30;
 
   @media (min-width: $tablet-width) {
     align-self: end;
+    padding-left: 29px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 32px;
   }
 }
 

@@ -1,6 +1,7 @@
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "blocks/page.scss";
 @import "blocks/icon.scss";
 @import "blocks/input.scss";
 @import "blocks/break.scss";
@@ -28,6 +29,8 @@
 @import "blocks/traveler-link.scss";
 @import "blocks/interests.scss";
 @import "blocks/tariffs.scss";
+@import "blocks/business-tariffs.scss";
+@import "blocks/modal.scss";
 @import "blocks/email-form.scss";
 @import "blocks/our-contacts.scss";
 @import "blocks/feedback.scss";
@@ -72,3 +75,4 @@
 @import "blocks/alphabet.scss";
 @import "blocks/choose-country";
 @import "blocks/countries-to-choose.scss";
+@import "blocks/circular-chart.scss";

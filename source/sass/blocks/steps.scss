@@ -29,8 +29,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 21px;
   font-family: $main-font;
@@ -73,41 +73,55 @@
     &--first {
       box-shadow: 0 20px 0 $special-orange,
         20px 0 0 $special-orange;
+      border-radius: 20px 0 0 0;
     }
 
     &--second {
-      border-radius: 10px 10px 0 0;
+      border-radius: 20px 20px 0 0;
     }
 
     &--third {
       box-shadow: 20px 0 0 $special-yellow_dark;
+      border-radius: 0 0 0 20px;
     }
 
     &--fourth {
-      border-radius: 0 0 10px 10px;
+      border-radius: 0 0 20px 20px;
     }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    padding-right: 34px;
+    padding-bottom: 29px;
     border-radius: 20px 0 0 20px;
 
     &--first {
+      padding-right: 48px;
+      padding-top: 27px;
       box-shadow: 20px 0 0 $special-orange;
     }
 
     &--second {
-      box-shadow: 20px 0 0 $special-orange_light;
+      padding-left: 15px;
+      padding-top: 27px;
+      padding-right: 32px;
+      box-shadow: -15px 0 0 $special-orange_light, 15px 0 0 $special-orange_light;
     }
 
     &--third {
+      padding-top: 27px;
+      padding-right: 17px;
       box-shadow: 20px 0 0 $special-yellow_dark;
     }
 
     &--fourth {
+      padding-left: 45px;
+      padding-right: 32px;
+      padding-top: 28px;
       border-radius: 20px;
+      padding-bottom: 31px;
+      box-shadow: inset 15px 0 0 $special-yellow_dark;
     }
   }
 }
@@ -121,6 +135,11 @@
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 

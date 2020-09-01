@@ -24,8 +24,12 @@
   row-gap: 10px;
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   list-style-type: none;
+
+  &--special {
+    padding-bottom: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -35,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    row-gap: 12px;
   }
 }
 
@@ -53,23 +58,9 @@
   text-transform: uppercase;
   color: $main-color;
 
-  &::before {
-    width: 26px;
-    height: 18px;
-    background-color: $main-bg_color;
-    content: "";
-  }
-
   @media (min-width: $tablet-width) {
     margin-right: 25px;
     font-size: 20px;
     line-height: 20px;
-
-    &::before {
-      width: 35px;
-      height: 24px;
-      background-color: $main-bg_color;
-      content: "";
-    }
   }
 }

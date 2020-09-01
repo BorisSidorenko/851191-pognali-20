@@ -2,6 +2,20 @@
   border-collapse: collapse;
 }
 
+.alphabet--form {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 262px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 361px;
+  }
+}
+
 .alphabet__cell {
   padding-top: 12px;
   padding-bottom: 15px;
@@ -18,8 +32,13 @@
   background-color: $basic-white;
   border: 1px solid $calendar-grey;
 
+  &--catalog-active {
+    color: $basic-white;
+    background-color: $special-blue_dark;
+  }
+
   @media (min-width: $tablet-width) {
-    &--form {
+    &--catalog {
       padding: 0;
       font-weight: bold;
       font-size: 60px;
@@ -29,7 +48,7 @@
       border: none;
     }
 
-    &--form-active {
+    &--catalog-active {
       color: $main-color;
     }
   }
@@ -38,6 +57,28 @@
     text-align: left;
     vertical-align: top;
   }
+}
+
+.alphabet__cell--form {
+  &:hover {
+    border: 1px solid $input-border_hover_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.alphabet__cell--form-active {
+  color: $basic-white;
+  background-color: $special-blue_dark;
 }
 
 
@@ -54,5 +95,21 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+}
+
+.alphabet__letter {
+  @media (min-width: $desktop-width) {
+    color: $light-blue;
+  }
+}
+
+.alphabet__row {
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      .alphabet__countries {
+        margin-bottom: 55px;
+      }
+    }
   }
 }

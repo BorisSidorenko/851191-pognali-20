@@ -1,16 +1,69 @@
 .countries-to-choose {
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    padding-top: 34px;
+    min-width: 251px;
+  }
+}
+
+.countries-to-choose--form {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 20px;
+  background-color: $basic-white;
+  border: 1px solid $input-grey;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 26px;
+    padding-right: 23px;
+    border-right: none;
+    border-bottom: none;
+  }
 }
 
 .countries-to-choose__item {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.countries-to-choose__item--form {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.countries-to-choose__link {
+  margin-right: auto;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
   line-height: 22px;
   color: $special-grey;
 
-  @media (min-width: $tablet-width) {
+  &:hover {
+    color: $special-blue_dark;
+  }
+
+  &:active {
+    color: rgba($special-blue_dark, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }

@@ -44,26 +44,30 @@
 }
 
 .month__prev {
-  left: 0;
+  left: -6px;
 
   @media (min-width: $tablet-width) {
-    left: 17px;
+    left: 11px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: -6px;
+    top: 26px;
   }
 }
 
 .month__next {
-  right: 0;
+  right: -6px;
 
   @media (min-width: $tablet-width) {
-    right: 17px;
+    right: 10px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: -6px;
+    top: 26px;
   }
 }
 

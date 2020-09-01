@@ -1,22 +1,30 @@
 .address {
-  padding-top: 31px;
-  padding-bottom: 35px;
+  position: relative;
   background-color: $basic-yellow;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 35px 0 $basic-yellow;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+}
+
+.address__container {
+  position: relative;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
-    padding-bottom: 84px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    padding-bottom: 56px;
+    padding-bottom: 21px;
     padding-left: 283px;
     padding-right: 135px;
   }
 }
-
 
 .address__wrapper {
   @media (min-width: $desktop-width) {
@@ -30,7 +38,7 @@
   position: relative;
   margin: 0;
   padding-left: 61px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -41,7 +49,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 45px;
     height: 45px;
@@ -81,6 +89,10 @@
 }
 
 .address__link {
+  padding-top: 18px;
+  padding-left: 19px;
+  padding-bottom: 20px;
+
   &:hover {
     background-color: $light-blue;
     color: $basic-white;
@@ -90,7 +102,24 @@
     color: rgba($basic-white, 0.3);
   }
 
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-bottom: 26px;
+    width: 618px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 324px;
+  }
+}
+
+.address__link-icon {
+  top: 21px;
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 32px;
   }
 }

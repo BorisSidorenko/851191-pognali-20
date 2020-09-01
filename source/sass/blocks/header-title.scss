@@ -1,12 +1,12 @@
 .header-title {
-  padding-top: 62px;
+  padding-top: 45px;
   padding-left: 25px;
-  padding-bottom: 11px;
+  padding-bottom: 15px;
   padding-right: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 152px;
-    padding-bottom: 66px;
+    padding-top: 130px;
+    padding-bottom: 70px;
     padding-left: 75px;
     padding-right: 75px;
 
@@ -17,7 +17,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 126px;
+    padding-left: 125px;
     padding-right: 123px;
+    padding-top: 116px;
+    padding-bottom: 71px;
   }
 }

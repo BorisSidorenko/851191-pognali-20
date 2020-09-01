@@ -1,17 +1,26 @@
 .feedback {
-  padding-top: 72px;
-  padding-bottom: 29px;
   background-color: $additional-bg_color;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 0 $basic-yellow;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 30px 0 $basic-yellow;
 
   @media (min-width: $tablet-width) {
-    padding-top: 76px;
-    padding-bottom: 60px;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 60px 0 $basic-yellow;
+  }
+}
+
+.feedback__container {
+  padding-top: 70px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 72px;
+    padding-bottom: 59px;
+    padding-right: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 109px;
+    padding-top: 105px;
     padding-bottom: 102px;
     padding-left: 132px;
     padding-right: 134px;
@@ -33,7 +42,7 @@
 
 .feedback__text {
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 300;
@@ -43,13 +52,23 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 65px;
+    padding-bottom: 69px;
     font-size: 28px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 60px;
+    padding-bottom: 62px;
+  }
+}
+
+.feedback__span {
+  @media (min-width: $tablet-width) {
+    padding-left: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
   }
 }
 

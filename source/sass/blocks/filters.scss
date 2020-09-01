@@ -1,5 +1,19 @@
+.filters__container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+}
+
 .filters__form {
-  padding-top: 26px;
+  padding-top: 24px;
   padding-bottom: 22px;
   padding-right: 20px;
   padding-left: 20px;
@@ -7,8 +21,8 @@
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
-    padding-left: 34px;
+    padding-top: 35px;
+    padding-left: 30px;
     padding-right: 36px;
     padding-bottom: 37px;
   }
@@ -16,7 +30,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 46px;
     padding-left: 47px;
-    padding-right: 47px;
+    padding-right: 40px;
     padding-bottom: 48px;
   }
 }
@@ -24,6 +38,7 @@
 .filters__title {
   margin: 0;
   padding-bottom: 23px;
+  padding-left: 5px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -42,16 +57,20 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 34px;
+    padding-left: 0;
     width: 194px;
   }
 }
 
 .filters__wrapper {
+  margin-bottom:  16px;
+
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 34px;
+    padding-top: 37px;
     padding-bottom: 37px;
     margin-bottom: 36px;
+    padding-left: 5px;
 
     &::before {
       position: absolute;
@@ -76,7 +95,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 38px;
+    margin-bottom: 11px;
 
     &::before,
     &::after {
@@ -89,10 +108,19 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
   border: none;
+
+  &--transport {
+    z-index: 1;
+  }
+
+  &--level {
+    padding-top: 10px;
+  }
 
   &::before {
     position: absolute;
@@ -109,7 +137,7 @@
     align-items: center;
     column-gap: 18px;
     padding: 0;
-    padding-bottom: 26px;
+    padding-bottom: 25px;
 
     &:nth-last-child(2) {
       padding-bottom: 14px;
@@ -126,10 +154,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-bottom: 19px;
+    padding-bottom: 0;
 
     &:nth-last-child(2) {
-      padding-bottom: 34px;
+      padding-bottom: 0;
     }
 
     &:last-child {
@@ -138,9 +166,59 @@
   }
 }
 
-.filters__category {
+.filters__category-toggle {
+  position: relative;
+  display: flex;
   margin: 0;
-  padding-top: 12px;
+  padding: 0;
+  padding-top: 1px;
+  width: 100%;
+
+  &--opened {
+    .filters__category-icon {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &--closed {
+    .filters__category-icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  &:hover {
+    color: rgba($main-color, 0.6);
+
+    .filters__category {
+      color: rgba($main-color, 0.6);
+    }
+  }
+
+  &:active {
+    color: rgba($main-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &:hover {
+      .filters__category {
+        color: $main-color;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
+  }
+}
+
+.filters__category {
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -150,31 +228,24 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 23px;
+    font-weight: 500;
   }
 }
 
 .filters__list {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 14px;
+  padding-bottom: 8px;
   list-style-type: none;
-
-  &--hobbies {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 155px 158px 154px;
     row-gap: 10px;
+    column-gap: 14px;
     padding: 0;
   }
 
@@ -183,8 +254,37 @@
   }
 }
 
+.filters__controls {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.filters__options--collapsed {
+  @media (max-width: $mobile-width), (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.filters__options--expanded {
+  @media (max-width: $mobile-width), (min-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
+}
+
 .filters__item {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 
   &:last-child {
     padding-bottom: 0;
@@ -192,23 +292,26 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    padding-top: 3px;
+    padding-left: 3px;
+    white-space: nowrap;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 16px;
+    padding-left: 0;
   }
 }
 
 .filters__label {
   position: relative;
-  padding-left: 34px;
+  padding-left: 28px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
-  text-transform: capitalize;
 
   &:hover {
     color: rgba($basic-black, 0.6);
@@ -223,11 +326,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 39px;
     font-size: 20px;
   }
 }
 
 .filters__button {
+  padding-top: 13px;
+  padding-bottom: 11px;
   outline: none;
 
   &:hover {
@@ -237,6 +343,12 @@
   &:active {
     color: rgba($special-blue_dark, 0.3);
     background-color: $dilimeter-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+    padding-top: 16px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -249,35 +361,39 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background-color: $basic-white;
     border-radius: 4px;
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
 .filters__checkbox:checked + .filters__label {
   &::after {
     position: absolute;
-    top: 6px;
-    left: 7px;
-    width: 11px;
-    height: 11px;
+    top: 4px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
     background-image: url("../../img/tick.svg");
     content: "";
   }
-}
 
-.filters__controls {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
+    &::after {
+      top: 7px;
+      left: 7px;
+      width: 11px;
+      height: 11px;
+    }
   }
 }
+
