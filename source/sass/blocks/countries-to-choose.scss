@@ -24,12 +24,6 @@
 }
 
 .countries-to-choose__item {
-  padding-bottom: 4px;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -51,6 +45,7 @@
   font-weight: normal;
   font-size: 16px;
   text-decoration: none;
+  text-transform: capitalize;
   line-height: 22px;
   color: $special-grey;
 
@@ -60,5 +55,10 @@
 
   &:active {
     color: rgba($special-blue_dark, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
