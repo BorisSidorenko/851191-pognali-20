@@ -22,12 +22,12 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 18px;
-    padding-bottom: 47px;
+    padding-bottom: 48px;
     padding-right: 115px;
 
     &:last-of-type {
       padding-top: 0;
-      padding-bottom: 0;
+      padding-bottom: 34px;
     }
   }
 }
@@ -109,6 +109,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-left: 25px;
     width: 730px;
   }
 }
