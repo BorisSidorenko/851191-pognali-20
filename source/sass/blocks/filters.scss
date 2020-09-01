@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 60px;
+    padding-left: 0;
     padding-right: 60px;
     width: auto;
   }
@@ -379,10 +379,14 @@
 }
 
 .filters__controls {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }

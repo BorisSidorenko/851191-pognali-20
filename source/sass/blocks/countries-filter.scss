@@ -87,7 +87,6 @@
 
 .countries-filter__toggle {
   grid-column: 3;
-  align-self: center;
   margin-right: 4px;
   padding: 0;
   width: 17px;
@@ -139,6 +138,10 @@
       display: flex;
       padding-bottom: 57px;
     }
+  }
+
+  .countries-filter__toggle {
+    align-self: center;
   }
 
   .countries-filter__toggle-text {
