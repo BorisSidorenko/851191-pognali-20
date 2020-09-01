@@ -93,4 +93,16 @@
       height: 19px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--min {
+      left: 60px;
+      top: -5px;
+    }
+
+    &--max {
+      left: calc(100% - 20px);
+      top: -6px;
+    }
+  }
 }

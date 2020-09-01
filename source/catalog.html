@@ -797,178 +797,300 @@
         </div>
       </section>
       <div class="travelers-to-choose__wrapper">
-        <h2 class="visually-hidden">Фильтр попутчиков</h2>
-        <section class="filters">
-          <div class="container filters__container">
-            <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
-              <h3 class="filters__title">Подберите идеального попутчика</h3>
-              <div class="filters__wrapper">
-                <div class="filters__group filters__group--hobbies">
-                  <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
-                    <span class="filters__category">хобби:</span>
-                    <svg class="icon icon--arrow-filter filters__category-icon">
-                      <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <ul class="filters__list filters__options filters__options--collapsed">
-                    <li class="filters__item">
-                      <input type="checkbox" name="gym" id="gym" class="visually-hidden filters__checkbox" checked>
-                      <label for="gym" class="filters__label">Спортзал</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="hookah" id="hookah" class="visually-hidden filters__checkbox">
-                      <label for="hookah" class="filters__label">Кальян</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="sofa" id="sofa" class="visually-hidden filters__checkbox">
-                      <label for="sofa" class="filters__label">Диван</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filters__group filters__group--music">
-                  <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
-                    <span class="filters__category">музыка:</span>
-                    <svg class="icon icon--arrow-filter filters__category-icon">
-                      <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <ul class="filters__list filters__options filters__options--collapsed">
-                    <li class="filters__item">
-                      <input type="checkbox" name="rock" id="rock" class="visually-hidden filters__checkbox" checked>
-                      <label for="rock" class="filters__label">Тяжелый рок</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="rap" id="rap" class="visually-hidden filters__checkbox" checked>
-                      <label for="rap" class="filters__label">Русский рэп</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="dance" id="dance" class="visually-hidden filters__checkbox">
-                      <label for="dance" class="filters__label">Евроденс</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filters__group filters__group--food">
-                  <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
-                    <span class="filters__category">еда:</span>
-                    <svg class="icon icon--arrow-filter filters__category-icon">
-                      <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <ul class="filters__list filters__options filters__options--collapsed">
-                    <li class="filters__item">
-                      <input type="checkbox" name="meat" id="meat" class="visually-hidden filters__checkbox" checked>
-                      <label for="meat" class="filters__label">Мясоед</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="healthy-food" id="healthy-food" class="visually-hidden filters__checkbox">
-                      <label for="healthy-food" class="filters__label">Сидит на ПП</label>
-                    </li>
-                    <li class="filters__item">
-                      <input type="checkbox" name="vegan" id="vegan" class="visually-hidden filters__checkbox">
-                      <label for="vegan" class="filters__label">Веган-сыроед</label>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filters__group filters__group--transport">
-                  <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
-                    <span class="filters__category">транспорт:</span>
-                    <svg class="icon icon--arrow-filter filters__category-icon">
-                      <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <div class="transport filters__options filters__options--collapsed">
-                    <ul class="transport__list transport__list--form">
-                      <li class="transport__item tooltip">
-                        <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Самолёт">
-                          <span class="tooltip__text">Авиаперелет</span>
-                          <svg class="transport__icon transport__icon--plane">
-                            <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
-                          </svg>
-                        </button>
+        <div class="travelers-to-choose__container">
+          <h2 class="visually-hidden">Фильтр попутчиков</h2>
+          <section class="filters">
+            <div class="container filters__container">
+              <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+                <h3 class="filters__title">Подберите идеального попутчика</h3>
+                <div class="filters__wrapper">
+                  <div class="filters__group filters__group--hobbies">
+                    <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
+                      <span class="filters__category">хобби:</span>
+                      <svg class="icon icon--arrow-filter filters__category-icon">
+                        <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <ul class="filters__list filters__options filters__options--collapsed">
+                      <li class="filters__item">
+                        <input type="checkbox" name="gym" id="gym" class="visually-hidden filters__checkbox" checked>
+                        <label for="gym" class="filters__label">Спортзал</label>
                       </li>
-                      <li class="transport__item tooltip">
-                        <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Автобус">
-                          <span class="tooltip__text">Автотранспорт</span>
-                          <svg class="transport__icon transport__icon--bus">
-                            <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
-                          </svg>
-                        </button>
+                      <li class="filters__item">
+                        <input type="checkbox" name="hookah" id="hookah" class="visually-hidden filters__checkbox">
+                        <label for="hookah" class="filters__label">Кальян</label>
                       </li>
-                      <li class="transport__item tooltip">
-                        <button type="button" class="button transport__toggle button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Велосипед">
-                          <span class="tooltip__text">Велосипед</span>
-                          <svg class="transport__icon transport__icon--bike">
-                            <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
-                          </svg>
-                        </button>
-                      </li>
-                      <li class="transport__item tooltip">
-                        <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s  button--bg-color_white button--padding_none" aria-label="Пешеход">
-                          <span class="tooltip__text">Пешком</span>
-                          <svg class="transport__icon transport__icon--run">
-                            <use xlink:href="img/spriteTransport.svg#transport-run"></use>
-                          </svg>
-                        </button>
+                      <li class="filters__item">
+                        <input type="checkbox" name="sofa" id="sofa" class="visually-hidden filters__checkbox">
+                        <label for="sofa" class="filters__label">Диван</label>
                       </li>
                     </ul>
                   </div>
-                </div>
-                <div class="filters__group filters__group--level">
-                  <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
-                    <span class="filters__category">левел:</span>
-                    <svg class="icon icon--arrow-filter filters__category-icon">
-                      <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
-                    </svg>
-                  </button>
-                  <div class="filters__controls filters__options filters__options--collapsed">
-                    <div class="level-controls">
-                      <label for="level-min" class="visually-hidden">Левел от:</label>
-                      <input type="text" name="level-min" id="level-min" class="level-controls__input level-controls__input--min" value="30">
-                      <label for="level-max" class="visually-hidden">Левел до:</label>
-                      <input type="text" name="level-max" id="level-max" class="level-controls__input level-controls__input--max" value="100">
+                  <div class="filters__group filters__group--music">
+                    <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
+                      <span class="filters__category">музыка:</span>
+                      <svg class="icon icon--arrow-filter filters__category-icon">
+                        <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <ul class="filters__list filters__options filters__options--collapsed">
+                      <li class="filters__item">
+                        <input type="checkbox" name="rock" id="rock" class="visually-hidden filters__checkbox" checked>
+                        <label for="rock" class="filters__label">Тяжелый рок</label>
+                      </li>
+                      <li class="filters__item">
+                        <input type="checkbox" name="rap" id="rap" class="visually-hidden filters__checkbox" checked>
+                        <label for="rap" class="filters__label">Русский рэп</label>
+                      </li>
+                      <li class="filters__item">
+                        <input type="checkbox" name="dance" id="dance" class="visually-hidden filters__checkbox">
+                        <label for="dance" class="filters__label">Евроденс</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filters__group filters__group--food">
+                    <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
+                      <span class="filters__category">еда:</span>
+                      <svg class="icon icon--arrow-filter filters__category-icon">
+                        <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <ul class="filters__list filters__options filters__options--collapsed">
+                      <li class="filters__item">
+                        <input type="checkbox" name="meat" id="meat" class="visually-hidden filters__checkbox" checked>
+                        <label for="meat" class="filters__label">Мясоед</label>
+                      </li>
+                      <li class="filters__item">
+                        <input type="checkbox" name="healthy-food" id="healthy-food" class="visually-hidden filters__checkbox">
+                        <label for="healthy-food" class="filters__label">Сидит на ПП</label>
+                      </li>
+                      <li class="filters__item">
+                        <input type="checkbox" name="vegan" id="vegan" class="visually-hidden filters__checkbox">
+                        <label for="vegan" class="filters__label">Веган-сыроед</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filters__group filters__group--transport">
+                    <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
+                      <span class="filters__category">транспорт:</span>
+                      <svg class="icon icon--arrow-filter filters__category-icon">
+                        <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <div class="transport filters__options filters__options--collapsed">
+                      <ul class="transport__list transport__list--form">
+                        <li class="transport__item tooltip">
+                          <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Самолёт">
+                            <span class="tooltip__text">Авиаперелет</span>
+                            <svg class="transport__icon transport__icon--plane">
+                              <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="transport__item tooltip">
+                          <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Автобус">
+                            <span class="tooltip__text">Автотранспорт</span>
+                            <svg class="transport__icon transport__icon--bus">
+                              <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="transport__item tooltip">
+                          <button type="button" class="button transport__toggle button--circle_toggle_s button--bg-color_white button--padding_none" aria-label="Велосипед">
+                            <span class="tooltip__text">Велосипед</span>
+                            <svg class="transport__icon transport__icon--bike">
+                              <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="transport__item tooltip">
+                          <button type="button" class="button transport__toggle transport__toggle--active button--circle_toggle_s  button--bg-color_white button--padding_none" aria-label="Пешеход">
+                            <span class="tooltip__text">Пешком</span>
+                            <svg class="transport__icon transport__icon--run">
+                              <use xlink:href="img/spriteTransport.svg#transport-run"></use>
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="range-controls">
-                      <div class="range-controls__scale">
-                        <div class="range-controls__bar"></div>
+                  </div>
+                  <div class="filters__group filters__group--level">
+                    <button type="button" class="button filters__category-toggle filters__category-toggle--closed button--bg_none">
+                      <span class="filters__category">левел:</span>
+                      <svg class="icon icon--arrow-filter filters__category-icon">
+                        <use xlink:href="../img/spriteTriangleArrows.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <div class="filters__controls filters__options filters__options--collapsed">
+                      <div class="level-controls">
+                        <label for="level-min" class="visually-hidden">Левел от:</label>
+                        <input type="text" name="level-min" id="level-min" class="level-controls__input level-controls__input--min" value="30">
+                        <label for="level-max" class="visually-hidden">Левел до:</label>
+                        <input type="text" name="level-max" id="level-max" class="level-controls__input level-controls__input--max" value="100">
                       </div>
-                      <button type="button" aria-label="Минимальный уровень" class="range-controls__toggle range-controls__toggle--min"></button>
-                      <button type="button" aria-label="Максимальный уровень" class="range-controls__toggle range-controls__toggle--max"></button>
+                      <div class="range-controls">
+                        <div class="range-controls__scale">
+                          <div class="range-controls__bar"></div>
+                        </div>
+                        <button type="button" aria-label="Минимальный уровень" class="range-controls__toggle range-controls__toggle--min"></button>
+                        <button type="button" aria-label="Максимальный уровень" class="range-controls__toggle range-controls__toggle--max"></button>
+                      </div>
                     </div>
-                  </div>
-                  </div>
-              </div>
-              <button type="submit" class="button filters__button button--rounded_m button--text_upper">
-                показать
-              </button>
-            </form>
-          </div>
-        </section>
-        <section class="catalog">
-          <div class="container catalog__container">
-            <h2 class="visually-hidden">Список доступных попутчиков</h2>
-            <ul class="cards catalog__list">
-              <li class="cards__item">
-                <article class="card">
-                  <div class="card__photo-wrapper">
-                    <a href="user.html">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                        <source type="image/webp" media="(max-width: 768px)" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
-                        <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Тани Фирсовой">
-                      </picture>
+                    </div>
+                </div>
+                <button type="submit" class="button filters__button button--rounded_m button--text_upper">
+                  показать
+                </button>
+              </form>
+            </div>
+          </section>
+          <section class="catalog">
+            <div class="container catalog__container">
+              <h2 class="visually-hidden">Список доступных попутчиков</h2>
+              <ul class="cards catalog__list">
+                <li class="cards__item">
+                  <article class="card">
+                    <div class="card__photo-wrapper">
+                      <a href="user.html">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                          <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                          <source type="image/webp" media="(max-width: 768px)" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                          <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Тани Фирсовой">
+                        </picture>
+                      </a>
+                    </div>
+                    <a href="user.html" class="traveler-link">
+                      <h3 class="card__title">
+                        <span class="card__first-name">Таня</span>
+                        <span class="card__last-name">Фирсова</span>
+                      </h3>
                     </a>
-                  </div>
-                  <a href="user.html" class="traveler-link">
-                    <h3 class="card__title">
-                      <span class="card__first-name">Таня</span>
-                      <span class="card__last-name">Фирсова</span>
-                    </h3>
-                  </a>
+                      <div class="likes card__likes">
+                        <a href="like.html" class="likes__link likes__link--active">
+                          <div class="likes__icon-wrapper">
+                            <svg class="likes__icon likes__icon--active">
+                              <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
+                            </svg>
+                            <svg class="likes__icon">
+                              <use xlink:href="../img/spriteLike.svg#like-heart"></use>
+                            </svg>
+                          </div>
+                          <div class="likes__label">
+                            <span class="likes__count">1,5 М</span>
+                          </div>
+                        </a>
+                      </div>
+                    <ul class="card__interests interests">
+                      <li class="interests__item">#ЗОЖ</li>
+                      <li class="interests__item">#ПП</li>
+                      <li class="interests__item">#Фитнес</li>
+                      <li class="interests__item">#пляж</li>
+                      <li class="interests__item">#авокадо</li>
+                      <li class="interests__item">#смузи</li>
+                    </ul>
+                    <div class="wishes card__wishes">
+                      <p class="wishes__title">
+                        хочет посетить:
+                      </p>
+                      <ul class="wishes__list">
+                        <li class="wishes__item wishes__item--sri-lanka">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-sri-lanka"></use>
+                          </svg>
+                          Шри-Ланка
+                        </li>
+                        <li class="wishes__item wishes__item--thailand">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-thailand"></use>
+                          </svg>
+                          Тайланд
+                        </li>
+                        <li class="wishes__item wishes__item--seychelles">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-seychelles"></use>
+                          </svg>
+                          Сейшелы
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="badges card__badges">
+                      <div class="badges__title">
+                        <span class="badges__title badges__title--transport">транспорт:</span>
+                        <span class="badges__title badges__title--level">левел:</span>
+                      </div>
+                      <div class="badges__wrapper">
+                        <div class="badges__transport">
+                          <div class="badge badge--active badge--catalog tooltip">
+                            <span class="tooltip__text">Авиаперелет</span>
+                            <svg class="badge__icon badge__icon--plane">
+                              <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Автотранспорт</span>
+                            <svg class="badge__icon badge__icon--bus">
+                              <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Велосипед</span>
+                            <svg class="badge__icon badge__icon--bike">
+                              <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Пешком</span>
+                            <svg class="badge__icon badge__icon--run">
+                              <use xlink:href="img/spriteTransport.svg#transport-run"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="level badges__level">
+                          <span class="level__text level__text--catalog">99</span>
+                          <span class="level__title level__title--catalog">level</span>
+                          <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circular-chart__circle"
+                              stroke-dasharray="95, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__link-wrapper">
+                      <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                        Позвать!
+                      </a>
+                    </div>
+                  </article>
+                </li>
+                <li class="cards__item">
+                  <article class="card">
+                    <div class="card__photo-wrapper">
+                      <a href="user.html">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                          <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                          <source type="image/webp" media="(max-width: 768px)" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                          <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Пети Демина">
+                        </picture>
+                      </a>
+                    </div>
+                    <a href="user.html" class="traveler-link">
+                      <h3 class="card__title">
+                        <span class="card__first-name">Петя</span>
+                        <span class="card__last-name">Демин</span>
+                      </h3>
+                    </a>
                     <div class="likes card__likes">
-                      <a href="like.html" class="likes__link likes__link--active">
+                      <a href="like.html" class="likes__link">
                         <div class="likes__icon-wrapper">
                           <svg class="likes__icon likes__icon--active">
                             <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
@@ -978,489 +1100,369 @@
                           </svg>
                         </div>
                         <div class="likes__label">
-                          <span class="likes__count">1,5 М</span>
+                          <span class="likes__count">1500</span>
                         </div>
                       </a>
                     </div>
-                  <ul class="card__interests interests">
-                    <li class="interests__item">#ЗОЖ</li>
-                    <li class="interests__item">#ПП</li>
-                    <li class="interests__item">#Фитнес</li>
-                    <li class="interests__item">#пляж</li>
-                    <li class="interests__item">#авокадо</li>
-                    <li class="interests__item">#смузи</li>
-                  </ul>
-                  <div class="wishes card__wishes">
-                    <p class="wishes__title">
-                      хочет посетить:
-                    </p>
-                    <ul class="wishes__list">
-                      <li class="wishes__item wishes__item--sri-lanka">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-sri-lanka"></use>
-                        </svg>
-                        Шри-Ланка
-                      </li>
-                      <li class="wishes__item wishes__item--thailand">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-thailand"></use>
-                        </svg>
-                        Тайланд
-                      </li>
-                      <li class="wishes__item wishes__item--seychelles">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-seychelles"></use>
-                        </svg>
-                        Сейшелы
-                      </li>
+                    <ul class="card__interests interests">
+                      <li class="interests__item">#бургер</li>
+                      <li class="interests__item">#бар</li>
+                      <li class="interests__item">#футбол</li>
+                      <li class="interests__item">#концерт</li>
+                      <li class="interests__item">#крафт</li>
                     </ul>
-                  </div>
-                  <div class="badges card__badges">
-                    <div class="badges__title">
-                      <span class="badges__title badges__title--transport">транспорт:</span>
-                      <span class="badges__title badges__title--level">левел:</span>
+                    <div class="wishes card__wishes">
+                      <p class="wishes__title">
+                        хочет посетить:
+                      </p>
+                      <ul class="wishes__list wishes__list--special">
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-belgium"></use>
+                          </svg>
+                          Бельгия
+                        </li>
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-czech"></use>
+                          </svg>
+                          Чехия
+                        </li>
+                      </ul>
                     </div>
-                    <div class="badges__wrapper">
-                      <div class="badges__transport">
-                        <div class="badge badge--active badge--catalog tooltip">
-                          <span class="tooltip__text">Авиаперелет</span>
-                          <svg class="badge__icon badge__icon--plane">
-                            <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Автотранспорт</span>
-                          <svg class="badge__icon badge__icon--bus">
-                            <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Велосипед</span>
-                          <svg class="badge__icon badge__icon--bike">
-                            <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Пешком</span>
-                          <svg class="badge__icon badge__icon--run">
-                            <use xlink:href="img/spriteTransport.svg#transport-run"></use>
-                          </svg>
-                        </div>
+                    <div class="badges card__badges">
+                      <div class="badges__title">
+                        <span class="badges__title badges__title--transport">транспорт:</span>
+                        <span class="badges__title badges__title--level">левел:</span>
                       </div>
-                      <div class="level badges__level">
-                        <span class="level__text level__text--catalog">99</span>
-                        <span class="level__title level__title--catalog">level</span>
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                          <path class="circular-chart__circle"
-                            stroke-dasharray="95, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__link-wrapper">
-                    <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
-                      Позвать!
-                    </a>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <div class="card__photo-wrapper">
-                    <a href="user.html">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                        <source type="image/webp" media="(max-width: 768px)" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-                        <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Пети Демина">
-                      </picture>
-                    </a>
-                  </div>
-                  <a href="user.html" class="traveler-link">
-                    <h3 class="card__title">
-                      <span class="card__first-name">Петя</span>
-                      <span class="card__last-name">Демин</span>
-                    </h3>
-                  </a>
-                  <div class="likes card__likes">
-                    <a href="like.html" class="likes__link">
-                      <div class="likes__icon-wrapper">
-                        <svg class="likes__icon likes__icon--active">
-                          <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
-                        </svg>
-                        <svg class="likes__icon">
-                          <use xlink:href="../img/spriteLike.svg#like-heart"></use>
-                        </svg>
-                      </div>
-                      <div class="likes__label">
-                        <span class="likes__count">1500</span>
-                      </div>
-                    </a>
-                  </div>
-                  <ul class="card__interests interests">
-                    <li class="interests__item">#бургер</li>
-                    <li class="interests__item">#бар</li>
-                    <li class="interests__item">#футбол</li>
-                    <li class="interests__item">#концерт</li>
-                    <li class="interests__item">#крафт</li>
-                  </ul>
-                  <div class="wishes card__wishes">
-                    <p class="wishes__title">
-                      хочет посетить:
-                    </p>
-                    <ul class="wishes__list wishes__list--special">
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-belgium"></use>
-                        </svg>
-                        Бельгия
-                      </li>
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-czech"></use>
-                        </svg>
-                        Чехия
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="badges card__badges">
-                    <div class="badges__title">
-                      <span class="badges__title badges__title--transport">транспорт:</span>
-                      <span class="badges__title badges__title--level">левел:</span>
-                    </div>
-                    <div class="badges__wrapper">
-                      <div class="badges__transport">
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Авиаперелет</span>
-                          <svg class="badge__icon badge__icon--plane">
-                            <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                      <div class="badges__wrapper">
+                        <div class="badges__transport">
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Авиаперелет</span>
+                            <svg class="badge__icon badge__icon--plane">
+                              <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Автотранспорт</span>
+                            <svg class="badge__icon badge__icon--bus">
+                              <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Велосипед</span>
+                            <svg class="badge__icon badge__icon--bike">
+                              <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Пешком</span>
+                            <svg class="badge__icon badge__icon--run">
+                              <use xlink:href="img/spriteTransport.svg#transport-run"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="level badges__level">
+                          <span class="level__text level__text--catalog">80</span>
+                          <span class="level__title level__title--catalog">level</span>
+                          <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circular-chart__circle"
+                              stroke-dasharray="85, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
                           </svg>
                         </div>
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Автотранспорт</span>
-                          <svg class="badge__icon badge__icon--bus">
-                            <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Велосипед</span>
-                          <svg class="badge__icon badge__icon--bike">
-                            <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Пешком</span>
-                          <svg class="badge__icon badge__icon--run">
-                            <use xlink:href="img/spriteTransport.svg#transport-run"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="level badges__level">
-                        <span class="level__text level__text--catalog">80</span>
-                        <span class="level__title level__title--catalog">level</span>
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                          <path class="circular-chart__circle"
-                            stroke-dasharray="85, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                        </svg>
                       </div>
                     </div>
-                  </div>
-                  <div class="card__link-wrapper">
-                    <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
-                      Позвать!
-                    </a>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <div class="card__photo-wrapper">
-                    <a href="user.html">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                        <source type="image/webp" media="(max-width: 768px)" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-                        <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Марка Смолова">
-                      </picture>
-                    </a>
-                  </div>
-                  <a href="user.html" class="traveler-link">
-                    <h3 class="card__title">
-                      <span class="card__first-name">Марк</span>
-                      <span class="card__last-name">Смолов</span>
-                    </h3>
-                  </a>
-                  <div class="likes card__likes">
-                    <a href="like.html" class="likes__link">
-                      <div class="likes__icon-wrapper">
-                        <svg class="likes__icon likes__icon--active">
-                          <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
-                        </svg>
-                        <svg class="likes__icon">
-                          <use xlink:href="../img/spriteLike.svg#like-heart"></use>
-                        </svg>
-                      </div>
-                      <div class="likes__label">
-                        <span class="likes__count">170</span>
-                      </div>
-                  </a>
-                  </div>
-                  <ul class="card__interests interests">
-                    <li class="interests__item">#рэп</li>
-                    <li class="interests__item">#тату</li>
-                    <li class="interests__item">#хайпбист</li>
-                    <li class="interests__item">#кроссовки</li>
-                    <li class="interests__item">#суприм</li>
-                  </ul>
-                  <div class="wishes card__wishes">
-                    <p class="wishes__title">
-                      хочет посетить:
-                    </p>
-                    <ul class="wishes__list wishes__list--special">
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-usa"></use>
-                        </svg>
-                        США
-                      </li>
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-australia"></use>
-                        </svg>
-                        Австралия
-                      </li>
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-dominica"></use>
-                        </svg>
-                        Доминика
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="badges card__badges">
-                    <div class="badges__title">
-                      <span class="badges__title badges__title--transport">транспорт:</span>
-                      <span class="badges__title badges__title--level">левел:</span>
+                    <div class="card__link-wrapper">
+                      <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                        Позвать!
+                      </a>
                     </div>
-                    <div class="badges__wrapper">
-                      <div class="badges__transport">
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Авиаперелет</span>
-                          <svg class="badge__icon badge__icon--plane">
-                            <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Автотранспорт</span>
-                          <svg class="badge__icon badge__icon--bus">
-                            <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Велосипед</span>
-                          <svg class="badge__icon badge__icon--bike">
-                            <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Пешком</span>
-                          <svg class="badge__icon badge__icon--run">
-                            <use xlink:href="img/spriteTransport.svg#transport-run"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="level badges__level">
-                        <span class="level__text level__text--catalog">25</span>
-                        <span class="level__title level__title--catalog">level</span>
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                          <path class="circular-chart__circle"
-                            stroke-dasharray="25, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__link-wrapper">
-                    <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
-                      Позвать!
-                    </a>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <div class="card__photo-wrapper">
-                    <a href="user.html">
-                      <picture>
-                        <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
-                        <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                        <source type="image/webp" media="(max-width: 768px)" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-                        <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Ларисы Роговой">
-                      </picture>
-                    </a>
-                  </div>
-                  <a href="user.html" class="traveler-link">
-                    <h3 class="card__title card__title--online">
-                      <span class="card__first-name">Лариса</span>
-                      <span class="card__last-name">Роговая</span>
-                    </h3>
-                  </a>
-                  <div class="likes card__likes">
-                    <a href="like.html" class="likes__link">
-                      <div class="likes__icon-wrapper">
-                        <svg class="likes__icon likes__icon--active">
-                          <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
-                        </svg>
-                        <svg class="likes__icon">
-                          <use xlink:href="../img/spriteLike.svg#like-heart"></use>
-                        </svg>
-                      </div>
-                      <div class="likes__label">
-                        <span class="likes__count">23</span>
-                      </div>
-                    </a>
-                  </div>
-                  <ul class="card__interests interests">
-                    <li class="interests__item">#образование</li>
-                    <li class="interests__item">#карьера</li>
-                    <li class="interests__item">#учеба</li>
-                    <li class="interests__item">#линкедин</li>
-                  </ul>
-                  <div class="wishes card__wishes">
-                    <p class="wishes__title">
-                      хочет посетить:
-                    </p>
-                    <ul class="wishes__list wishes__list--special">
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-united-kingdom"></use>
-                        </svg>
-                        Великобритания
-                      </li>
-                      <li class="wishes__item">
-                        <svg class="icon icon--flag-catalog">
-                          <use xlink:href="../img/spriteFlags.svg#flag-germany"></use>
-                        </svg>
-                        Германия
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="badges card__badges">
-                    <div class="badges__title">
-                      <span class="badges__title badges__title--transport">транспорт:</span>
-                      <span class="badges__title badges__title--level">левел:</span>
-                    </div>
-                    <div class="badges__wrapper">
-                      <div class="badges__transport">
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Авиаперелет</span>
-                          <svg class="badge__icon badge__icon--plane">
-                            <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog badge--active tooltip">
-                          <span class="tooltip__text">Автотранспорт</span>
-                          <svg class="badge__icon badge__icon--bus">
-                            <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Велосипед</span>
-                          <svg class="badge__icon badge__icon--bike">
-                            <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
-                          </svg>
-                        </div>
-                        <div class="badge badge--catalog tooltip">
-                          <span class="tooltip__text">Пешком</span>
-                          <svg class="badge__icon badge__icon--run">
-                            <use xlink:href="img/spriteTransport.svg#transport-run"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="level badges__level">
-                        <span class="level__text level__text--catalog">50</span>
-                        <span class="level__title level__title--catalog">level</span>
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                          <path class="circular-chart__circle"
-                            stroke-dasharray="50, 100"
-                            d="M18 2.0845
-                              a 15.9155 15.9155 0 0 1 0 31.831
-                              a 15.9155 15.9155 0 0 1 0 -31.831"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__link-wrapper">
-                    <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
-                      Позвать!
-                    </a>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <a href="travelers.html" class="button catalog__link button--bg_none button--text_upper button--text-align_center button--text_dark-blue">
-              показать еще
-              <svg class="icon catalog__link-icon icon--show-more">
-                <use xlink:href="../img/spriteShowMore.svg#show-more-plus"></use>
-              </svg>
-            </a>
-            <h2 class="visually-hidden">Другие страницы</h2>
-            <div class="pagination">
-              <ul class="page-numbers pagination__page-numbers">
-                <li class="page-numbers__item page-numbers__item--current">
-                  <a href="#" class="page-numbers__link page-numbers__link" aria-label="Первая страница">
-                    1
-                  </a>
+                  </article>
                 </li>
-                <li class="page-numbers__item">
-                  <a href="#" class="page-numbers__link" aria-label="Вторая страница">
-                    2
-                  </a>
+                <li class="cards__item">
+                  <article class="card">
+                    <div class="card__photo-wrapper">
+                      <a href="user.html">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                          <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                          <source type="image/webp" media="(max-width: 768px)" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                          <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Марка Смолова">
+                        </picture>
+                      </a>
+                    </div>
+                    <a href="user.html" class="traveler-link">
+                      <h3 class="card__title">
+                        <span class="card__first-name">Марк</span>
+                        <span class="card__last-name">Смолов</span>
+                      </h3>
+                    </a>
+                    <div class="likes card__likes">
+                      <a href="like.html" class="likes__link">
+                        <div class="likes__icon-wrapper">
+                          <svg class="likes__icon likes__icon--active">
+                            <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
+                          </svg>
+                          <svg class="likes__icon">
+                            <use xlink:href="../img/spriteLike.svg#like-heart"></use>
+                          </svg>
+                        </div>
+                        <div class="likes__label">
+                          <span class="likes__count">170</span>
+                        </div>
+                    </a>
+                    </div>
+                    <ul class="card__interests interests">
+                      <li class="interests__item">#рэп</li>
+                      <li class="interests__item">#тату</li>
+                      <li class="interests__item">#хайпбист</li>
+                      <li class="interests__item">#кроссовки</li>
+                      <li class="interests__item">#суприм</li>
+                    </ul>
+                    <div class="wishes card__wishes">
+                      <p class="wishes__title">
+                        хочет посетить:
+                      </p>
+                      <ul class="wishes__list wishes__list--special">
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-usa"></use>
+                          </svg>
+                          США
+                        </li>
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-australia"></use>
+                          </svg>
+                          Австралия
+                        </li>
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-dominica"></use>
+                          </svg>
+                          Доминика
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="badges card__badges">
+                      <div class="badges__title">
+                        <span class="badges__title badges__title--transport">транспорт:</span>
+                        <span class="badges__title badges__title--level">левел:</span>
+                      </div>
+                      <div class="badges__wrapper">
+                        <div class="badges__transport">
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Авиаперелет</span>
+                            <svg class="badge__icon badge__icon--plane">
+                              <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Автотранспорт</span>
+                            <svg class="badge__icon badge__icon--bus">
+                              <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Велосипед</span>
+                            <svg class="badge__icon badge__icon--bike">
+                              <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Пешком</span>
+                            <svg class="badge__icon badge__icon--run">
+                              <use xlink:href="img/spriteTransport.svg#transport-run"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="level badges__level">
+                          <span class="level__text level__text--catalog">25</span>
+                          <span class="level__title level__title--catalog">level</span>
+                          <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circular-chart__circle"
+                              stroke-dasharray="25, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__link-wrapper">
+                      <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                        Позвать!
+                      </a>
+                    </div>
+                  </article>
                 </li>
-                <li class="page-numbers__item">
-                  <a href="#" class="page-numbers__link" aria-label="Третья страница">
-                    3
-                  </a>
-                </li>
-                <li class="page-numbers__item">
-                  <a href="#" class="page-numbers__link" aria-label="Четвёртая страница">
-                    4
-                  </a>
+                <li class="cards__item">
+                  <article class="card">
+                    <div class="card__photo-wrapper">
+                      <a href="user.html">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                          <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                          <source type="image/webp" media="(max-width: 768px)" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+                          <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70" height="70" class="card__photo" alt="Аватар Ларисы Роговой">
+                        </picture>
+                      </a>
+                    </div>
+                    <a href="user.html" class="traveler-link">
+                      <h3 class="card__title card__title--online">
+                        <span class="card__first-name">Лариса</span>
+                        <span class="card__last-name">Роговая</span>
+                      </h3>
+                    </a>
+                    <div class="likes card__likes">
+                      <a href="like.html" class="likes__link">
+                        <div class="likes__icon-wrapper">
+                          <svg class="likes__icon likes__icon--active">
+                            <use xlink:href="../img/spriteLike.svg#like-heart-active"></use>
+                          </svg>
+                          <svg class="likes__icon">
+                            <use xlink:href="../img/spriteLike.svg#like-heart"></use>
+                          </svg>
+                        </div>
+                        <div class="likes__label">
+                          <span class="likes__count">23</span>
+                        </div>
+                      </a>
+                    </div>
+                    <ul class="card__interests interests">
+                      <li class="interests__item">#образование</li>
+                      <li class="interests__item">#карьера</li>
+                      <li class="interests__item">#учеба</li>
+                      <li class="interests__item">#линкедин</li>
+                    </ul>
+                    <div class="wishes card__wishes">
+                      <p class="wishes__title">
+                        хочет посетить:
+                      </p>
+                      <ul class="wishes__list wishes__list--special">
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-united-kingdom"></use>
+                          </svg>
+                          Великобритания
+                        </li>
+                        <li class="wishes__item">
+                          <svg class="icon icon--flag-catalog">
+                            <use xlink:href="../img/spriteFlags.svg#flag-germany"></use>
+                          </svg>
+                          Германия
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="badges card__badges">
+                      <div class="badges__title">
+                        <span class="badges__title badges__title--transport">транспорт:</span>
+                        <span class="badges__title badges__title--level">левел:</span>
+                      </div>
+                      <div class="badges__wrapper">
+                        <div class="badges__transport">
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Авиаперелет</span>
+                            <svg class="badge__icon badge__icon--plane">
+                              <use xlink:href="img/spriteTransport.svg#transport-plane"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog badge--active tooltip">
+                            <span class="tooltip__text">Автотранспорт</span>
+                            <svg class="badge__icon badge__icon--bus">
+                              <use xlink:href="img/spriteTransport.svg#transport-bus"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Велосипед</span>
+                            <svg class="badge__icon badge__icon--bike">
+                              <use xlink:href="img/spriteTransport.svg#transport-bike"></use>
+                            </svg>
+                          </div>
+                          <div class="badge badge--catalog tooltip">
+                            <span class="tooltip__text">Пешком</span>
+                            <svg class="badge__icon badge__icon--run">
+                              <use xlink:href="img/spriteTransport.svg#transport-run"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="level badges__level">
+                          <span class="level__text level__text--catalog">50</span>
+                          <span class="level__title level__title--catalog">level</span>
+                          <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circular-chart__circle"
+                              stroke-dasharray="50, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__link-wrapper">
+                      <a href="call.html" class="button card__link button--rounded_m button--text-align_center button--text_upper button--bg-color_yellow">
+                        Позвать!
+                      </a>
+                    </div>
+                  </article>
                 </li>
               </ul>
-              <ul class="pagination__page-controls page-controls">
-                <li class="page-controls__item">
-                  <a href="prev.html" class="button page-controls__button page-controls__button--prev button--bg-color_white button--left-rounded">
-                    <span class="visually-hidden">Предыдущая страница</span>
-                  </a>
-                </li>
-                <li class="page-controls__item">
-                  <a href="next.html" class="button page-controls__button page-controls__button--next button--bg-color_white button--right-rounded">
-                    <span class="visually-hidden">Следующая страница</span>
-                  </a>
-                </li>
-              </ul>
+              <a href="travelers.html" class="button catalog__link button--bg_none button--text_upper button--text-align_center button--text_dark-blue">
+                показать еще
+                <svg class="icon catalog__link-icon icon--show-more">
+                  <use xlink:href="../img/spriteShowMore.svg#show-more-plus"></use>
+                </svg>
+              </a>
+              <h2 class="visually-hidden">Другие страницы</h2>
+              <div class="pagination">
+                <ul class="page-numbers pagination__page-numbers">
+                  <li class="page-numbers__item page-numbers__item--current">
+                    <a href="#" class="page-numbers__link page-numbers__link" aria-label="Первая страница">
+                      1
+                    </a>
+                  </li>
+                  <li class="page-numbers__item">
+                    <a href="#" class="page-numbers__link" aria-label="Вторая страница">
+                      2
+                    </a>
+                  </li>
+                  <li class="page-numbers__item">
+                    <a href="#" class="page-numbers__link" aria-label="Третья страница">
+                      3
+                    </a>
+                  </li>
+                  <li class="page-numbers__item">
+                    <a href="#" class="page-numbers__link" aria-label="Четвёртая страница">
+                      4
+                    </a>
+                  </li>
+                </ul>
+                <ul class="pagination__page-controls page-controls">
+                  <li class="page-controls__item">
+                    <a href="prev.html" class="button page-controls__button page-controls__button--prev button--bg-color_white button--left-rounded">
+                      <span class="visually-hidden">Предыдущая страница</span>
+                    </a>
+                  </li>
+                  <li class="page-controls__item">
+                    <a href="next.html" class="button page-controls__button page-controls__button--next button--bg-color_white button--right-rounded">
+                      <span class="visually-hidden">Следующая страница</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="page-footer">

@@ -8,7 +8,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    box-shadow: 0 40px 0 $main-bg_color
+  }
+}
+
+.travelers-to-choose__container {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1320px;
   }
 }

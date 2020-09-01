@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+  }
 }
 
 .cards__item {

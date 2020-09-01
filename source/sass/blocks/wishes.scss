@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    row-gap: 12px;
   }
 }
 

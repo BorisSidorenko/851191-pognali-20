@@ -8,6 +8,10 @@
     justify-content: space-between;
     width: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+  }
 }
 
 .page-controls__button {

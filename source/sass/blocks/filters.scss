@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    padding-right: 60px;
+    padding-right: 0;
     width: auto;
   }
 }
@@ -30,7 +30,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 46px;
     padding-left: 47px;
-    padding-right: 47px;
+    padding-right: 40px;
     padding-bottom: 48px;
   }
 }
@@ -57,6 +57,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 34px;
+    padding-left: 0;
     width: 194px;
   }
 }
@@ -94,7 +95,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 38px;
+    margin-bottom: 11px;
 
     &::before,
     &::after {
@@ -153,10 +154,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-bottom: 19px;
+    padding-bottom: 0;
 
     &:nth-last-child(2) {
-      padding-bottom: 34px;
+      padding-bottom: 0;
     }
 
     &:last-child {
@@ -213,7 +214,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 }
 
@@ -276,6 +277,10 @@
   @media (max-width: $mobile-width), (min-width: $desktop-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
 }
 
 .filters__item {
@@ -294,6 +299,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 16px;
+    padding-left: 0;
   }
 }
 

@@ -180,14 +180,11 @@
     }
   }
 
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &--arrow-filter {
       display: none;
     }
-  }
 
-  @media (min-width: $tablet-width) {
     &--phone {
       top: 21px;
       left: 21px;
@@ -318,6 +315,10 @@
       left: 28px;
       width: 32px;
       height: 30px;
+    }
+
+    &--arrow-filter {
+      display: block;
     }
 
     &--mail {
