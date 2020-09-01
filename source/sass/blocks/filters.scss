@@ -253,6 +253,19 @@
   }
 }
 
+.filters__controls {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .filters__options--collapsed {
   @media (max-width: $mobile-width), (min-width: $desktop-width) {
     display: none;
@@ -378,15 +391,3 @@
   }
 }
 
-.filters__controls {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-  }
-}
