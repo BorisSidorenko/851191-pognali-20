@@ -22,3 +22,10 @@
     margin-left: 10px;
   }
 }
+
+.traveler-link--index {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-left: 67px;
+  }
+}

@@ -189,6 +189,11 @@
   .nav__logo--menu {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .nav__logo {

@@ -49,11 +49,11 @@
       width: 100px;
       height: 100px;
       background-image: url("../../img/rates@1x.png");
-    }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/rates@2x.png");
-      background-size: cover;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/rates@2x.png");
+        background-size: cover;
+      }
     }
   }
 
