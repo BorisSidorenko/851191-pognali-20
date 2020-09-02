@@ -77,6 +77,12 @@
   }
 }
 
+.checkbox__control:focus + .checkbox__label {
+  &::before {
+    outline: 1px solid $basic-black;
+  }
+}
+
 .checkbox__tick {
   display: none;
   top: 9px;

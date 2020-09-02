@@ -47,6 +47,13 @@
   }
 }
 
+.transport__item {
+  &--form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .transport__title {
   margin: 0 auto;
   padding-left: 15px;
@@ -92,10 +99,6 @@
   &:active {
     background-color: $btn-transport_down;
     opacity: 0.3;
-    outline: none;
-  }
-
-  &:focus {
     outline: none;
   }
 

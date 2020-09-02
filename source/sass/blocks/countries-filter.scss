@@ -95,7 +95,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  outline: none;
   font-size: 0;
 
   &:hover {
@@ -291,7 +290,6 @@
     grid-row: 5;
     margin-bottom: 11px;
     background-color: $contries-filter-button;
-    outline: none;
     color: $light-blue;
 
     &:hover {

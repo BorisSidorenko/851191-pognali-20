@@ -334,7 +334,6 @@
 .filters__button {
   padding-top: 13px;
   padding-bottom: 11px;
-  outline: none;
 
   &:hover {
     filter: drop-shadow(0 3px 6px rgba($basic-black, 0.14));
@@ -394,5 +393,11 @@
       width: 11px;
       height: 11px;
     }
+  }
+}
+
+.filters__checkbox:focus + .filters__label {
+  &::before {
+    outline: 1px solid $basic-black;
   }
 }
