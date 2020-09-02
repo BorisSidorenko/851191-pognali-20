@@ -64,6 +64,7 @@
   position: relative;
   padding-top: 0;
   box-shadow: 0 -17px 0 $basic-white;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     box-shadow: 0 -30px 0 $basic-white;
