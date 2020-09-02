@@ -77,7 +77,7 @@
   }
 }
 
-.checkbox__control:disabled +.checkbox__label {
+.checkbox__control:disabled + .checkbox__label {
   &::before {
     background-color: $btn-transport_down;
   }
