@@ -67,7 +67,7 @@ exports.spriteIcons = spriteIcons;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/**.{webp,jpg,png}",
     "source/js/**"
   ], {
     base: "source"
