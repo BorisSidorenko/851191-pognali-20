@@ -1,29 +1,40 @@
 .entertainment {
-  padding-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 24px;
 
   &:last-of-type {
     padding-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 30px;
+    padding-bottom: 49px;
+
+    &:last-of-type {
+      padding-bottom: 24px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 18px;
-    padding-bottom: 52px;
+    padding-bottom: 48px;
+    padding-right: 115px;
 
     &:last-of-type {
       padding-top: 0;
-      padding-bottom: 0;
+      padding-bottom: 34px;
     }
   }
 }
 
 .entertainment__country {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-bottom: 18px;
   font-family: $main-font;
   font-style: normal;
@@ -34,14 +45,23 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
+  }
 }
 
 .entertainment__description {
+  position: relative;
+}
+
+.entertainment__textarea {
+  display: block;
   padding: 0;
   padding-top: 10px;
   padding-left: 14px;
@@ -56,6 +76,7 @@
   line-height: 22px;
   color: $special-grey;
   border-color: $input-grey;
+  border-radius: 4px;
   outline: none;
   resize: none;
 
@@ -77,17 +98,55 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 19px;
+    padding-top: 16px;
     padding-left: 18px;
     padding-right: 30px;
     padding-bottom: 19px;
-    width: 500px;
-    height: 140px;
+    width: 502px;
+    height: 142px;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-left: 25px;
     width: 730px;
+  }
+}
+
+.entertainment__invalid-text {
+  position: absolute;
+  bottom: 1px;
+  left: 2px;
+  display: none;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 20px;
+  width: calc(100% - 3px);
+  padding-bottom: 16px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $invalid-text_red;
+  background-color: $invalid-background_red;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.entertainment__description--invalid {
+  .entertainment__textarea {
+    padding-bottom: 57px;
+    border: 1px solid $special-red;
+  }
+
+  .entertainment__invalid-text {
+    display: block;
   }
 }

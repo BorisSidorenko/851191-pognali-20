@@ -1,17 +1,24 @@
 .plans {
-  padding-top: 28px;
-  padding-bottom: 30px;
   background-color: $special-blue_light;
-  border-radius: 25px 25px 0 0;
+  border-radius: 30px 30px 0 0;
   box-shadow: 0 20px 0 $special-blue_light;
 
+  @media (min-width: $desktop-width) {
+    border-radius: 56px 56px 0 0;
+  }
+}
+
+.plans__container {
+  padding-top: 26px;
+  padding-bottom: 30px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 57px;
-    padding-bottom: 76px;
+    padding-top: 54px;
+    padding-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
+    padding-top: 51px;
     padding-left: 124px;
     padding-right: 58px;
     padding-bottom: 64px;
@@ -20,7 +27,7 @@
 
 .plans__title {
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -30,7 +37,7 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    padding-bottom: 51px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -51,6 +58,10 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {

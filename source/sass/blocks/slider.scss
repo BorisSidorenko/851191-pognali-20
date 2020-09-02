@@ -11,13 +11,14 @@
   width: 47px;
 
   @media (min-width: $tablet-width) {
-    top: -73px;
-    right: 0;
+    top: -78px;
+    right: -2px;
     width: 76px;
     height: 5px;
   }
 
   @media (min-width: $desktop-width) {
+    display: none;
     top: 116px;
     right: 382px;
     flex-direction: column;

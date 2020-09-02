@@ -8,6 +8,10 @@
     justify-content: space-between;
     width: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+  }
 }
 
 .page-controls__button {
@@ -16,8 +20,8 @@
   &--prev::before,
   &--next::before {
     position: absolute;
-    top: 17px;
-    left: 63px;
+    top: 20px;
+    left: 59px;
     width: 20px;
     height: 13px;
     background: url("../../img/triangle-arrow-left.svg") center no-repeat;
@@ -26,6 +30,7 @@
 
   &--next::before {
     position: absolute;
+    top: 18px;
     right: 63px;
     background: url("../../img/triangle-arrow-right.svg") center no-repeat;
     content: "";
@@ -48,7 +53,13 @@
     &--prev::before,
     &--next::before {
       top: 9px;
-      left: 0;
+      left: -4px;
+    }
+
+    &--next::before {
+      top: 9px;
+      left: auto;
+      right: -6px;
     }
   }
 }

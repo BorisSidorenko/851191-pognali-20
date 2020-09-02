@@ -1,13 +1,13 @@
 .email-form {
   display: flex;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
+    padding-bottom: 67px;
   }
 }
 
@@ -27,8 +27,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 20px;
     padding-left: 36px;
-    width: 330px;
+    width: 324px;
     text-align: left;
   }
 }
@@ -48,29 +49,35 @@
   fill: $special-blue_dark;
 
   @media (min-width: $tablet-width) {
-    top: 29px;
-    left: 31px;
+    top: 32px;
+    left: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 274px;
+    left: 276px;
   }
 }
 
 .email-form__input {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 23px;
   border: none;
 
   &:focus {
     padding-top: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
     color: $basic-white;
     background-color: $light-blue;
     border: 4px solid $basic-white;
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 28px;
     border-radius: 20px 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 29px;
   }
 }

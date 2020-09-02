@@ -9,6 +9,12 @@
     padding-right: 0;
   }
 
+  &--nav {
+    position: relative;
+    padding: 0;
+    min-height: 47px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 768px;
     padding-left: 75px;
@@ -17,6 +23,12 @@
     &--padding-none {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    &--nav {
+      position: relative;
+      padding: 0;
+      min-height: 91px;
     }
   }
 
@@ -28,6 +40,11 @@
     &--padding-none {
       padding-left: 0;
       padding-right: 0;
+    }
+
+    &--nav {
+      padding: 0;
+      min-height: 104px;
     }
   }
 }

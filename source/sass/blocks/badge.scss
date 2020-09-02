@@ -2,21 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 27px;
+  color: rgba($special-blue_dark, 0.15);
   background-color: $basic-blue_light;
   border-radius: 50%;
 
+  &--catalog {
+    width: 32px;
+    height: 32px;
+  }
+
   &--active {
-    .badge__icon {
-      fill: $special-blue_dark;
-    }
+    color: $special-blue_dark;
   }
 
   &--special {
-    .badge__icon {
-      fill: $badge_blue;
-    }
+    color: $badge_blue;
   }
 
   &--bg_none {
@@ -53,8 +55,6 @@
 }
 
 .badge__icon {
-  fill: rgba($special-blue_dark, 0.15);
-
   &--plane {
     width: 12px;
     height: 14px;

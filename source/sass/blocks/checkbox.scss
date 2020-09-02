@@ -1,11 +1,15 @@
 .checkbox {
   padding-top: 5px;
   padding-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .checkbox__label {
   position: relative;
-  padding-left: 39px;
+  padding-left: 38px;
   padding-top: 5px;
   padding-bottom: 3px;
   font-family: $main-font;

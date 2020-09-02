@@ -1,29 +1,210 @@
+.country {
+  position: relative;
+}
+
 .country__selected,
-.country__select,
-.country__add {
-  padding-top: 13px;
+.country__select {
+  padding-top: 12px;
   padding-left: 10px;
   padding-bottom: 10px;
+  padding-right: 35px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    padding-top: 27px;
+    padding-top: 24px;
     padding-left: 26px;
     padding-right: 26px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.1em;
   }
 }
 
-.country__add {
+.country__add-btn {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 11px;
+  width: 220px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $main-color;
+  text-align: left;
   background-color: $main-bg_color;
+  border-radius: 4px;
+  border: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    width: 14px;
+    border-top: 2px solid $contries-add-button_icon;
+    content: "";
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: $special-blue_light;
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      border-color: rgba($contries-add-button_icon, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 369px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+    &::before,
+    &::after {
+      top: 34px;
+      right: 26px;
+      width: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 26px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 730px;
+
+    &::before,
+    &::after {
+      top: 33px;
+      right: 26px;
+      width: 20px;
+    }
+  }
+}
+
+.country__flag {
+  display: flex;
+  width: 53px;
+  border: 1px solid $input-grey;
+  border-left: none;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+    width: auto;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 85px;
+    padding-right: 112px;
+  }
+}
+
+.country__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    top: 17px;
+    right: 54px;
+    width: 8px;
+    height: 8px;
+    background-color: $special-blue_dark;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--not-selected {
+    &::before {
+      background-color: transparent;
+      border: 1px solid $input-grey;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      top: 26px;
+      right: 130px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 216px;
+    }
+  }
+}
+
+.country__remove-btn {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    width: 9px;
+    border-top: 1px solid $contries-cross-button;
+    transform: rotate(45deg);
+    content: "";
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+    right: -3px;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      width: 22px;
+      left: 0;
+    }
+  }
 }

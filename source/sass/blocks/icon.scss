@@ -8,6 +8,7 @@
   fill: $basic-yellow;
 
   &--mail {
+    top: 18px;
     left: 14px;
     width: 18px;
     height: 13px;
@@ -17,6 +18,45 @@
     width: 16px;
     height: 21px;
     top: 12px;
+  }
+
+  &--arrow-btn {
+    top: 25px;
+    left: auto;
+    right: 23px;
+    width: 13px;
+    height: 13px;
+  }
+
+  &--arrow-filter {
+    top: 6px;
+    left: auto;
+    right: 2px;
+    width: 6px;
+    height: 10px;
+  }
+
+  &--arrow-dwn {
+    top: 49px;
+    left: auto;
+    right: 55px;
+    width: 6px;
+    height: 10px;
+    fill: $input-grey;
+  }
+
+  &--topmenu-phone {
+    top: 12px;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--topmenu-mail {
+    top: 14px;
+    left: 13px;
+    width: 16px;
+    height: 13px;
   }
 
   &--handset {
@@ -34,8 +74,71 @@
     fill: $basic-blue;
   }
 
+  &--flag {
+    width: 35px;
+    height: 24px;
+  }
+
+  &--flag-catalog {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 18px;
+  }
+
+  &--flag-dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  &--flag-entertainment {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &--country-flag {
+    top: 88px;
+    left: 25px;
+  }
+
+  &--popularity {
+    top: 2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    fill: rgba($light-blue, 0.1);
+  }
+
+  &--travelers-flag {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  &--show-more {
+    top: 5px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--connection-line {
+    top: 8px;
+    left: -8px;
+    width: 17px;
+    height: 287px;
+  }
+
+  &--straight-line {
+    display: none;
+  }
+
   &--contries-filter {
-    top: 3px;
+    top: 4px;
     left: 0;
     width: 15px;
     height: 10px;
@@ -55,7 +158,33 @@
     height: 16px;
   }
 
+  &--dropdown {
+    position: absolute;
+    top: 16px;
+    left: auto;
+    right: 21px;
+    width: 10px;
+    height: 14px;
+    fill: rgba($basic-black, 0.6);
+    z-index: 1;
+  }
+
+  &--dropdown-offset {
+    right: 73px;
+    top: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--hide-arrow-btn {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    &--arrow-filter {
+      display: none;
+    }
+
     &--phone {
       top: 21px;
       left: 21px;
@@ -64,7 +193,7 @@
     }
 
     &--mail {
-      top: 22px;
+      top: 25px;
       left: 19px;
       width: 28px;
       height: 19px;
@@ -77,8 +206,49 @@
       height: 32px;
     }
 
-    &--return {
+    &--popularity {
+      width: 18px;
+      height: 20px;
+    }
+
+    &--arrow-btn {
+      top: 34px;
+      right: 34px;
+    }
+
+    &--arrow-dwn {
+      display: none;
+    }
+
+    &--left-arrow-btn {
       top: 0;
+      left: -35px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--connection-line {
+      display: none;
+    }
+
+    &--straight-line {
+      display: block;
+      top: 47px;
+      left: auto;
+      right: -3px;
+      width: 14px;
+      height: 274px;
+    }
+
+    &--show-more {
+      top: -3px;
+      left: 4px;
+      width: 26px;
+      height: 26px;
+    }
+
+    &--return {
+      top: 4px;
       left: auto;
       right: 0;
       width: 32px;
@@ -86,6 +256,8 @@
     }
 
     &--contries-dots-toggle {
+      top: 1px;
+      left: 6px;
       width: 30px;
       height: 6px;
     }
@@ -98,18 +270,59 @@
     &--contries-filter {
       display: none;
     }
+
+    &--flag-catalog {
+      width: 35px;
+      height: 24px;
+    }
+
+    &--flag-dropdown {
+      width: 70px;
+      height: 47px;
+    }
+
+    &--flag-entertainment {
+      width: 70px;
+      height: 47px;
+      top: -6px;
+      left: -1px;
+    }
+
+    &--country-flag {
+      top: 17px;
+      left: auto;
+      right: 150px;
+      width: 70px;
+      height: 47px;
+    }
+
+    &--dropdown {
+      top: 31px;
+      right: 190px;
+      width: 17px;
+      height: 9px;
+    }
+
+    &--dropdown-offset {
+      right: 190px;
+      top: 31px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     &--phone {
-      top: 30px;
-      left: 29px;
-      width: 31px;
+      top: 35px;
+      left: 28px;
+      width: 32px;
       height: 30px;
     }
 
+    &--arrow-filter {
+      display: block;
+    }
+
     &--mail {
-      top: 32px;
+      top: 38px;
       left: 26px;
       width: 37px;
       height: 25px;
@@ -123,22 +336,67 @@
     }
 
     &--contries-filter {
+      top: 2px;
       display: block;
       width: 23px;
       height: 15px;
+    }
+
+    &--country-flag {
+      top: 23px;
+      right: 152px;
+    }
+
+    &--flag-entertainment {
+      top: -3px;
+    }
+
+    &--straight-line {
+      top: 89px;
+      right: 218px;
+    }
+
+    &--dropdown {
+      width: 21px;
+      height: 11px;
+      right: 292px;
+    }
+
+    &--popularity {
+      top: 0;
+      left: 3;
+    }
+
+    &--dropdown-offset {
+      top: 30px;
+      right: 292px;
+    }
+
+    &--topmenu-phone {
+      top: 17px;
+      left: 17px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &--topmenu-mail {
+      top: 18px;
+      left: 17px;
+      width: 16px;
+      height: 14px;
     }
   }
 }
 
 .icon__header {
   &--handset,
-  &--mail-s  {
+  &--mail-s {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     &--phone,
-    &--mail  {
+    &--mail {
       display: none;
     }
 

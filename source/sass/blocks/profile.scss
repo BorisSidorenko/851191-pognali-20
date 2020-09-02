@@ -1,15 +1,24 @@
 .profile {
+  background-color: $main-bg_color;
+  box-shadow: 0 20px 0 $main-bg_color;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 50px 0 $main-bg_color;
+  }
+}
+
+.profile__container {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-bottom: 34px;
-  background-color: $main-bg_color;
-  box-shadow: 0 20px 0 $main-bg_color;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 308px 1fr;
+    padding-top: 64px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +26,8 @@
     grid-template-rows: 47px 1fr;
     row-gap: 27px;
     padding-top: 0;
+    padding-left: 124px;
+    padding-bottom: 56px;
   }
 }
 
@@ -35,7 +46,7 @@
 }
 
 .profile__current-photo {
-  margin-right: 17px;
+  margin-right: 18px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
@@ -79,8 +90,13 @@
 
 .profile__button {
   grid-column: 1 / -1;
-  margin-top: 16px;
-  margin-bottom: 25px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
   background-color: $special-blue_light;
 
   &:hover {
@@ -91,16 +107,24 @@
     color: rgba($basic_blue, 0.3);
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    margin-top: 43px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-radius: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 3;
     margin: 0;
     margin-left: auto;
     margin-right: 95px;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 12px;
     width: 190px;
     letter-spacing: 0;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
   }
 }
 

@@ -1,24 +1,31 @@
 .new-plan {
-  padding-top: 30px;
-  padding-bottom: 43px;
   background-color: $plan-light_blue;
   box-shadow: 0 20px 0 $plan-light_blue;
   border-radius: 25px 25px 0 0;
 
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 50px 0 $plan-light_blue;
+  }
+}
+
+.new-plan__container {
+  padding-top: 28px;
+  padding-bottom: 43px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 51px;
     padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    padding-bottom: 70px;
+    padding-top: 54px;
+    padding-bottom: 72px;
   }
 }
 
 .new-plan__title {
   margin: 0;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
   font-family: $main-font;
   font-style: normal;
   font-weight: bold;
@@ -27,13 +34,13 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 56px;
+    padding-bottom: 59px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 69px;
-    padding-bottom: 54px;
+    padding-bottom: 57px;
   }
 }

@@ -1,8 +1,8 @@
 .level-controls {
   position: relative;
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 21px;
+  margin-top: 12px;
+  margin-bottom: 24px;
 
   &::before {
     position: absolute;
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 37px;
 
     &::before {
       top: 16px;
