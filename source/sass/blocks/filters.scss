@@ -331,6 +331,15 @@
   }
 }
 
+.filters__tick {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  display: none;
+  width: 8px;
+  height: 8px;
+}
+
 .filters__button {
   padding-top: 13px;
   padding-bottom: 11px;
@@ -376,23 +385,27 @@
 }
 
 .filters__checkbox:checked + .filters__label {
-  &::after {
-    position: absolute;
-    top: 4px;
-    left: 5px;
-    width: 8px;
-    height: 8px;
-    background-image: url("../../img/tick.svg");
-    content: "";
+  .filters__tick {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
-    &::after {
+    .filters__tick {
       top: 7px;
       left: 7px;
       width: 11px;
       height: 11px;
     }
+  }
+}
+
+.filters__checkbox:disabled + .filters__label {
+  &::before {
+    background-color: $btn-transport_down;
+  }
+
+  .filters__tick {
+    fill: rgba($basic-blue, 0.3);
   }
 }
 

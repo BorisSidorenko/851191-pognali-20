@@ -108,6 +108,10 @@
   }
 }
 
+.transport__toggle:disabled {
+  background-color: $btn-transport_down;
+}
+
 .transport__icon {
   fill: rgba($main-color, 0.15);
 

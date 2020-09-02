@@ -77,6 +77,16 @@
   }
 }
 
+.checkbox__control:disabled +.checkbox__label {
+  &::before {
+    background-color: $btn-transport_down;
+  }
+
+  .checkbox__tick {
+    fill: rgba($basic-blue, 0.3);
+  }
+}
+
 .checkbox__control:focus + .checkbox__label {
   &::before {
     outline: 1px solid $basic-black;
