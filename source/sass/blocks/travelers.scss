@@ -19,7 +19,7 @@
   padding-bottom: 30px;
   background-image: url("../../img/smolov-back-desktop@1x.png"),
     url("../../img/rogovaya-back-mobile@1x.png");
-  background-position: top 35px right 25px,top 307px left -9px;
+  background-position: top 35px right 25px, top 307px left -9px;
   background-repeat: no-repeat, no-repeat;
 
   &::before {
@@ -290,7 +290,7 @@
 .travelers__button {
   @media (min-width: $tablet-width) {
     padding-top: 26px;
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
