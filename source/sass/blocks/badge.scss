@@ -25,56 +25,12 @@
     background-color: transparent;
   }
 
-  &--big {
-    .badge__icon {
-      &--plane {
-        width: 21px;
-        height: 21px;
-      }
-
-      &--bus {
-        width: 17px;
-        height: 19px;
-      }
-
-      &--bike {
-        width: 24px;
-        height: 24px;
-      }
-
-      &--run {
-        width: 21px;
-        height: 23px;
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
     background-color: transparent;
   }
 }
 
 .badge__icon {
-  &--plane {
-    width: 12px;
-    height: 14px;
-  }
-
-  &--bus {
-    width: 13px;
-    height: 16px;
-  }
-
-  &--bike {
-    width: 14px;
-    height: 17px;
-  }
-
-  &--run {
-    width: 13px;
-    height: 17px;
-  }
-
   @media (min-width: $tablet-width) {
     &--plane {
       width: 20px;

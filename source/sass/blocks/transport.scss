@@ -115,26 +115,6 @@
 .transport__icon {
   fill: rgba($main-color, 0.15);
 
-  &--plane {
-    width: 17px;
-    height: 16px;
-  }
-
-  &--bus {
-    width: 17px;
-    height: 16px;
-  }
-
-  &--bike {
-    width: 15px;
-    height: 12px;
-  }
-
-  &--run {
-    width: 13px;
-    height: 13px;
-  }
-
   @media (min-width: $tablet-width) {
     &--plane {
       width: 23px;

@@ -2,21 +2,14 @@
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 16px;
-  height: 15px;
-  content: "";
   fill: $basic-yellow;
 
   &--mail {
     top: 18px;
     left: 14px;
-    width: 18px;
-    height: 13px;
   }
 
   &--address-marker {
-    width: 16px;
-    height: 21px;
     top: 12px;
   }
 
@@ -24,67 +17,47 @@
     top: 25px;
     left: auto;
     right: 23px;
-    width: 13px;
-    height: 13px;
   }
 
   &--arrow-filter {
     top: 6px;
     left: auto;
     right: 2px;
-    width: 6px;
-    height: 10px;
   }
 
   &--arrow-dwn {
     top: 49px;
     left: auto;
     right: 55px;
-    width: 6px;
-    height: 10px;
     fill: $input-grey;
   }
 
   &--topmenu-phone {
     top: 12px;
     left: 14px;
-    width: 16px;
-    height: 16px;
   }
 
   &--topmenu-mail {
     top: 14px;
     left: 13px;
-    width: 16px;
-    height: 13px;
   }
 
   &--handset {
     top: 17px;
     left: 17px;
-    width: 16px;
     fill: $basic-blue;
   }
 
   &--mail-s {
     top: 19px;
     left: 17px;
-    width: 14px;
-    height: 11px;
     fill: $basic-blue;
-  }
-
-  &--flag {
-    width: 35px;
-    height: 24px;
   }
 
   &--flag-catalog {
     position: relative;
     top: 0;
     left: 0;
-    width: 26px;
-    height: 18px;
   }
 
   &--flag-dropdown {
@@ -108,8 +81,6 @@
   &--popularity {
     top: 2px;
     left: 0;
-    width: 14px;
-    height: 14px;
     fill: rgba($light-blue, 0.1);
   }
 
@@ -122,15 +93,11 @@
   &--show-more {
     top: 5px;
     left: 0;
-    width: 18px;
-    height: 18px;
   }
 
   &--connection-line {
     top: 8px;
     left: -8px;
-    width: 17px;
-    height: 287px;
   }
 
   &--straight-line {
@@ -140,8 +107,6 @@
   &--contries-filter {
     top: 4px;
     left: 0;
-    width: 15px;
-    height: 10px;
   }
 
   &--contries-dots-toggle,
@@ -149,13 +114,6 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 17px;
-    height: 3px;
-  }
-
-  &--contries-cross-toggle {
-    width: 16px;
-    height: 16px;
   }
 
   &--dropdown {
@@ -163,8 +121,6 @@
     top: 16px;
     left: auto;
     right: 21px;
-    width: 10px;
-    height: 14px;
     fill: rgba($basic-black, 0.6);
     z-index: 1;
   }
@@ -251,8 +207,6 @@
       top: 4px;
       left: auto;
       right: 0;
-      width: 32px;
-      height: 16px;
     }
 
     &--contries-dots-toggle {
