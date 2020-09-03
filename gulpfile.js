@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+var replace = require("gulp-replace");
 
 // Styles
 
@@ -19,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(replace('../../img', '../img'))
     .pipe(postcss([
       autoprefixer()
     ]))
