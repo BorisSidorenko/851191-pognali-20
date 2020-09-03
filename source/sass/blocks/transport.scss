@@ -47,6 +47,13 @@
   }
 }
 
+.transport__item {
+  &--form {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .transport__title {
   margin: 0 auto;
   padding-left: 15px;
@@ -95,38 +102,18 @@
     outline: none;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   @media (min-width: $tablet-width) {
     width: 43px;
     height: 43px;
   }
 }
 
+.transport__toggle:disabled {
+  background-color: $btn-transport_down;
+}
+
 .transport__icon {
   fill: rgba($main-color, 0.15);
-
-  &--plane {
-    width: 17px;
-    height: 16px;
-  }
-
-  &--bus {
-    width: 17px;
-    height: 16px;
-  }
-
-  &--bike {
-    width: 15px;
-    height: 12px;
-  }
-
-  &--run {
-    width: 13px;
-    height: 13px;
-  }
 
   @media (min-width: $tablet-width) {
     &--plane {

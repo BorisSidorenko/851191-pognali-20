@@ -17,7 +17,8 @@
   padding-bottom: 23px;
 
   &--index {
-    padding-top: 32px;
+    padding-top: 22px;
+    padding-bottom: 30px;
   }
 
   &::before {
@@ -38,6 +39,10 @@
     padding-right: 40px;
     border-radius: 50px 50px 0 0;
 
+    &--index {
+      padding-top: 16px;
+    }
+
     &::before {
       display: none;
     }
@@ -48,13 +53,22 @@
     padding-bottom: 47px;
     padding-left: 58px;
     padding-right: 60px;
+
+    &--index {
+      padding-top: 16px;
+    }
   }
 }
 
 .page-footer--index {
   position: relative;
   padding-top: 0;
-  box-shadow: 0 -30px 0 $basic-white;
+  box-shadow: 0 -17px 0 $basic-white;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 -30px 0 $basic-white;
+  }
 }
 
 .page-footer__logo {

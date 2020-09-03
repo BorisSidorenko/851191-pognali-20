@@ -63,7 +63,7 @@
 }
 
 .filters__wrapper {
-  margin-bottom:  16px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -331,10 +331,16 @@
   }
 }
 
+.filters__tick {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  display: none;
+}
+
 .filters__button {
   padding-top: 13px;
   padding-bottom: 11px;
-  outline: none;
 
   &:hover {
     filter: drop-shadow(0 3px 6px rgba($basic-black, 0.14));
@@ -377,18 +383,12 @@
 }
 
 .filters__checkbox:checked + .filters__label {
-  &::after {
-    position: absolute;
-    top: 4px;
-    left: 5px;
-    width: 8px;
-    height: 8px;
-    background-image: url("../../img/tick.svg");
-    content: "";
+  .filters__tick {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
-    &::after {
+    .filters__tick {
       top: 7px;
       left: 7px;
       width: 11px;
@@ -397,3 +397,18 @@
   }
 }
 
+.filters__checkbox:disabled + .filters__label {
+  &::before {
+    background-color: $btn-transport_down;
+  }
+
+  .filters__tick {
+    fill: rgba($basic-blue, 0.3);
+  }
+}
+
+.filters__checkbox:focus + .filters__label {
+  &::before {
+    outline: 1px solid $basic-black;
+  }
+}

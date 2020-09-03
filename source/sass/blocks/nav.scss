@@ -191,7 +191,8 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -302,7 +303,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  outline: none;
   font-size: 0;
 
   @media (min-width: $tablet-width) {

@@ -21,21 +21,6 @@
 .socials__icon {
   position: relative;
 
-  &--fb {
-    width: 11px;
-    height: 21px;
-  }
-
-  &--vk {
-    width: 23px;
-    height: 12px;
-  }
-
-  &--inst {
-    width: 18px;
-    height: 18px;
-  }
-
   @media (min-width: $tablet-width) {
     &--fb {
       width: 14px;

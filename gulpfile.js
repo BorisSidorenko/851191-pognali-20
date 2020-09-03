@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+var replace = require("gulp-replace");
 
 // Styles
 
@@ -19,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(replace('../../img', '../img'))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -53,165 +55,21 @@ exports.webpImg = webpImg;
 
 // Sprites
 
-const spriteFlags = () => {
-  return gulp.src("source/img/**/flag-*.svg")
+const spriteIcons = () => {
+  return gulp.src("source/img/**/*.svg")
     .pipe(svgstore())
-    .pipe(rename("spriteFlags.svg"))
+    .pipe(rename("spriteIcons.svg"))
     .pipe(gulp.dest("./build/img"));
 };
 
-exports.spriteFlags = spriteFlags;
-
-const spriteTransport = () => {
-  return gulp.src("source/img/**/transport-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteTransport.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteTransport = spriteTransport;
-
-const spriteSocial = () => {
-  return gulp.src("source/img/**/social-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteSocial.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteSocial = spriteSocial;
-
-const spriteLike = () => {
-  return gulp.src("source/img/**/like-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteLike.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteLike = spriteLike;
-
-const spriteTopMenu = () => {
-  return gulp.src("source/img/**/topmenu-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteTopMenu.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteTopMenu = spriteTopMenu;
-
-const spriteContacts = () => {
-  return gulp.src("source/img/**/contacts-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteContacts.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteContacts = spriteContacts;
-
-const spriteTriangleArrows = () => {
-  return gulp.src("source/img/**/triangle-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteTriangleArrows.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteTriangleArrows = spriteTriangleArrows;
-
-const spriteUser = () => {
-  return gulp.src("source/img/**/user.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteUser.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteUser = spriteUser;
-
-const spriteReturn = () => {
-  return gulp.src("source/img/**/return.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteReturn.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteReturn = spriteReturn;
-
-const spriteFilterCountries = () => {
-  return gulp.src("source/img/**/filter*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteFilterCountries.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteFilterCountries = spriteFilterCountries;
-
-const spriteCopyright = () => {
-  return gulp.src("source/img/**/htmlacademy.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteCopyright.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteCopyright = spriteCopyright;
-
-const spriteDots = () => {
-  return gulp.src("source/img/**/dots.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteDots.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteDots = spriteDots;
-
-const spriteShowMore = () => {
-  return gulp.src("source/img/**/show-more-plus.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteShowMore.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteShowMore = spriteShowMore;
-
-const spriteTick = () => {
-  return gulp.src("source/img/**/tick.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteTick.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteTick = spriteTick;
-
-const spriteMonthArrow = () => {
-  return gulp.src("source/img/**/month-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteMonthArrow.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteMonthArrow = spriteMonthArrow;
-
-const spriteSmallArrowCross = () => {
-  return gulp.src("source/img/**/small-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteSmallArrowCross.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteSmallArrowCross = spriteSmallArrowCross;
-
-const spriteDropDown = () => {
-  return gulp.src("source/img/**/dropdown-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("spriteDropDown.svg"))
-    .pipe(gulp.dest("./build/img"));
-};
-
-exports.spriteDropDown = spriteDropDown;
+exports.spriteIcons = spriteIcons;
 
 // Copy
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/**.{webp,jpg,png}",
     "source/js/**"
   ], {
     base: "source"
@@ -241,10 +99,7 @@ exports.clean = clean;
 
 // Build
 
-const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteFlags,
-  spriteTransport, spriteSocial, spriteLike, spriteTopMenu, spriteContacts, spriteUser,
-  spriteCopyright, spriteReturn, spriteFilterCountries, spriteDots, spriteTick, spriteMonthArrow,
-  spriteSmallArrowCross, spriteDropDown, html);
+const build = gulp.series(clean, copy, styles, svgo, webpImg, spriteIcons, html);
 
 exports.build = build;
 

@@ -66,10 +66,6 @@
     box-shadow: 0 3px 7px rgba($basic-black, 0.24);
   }
 
-  &:focus {
-    outline: none;
-  }
-
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;

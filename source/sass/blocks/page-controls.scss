@@ -16,25 +16,7 @@
 
 .page-controls__button {
   position: relative;
-
-  &--prev::before,
-  &--next::before {
-    position: absolute;
-    top: 20px;
-    left: 59px;
-    width: 20px;
-    height: 13px;
-    background: url("../../img/triangle-arrow-left.svg") center no-repeat;
-    content: "";
-  }
-
-  &--next::before {
-    position: absolute;
-    top: 18px;
-    right: 63px;
-    background: url("../../img/triangle-arrow-right.svg") center no-repeat;
-    content: "";
-  }
+  color: $special-blue_dark;
 
   &:hover {
     opacity: 0.6;
@@ -61,5 +43,31 @@
       left: auto;
       right: -6px;
     }
+  }
+}
+
+.page-controls__icon-prev {
+  position: absolute;
+  top: 20px;
+  left: 58px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -6px;
+  }
+}
+
+.page-controls__icon-next {
+  position: absolute;
+  top: 18px;
+  right: 58px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    right: -6px;
   }
 }
