@@ -1,4 +1,4 @@
-https://borissidorenko.github.io/851191-pognali-20/
+<a href="https://borissidorenko.github.io/851191-pognali-20/">Опубликованный проект Погнали</a>
 
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
