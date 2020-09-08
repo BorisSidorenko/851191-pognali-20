@@ -1,3 +1,5 @@
+https://borissidorenko.github.io/851191-pognali-20/
+
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Борис Сидоренко](https://htmlacademy.ru/profile/id851191).

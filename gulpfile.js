@@ -12,6 +12,8 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 var replace = require("gulp-replace");
+const ghPages = require("gh-pages");
+const path = require("path");
 
 // Styles
 
@@ -129,3 +131,9 @@ const watcher = () => {
 exports.default = gulp.series(
   build, server, watcher
 );
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+
+exports.deploy = deploy;
